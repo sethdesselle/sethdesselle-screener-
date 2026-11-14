@@ -150,12 +150,16 @@
   }
   const zoneTag = (n, price) => { const z = zoneState(n, price); return z ? ` <span class="t1pill zone ${z.cls}" title="Suggested zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)}">${z.text}</span>` : ""; };
 
-  const buyBelow = (n) => (isNum(n.fairValue) ? n.fairValue * (1 - (n.requiredDiscountPct ?? 20) / 100) : null);
+  const buyBelow = (n) => {
+    if (isNum(n.buyBelow)) return n.buyBelow;
+    const k = ((n.fairValueDetail || {}).methods || []).filter((m) => !m.trimmed && isNum(m.value)).map((m) => m.value);
+    return k.length >= 3 ? Math.min(...k) : null;
+  };
   function verdict(n, price) {
     const bb = buyBelow(n);
     if (!isNum(bb) || !isNum(price)) return { cls: "flat", text: "No fair value yet", sub: "Not enough verified data to value it." };
     const d = (1 - price / n.fairValue) * 100, need = `Would be a buy at $${money(bb)} or lower (${fix((1 - bb / price) * 100, 0)}% below today).`;
-    if (price <= bb) return { cls: "up", text: "Priced in the buy range", sub: `${fix(d, 0)}% below fair value.` };
+    if (price <= bb) return { cls: "up", text: "Cheap on every measure", sub: `In the buy range, ${fix(d, 0)}% below fair value.` };
     if (d >= 3) return { cls: "near", text: "A little cheap, not cheap enough", sub: need };
     if (d > -10) return { cls: "flat", text: "About fairly priced", sub: need };
     return { cls: "down", text: `Expensive: ${fix(-d, 0)}% above fair value`, sub: need };
@@ -175,7 +179,7 @@
     const range = isNum(d.low) && isNum(d.high) ? `Range across methods $${money(d.low)} to $${money(d.high)}.` : "";
     const bb = [isNum(d.bear) ? `Bear $${money(d.bear)}` : null, isNum(d.bull) ? `Bull $${money(d.bull)}` : null].filter(Boolean).join(" · ");
     const sc = n.strictChecks, ck = (ok, txt) => `<li class="${ok ? "up" : "down"}">${ok ? "✓" : "✗"} ${txt}</li>`;
-    const checks = sc ? `<ul class="chk">${ck(sc.discount, `Discount ≥ ${fix(n.requiredDiscountPct ?? 20, 0)}% required` + (n.riskTier ? ` (${esc(n.riskTier)})` : ""))}${ck(sc.rewardRisk, "Reward:risk ≥ 2:1" + (isNum(n.rewardRisk) ? ` (${fix(n.rewardRisk, 1)}:1)` : ""))}${ck(sc.agreement, "Methods agree within 40%" + (isNum(n.spreadPct) ? ` (${fix(n.spreadPct, 0)}%)` : ""))}</ul>` : "";
+    const checks = sc ? `<ul class="chk">${ck(sc.allMethods ?? sc.discount, "Price is below every valuation method" + (isNum(buyBelow(n)) ? ` (lowest is $${money(buyBelow(n))})` : ""))}${ck(sc.rewardRisk, "Reward:risk ≥ 2:1" + (isNum(n.rewardRisk) ? ` (${fix(n.rewardRisk, 1)}:1)` : ""))}</ul>` : "";
     const hc = isNum(d.composite) && n.haircutPct ? `<p>Composite $${money(d.composite)} less ${fix(n.haircutPct || 0, 0)}% risk haircut = <b>$${money(n.fairValue)}</b>.</p>` : "";
     return `<details class="tech"><summary>How fair value is worked out</summary>${checks}${hc}
       <table class="perf"><thead><tr><th class="l">Method</th><th class="l">Assumption</th><th>Value</th><th>Weight</th></tr></thead><tbody>${rows}</tbody></table>
@@ -202,7 +206,7 @@
   function t1Facts(n) {
     const f = [["Rev growth", isNum(n.revGrowth) ? fix(n.revGrowth, 0) + "%" : null], ["Fwd P/E", isNum(n.fwdPE) ? fix(n.fwdPE, 1) : null],
       ["FCF yield", isNum(n.fcfYield) ? fix(n.fcfYield, 1) + "%" : null], ["ROIC", isNum(n.roic) ? fix(n.roic, 0) + "%" : null],
-      ["Fair value", isNum(n.fairValue) ? "$" + money(n.fairValue) : null], ["Discount", isNum(n.discountPct) ? fix(n.discountPct, 0) + "%" + (isNum(n.requiredDiscountPct) ? ` (need ${fix(n.requiredDiscountPct, 0)}%)` : "") : null],
+      ["Fair value", isNum(n.fairValue) ? "$" + money(n.fairValue) : null], ["Discount", isNum(n.discountPct) ? fix(n.discountPct, 0) + "%" : null],
       ["Reward:risk", isNum(n.rewardRisk) ? fix(n.rewardRisk, 1) + ":1" : null], ["Implied return/yr", isNum(n.impliedReturnPct) ? fix(n.impliedReturnPct, 1) + "%" : null]];
     return f.filter(([, v]) => v).map(([k, v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
   }
