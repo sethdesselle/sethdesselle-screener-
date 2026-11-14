@@ -153,7 +153,16 @@
         ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}</p>` : ""}
         <p class="d-links">${t1Sources(n)}</p></article>`;
     }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
+    renderChanges();
     $("#t1-foot").textContent = "For information only, not financial advice. Nothing here executes trades or changes your watchlist.";
+  }
+
+  function renderChanges() {
+    const w = (tier1 && tier1.watchlist) || {}, adds = w.adds || [], rems = w.removes || [];
+    const item = (x, cls) => `<li><b>${esc(x.symbol)}</b>${x.name ? ` <span class="muted">${esc(x.name)}</span>` : ""}${x.confidence ? ` <span class="t1pill">${esc(x.confidence)}</span>` : ""}<br>${esc(x.reason)}</li>`;
+    $("#t1-changes").innerHTML = (adds.length || rems.length) ? `<h3>Suggested list changes <span class="muted">(recommendations only)</span></h3>
+      ${adds.length ? `<h4 class="up">Consider adding</h4><ul class="chg">${adds.map(item).join("")}</ul>` : ""}
+      ${rems.length ? `<h4 class="down">Consider removing</h4><ul class="chg">${rems.map(item).join("")}</ul>` : ""}` : "";
   }
 
   function setTab(tab) {
