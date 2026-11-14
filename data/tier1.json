@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-14T08:30:00+00:00",
+  "updated": "2026-11-14T09:20:00+00:00",
   "asOf": "2026-11-13",
   "test": true,
   "summary": {
     "screened": 11,
     "strict": 0,
     "approaching": 7,
-    "note": "Test run covering the 11 research-priority names only. No Strict Tier 1 BUYs. Technicals (RSI/MACD/ATR) were not pulled in this run."
+    "note": "Sample run of the 7 names above only (no full-universe screen). Fair values use the new composite method but with ASSUMED target multiples; stockanalysis.com data dated Oct 22 to Nov 6. Treat as illustrative."
   },
   "names": [
     {
@@ -20,8 +20,8 @@
       "fwdPE": 14.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 185,
-      "discountPct": 9,
+      "fairValue": 174,
+      "discountPct": 4,
       "entry": "Wait for a pullback toward $150-160 (the Nov 5-6 gap area).",
       "upgrade": "A pullback that gives 20%+ discount to fair value, or evidence the VYKAT XR launch is durable.",
       "sources": [
@@ -33,6 +33,45 @@
       "entryZone": {
         "low": 150,
         "high": 160
+      },
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "15x fwd EPS $11.41",
+            "value": 171.08,
+            "weight": 30
+          },
+          {
+            "name": "FCF yield",
+            "assumption": "5.5% on FCF/sh $8.56",
+            "value": 155.64,
+            "weight": 25
+          },
+          {
+            "name": "EV/EBITDA",
+            "assumption": "14x TTM EBITDA $913M, net debt $72M",
+            "value": 125.08,
+            "weight": 15
+          },
+          {
+            "name": "Forward P/S",
+            "assumption": "3.5x fwd rev/sh $42.78",
+            "value": 149.73,
+            "weight": 15
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 32.9% -> P/E capped at 25x",
+            "value": 285.13,
+            "weight": 15
+          }
+        ],
+        "low": 125,
+        "high": 285,
+        "bear": 135,
+        "bull": 200,
+        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
       }
     },
     {
@@ -46,8 +85,8 @@
       "fwdPE": 10.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": null,
-      "discountPct": null,
+      "fairValue": 120,
+      "discountPct": 35,
       "entry": "About 36% above its 52-week low after a ~7% post-earnings drop; no technicals pulled.",
       "upgrade": "FCF margin recovery and signs growth is stabilizing near 15-20%.",
       "sources": [
@@ -55,7 +94,40 @@
           "title": "monday.com Q3 2026 results",
           "url": "https://monday.com/newsroom/announcements/q3-2026-results"
         }
-      ]
+      ],
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "18x fwd EPS $6.16 (non-GAAP)",
+            "value": 110.85,
+            "weight": 35
+          },
+          {
+            "name": "FCF yield",
+            "assumption": "5.5% on FCF/sh $7.05 (before SBC)",
+            "value": 128.18,
+            "weight": 29
+          },
+          {
+            "name": "Forward P/S",
+            "assumption": "3.0x fwd rev/sh $37.33",
+            "value": 111.99,
+            "weight": 18
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 21.5% -> P/E 21.5x",
+            "value": 132.16,
+            "weight": 18
+          }
+        ],
+        "low": 111,
+        "high": 132,
+        "bear": 85,
+        "bull": 135,
+        "note": "Weighted average of 4 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
+      }
     },
     {
       "symbol": "RGA",
@@ -68,8 +140,8 @@
       "fwdPE": 9.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 290,
-      "discountPct": 5,
+      "fairValue": 294,
+      "discountPct": 6,
       "entry": "Extended after a breakout; prefer a pullback toward $255-265.",
       "upgrade": "A pullback to the $255-265 area, or evidence earnings quality holds without one-time items.",
       "sources": [
@@ -81,6 +153,33 @@
       "entryZone": {
         "low": 255,
         "high": 265
+      },
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "10x fwd EPS $28.65",
+            "value": 286.52,
+            "weight": 40
+          },
+          {
+            "name": "P/B vs ROE",
+            "assumption": "1.3x book value/sh $209.73 (ROE 11.7%)",
+            "value": 272.65,
+            "weight": 40
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 12.2% -> P/E 12.2x",
+            "value": 349.84,
+            "weight": 20
+          }
+        ],
+        "low": 273,
+        "high": 350,
+        "bear": 235,
+        "bull": 320,
+        "note": "Weighted average of 3 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
       }
     },
     {
@@ -94,8 +193,8 @@
       "fwdPE": 13.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": null,
-      "discountPct": null,
+      "fairValue": 27,
+      "discountPct": -5,
       "entry": "Up sharply from the pre-earnings $22.74; no technicals pulled.",
       "upgrade": "Verified FCF yield and ROIC, and evidence Q4/Q1 growth stays above 15%.",
       "sources": [
@@ -103,7 +202,46 @@
           "title": "EverQuote Q3 8-K",
           "url": "https://www.sec.gov/Archives/edgar/data/0001640428/000119312526443633/ever-ex99_1.htm"
         }
-      ]
+      ],
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "12x fwd EPS $2.05",
+            "value": 24.64,
+            "weight": 30
+          },
+          {
+            "name": "FCF yield",
+            "assumption": "7% on FCF/sh $2.70",
+            "value": 38.57,
+            "weight": 25
+          },
+          {
+            "name": "EV/EBITDA",
+            "assumption": "8x TTM EBITDA $83.6M + net cash $190M",
+            "value": 24.38,
+            "weight": 15
+          },
+          {
+            "name": "Forward P/S",
+            "assumption": "1.0x fwd rev/sh $25.39",
+            "value": 25.39,
+            "weight": 15
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 8.0% -> P/E 8x",
+            "value": 16.44,
+            "weight": 15
+          }
+        ],
+        "low": 16,
+        "high": 39,
+        "bear": 20,
+        "bull": 36,
+        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+      }
     },
     {
       "symbol": "POWL",
@@ -116,8 +254,8 @@
       "fwdPE": 22,
       "fcfYield": 4.8,
       "roic": null,
-      "fairValue": null,
-      "discountPct": null,
+      "fairValue": 124,
+      "discountPct": -15,
       "entry": "Do not act before fiscal Q4 results on Mon Nov 16 after the close.",
       "upgrade": "A strong Nov 16 print and a lower entry price (forward P/E near 20x or below).",
       "sources": [
@@ -125,21 +263,60 @@
           "title": "Powell Q3 FY26 8-K",
           "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
         }
-      ]
+      ],
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "20x fwd EPS $6.46",
+            "value": 129.12,
+            "weight": 30
+          },
+          {
+            "name": "FCF yield",
+            "assumption": "5% on FCF/sh $6.70",
+            "value": 134.0,
+            "weight": 25
+          },
+          {
+            "name": "EV/EBITDA",
+            "assumption": "14x TTM EBITDA $236M + net cash $631M",
+            "value": 108.1,
+            "weight": 15
+          },
+          {
+            "name": "Forward P/S",
+            "assumption": "3.0x fwd rev/sh $37.71",
+            "value": 113.13,
+            "weight": 15
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 19.6% -> P/E 19.6x",
+            "value": 126.47,
+            "weight": 15
+          }
+        ],
+        "low": 108,
+        "high": 134,
+        "bear": 105,
+        "bull": 160,
+        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
+      }
     },
     {
       "symbol": "BN",
       "rank": 6,
       "class": "approaching",
-      "price": 41.38,
-      "priceDate": "2026-11-06",
+      "price": 40.97,
+      "priceDate": "2026-11-13",
       "reason": "Q3 distributable earnings per share $0.73 (+16%), ~15x P/DE, buybacks. GAAP metrics are not meaningful and the discount to fair value is thin. Nov 13 close not verified.",
       "revGrowth": null,
       "fwdPE": null,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 50,
-      "discountPct": 17,
+      "fairValue": null,
+      "discountPct": null,
       "entry": "Support near $36; add on dips toward the high $30s.",
       "upgrade": "A deeper discount to fair value (25%+) or evidence of faster DE growth.",
       "sources": [
@@ -151,6 +328,10 @@
       "entryZone": {
         "low": 36,
         "high": 39
+      },
+      "fairValueDetail": {
+        "methods": [],
+        "note": "Fewer than 3 verifiable methods (conglomerate; FCF negative, no forward EPS or P/S). Fair value left blank."
       }
     },
     {
@@ -164,8 +345,8 @@
       "fwdPE": null,
       "fcfYield": null,
       "roic": null,
-      "fairValue": null,
-      "discountPct": null,
+      "fairValue": 173,
+      "discountPct": -10,
       "entry": "35% above its 52-week low; residential demand is cyclical and storm-driven.",
       "upgrade": "A lower price (P/S near 2x) with the data-center backlog converting to sales.",
       "sources": [
@@ -173,7 +354,46 @@
           "title": "Generac Q3 2026 results",
           "url": "https://finviz.com/news/409750/generac-reports-third-quarter-2026-results"
         }
-      ]
+      ],
+      "fairValueDetail": {
+        "methods": [
+          {
+            "name": "Forward P/E",
+            "assumption": "15x fwd EPS $12.23",
+            "value": 183.51,
+            "weight": 30
+          },
+          {
+            "name": "FCF yield",
+            "assumption": "5.5% on FCF/sh $7.03",
+            "value": 127.82,
+            "weight": 25
+          },
+          {
+            "name": "EV/EBITDA",
+            "assumption": "12x TTM EBITDA $621M, net debt $1.02B",
+            "value": 109.08,
+            "weight": 15
+          },
+          {
+            "name": "Forward P/S",
+            "assumption": "1.5x fwd rev/sh $105.85",
+            "value": 158.77,
+            "weight": 15
+          },
+          {
+            "name": "PEG",
+            "assumption": "growth 39% -> P/E capped at 25x",
+            "value": 305.85,
+            "weight": 15
+          }
+        ],
+        "low": 109,
+        "high": 306,
+        "bear": 125,
+        "bull": 215,
+        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+      }
     },
     {
       "symbol": "CALX",
@@ -220,8 +440,8 @@
     {
       "symbol": "S",
       "class": "not_qualified",
-      "price": 21.77,
-      "priceDate": "2026-11-06",
+      "price": 22.2,
+      "priceDate": "2026-11-13",
       "reason": "Revenue +21% but GAAP operating margin -31%, ROIC negative, FCF yield under 1% and forward P/S ~6x. Nov 13 close not verified.",
       "revGrowth": 21,
       "fwdPE": 55,
