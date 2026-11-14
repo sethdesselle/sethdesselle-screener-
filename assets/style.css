@@ -246,3 +246,7 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .t1pill.not_qualified { color: var(--muted); }
 .t1-box { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin: 10px 0; }
 .t1-box p { margin: 6px 0; }
+.t1-head + .t1-list + div h3 { margin: 18px 0 4px; }
+#t1-changes h4 { margin: 10px 0 4px; }
+.chg { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.chg li { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; }
