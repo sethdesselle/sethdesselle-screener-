@@ -288,3 +288,5 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .sec-row > span:first-child { flex: 1 1 auto; min-width: 0; }
 .sec-bar { flex: 0 0 90px; height: 8px; border-radius: 99px; background: var(--border); position: relative; overflow: hidden; }
 .sec-bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); }
+
+.chk{list-style:none;padding:0;margin:.4rem 0;font-size:.85rem}.chk li{margin:.15rem 0}

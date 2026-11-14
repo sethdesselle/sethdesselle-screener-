@@ -1,12 +1,12 @@
 {
-  "updated": "2026-11-14T09:20:00+00:00",
+  "updated": "2026-11-14T10:30:00Z",
   "asOf": "2026-11-13",
   "test": true,
   "summary": {
     "screened": 11,
     "strict": 0,
     "approaching": 7,
-    "note": "Sample run of the 7 names above only (no full-universe screen). Fair values use the new composite method but with ASSUMED target multiples; stockanalysis.com data dated Oct 22 to Nov 6. Treat as illustrative."
+    "note": "Sample re-run under the new rules (risk-adjusted fair value, SBC-adjusted FCF, DCF, trimming, reward:risk). Target multiples and SBC shares are ASSUMED, source data is stale (Oct 22 to Nov 6). Illustrative only."
   },
   "names": [
     {
@@ -20,8 +20,8 @@
       "fwdPE": 14.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 160,
-      "discountPct": -5,
+      "fairValue": 135.86,
+      "discountPct": -23,
       "entry": "Wait for a pullback toward $150-160 (the Nov 5-6 gap area).",
       "upgrade": "A pullback that gives 20%+ discount to fair value, or evidence the VYKAT XR launch is durable.",
       "sources": [
@@ -38,40 +38,65 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "15x fwd EPS $11.41",
-            "value": 171.08,
-            "weight": 30
+            "assumption": "22.0x fwd EPS $11.41 (rule: 12 + 0.5 x EPS growth 32.9%, cap 22x, floor 10x)",
+            "value": 251.02,
+            "weight": 0,
+            "trimmed": true
           },
           {
-            "name": "FCF yield",
-            "assumption": "5.5% on FCF/sh $8.56",
-            "value": 155.64,
-            "weight": 25
+            "name": "FCF yield (SBC-adjusted)",
+            "assumption": "5.5% on FCF/sh $7.28 after SBC (assumed SBC 15% of FCF)",
+            "value": 132.29,
+            "weight": 33,
+            "trimmed": false
           },
           {
             "name": "EV/EBITDA",
             "assumption": "14x TTM EBITDA $913M, net debt $72M",
             "value": 125.08,
-            "weight": 15
+            "weight": 0,
+            "trimmed": true
           },
           {
             "name": "Forward P/S",
             "assumption": "3.5x fwd rev/sh $42.78",
             "value": 149.73,
-            "weight": 15
+            "weight": 17,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 32.9% halved -> P/E 16.5x (floor 10x, cap 20x)",
             "value": 187.75,
-            "weight": 15
+            "weight": 25,
+            "trimmed": false
+          },
+          {
+            "name": "DCF",
+            "assumption": "5y growth 15.0% on FCF/sh $7.28, 10% discount, 3% terminal",
+            "value": 175.36,
+            "weight": 25,
+            "trimmed": false
           }
         ],
         "low": 125,
-        "high": 188,
+        "high": 251,
         "bear": 135,
         "bull": 200,
-        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 159.83,
+        "haircutPct": 15,
+        "spreadPct": 42
+      },
+      "compositeFV": 159.83,
+      "haircutPct": 15,
+      "rewardRisk": 1.0,
+      "impliedReturnPct": -6.7,
+      "spreadPct": 42,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": false
       }
     },
     {
@@ -85,8 +110,8 @@
       "fwdPE": 10.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 108,
-      "discountPct": 28,
+      "fairValue": 72.93,
+      "discountPct": -7,
       "entry": "About 36% above its 52-week low after a ~7% post-earnings drop; no technicals pulled.",
       "upgrade": "FCF margin recovery and signs growth is stabilizing near 15-20%.",
       "sources": [
@@ -99,34 +124,58 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "18x fwd EPS $6.16 (non-GAAP)",
-            "value": 110.85,
-            "weight": 35
+            "assumption": "22.0x fwd EPS $6.16 (rule: 12 + 0.5 x EPS growth 21.5%, cap 22x, floor 10x)",
+            "value": 135.52,
+            "weight": 0,
+            "trimmed": true
           },
           {
-            "name": "FCF yield",
-            "assumption": "5.5% on FCF/sh $7.05 (before SBC)",
-            "value": 128.18,
-            "weight": 29
+            "name": "FCF yield (SBC-adjusted)",
+            "assumption": "5.5% on FCF/sh $4.23 after SBC (assumed SBC 40% of FCF)",
+            "value": 76.91,
+            "weight": 46,
+            "trimmed": false
           },
           {
             "name": "Forward P/S",
             "assumption": "3.0x fwd rev/sh $37.33",
             "value": 111.99,
-            "weight": 18
+            "weight": 15,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 21.5% halved -> P/E 10.7x (floor 10x, cap 20x)",
             "value": 66.1,
-            "weight": 18
+            "weight": 0,
+            "trimmed": true
+          },
+          {
+            "name": "DCF",
+            "assumption": "5y growth 10.8% on FCF/sh $4.23, 10% discount, 3% terminal",
+            "value": 85.98,
+            "weight": 38,
+            "trimmed": false
           }
         ],
         "low": 66,
-        "high": 128,
+        "high": 136,
         "bear": 85,
         "bull": 135,
-        "note": "Weighted average of 4 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 85.79,
+        "haircutPct": 15,
+        "spreadPct": 46
+      },
+      "compositeFV": 85.79,
+      "haircutPct": 15,
+      "rewardRisk": null,
+      "impliedReturnPct": -2.2,
+      "spreadPct": 46,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": false
       }
     },
     {
@@ -140,7 +189,7 @@
       "fwdPE": 9.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 281,
+      "fairValue": 280.96,
       "discountPct": 2,
       "entry": "Extended after a breakout; prefer a pullback toward $255-265.",
       "upgrade": "A pullback to the $255-265 area, or evidence earnings quality holds without one-time items.",
@@ -158,28 +207,44 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "10x fwd EPS $28.65",
-            "value": 286.52,
-            "weight": 40
+            "assumption": "10x fwd EPS $28.65 (financials: fixed multiple)",
+            "value": 286.5,
+            "weight": 40,
+            "trimmed": false
           },
           {
             "name": "P/B vs ROE",
             "assumption": "1.3x book value/sh $209.73 (ROE 11.7%)",
             "value": 272.65,
-            "weight": 40
+            "weight": 40,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 12.2% halved -> P/E 10.0x (floor 10x, cap 20x)",
             "value": 286.5,
-            "weight": 20
+            "weight": 20,
+            "trimmed": false
           }
         ],
         "low": 273,
-        "high": 287,
+        "high": 286,
         "bear": 235,
         "bull": 320,
-        "note": "Weighted average of 3 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 280.96,
+        "haircutPct": 0,
+        "spreadPct": 5
+      },
+      "compositeFV": 280.96,
+      "haircutPct": 0,
+      "rewardRisk": 1.1,
+      "impliedReturnPct": 0.7,
+      "spreadPct": 5,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": true
       }
     },
     {
@@ -193,8 +258,8 @@
       "fwdPE": 13.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 28,
-      "discountPct": -3,
+      "fairValue": 23.58,
+      "discountPct": -20,
       "entry": "Up sharply from the pre-earnings $22.74; no technicals pulled.",
       "upgrade": "Verified FCF yield and ROIC, and evidence Q4/Q1 growth stays above 15%.",
       "sources": [
@@ -207,40 +272,65 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "12x fwd EPS $2.05",
-            "value": 24.64,
-            "weight": 30
+            "assumption": "16.0x fwd EPS $2.05 (rule: 12 + 0.5 x EPS growth 8.0%, cap 22x, floor 10x)",
+            "value": 32.8,
+            "weight": 0,
+            "trimmed": true
           },
           {
-            "name": "FCF yield",
-            "assumption": "7% on FCF/sh $2.70",
-            "value": 38.57,
-            "weight": 25
+            "name": "FCF yield (SBC-adjusted)",
+            "assumption": "7% on FCF/sh $2.03 after SBC (assumed SBC 25% of FCF)",
+            "value": 28.93,
+            "weight": 33,
+            "trimmed": false
           },
           {
             "name": "EV/EBITDA",
             "assumption": "8x TTM EBITDA $83.6M + net cash $190M",
             "value": 24.38,
-            "weight": 15
+            "weight": 25,
+            "trimmed": false
           },
           {
             "name": "Forward P/S",
             "assumption": "1.0x fwd rev/sh $25.39",
             "value": 25.39,
-            "weight": 15
+            "weight": 17,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 8.0% halved -> P/E 10.0x (floor 10x, cap 20x)",
             "value": 20.5,
-            "weight": 15
+            "weight": 0,
+            "trimmed": true
+          },
+          {
+            "name": "DCF",
+            "assumption": "5y growth 4.0% on FCF/sh $2.03, 10% discount, 3% terminal",
+            "value": 31.09,
+            "weight": 25,
+            "trimmed": false
           }
         ],
         "low": 20,
-        "high": 39,
+        "high": 33,
         "bear": 20,
         "bull": 36,
-        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 27.74,
+        "haircutPct": 15,
+        "spreadPct": 28
+      },
+      "compositeFV": 27.74,
+      "haircutPct": 15,
+      "rewardRisk": 0.9,
+      "impliedReturnPct": -5.9,
+      "spreadPct": 28,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": true
       }
     },
     {
@@ -254,8 +344,8 @@
       "fwdPE": 22,
       "fcfYield": 4.8,
       "roic": null,
-      "fairValue": 115,
-      "discountPct": -24,
+      "fairValue": 106.47,
+      "discountPct": -34,
       "entry": "Do not act before fiscal Q4 results on Mon Nov 16 after the close.",
       "upgrade": "A strong Nov 16 print and a lower entry price (forward P/E near 20x or below).",
       "sources": [
@@ -268,40 +358,65 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "20x fwd EPS $6.46",
-            "value": 129.12,
-            "weight": 30
+            "assumption": "21.8x fwd EPS $6.46 (rule: 12 + 0.5 x EPS growth 19.6%, cap 22x, floor 10x)",
+            "value": 140.83,
+            "weight": 0,
+            "trimmed": true
           },
           {
-            "name": "FCF yield",
-            "assumption": "5% on FCF/sh $6.70",
-            "value": 134.0,
-            "weight": 25
+            "name": "FCF yield (SBC-adjusted)",
+            "assumption": "5% on FCF/sh $6.50 after SBC (assumed SBC 3% of FCF)",
+            "value": 129.98,
+            "weight": 23,
+            "trimmed": false
           },
           {
             "name": "EV/EBITDA",
             "assumption": "14x TTM EBITDA $236M + net cash $631M",
             "value": 108.1,
-            "weight": 15
+            "weight": 38,
+            "trimmed": false
           },
           {
             "name": "Forward P/S",
             "assumption": "3.0x fwd rev/sh $37.71",
             "value": 113.13,
-            "weight": 15
+            "weight": 15,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 19.6% halved -> P/E 10.0x (floor 10x, cap 20x)",
             "value": 64.6,
-            "weight": 15
+            "weight": 0,
+            "trimmed": true
+          },
+          {
+            "name": "DCF",
+            "assumption": "5y growth 9.8% on FCF/sh $6.50, 10% discount, 3% terminal",
+            "value": 127.08,
+            "weight": 23,
+            "trimmed": false
           }
         ],
         "low": 65,
-        "high": 134,
+        "high": 141,
         "bear": 105,
         "bull": 160,
-        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 118.3,
+        "haircutPct": 10,
+        "spreadPct": 20
+      },
+      "compositeFV": 118.3,
+      "haircutPct": 10,
+      "rewardRisk": 0.5,
+      "impliedReturnPct": -9.3,
+      "spreadPct": 20,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": true
       }
     },
     {
@@ -345,8 +460,8 @@
       "fwdPE": null,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 163,
-      "discountPct": -17,
+      "fairValue": 136.12,
+      "discountPct": -40,
       "entry": "35% above its 52-week low; residential demand is cyclical and storm-driven.",
       "upgrade": "A lower price (P/S near 2x) with the data-center backlog converting to sales.",
       "sources": [
@@ -359,40 +474,65 @@
         "methods": [
           {
             "name": "Forward P/E",
-            "assumption": "15x fwd EPS $12.23",
-            "value": 183.51,
-            "weight": 30
+            "assumption": "22.0x fwd EPS $12.23 (rule: 12 + 0.5 x EPS growth 39.4%, cap 22x, floor 10x)",
+            "value": 269.06,
+            "weight": 0,
+            "trimmed": true
           },
           {
-            "name": "FCF yield",
-            "assumption": "5.5% on FCF/sh $7.03",
-            "value": 127.82,
-            "weight": 25
+            "name": "FCF yield (SBC-adjusted)",
+            "assumption": "5.5% on FCF/sh $6.33 after SBC (assumed SBC 10% of FCF)",
+            "value": 115.04,
+            "weight": 30,
+            "trimmed": false
           },
           {
             "name": "EV/EBITDA",
             "assumption": "12x TTM EBITDA $621M, net debt $1.02B",
             "value": 109.08,
-            "weight": 15
+            "weight": 0,
+            "trimmed": true
           },
           {
             "name": "Forward P/S",
             "assumption": "1.5x fwd rev/sh $105.85",
             "value": 158.77,
-            "weight": 15
+            "weight": 20,
+            "trimmed": false
           },
           {
             "name": "PEG (growth haircut)",
             "assumption": "EPS growth 39.4% halved -> P/E 19.7x (floor 10x, cap 20x)",
             "value": 240.63,
-            "weight": 15
+            "weight": 20,
+            "trimmed": false
+          },
+          {
+            "name": "DCF",
+            "assumption": "5y growth 15.0% on FCF/sh $6.33, 10% discount, 3% terminal",
+            "value": 152.49,
+            "weight": 30,
+            "trimmed": false
           }
         ],
         "low": 109,
-        "high": 241,
+        "high": 269,
         "bear": 125,
         "bull": 215,
-        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
+        "note": "Risk-adjusted fair value = weighted composite less a risk haircut. Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (the haircut covers it). Sample only.",
+        "composite": 160.14,
+        "haircutPct": 15,
+        "spreadPct": 109
+      },
+      "compositeFV": 160.14,
+      "haircutPct": 15,
+      "rewardRisk": 0.4,
+      "impliedReturnPct": -10.6,
+      "spreadPct": 109,
+      "strictChecks": {
+        "discount": false,
+        "rewardRisk": false,
+        "agreement": false
       }
     },
     {
