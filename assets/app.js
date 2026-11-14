@@ -140,6 +140,16 @@
     return n;
   };
 
+  function zoneState(n, price) {
+    const z = n.entryZone;
+    if (!z || !isNum(z.low) || !isNum(z.high) || !isNum(price)) return null;
+    if (price >= z.low && price <= z.high) return { cls: "in", text: "In entry zone" };
+    if (price > z.high && price <= z.high * 1.03) return { cls: "near", text: "Near entry zone" };
+    if (price < z.low) return { cls: "below", text: "Below entry zone" };
+    return null;
+  }
+  const zoneTag = (n, price) => { const z = zoneState(n, price); return z ? ` <span class="t1pill zone ${z.cls}" title="Suggested zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)}">${z.text}</span>` : ""; };
+
   function fvBar(n, price) {
     if (!isNum(n.fairValue) || !isNum(price) || n.fairValue <= 0) return "";
     const max = Math.max(n.fairValue, price) * 1.15, pp = price / max * 100, fp = n.fairValue / max * 100, disc = (1 - price / n.fairValue) * 100;
@@ -205,13 +215,13 @@
       const s = stocks.find((x) => x.symbol === n.symbol);
       const price = s && isNum(s.price) ? s.price : n.price;
       return `<article class="t1-card" ${s ? `data-open="${esc(n.symbol)}"` : ""}>
-        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}
+        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}${zoneTag(n, s && isNum(s.price) ? s.price : n.price)}
           <span class="nm">${esc(s ? s.name : "")}</span></div>
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
         <p>${esc(n.reason)}</p>
         <div class="stats">${t1Facts(n)}</div>
         ${fvBar(n, price)}
-        ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}</p>` : ""}
+        ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}${n.entryZone ? ` <span class="muted">(zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)})</span>` : ""}</p>` : ""}
         ${techBlock(n, s)}
         <p class="d-links">${t1Sources(n)}</p></article>`;
     }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
@@ -227,16 +237,34 @@
     if (dropped.length) $("#t1-head").insertAdjacentHTML("beforeend", `<p class="muted">Dropped off since last run: ${dropped.map(esc).join(", ")}</p>`);
     const hist = [...tier1hist].sort((a, b) => b.date.localeCompare(a.date));
     $("#t1-hist").hidden = !hist.length;
-    $("#t1-hist-body").innerHTML = hist.map((h) => `<div class="hist-row"><b>${esc(h.date)}</b> ` +
+    const first = {};
+    [...tier1hist].sort((a, b) => a.date.localeCompare(b.date)).forEach((e) => (e.names || []).forEach((n) => { if (!first[n.symbol] && isNum(n.price)) first[n.symbol] = { date: e.date, price: n.price, cls: n.class }; }));
+    const nowSet = new Set(((tier1 && tier1.names) || []).map((n) => n.symbol));
+    const perf = Object.entries(first).map(([sym, f]) => {
+      const s = stocks.find((x) => x.symbol === sym);
+      return { sym, f, now: s && isNum(s.price) ? s.price : null, active: nowSet.has(sym) };
+    }).sort((a, b) => a.f.date.localeCompare(b.f.date) || a.sym.localeCompare(b.sym));
+    const perfHtml = perf.length ? `<h4 class="perf-h">Since first picked <span class="muted">(price when first listed vs now)</span></h4>
+      <table class="perf"><thead><tr><th class="l">Name</th><th>First</th><th>Then</th><th>Now</th><th>Change</th></tr></thead><tbody>${perf.map((p) => {
+        const ch = p.now != null ? (p.now / p.f.price - 1) * 100 : null;
+        return `<tr><td class="l"><b>${esc(p.sym)}</b>${p.active ? "" : ' <span class="muted">(dropped)</span>'}</td><td>${esc(p.f.date.slice(5))}</td><td>$${money(p.f.price)}</td><td>${p.now != null ? "$" + money(p.now) : "–"}</td><td class="${dirCls(ch)}">${pct(ch, 1)}</td></tr>`;
+      }).join("")}</tbody></table>` : "";
+    $("#t1-hist-body").innerHTML = perfHtml + hist.map((h) => `<div class="hist-row"><b>${esc(h.date)}</b> ` +
       ((h.names || []).length ? h.names.map((n) => `<span class="t1pill ${esc(n.class)}">${esc(n.symbol)}</span>`).join(" ") : '<span class="muted">no qualifying names</span>') + "</div>").join("");
   }
 
+  let dismissed = new Set(store.get("dismissed", []));
   function renderChanges() {
-    const w = (tier1 && tier1.watchlist) || {}, adds = w.adds || [], rems = w.removes || [];
-    const item = (x, cls) => `<li><b>${esc(x.symbol)}</b>${x.name ? ` <span class="muted">${esc(x.name)}</span>` : ""}${x.confidence ? ` <span class="t1pill">${esc(x.confidence)}</span>` : ""}<br>${esc(x.reason)}</li>`;
-    $("#t1-changes").innerHTML = (adds.length || rems.length) ? `<h3>Suggested list changes <span class="muted">(recommendations only)</span></h3>
-      ${adds.length ? `<h4 class="up">Consider adding</h4><ul class="chg">${adds.map(item).join("")}</ul>` : ""}
-      ${rems.length ? `<h4 class="down">Consider removing</h4><ul class="chg">${rems.map(item).join("")}</ul>` : ""}` : "";
+    const w = (tier1 && tier1.watchlist) || {};
+    const allAdds = w.adds || [], allRems = w.removes || [];
+    const keyOf = (kind, x) => kind + ":" + x.symbol;
+    const adds = allAdds.filter((x) => !dismissed.has(keyOf("A", x))), rems = allRems.filter((x) => !dismissed.has(keyOf("R", x)));
+    const hiddenN = allAdds.length + allRems.length - adds.length - rems.length;
+    const item = (kind) => (x) => `<li><b>${esc(x.symbol)}</b>${x.name ? ` <span class="muted">${esc(x.name)}</span>` : ""}${x.confidence ? ` <span class="t1pill">${esc(x.confidence)}</span>` : ""}<br>${esc(x.reason)}<br><button class="link-btn" data-dismiss="${esc(keyOf(kind, x))}">Dismiss</button></li>`;
+    $("#t1-changes").innerHTML = (adds.length || rems.length || hiddenN) ? `<h3>Suggested list changes <span class="muted">(recommendations only)</span></h3>
+      ${adds.length ? `<h4 class="up">Consider adding</h4><ul class="chg">${adds.map(item("A")).join("")}</ul>` : ""}
+      ${rems.length ? `<h4 class="down">Consider removing</h4><ul class="chg">${rems.map(item("R")).join("")}</ul>` : ""}
+      ${hiddenN ? `<p class="muted">${hiddenN} dismissed (this browser only; the daily run may suggest them again) <button class="link-btn" data-undismiss="1">Show again</button></p>` : ""}` : "";
   }
 
   const TABS = ["screener", "tier1", "earnings", "positions"];
@@ -276,6 +304,20 @@
     const total = rows.reduce((a, r) => a + (r.value || 0), 0);
     $("#pos-summary").textContent = rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
     $("#pos-empty").hidden = rows.length > 0;
+    const secs = {}, inds = {};
+    rows.forEach((r) => {
+      if (!r.value) return;
+      const sec = r.core ? "Core funds / ETFs" : (r.s && r.s.sector) || "Unknown";
+      (secs[sec] = secs[sec] || { v: 0, syms: [] }).v += r.value; secs[sec].syms.push(r.sym);
+      const ind = r.core ? null : r.s && r.s.industry;
+      if (ind) (inds[ind] = inds[ind] || []).push(r.sym);
+    });
+    const secRows = Object.entries(secs).sort((a, b) => b[1].v - a[1].v);
+    const overlap = Object.entries(inds).filter(([, v]) => v.length > 1);
+    $("#pos-sectors").innerHTML = secRows.length ? `<h3 class="sec-h">By sector</h3>` + secRows.map(([k, v]) => {
+      const w = total ? v.v / total * 100 : 0;
+      return `<div class="sec-row"><span>${esc(k)} <span class="muted">${esc(v.syms.join(", "))}</span></span><span class="sec-bar"><i style="width:${w.toFixed(1)}%"></i></span><b>${fix(w, 0)}%</b></div>`;
+    }).join("") + (overlap.length ? `<p class="muted"><b>Overlap check:</b> ${overlap.map(([k, v]) => `${esc(v.join(" + "))} (${esc(k)})`).join("; ")}. Same-industry holdings may need a replacement comparison.</p>` : "") : "";
     $("#pos-body").innerHTML = rows.sort((a, b) => (b.value || 0) - (a.value || 0)).map((r) => {
       const w = total && r.value ? r.value / total * 100 : null;
       let status = '<span class="muted">no price</span>';
@@ -618,6 +660,11 @@
 
     $("#presets").addEventListener("click", (e) => { const b = e.target.closest("[data-preset]"); if (b) setPreset(b.dataset.preset); });
     $("#tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) setTab(b.dataset.tab); });
+    $("#t1-changes").addEventListener("click", (e) => {
+      const d = e.target.closest("[data-dismiss]"), u = e.target.closest("[data-undismiss]");
+      if (d) dismissed.add(d.dataset.dismiss); else if (u) dismissed = new Set(); else return;
+      store.set("dismissed", [...dismissed]); renderChanges();
+    });
     $("#t1-list").addEventListener("click", (e) => { if (e.target.closest("a, .tech")) return; const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
     bindPositions();
     setTab(state.tab);
