@@ -150,11 +150,22 @@
   }
   const zoneTag = (n, price) => { const z = zoneState(n, price); return z ? ` <span class="t1pill zone ${z.cls}" title="Suggested zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)}">${z.text}</span>` : ""; };
 
+  const buyBelow = (n) => (isNum(n.fairValue) ? n.fairValue * (1 - (n.requiredDiscountPct ?? 20) / 100) : null);
+  function verdict(n, price) {
+    const bb = buyBelow(n);
+    if (!isNum(bb) || !isNum(price)) return { cls: "flat", text: "No fair value yet", sub: "Not enough verified data to value it." };
+    const d = (1 - price / n.fairValue) * 100, need = `Would be a buy at $${money(bb)} or lower (${fix((1 - bb / price) * 100, 0)}% below today).`;
+    if (price <= bb) return { cls: "up", text: "Priced in the buy range", sub: `${fix(d, 0)}% below fair value.` };
+    if (d >= 3) return { cls: "near", text: "A little cheap, not cheap enough", sub: need };
+    if (d > -10) return { cls: "flat", text: "About fairly priced", sub: need };
+    return { cls: "down", text: `Expensive: ${fix(-d, 0)}% above fair value`, sub: need };
+  }
   function fvBar(n, price) {
     if (!isNum(n.fairValue) || !isNum(price) || n.fairValue <= 0) return "";
-    const max = Math.max(n.fairValue, price) * 1.15, pp = price / max * 100, fp = n.fairValue / max * 100, disc = (1 - price / n.fairValue) * 100;
-    return `<div class="fv"><div class="fv-track"><i class="fv-fill" style="width:${pp.toFixed(1)}%"></i><b class="fv-mark" style="left:${fp.toFixed(1)}%"></b></div>
-      <div class="fv-lbl"><span>Price $${money(price)}</span><span>${n.haircutPct ? "Risk-adj. fair value" : "Fair value"} $${money(n.fairValue)} · ${disc >= 0 ? fix(disc, 0) + "% below" : fix(-disc, 0) + "% above"}</span></div></div>`;
+    const bb = buyBelow(n), max = Math.max(n.fairValue, price) * 1.15, w = (v) => (v / max * 100).toFixed(1);
+    return `<div class="fv3"><div><span class="k">Price now</span><b>$${money(price)}</b></div><div><span class="k">Fair value</span><b>$${money(n.fairValue)}</b></div><div><span class="k">Buy at or below</span><b class="up">$${money(bb)}</b></div></div>
+      <div class="fv"><div class="fv-track"><i class="fv-buy" style="width:${w(bb)}%"></i><b class="fv-mark" style="left:${w(n.fairValue)}%"></b><b class="fv-dot" style="left:${w(price)}%"></b></div>
+      <div class="fv-lbl"><span><i class="lg buy"></i>buy range</span><span><i class="lg fair"></i>fair value</span><span><i class="lg now"></i>price now</span></div></div>`;
   }
 
   function fvDetail(n) {
@@ -166,7 +177,7 @@
     const sc = n.strictChecks, ck = (ok, txt) => `<li class="${ok ? "up" : "down"}">${ok ? "✓" : "✗"} ${txt}</li>`;
     const checks = sc ? `<ul class="chk">${ck(sc.discount, `Discount ≥ ${fix(n.requiredDiscountPct ?? 20, 0)}% required` + (n.riskTier ? ` (${esc(n.riskTier)})` : ""))}${ck(sc.rewardRisk, "Reward:risk ≥ 2:1" + (isNum(n.rewardRisk) ? ` (${fix(n.rewardRisk, 1)}:1)` : ""))}${ck(sc.agreement, "Methods agree within 40%" + (isNum(n.spreadPct) ? ` (${fix(n.spreadPct, 0)}%)` : ""))}</ul>` : "";
     const hc = isNum(d.composite) && n.haircutPct ? `<p>Composite $${money(d.composite)} less ${fix(n.haircutPct || 0, 0)}% risk haircut = <b>$${money(n.fairValue)}</b>.</p>` : "";
-    return `<details class="tech"><summary>How fair value is built</summary>${checks}${hc}
+    return `<details class="tech"><summary>How fair value is worked out</summary>${checks}${hc}
       <table class="perf"><thead><tr><th class="l">Method</th><th class="l">Assumption</th><th>Value</th><th>Weight</th></tr></thead><tbody>${rows}</tbody></table>
       <p class="muted">${[range, bb, d.note ? esc(d.note) : ""].filter(Boolean).join(" ")}</p></details>`;
   }
@@ -234,13 +245,16 @@
         <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}${zoneTag(n, s && isNum(s.price) ? s.price : n.price)}
           <span class="nm">${esc(s ? s.name : "")}</span></div>
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
-        <p>${esc(n.reason)}</p>
-        <div class="stats">${t1Facts(n)}</div>
+        ${(() => { const v = verdict(n, price); return `<p class="verdict ${v.cls}"><b>${v.text}</b><span>${v.sub}</span></p>`; })()}
         ${fvBar(n, price)}
-        ${fvDetail(n)}
-        ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}${n.entryZone ? ` <span class="muted">(zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)})</span>` : ""}</p>` : ""}
-        ${techBlock(n, s)}
-        <p class="d-links">${t1Sources(n)}</p></article>`;
+        <p>${esc(n.reason)}</p>
+        <details class="tech more"><summary>More detail</summary>
+          <div class="stats">${t1Facts(n)}</div>
+          ${n.entry ? `<p class="muted"><b>Entry timing:</b> ${esc(n.entry)}${n.entryZone ? ` (zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)})` : ""}</p>` : ""}
+          ${n.upgrade ? `<p class="muted"><b>What would upgrade it:</b> ${esc(n.upgrade)}</p>` : ""}
+          ${fvDetail(n)}
+          ${techBlock(n, s)}
+          <p class="d-links">${t1Sources(n)}</p></details></article>`;
     }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
     renderChanges();
     renderBannerAndHistory();
