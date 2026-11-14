@@ -24,7 +24,19 @@
     </div>
   </header>
 
+  <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Views">
+    <button class="tab on" data-tab="screener" role="tab" aria-selected="true">Screener</button>
+    <button class="tab" data-tab="tier1" role="tab" aria-selected="false">Tier 1 <span id="t1-count" class="badge" hidden></span></button>
+  </nav>
+
   <main class="wrap">
+    <section id="view-tier1" hidden>
+      <div id="t1-head" class="t1-head"></div>
+      <div id="t1-list" class="t1-list"></div>
+      <p id="t1-foot" class="foot muted"></p>
+    </section>
+
+    <div id="view-screener">
     <section class="summary" id="summary" aria-label="Market summary"></section>
 
     <section class="controls">
@@ -88,6 +100,7 @@
       Data from Yahoo Finance via an automatic GitHub Action (prices may be delayed). For information only, not financial advice.
       <span id="missing"></span>
     </footer>
+    </div>
   </main>
 
   <dialog id="detail" aria-labelledby="d-title">
@@ -110,6 +123,7 @@
         <button data-r="21">1M</button><button data-r="63">3M</button><button data-r="126">6M</button><button data-r="0" class="on">1Y</button>
       </div>
       <div class="chart" id="d-chart"><p class="muted">Loading chart…</p></div>
+      <div id="d-t1" class="t1-box" hidden></div>
       <div class="stats" id="d-stats"></div>
       <p class="d-links">
         <a id="d-yahoo" target="_blank" rel="noopener">Yahoo Finance ↗</a>

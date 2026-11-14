@@ -225,3 +225,24 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .chip.on .muted { color: inherit; opacity: .75; }
 #result-count { white-space: nowrap; }
 .result-bar { flex-wrap: wrap; }
+
+/* ---- Tier 1 tab ---- */
+.tabs { display: flex; gap: 6px; padding-top: 10px; }
+.tab { border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 999px; padding: 6px 14px; font: inherit; cursor: pointer; }
+.tab.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.t1-head h2 { margin: 12px 0 2px; font-size: 1.15rem; }
+.t1-head p { margin: 2px 0; }
+.t1-list { display: grid; gap: 12px; margin: 12px 0; }
+.t1-card { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.t1-card[data-open] { cursor: pointer; }
+.t1-card p { margin: 8px 0; }
+.t1-card-head { display: flex; justify-content: space-between; gap: 8px; align-items: flex-start; flex-wrap: wrap; }
+.t1-sym { font-size: 1.1rem; }
+.t1-card .nm { display: block; color: var(--muted); font-size: .85rem; }
+.t1-card .stats, .t1-box .stats { margin: 8px 0; }
+.t1pill { display: inline-block; font-size: .7rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); vertical-align: middle; }
+.t1pill.strict { background: var(--up); border-color: var(--up); color: #fff; }
+.t1pill.approaching { color: var(--star); border-color: var(--star); }
+.t1pill.not_qualified { color: var(--muted); }
+.t1-box { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; margin: 10px 0; }
+.t1-box p { margin: 6px 0; }

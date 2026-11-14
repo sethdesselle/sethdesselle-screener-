@@ -10,6 +10,7 @@
 
   // ------------------------------------------------------------ state
   let stocks = [];
+  let tier1 = null;            // data/tier1.json (written by the daily Claude task)
   let history = null;          // loaded lazily for charts
   let historyPromise = null;
   const favs = new Set(store.get("favs", []));
@@ -18,6 +19,7 @@
     sort: store.get("sort", { key: "marketCap", dir: "desc" }),
     q: "",
     f: store.get("filters", {}),
+    tab: store.get("tab", "screener"),
   };
 
   // ------------------------------------------------------------ formatting
@@ -42,6 +44,7 @@
   // ------------------------------------------------------------ screens
   const PRESETS = [
     { id: "all", label: "All" },
+    { id: "tier1", label: "Tier 1 picks", test: (s) => s.t1 && s.t1.class !== "not_qualified" },
     { id: "fav", label: "★ Favorites", test: (s) => favs.has(s.symbol) },
     { id: "gainers", label: "Top gainers", test: (s) => s.changePct > 0, sort: { key: "changePct", dir: "desc" } },
     { id: "losers", label: "Top losers", test: (s) => s.changePct < 0, sort: { key: "changePct", dir: "asc" } },
@@ -60,7 +63,7 @@
 
   // ------------------------------------------------------------ columns
   const COLS = [
-    { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b><span class="nm">${esc(s.name)}</span></div></div>` },
+    { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b>${t1Badge(s)}<span class="nm">${esc(s.name)}</span></div></div>` },
     { key: "price", label: "Price", desk: true, cell: (s) => money(s.price) },
     { key: "changePct", label: "Day", desk: true, cell: (s) => `<span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` },
     { key: "perfM1", label: "30-day", sortable: false, cell: (s) => sparkSvg(s.spark) },
@@ -97,15 +100,89 @@
     return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline points="${d}" fill="none" stroke="${color}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>`;
   }
 
+
+  // ------------------------------------------------------------ Tier 1
+  const T1_LABEL = { strict: "Tier 1 BUY", approaching: "Approaching", not_qualified: "Not qualified" };
+  function t1Badge(s) {
+    return s.t1 && s.t1.class !== "not_qualified" ? ` <span class="t1pill ${esc(s.t1.class)}">${s.t1.class === "strict" ? "T1" : "T1~"}</span>` : "";
+  }
+  const t1Rows = () => (tier1 && tier1.names || []).filter((n) => n.class !== "not_qualified")
+    .sort((a, b) => (a.class === b.class ? (a.rank || 99) - (b.rank || 99) : a.class === "strict" ? -1 : 1));
+
+  function t1Facts(n) {
+    const f = [["Rev growth", isNum(n.revGrowth) ? fix(n.revGrowth, 0) + "%" : null], ["Fwd P/E", isNum(n.fwdPE) ? fix(n.fwdPE, 1) : null],
+      ["FCF yield", isNum(n.fcfYield) ? fix(n.fcfYield, 1) + "%" : null], ["ROIC", isNum(n.roic) ? fix(n.roic, 0) + "%" : null],
+      ["Fair value", isNum(n.fairValue) ? "$" + money(n.fairValue) : null], ["Discount", isNum(n.discountPct) ? fix(n.discountPct, 0) + "%" : null]];
+    return f.filter(([, v]) => v).map(([k, v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+  }
+  const t1Sources = (n) => (n.sources || []).filter((x) => /^https?:/.test(x.url || ""))
+    .map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || "Source")} ↗</a>`).join(" ");
+
+  function t1Detail(n) {
+    return `<div class="t1-top"><span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class] || ""}</span> <span class="muted">as of ${esc(n.priceDate || "")}</span></div>
+      <p>${esc(n.reason)}</p>
+      <div class="stats">${t1Facts(n)}</div>
+      ${n.entry ? `<p><b>Entry timing:</b> ${esc(n.entry)}</p>` : ""}
+      ${n.upgrade ? `<p><b>What would upgrade it:</b> ${esc(n.upgrade)}</p>` : ""}
+      <p class="d-links">${t1Sources(n)}</p>`;
+  }
+
+  function renderTier1() {
+    const rows = t1Rows();
+    const cnt = $("#t1-count");
+    cnt.hidden = !rows.length; cnt.textContent = rows.length;
+    if (!tier1) {
+      $("#t1-head").innerHTML = "";
+      $("#t1-list").innerHTML = '<div class="empty"><b>No Tier 1 data yet</b>The daily Tier 1 screen writes data/tier1.json each morning.</div>';
+      $("#t1-foot").textContent = "";
+      return;
+    }
+    const sm = tier1.summary || {};
+    $("#t1-head").innerHTML = `<h2>Tier 1 screen</h2>
+      <p class="muted">${tier1.test ? "<b>Test data.</b> " : ""}As of ${esc(tier1.asOf || "")} · ${esc(sm.screened ?? "?")} screened · <span class="up">${sm.strict ?? 0} Tier 1 BUY</span> · ${sm.approaching ?? 0} approaching</p>
+      ${sm.note ? `<p class="muted">${esc(sm.note)}</p>` : ""}`;
+    $("#t1-list").innerHTML = rows.length ? rows.map((n) => {
+      const s = stocks.find((x) => x.symbol === n.symbol);
+      const price = s && isNum(s.price) ? s.price : n.price;
+      return `<article class="t1-card" ${s ? `data-open="${esc(n.symbol)}"` : ""}>
+        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>
+          <span class="nm">${esc(s ? s.name : "")}</span></div>
+          <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
+        <p>${esc(n.reason)}</p>
+        <div class="stats">${t1Facts(n)}</div>
+        ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}</p>` : ""}
+        <p class="d-links">${t1Sources(n)}</p></article>`;
+    }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
+    $("#t1-foot").textContent = "For information only, not financial advice. Nothing here executes trades or changes your watchlist.";
+  }
+
+  function setTab(tab) {
+    state.tab = tab === "tier1" ? "tier1" : "screener";
+    store.set("tab", state.tab);
+    $("#view-screener").hidden = state.tab !== "screener";
+    $("#view-tier1").hidden = state.tab !== "tier1";
+    document.querySelectorAll("#tabs .tab").forEach((b) => { const on = b.dataset.tab === state.tab; b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on)); });
+  }
+
   // ------------------------------------------------------------ data
+  async function loadTier1() {
+    try {
+      const r = await fetch("data/tier1.json?t=" + Date.now(), { cache: "no-store" });
+      tier1 = r.ok ? await r.json() : null;
+    } catch { tier1 = null; }
+  }
+
   async function load() {
     $("#reload").classList.add("spin");
     try {
       const res = await fetch("data/stocks.json?t=" + Date.now(), { cache: "no-store" });
       if (!res.ok) throw new Error(res.status === 404 ? "nodata" : "HTTP " + res.status);
       const data = await res.json();
+      await loadTier1();
+      const t1map = Object.fromEntries(((tier1 && tier1.names) || []).map((n) => [n.symbol, n]));
       stocks = (data.stocks || []).map((s) => ({
         ...s,
+        t1: t1map[s.symbol] || null,
         upside: isNum(s.targetPrice) && isNum(s.price) && s.price ? (s.targetPrice / s.price - 1) * 100 : null,
       }));
       history = null; historyPromise = null;
@@ -182,6 +259,7 @@
 
   // ------------------------------------------------------------ render
   function render() {
+    renderTier1();
     renderPresets();
     renderSummary();
     const fc = activeFilterCount();
@@ -283,6 +361,10 @@
       ["Next earnings", s.earningsDate ? `${esc(s.earningsDate)}${ed != null && ed >= 0 ? ` <span class="muted">in ${ed}d</span>` : ""}` : "–"],
     ];
     $("#d-stats").innerHTML = stats.map(([k, v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+
+    const box = $("#d-t1");
+    box.hidden = !s.t1;
+    box.innerHTML = s.t1 ? t1Detail(s.t1) : "";
 
     const dlg = $("#detail");
     if (!dlg.open) dlg.showModal();
@@ -392,6 +474,9 @@
     syncSortSelect();
 
     $("#presets").addEventListener("click", (e) => { const b = e.target.closest("[data-preset]"); if (b) setPreset(b.dataset.preset); });
+    $("#tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) setTab(b.dataset.tab); });
+    $("#t1-list").addEventListener("click", (e) => { if (e.target.closest("a")) return; const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
+    setTab(state.tab);
     $("#summary").addEventListener("click", (e) => { const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
 
     let t;
