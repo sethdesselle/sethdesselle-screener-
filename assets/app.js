@@ -10,6 +10,7 @@
 
   // ------------------------------------------------------------ state
   let stocks = [];
+  let tier1hist = [];          // data/tier1-history.json: [{date, names:[{symbol,class,rank}]}]
   let tier1 = null;            // data/tier1.json (written by the daily Claude task)
   let history = null;          // loaded lazily for charts
   let historyPromise = null;
@@ -63,7 +64,7 @@
 
   // ------------------------------------------------------------ columns
   const COLS = [
-    { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b>${t1Badge(s)}<span class="nm">${esc(s.name)}</span></div></div>` },
+    { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b>${t1Badge(s)}${restrictedTag(s.symbol)}<span class="nm">${esc(s.name)}</span></div></div>` },
     { key: "price", label: "Price", desk: true, cell: (s) => money(s.price) },
     { key: "changePct", label: "Day", desk: true, cell: (s) => `<span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` },
     { key: "perfM1", label: "30-day", sortable: false, cell: (s) => sparkSvg(s.spark) },
@@ -102,7 +103,29 @@
 
 
   // ------------------------------------------------------------ Tier 1
+  // Holdings you've restricted from new capital (recommendation text only; nothing is executed).
+  const RESTRICTED = { STRL: "No new capital", KTOS: "No new capital", KRMN: "No new capital", CLS: "No new capital", MSTR: "No new call purchases" };
+  const restrictedTag = (sym) => RESTRICTED[sym] ? ` <span class="t1pill restricted" title="Your rule">${esc(RESTRICTED[sym])}</span>` : "";
   const T1_LABEL = { strict: "Tier 1 BUY", approaching: "Approaching", not_qualified: "Not qualified" };
+  function t1Move(n) {
+    const prev = tier1hist.filter((h) => h.date < (tier1 && tier1.asOf)).sort((a, b) => b.date.localeCompare(a.date))[0];
+    if (!prev) return "";
+    const p = (prev.names || []).find((x) => x.symbol === n.symbol);
+    if (!p) return ' <span class="mv new">NEW</span>';
+    if (p.class === "approaching" && n.class === "strict") return ' <span class="mv up">▲ upgraded</span>';
+    if (p.class === "strict" && n.class === "approaching") return ' <span class="mv down">▼ downgraded</span>';
+    return "";
+  }
+  function t1Dropped() {
+    const prev = tier1hist.filter((h) => h.date < (tier1 && tier1.asOf)).sort((a, b) => b.date.localeCompare(a.date))[0];
+    if (!prev) return [];
+    const now = new Set(((tier1 && tier1.names) || []).map((n) => n.symbol));
+    return (prev.names || []).filter((p) => !now.has(p.symbol)).map((p) => p.symbol);
+  }
+  function earnBadge(s) {
+    const d = s ? daysUntil(s.earningsDate) : null;
+    return d != null && d >= 0 && d <= 21 ? ` <span class="t1pill earn">Earnings ${d === 0 ? "today" : "in " + d + "d"}</span>` : "";
+  }
   function t1Badge(s) {
     return s.t1 && s.t1.class !== "not_qualified" ? ` <span class="t1pill ${esc(s.t1.class)}">${s.t1.class === "strict" ? "T1" : "T1~"}</span>` : "";
   }
@@ -119,7 +142,7 @@
     .map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title || "Source")} ↗</a>`).join(" ");
 
   function t1Detail(n) {
-    return `<div class="t1-top"><span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class] || ""}</span> <span class="muted">as of ${esc(n.priceDate || "")}</span></div>
+    return `<div class="t1-top"><span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class] || ""}</span>${restrictedTag(n.symbol)} <span class="muted">as of ${esc(n.priceDate || "")}</span></div>
       <p>${esc(n.reason)}</p>
       <div class="stats">${t1Facts(n)}</div>
       ${n.entry ? `<p><b>Entry timing:</b> ${esc(n.entry)}</p>` : ""}
@@ -145,7 +168,7 @@
       const s = stocks.find((x) => x.symbol === n.symbol);
       const price = s && isNum(s.price) ? s.price : n.price;
       return `<article class="t1-card" ${s ? `data-open="${esc(n.symbol)}"` : ""}>
-        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>
+        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}
           <span class="nm">${esc(s ? s.name : "")}</span></div>
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
         <p>${esc(n.reason)}</p>
@@ -154,7 +177,19 @@
         <p class="d-links">${t1Sources(n)}</p></article>`;
     }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
     renderChanges();
+    renderBannerAndHistory();
     $("#t1-foot").textContent = "For information only, not financial advice. Nothing here executes trades or changes your watchlist.";
+  }
+
+  function renderBannerAndHistory() {
+    const strict = ((tier1 && tier1.names) || []).filter((n) => n.class === "strict");
+    $("#t1-banner").innerHTML = strict.length ? `<div class="t1-banner">★ Tier 1 BUY today: <b>${strict.map((n) => esc(n.symbol)).join(", ")}</b></div>` : "";
+    const dropped = t1Dropped();
+    if (dropped.length) $("#t1-head").insertAdjacentHTML("beforeend", `<p class="muted">Dropped off since last run: ${dropped.map(esc).join(", ")}</p>`);
+    const hist = [...tier1hist].sort((a, b) => b.date.localeCompare(a.date));
+    $("#t1-hist").hidden = !hist.length;
+    $("#t1-hist-body").innerHTML = hist.map((h) => `<div class="hist-row"><b>${esc(h.date)}</b> ` +
+      ((h.names || []).length ? h.names.map((n) => `<span class="t1pill ${esc(n.class)}">${esc(n.symbol)}</span>`).join(" ") : '<span class="muted">no qualifying names</span>') + "</div>").join("");
   }
 
   function renderChanges() {
@@ -179,6 +214,11 @@
       const r = await fetch("data/tier1.json?t=" + Date.now(), { cache: "no-store" });
       tier1 = r.ok ? await r.json() : null;
     } catch { tier1 = null; }
+    try {
+      const r = await fetch("data/tier1-history.json?t=" + Date.now(), { cache: "no-store" });
+      tier1hist = r.ok ? await r.json() : [];
+      if (!Array.isArray(tier1hist)) tier1hist = [];
+    } catch { tier1hist = []; }
   }
 
   async function load() {
