@@ -6,7 +6,7 @@
     "screened": 11,
     "strict": 0,
     "approaching": 7,
-    "note": "Sample re-run under the new rules (composite fair value, risk-based required discount, SBC-adjusted FCF, DCF, trimming, reward:risk). Target multiples and SBC shares are ASSUMED, source data is stale (Oct 22 to Nov 6). Illustrative only."
+    "note": "Sample only: built from older data and assumed inputs. Monday's run replaces it with verified numbers."
   },
   "names": [
     {
