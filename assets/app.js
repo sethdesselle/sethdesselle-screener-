@@ -157,6 +157,17 @@
       <div class="fv-lbl"><span>Price $${money(price)}</span><span>Fair value $${money(n.fairValue)} · ${disc >= 0 ? fix(disc, 0) + "% below" : fix(-disc, 0) + "% above"}</span></div></div>`;
   }
 
+  function fvDetail(n) {
+    const d = n.fairValueDetail;
+    if (!d || !Array.isArray(d.methods) || !d.methods.length) return "";
+    const rows = d.methods.map((m) => `<tr><td class="l">${esc(m.name)}</td><td class="l">${esc(m.assumption || "")}</td><td>${isNum(m.value) ? "$" + money(m.value) : "–"}</td><td>${isNum(m.weight) ? fix(m.weight, 0) + "%" : "–"}</td></tr>`).join("");
+    const range = isNum(d.low) && isNum(d.high) ? `Range across methods $${money(d.low)} to $${money(d.high)}.` : "";
+    const bb = [isNum(d.bear) ? `Bear $${money(d.bear)}` : null, isNum(d.bull) ? `Bull $${money(d.bull)}` : null].filter(Boolean).join(" · ");
+    return `<details class="tech"><summary>How fair value is built</summary>
+      <table class="perf"><thead><tr><th class="l">Method</th><th class="l">Assumption</th><th>Value</th><th>Weight</th></tr></thead><tbody>${rows}</tbody></table>
+      <p class="muted">${[range, bb, d.note ? esc(d.note) : ""].filter(Boolean).join(" ")}</p></details>`;
+  }
+
   function techBlock(n, s) {
     const t = n.tech || {};
     const pick = (a, b) => (isNum(a) ? a : isNum(b) ? b : null);
@@ -188,6 +199,7 @@
       <p>${esc(n.reason)}</p>
       <div class="stats">${t1Facts(n)}</div>
       ${fvBar(n, (stocks.find((x) => x.symbol === n.symbol) || {}).price ?? n.price)}
+      ${fvDetail(n)}
       ${n.entry ? `<p><b>Entry timing:</b> ${esc(n.entry)}</p>` : ""}
       ${techBlock(n, stocks.find((x) => x.symbol === n.symbol))}
       ${n.upgrade ? `<p><b>What would upgrade it:</b> ${esc(n.upgrade)}</p>` : ""}
@@ -221,6 +233,7 @@
         <p>${esc(n.reason)}</p>
         <div class="stats">${t1Facts(n)}</div>
         ${fvBar(n, price)}
+        ${fvDetail(n)}
         ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}${n.entryZone ? ` <span class="muted">(zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)})</span>` : ""}</p>` : ""}
         ${techBlock(n, s)}
         <p class="d-links">${t1Sources(n)}</p></article>`;
