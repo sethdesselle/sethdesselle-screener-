@@ -29,7 +29,11 @@
           "title": "Neurocrine Q3 release",
           "url": "https://finviz.com/news/413707/neurocrine-biosciences-reports-third-quarter-2026-financial-results"
         }
-      ]
+      ],
+      "entryZone": {
+        "low": 150,
+        "high": 160
+      }
     },
     {
       "symbol": "MNDY",
@@ -73,7 +77,11 @@
           "title": "RGA Q3 2026 8-K",
           "url": "https://www.sec.gov/Archives/edgar/data/0000898174/000089817426000038/pressrelease3q26.htm"
         }
-      ]
+      ],
+      "entryZone": {
+        "low": 255,
+        "high": 265
+      }
     },
     {
       "symbol": "EVER",
@@ -139,7 +147,11 @@
           "title": "Brookfield Q3 2026 press release",
           "url": "https://bn.brookfield.com/sites/brookfield-bn-v2/files/Brookfield-BN-IR-V2/2026/Q3/2026-q3-bn-press-release.pdf"
         }
-      ]
+      ],
+      "entryZone": {
+        "low": 36,
+        "high": 39
+      }
     },
     {
       "symbol": "GNRC",

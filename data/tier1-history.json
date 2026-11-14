@@ -5,37 +5,51 @@
       {
         "symbol": "NBIX",
         "class": "approaching",
-        "rank": 1
+        "rank": 1,
+        "price": 167.4,
+        "priceDate": "2026-11-13"
       },
       {
         "symbol": "MNDY",
         "class": "approaching",
-        "rank": 2
+        "rank": 2,
+        "price": 78.0,
+        "priceDate": "2026-11-13"
       },
       {
         "symbol": "RGA",
         "class": "approaching",
-        "rank": 3
+        "rank": 3,
+        "price": 275.15,
+        "priceDate": "2026-11-13"
       },
       {
         "symbol": "EVER",
         "class": "approaching",
-        "rank": 4
+        "rank": 4,
+        "price": 28.3,
+        "priceDate": "2026-11-13"
       },
       {
         "symbol": "POWL",
         "class": "approaching",
-        "rank": 5
+        "rank": 5,
+        "price": 142.72,
+        "priceDate": "2026-11-13"
       },
       {
         "symbol": "BN",
         "class": "approaching",
-        "rank": 6
+        "rank": 6,
+        "price": 41.38,
+        "priceDate": "2026-11-06"
       },
       {
         "symbol": "GNRC",
         "class": "approaching",
-        "rank": 7
+        "rank": 7,
+        "price": 190.77,
+        "priceDate": "2026-11-13"
       }
     ]
   }

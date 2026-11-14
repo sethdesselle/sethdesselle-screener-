@@ -276,3 +276,15 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 #pos-table td, #pos-table th { padding: 8px 10px; }
 #pos-table .nm { display: block; color: var(--muted); font-size: .8rem; }
 #pos-table td, #pos-table th { white-space: normal; } #pos-table td:nth-child(4) { font-size: .85rem; }
+
+.t1pill.zone.in { background: var(--up); border-color: var(--up); color: #fff; }
+.t1pill.zone.near { color: var(--star); border-color: var(--star); }
+.t1pill.zone.below { color: var(--down); border-color: var(--down); }
+.link-btn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: inherit; font-size: .85rem; }
+.perf-h, .sec-h { margin: 8px 0 4px; }
+.perf { width: 100%; border-collapse: collapse; font-size: .85rem; margin-bottom: 10px; }
+.perf th, .perf td { padding: 4px 6px; text-align: right; } .perf th.l, .perf td.l { text-align: left; }
+.sec-row { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: .9rem; }
+.sec-row > span:first-child { flex: 1 1 auto; min-width: 0; }
+.sec-bar { flex: 0 0 90px; height: 8px; border-radius: 99px; background: var(--border); position: relative; overflow: hidden; }
+.sec-bar i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); }
