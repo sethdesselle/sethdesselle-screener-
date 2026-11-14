@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2026-11-13",
+    "names": [
+      {
+        "symbol": "NBIX",
+        "class": "approaching",
+        "rank": 1
+      },
+      {
+        "symbol": "MNDY",
+        "class": "approaching",
+        "rank": 2
+      },
+      {
+        "symbol": "RGA",
+        "class": "approaching",
+        "rank": 3
+      },
+      {
+        "symbol": "EVER",
+        "class": "approaching",
+        "rank": 4
+      },
+      {
+        "symbol": "POWL",
+        "class": "approaching",
+        "rank": 5
+      },
+      {
+        "symbol": "BN",
+        "class": "approaching",
+        "rank": 6
+      },
+      {
+        "symbol": "GNRC",
+        "class": "approaching",
+        "rank": 7
+      }
+    ]
+  }
+]
