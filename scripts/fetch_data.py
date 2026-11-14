@@ -236,6 +236,12 @@ def main() -> int:
     print(f"{len(tickers)} tickers in stocks.txt", flush=True)
 
     frames = download_prices(tickers)
+    # Yahoo sometimes drops a symbol from a big batch; retry those once on their own.
+    retry = [t for t in tickers if t not in frames]
+    if frames and retry:
+        print(f"Retrying {len(retry)} tickers with no data: {', '.join(retry)}", flush=True)
+        time.sleep(5)
+        frames.update(download_prices(retry))
     if not frames:
         print("No price data downloaded; keeping previous data files.", file=sys.stderr)
         return 1
