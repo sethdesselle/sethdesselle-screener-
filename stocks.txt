@@ -1,0 +1,48 @@
+# My stock list
+# One ticker per line (commas or spaces also work). Lines starting with # are ignored.
+# Use Yahoo Finance symbols: BRK.B works, international stocks use a suffix (e.g. SHOP.TO, VOD.L).
+# After you save this file on GitHub, the data updates automatically within a few minutes.
+
+# --- Starter list: replace with your own ---
+AAPL
+MSFT
+NVDA
+GOOGL
+AMZN
+META
+TSLA
+AVGO
+BRK.B
+JPM
+V
+MA
+UNH
+LLY
+JNJ
+XOM
+CVX
+WMT
+COST
+HD
+PG
+KO
+PEP
+MCD
+DIS
+NFLX
+AMD
+INTC
+CRM
+ORCL
+ADBE
+PLTR
+UBER
+BA
+CAT
+GS
+BAC
+PFE
+T
+VZ
+SPY
+QQQ

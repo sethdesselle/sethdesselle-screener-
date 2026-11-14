@@ -1,0 +1,54 @@
+name: Update stock data
+
+on:
+  schedule:
+    # Times are UTC. Hourly while the US market is open (about 9:30am-4pm New York), weekdays.
+    - cron: "17 13-20 * * 1-5"
+    # Once more after the close for final prices.
+    - cron: "43 21 * * 1-5"
+  # Lets you run it any time from the Actions tab ("Run workflow").
+  workflow_dispatch:
+  # Runs right away when you edit your stock list.
+  push:
+    branches: [main]
+    paths:
+      - stocks.txt
+      - scripts/fetch_data.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch stock data
+        run: python scripts/fetch_data.py
+
+      - name: Save data to the repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898499+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update stock data"
+          git pull --rebase
+          git push

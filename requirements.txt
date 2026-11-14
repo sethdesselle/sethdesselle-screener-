@@ -1,0 +1,3 @@
+# Left unpinned on purpose: Yahoo changes its site often and yfinance ships fixes quickly.
+yfinance
+pandas
