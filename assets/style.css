@@ -257,3 +257,22 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .mv.new, .mv.up { color: var(--up); } .mv.down { color: var(--down); }
 .t1-hist { margin: 14px 0; } .t1-hist summary { cursor: pointer; font-weight: 600; }
 .hist-row { padding: 6px 0; border-bottom: 1px solid var(--border); display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+
+/* ---- extras ---- */
+.view-h { margin: 12px 0 2px; font-size: 1.15rem; }
+.t1-stale { background: var(--down); color: #fff; border-radius: 10px; padding: 10px 14px; margin: 12px 0 0; font-weight: 600; }
+.fv { margin: 10px 0 4px; }
+.fv-track { position: relative; height: 8px; border-radius: 99px; background: var(--border); }
+.fv-fill { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 99px; background: var(--accent); opacity: .85; }
+.fv-mark { position: absolute; top: -4px; width: 3px; height: 16px; background: var(--star); border-radius: 2px; transform: translateX(-1px); }
+.fv-lbl { display: flex; justify-content: space-between; gap: 8px; font-size: .78rem; color: var(--muted); margin-top: 6px; flex-wrap: wrap; }
+.tech { margin: 8px 0; } .tech summary { cursor: pointer; font-weight: 600; font-size: .9rem; }
+.earn-day { margin: 16px 0 6px; font-size: 1rem; }
+.earn-row { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: baseline; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; margin-bottom: 6px; cursor: pointer; }
+.earn-row .nm { color: var(--muted); font-size: .85rem; flex: 1 1 140px; }
+.earn-px { margin-left: auto; white-space: nowrap; }
+.pos-form { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.pos-form input { flex: 1 1 110px; min-width: 0; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); color: var(--text); font: inherit; }
+#pos-table td, #pos-table th { padding: 8px 10px; }
+#pos-table .nm { display: block; color: var(--muted); font-size: .8rem; }
+#pos-table td, #pos-table th { white-space: normal; } #pos-table td:nth-child(4) { font-size: .85rem; }
