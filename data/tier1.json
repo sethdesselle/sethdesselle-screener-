@@ -20,8 +20,8 @@
       "fwdPE": 14.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 174,
-      "discountPct": 4,
+      "fairValue": 160,
+      "discountPct": -5,
       "entry": "Wait for a pullback toward $150-160 (the Nov 5-6 gap area).",
       "upgrade": "A pullback that gives 20%+ discount to fair value, or evidence the VYKAT XR launch is durable.",
       "sources": [
@@ -61,14 +61,14 @@
             "weight": 15
           },
           {
-            "name": "PEG",
-            "assumption": "growth 32.9% -> P/E capped at 25x",
-            "value": 285.13,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 32.9% halved -> P/E 16.5x (floor 10x, cap 20x)",
+            "value": 187.75,
             "weight": 15
           }
         ],
         "low": 125,
-        "high": 285,
+        "high": 188,
         "bear": 135,
         "bull": 200,
         "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
@@ -85,8 +85,8 @@
       "fwdPE": 10.8,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 120,
-      "discountPct": 35,
+      "fairValue": 108,
+      "discountPct": 28,
       "entry": "About 36% above its 52-week low after a ~7% post-earnings drop; no technicals pulled.",
       "upgrade": "FCF margin recovery and signs growth is stabilizing near 15-20%.",
       "sources": [
@@ -116,17 +116,17 @@
             "weight": 18
           },
           {
-            "name": "PEG",
-            "assumption": "growth 21.5% -> P/E 21.5x",
-            "value": 132.16,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 21.5% halved -> P/E 10.7x (floor 10x, cap 20x)",
+            "value": 66.1,
             "weight": 18
           }
         ],
-        "low": 111,
-        "high": 132,
+        "low": 66,
+        "high": 128,
         "bear": 85,
         "bull": 135,
-        "note": "Weighted average of 4 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
+        "note": "Weighted average of 4 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
       }
     },
     {
@@ -140,8 +140,8 @@
       "fwdPE": 9.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 294,
-      "discountPct": 6,
+      "fairValue": 281,
+      "discountPct": 2,
       "entry": "Extended after a breakout; prefer a pullback toward $255-265.",
       "upgrade": "A pullback to the $255-265 area, or evidence earnings quality holds without one-time items.",
       "sources": [
@@ -169,14 +169,14 @@
             "weight": 40
           },
           {
-            "name": "PEG",
-            "assumption": "growth 12.2% -> P/E 12.2x",
-            "value": 349.84,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 12.2% halved -> P/E 10.0x (floor 10x, cap 20x)",
+            "value": 286.5,
             "weight": 20
           }
         ],
         "low": 273,
-        "high": 350,
+        "high": 287,
         "bear": 235,
         "bull": 320,
         "note": "Weighted average of 3 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
@@ -193,8 +193,8 @@
       "fwdPE": 13.5,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 27,
-      "discountPct": -5,
+      "fairValue": 28,
+      "discountPct": -3,
       "entry": "Up sharply from the pre-earnings $22.74; no technicals pulled.",
       "upgrade": "Verified FCF yield and ROIC, and evidence Q4/Q1 growth stays above 15%.",
       "sources": [
@@ -230,13 +230,13 @@
             "weight": 15
           },
           {
-            "name": "PEG",
-            "assumption": "growth 8.0% -> P/E 8x",
-            "value": 16.44,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 8.0% halved -> P/E 10.0x (floor 10x, cap 20x)",
+            "value": 20.5,
             "weight": 15
           }
         ],
-        "low": 16,
+        "low": 20,
         "high": 39,
         "bear": 20,
         "bull": 36,
@@ -254,8 +254,8 @@
       "fwdPE": 22,
       "fcfYield": 4.8,
       "roic": null,
-      "fairValue": 124,
-      "discountPct": -15,
+      "fairValue": 115,
+      "discountPct": -24,
       "entry": "Do not act before fiscal Q4 results on Mon Nov 16 after the close.",
       "upgrade": "A strong Nov 16 print and a lower entry price (forward P/E near 20x or below).",
       "sources": [
@@ -291,17 +291,17 @@
             "weight": 15
           },
           {
-            "name": "PEG",
-            "assumption": "growth 19.6% -> P/E 19.6x",
-            "value": 126.47,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 19.6% halved -> P/E 10.0x (floor 10x, cap 20x)",
+            "value": 64.6,
             "weight": 15
           }
         ],
-        "low": 108,
+        "low": 65,
         "high": 134,
         "bear": 105,
         "bull": 160,
-        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run)."
+        "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
       }
     },
     {
@@ -345,8 +345,8 @@
       "fwdPE": null,
       "fcfYield": null,
       "roic": null,
-      "fairValue": 173,
-      "discountPct": -10,
+      "fairValue": 163,
+      "discountPct": -17,
       "entry": "35% above its 52-week low; residential demand is cyclical and storm-driven.",
       "upgrade": "A lower price (P/S near 2x) with the data-center backlog converting to sales.",
       "sources": [
@@ -382,14 +382,14 @@
             "weight": 15
           },
           {
-            "name": "PEG",
-            "assumption": "growth 39% -> P/E capped at 25x",
-            "value": 305.85,
+            "name": "PEG (growth haircut)",
+            "assumption": "EPS growth 39.4% halved -> P/E 19.7x (floor 10x, cap 20x)",
+            "value": 240.63,
             "weight": 15
           }
         ],
         "low": 109,
-        "high": 306,
+        "high": 241,
         "bear": 125,
         "bull": 215,
         "note": "Weighted average of 5 methods; assumed target multiples (no 3-5y history or peer medians available in this run). Methods differ by more than 40%: lean on the lower figures."
