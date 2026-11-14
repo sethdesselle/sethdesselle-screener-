@@ -132,6 +132,38 @@
   const t1Rows = () => (tier1 && tier1.names || []).filter((n) => n.class !== "not_qualified")
     .sort((a, b) => (a.class === b.class ? (a.rank || 99) - (b.rank || 99) : a.class === "strict" ? -1 : 1));
 
+  const bizDaysSince = (iso) => {
+    if (!iso) return null;
+    const d = new Date(iso + "T00:00:00"), end = new Date(new Date().toDateString());
+    let n = 0;
+    while (d < end) { d.setDate(d.getDate() + 1); const w = d.getDay(); if (w !== 0 && w !== 6) n++; }
+    return n;
+  };
+
+  function fvBar(n, price) {
+    if (!isNum(n.fairValue) || !isNum(price) || n.fairValue <= 0) return "";
+    const max = Math.max(n.fairValue, price) * 1.15, pp = price / max * 100, fp = n.fairValue / max * 100, disc = (1 - price / n.fairValue) * 100;
+    return `<div class="fv"><div class="fv-track"><i class="fv-fill" style="width:${pp.toFixed(1)}%"></i><b class="fv-mark" style="left:${fp.toFixed(1)}%"></b></div>
+      <div class="fv-lbl"><span>Price $${money(price)}</span><span>Fair value $${money(n.fairValue)} · ${disc >= 0 ? fix(disc, 0) + "% below" : fix(-disc, 0) + "% above"}</span></div></div>`;
+  }
+
+  function techBlock(n, s) {
+    const t = n.tech || {};
+    const pick = (a, b) => (isNum(a) ? a : isNum(b) ? b : null);
+    const rsi = pick(t.rsi, s && s.rsi), fromLow = pick(t.fromLowPct, s && s.fromLow), vol = pick(t.volVsAvg, s && s.relVolume);
+    const price = s && isNum(s.price) ? s.price : n.price;
+    const ma = (v, label) => (s && isNum(s[v]) && isNum(price) ? `${label}: ${price > s[v] ? '<span class="up">above</span>' : '<span class="down">below</span>'}` : null);
+    const items = [
+      ["RSI (14d)", isNum(rsi) ? fix(rsi, 0) : null], ["RSI (weekly)", isNum(t.rsiWeekly) ? fix(t.rsiWeekly, 0) : null],
+      ["MACD", t.macd ? esc(t.macd) : null], ["ATR %", isNum(t.atrPct) ? fix(t.atrPct, 1) + "%" : null],
+      ["Above 52-wk low", isNum(fromLow) ? "+" + fix(fromLow, 0) + "%" : null], ["Volume vs avg", isNum(vol) ? fix(vol, 1) + "×" : null],
+      ["50-day avg", ma("sma50", "")], ["200-day avg", ma("sma200", "")],
+    ].filter(([, v]) => v).map(([k, v]) => `<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join("");
+    if (!items && !t.staging) return "";
+    return `<details class="tech"><summary>Entry timing <span class="muted">(timing only, not part of the Tier 1 score)</span></summary>
+      <div class="stats">${items}</div>${t.staging ? `<p>${esc(t.staging)}</p>` : ""}</details>`;
+  }
+
   function t1Facts(n) {
     const f = [["Rev growth", isNum(n.revGrowth) ? fix(n.revGrowth, 0) + "%" : null], ["Fwd P/E", isNum(n.fwdPE) ? fix(n.fwdPE, 1) : null],
       ["FCF yield", isNum(n.fcfYield) ? fix(n.fcfYield, 1) + "%" : null], ["ROIC", isNum(n.roic) ? fix(n.roic, 0) + "%" : null],
@@ -145,7 +177,9 @@
     return `<div class="t1-top"><span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class] || ""}</span>${restrictedTag(n.symbol)} <span class="muted">as of ${esc(n.priceDate || "")}</span></div>
       <p>${esc(n.reason)}</p>
       <div class="stats">${t1Facts(n)}</div>
+      ${fvBar(n, (stocks.find((x) => x.symbol === n.symbol) || {}).price ?? n.price)}
       ${n.entry ? `<p><b>Entry timing:</b> ${esc(n.entry)}</p>` : ""}
+      ${techBlock(n, stocks.find((x) => x.symbol === n.symbol))}
       ${n.upgrade ? `<p><b>What would upgrade it:</b> ${esc(n.upgrade)}</p>` : ""}
       <p class="d-links">${t1Sources(n)}</p>`;
   }
@@ -161,7 +195,10 @@
       return;
     }
     const sm = tier1.summary || {};
-    $("#t1-head").innerHTML = `<h2>Tier 1 screen</h2>
+    const age = bizDaysSince(tier1.asOf);
+    const stale = !tier1.test && age != null && age >= 2 ? `<div class="t1-stale">⚠ These picks are from ${esc(tier1.asOf)} (${age} trading days ago). A daily run may have failed; treat them as out of date.</div>` : "";
+    const rep = /^https?:\/\//.test(tier1.reportUrl || "") ? `<p><a class="btn small" href="${esc(tier1.reportUrl)}" target="_blank" rel="noopener">Full daily report ↗</a></p>` : "";
+    $("#t1-head").innerHTML = `${stale}<h2>Tier 1 screen</h2>${rep}
       <p class="muted">${tier1.test ? "<b>Test data.</b> " : ""}As of ${esc(tier1.asOf || "")} · ${esc(sm.screened ?? "?")} screened · <span class="up">${sm.strict ?? 0} Tier 1 BUY</span> · ${sm.approaching ?? 0} approaching</p>
       ${sm.note ? `<p class="muted">${esc(sm.note)}</p>` : ""}`;
     $("#t1-list").innerHTML = rows.length ? rows.map((n) => {
@@ -173,7 +210,9 @@
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
         <p>${esc(n.reason)}</p>
         <div class="stats">${t1Facts(n)}</div>
+        ${fvBar(n, price)}
         ${n.entry ? `<p class="muted"><b>Entry:</b> ${esc(n.entry)}</p>` : ""}
+        ${techBlock(n, s)}
         <p class="d-links">${t1Sources(n)}</p></article>`;
     }).join("") : '<div class="empty"><b>No qualifying names today</b>Nothing cleared Strict or Approaching Tier 1. Names are never forced.</div>';
     renderChanges();
@@ -200,12 +239,65 @@
       ${rems.length ? `<h4 class="down">Consider removing</h4><ul class="chg">${rems.map(item).join("")}</ul>` : ""}` : "";
   }
 
+  const TABS = ["screener", "tier1", "earnings", "positions"];
   function setTab(tab) {
-    state.tab = tab === "tier1" ? "tier1" : "screener";
+    state.tab = TABS.includes(tab) ? tab : "screener";
     store.set("tab", state.tab);
-    $("#view-screener").hidden = state.tab !== "screener";
-    $("#view-tier1").hidden = state.tab !== "tier1";
+    TABS.forEach((t) => { const el = $("#view-" + t); if (el) el.hidden = t !== state.tab; });
     document.querySelectorAll("#tabs .tab").forEach((b) => { const on = b.dataset.tab === state.tab; b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on)); });
+    if (state.tab === "earnings") renderEarnings();
+    if (state.tab === "positions") renderPositions();
+  }
+
+  // ------------------------------------------------------------ earnings calendar
+  function renderEarnings() {
+    const rows = stocks.filter((s) => { const d = daysUntil(s.earningsDate); return d != null && d >= 0 && d <= 75; })
+      .sort((a, b) => a.earningsDate.localeCompare(b.earningsDate) || a.symbol.localeCompare(b.symbol));
+    const box = $("#earn-list");
+    if (!rows.length) { box.innerHTML = '<div class="empty"><b>No upcoming earnings dates</b>Dates appear once the data has loaded.</div>'; return; }
+    let last = "";
+    box.innerHTML = rows.map((s) => {
+      const d = daysUntil(s.earningsDate);
+      const head = s.earningsDate !== last ? `<h3 class="earn-day">${new Date(s.earningsDate + "T00:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })} <span class="muted">${d === 0 ? "today" : "in " + d + "d"}</span></h3>` : "";
+      last = s.earningsDate;
+      return head + `<div class="earn-row" data-open="${esc(s.symbol)}"><b>${esc(s.symbol)}</b>${t1Badge(s)}${restrictedTag(s.symbol)} <span class="nm">${esc(s.name)}</span><span class="earn-px">$${money(s.price)} <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span></span></div>`;
+    }).join("");
+  }
+
+  // ------------------------------------------------------------ positions
+  const CORE = new Set(["SPYM", "QQQM", "VOO", "SCHD", "SCHG", "SPMO", "VXF", "FXAIX", "FSPGX", "FBGRX", "FIDRX", "WQTM", "SPAXX"]);
+  let positions = store.get("positions", []);
+  function renderPositions() {
+    const rows = positions.map((p) => {
+      const s = stocks.find((x) => x.symbol === p.sym);
+      const value = isNum(p.manual) && p.manual > 0 ? p.manual : isNum(p.qty) && s && isNum(s.price) ? p.qty * s.price : null;
+      return { ...p, s, value, core: CORE.has(p.sym) || (s && s.type === "ETF") };
+    });
+    const total = rows.reduce((a, r) => a + (r.value || 0), 0);
+    $("#pos-summary").textContent = rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
+    $("#pos-empty").hidden = rows.length > 0;
+    $("#pos-body").innerHTML = rows.sort((a, b) => (b.value || 0) - (a.value || 0)).map((r) => {
+      const w = total && r.value ? r.value / total * 100 : null;
+      let status = '<span class="muted">no price</span>';
+      if (r.core) status = '<span class="muted">Core (exempt)</span>';
+      else if (w != null) status = w >= 10 ? '<span class="down">At/over 10%</span>' : w >= 5 ? '<span class="up">5-9% range</span>' : '<span class="muted">Under 5%</span>';
+      return `<tr><td class="l"><b>${esc(r.sym)}</b>${restrictedTag(r.sym)}${r.s ? `<span class="nm">${esc(r.s.name)}</span>` : ""}</td><td>${r.value != null ? "$" + money(r.value) : "–"}</td><td>${w != null ? fix(w, 1) + "%" : "–"}</td><td class="l">${status}</td><td><button class="btn ghost small" data-rm="${esc(r.sym)}" aria-label="Remove ${esc(r.sym)}">✕</button></td></tr>`;
+    }).join("");
+  }
+  function bindPositions() {
+    $("#pos-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const f = new FormData(e.target), sym = String(f.get("sym") || "").trim().toUpperCase().replace(/^\$/, "").replace(/^([A-Z]{1,5})\.([A-Z])$/, "$1-$2");
+      const qty = parseFloat(f.get("qty")), manual = parseFloat(f.get("manual"));
+      if (!sym || (!(qty > 0) && !(manual > 0))) return;
+      positions = positions.filter((p) => p.sym !== sym).concat([{ sym, qty: qty > 0 ? qty : null, manual: manual > 0 ? manual : null }]);
+      store.set("positions", positions); e.target.reset(); renderPositions();
+    });
+    $("#pos-body").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-rm]"); if (!b) return;
+      positions = positions.filter((p) => p.sym !== b.dataset.rm); store.set("positions", positions); renderPositions();
+    });
+    $("#earn-list").addEventListener("click", (e) => { const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
   }
 
   // ------------------------------------------------------------ data
@@ -309,6 +401,8 @@
   // ------------------------------------------------------------ render
   function render() {
     renderTier1();
+    if (state.tab === "earnings") renderEarnings();
+    if (state.tab === "positions") renderPositions();
     renderPresets();
     renderSummary();
     const fc = activeFilterCount();
@@ -524,7 +618,8 @@
 
     $("#presets").addEventListener("click", (e) => { const b = e.target.closest("[data-preset]"); if (b) setPreset(b.dataset.preset); });
     $("#tabs").addEventListener("click", (e) => { const b = e.target.closest("[data-tab]"); if (b) setTab(b.dataset.tab); });
-    $("#t1-list").addEventListener("click", (e) => { if (e.target.closest("a")) return; const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
+    $("#t1-list").addEventListener("click", (e) => { if (e.target.closest("a, .tech")) return; const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
+    bindPositions();
     setTab(state.tab);
     $("#summary").addEventListener("click", (e) => { const c = e.target.closest("[data-open]"); if (c) openDetail(c.dataset.open); });
 

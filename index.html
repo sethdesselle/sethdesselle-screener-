@@ -27,6 +27,8 @@
   <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Views">
     <button class="tab on" data-tab="screener" role="tab" aria-selected="true">Screener</button>
     <button class="tab" data-tab="tier1" role="tab" aria-selected="false">Tier 1 <span id="t1-count" class="badge" hidden></span></button>
+    <button class="tab" data-tab="earnings" role="tab" aria-selected="false">Earnings</button>
+    <button class="tab" data-tab="positions" role="tab" aria-selected="false">Positions</button>
   </nav>
 
   <main class="wrap">
@@ -37,6 +39,25 @@
       <div id="t1-changes"></div>
       <details id="t1-hist" class="t1-hist" hidden><summary>Past picks</summary><div id="t1-hist-body"></div></details>
       <p id="t1-foot" class="foot muted"></p>
+    </section>
+
+    <section id="view-earnings" hidden>
+      <h2 class="view-h">Upcoming earnings</h2>
+      <p class="muted">Dates come from Yahoo Finance and can be estimates until a company confirms. Tap a row for details.</p>
+      <div id="earn-list"></div>
+    </section>
+
+    <section id="view-positions" hidden>
+      <h2 class="view-h">Positions</h2>
+      <p class="muted">Enter what you hold to see each position's weight against your 5-9% target (monitor at 10%; core ETFs exempt). Saved only in this browser, never uploaded.</p>
+      <form id="pos-form" class="pos-form" autocomplete="off">
+        <input name="sym" placeholder="Symbol" required maxlength="12" autocapitalize="characters" spellcheck="false">
+        <input name="qty" type="number" inputmode="decimal" step="any" min="0" placeholder="Shares">
+        <input name="manual" type="number" inputmode="decimal" step="any" min="0" placeholder="or $ value">
+        <button class="btn" type="submit">Add / update</button>
+      </form>
+      <div id="pos-summary" class="muted"></div>
+      <div class="table-wrap"><table id="pos-table"><thead><tr><th class="l">Symbol</th><th>Value</th><th>Weight</th><th class="l">Status</th><th></th></tr></thead><tbody id="pos-body"></tbody></table><div id="pos-empty" class="empty" hidden><b>No positions yet</b>Add a symbol and either shares or a dollar value.</div></div>
     </section>
 
     <div id="view-screener">
