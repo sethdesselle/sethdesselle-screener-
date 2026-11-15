@@ -173,6 +173,10 @@ def load_fund_cache() -> dict:
         return {}
 
 
+# Bump this when fetch_gate_data collects something new, so saved entries are refreshed once.
+GATE_VERSION = 2
+
+
 def _series(df, names, n=5):
     """First matching income-statement row as a list, newest year first."""
     for name in names:
@@ -218,6 +222,42 @@ def fetch_gate_data(tk, info: dict) -> dict:
                 g[key] = out
         except Exception as e:
             print(f"  {attr} {tk.ticker}: {e}", flush=True)
+    # Cash flow: yearly history plus the last four quarters added up (trailing twelve months).
+    # Stock-based compensation is needed for the stock-pay adjustment in the fair value method.
+    cf_rows = (("ocf", ["Operating Cash Flow"]), ("capex", ["Capital Expenditure"]),
+               ("fcfHist", ["Free Cash Flow"]), ("sbc", ["Stock Based Compensation"]))
+    try:
+        cf = tk.cashflow
+        if cf is not None and not cf.empty:
+            for key, names in cf_rows:
+                g[key + ("" if key.endswith("Hist") else "Hist")] = _series(cf, names)
+    except Exception as e:
+        print(f"  cash flow {tk.ticker}: {e}", flush=True)
+    try:
+        qcf = tk.quarterly_cashflow
+        if qcf is not None and not qcf.empty and len(qcf.columns) >= 4:
+            g["cfQuarters"] = [str(c)[:10] for c in qcf.columns[:4]]
+            for key, names in cf_rows:
+                vals = _series(qcf, names, 4)
+                if vals and all(v is not None for v in vals):
+                    g[key.replace("Hist", "") + "Ttm"] = round(sum(vals), 2)
+    except Exception as e:
+        print(f"  quarterly cash flow {tk.ticker}: {e}", flush=True)
+    # Quarterly income statement: used for the red-flag checks (sales down on a year ago, share count up).
+    try:
+        qi = tk.quarterly_income_stmt
+        if qi is not None and not qi.empty:
+            g["quarters"] = [str(c)[:10] for c in qi.columns[:6]]
+            g["qRevenue"] = _series(qi, ["Total Revenue", "Operating Revenue"], 6)
+            g["qOpIncome"] = _series(qi, ["Operating Income", "Total Operating Income As Reported"], 6)
+            g["qShares"] = _series(qi, ["Diluted Average Shares", "Basic Average Shares"], 6)
+            g["qEps"] = _series(qi, ["Diluted EPS", "Basic EPS"], 6)
+    except Exception as e:
+        print(f"  quarterly income {tk.ticker}: {e}", flush=True)
+    for src, key in (("enterpriseValue", "ev"), ("totalRevenue", "revenueTtm"), ("operatingCashflow", "ocfInfo"),
+                     ("grossMargins", "grossMargin"), ("ebitdaMargins", "ebitdaMargin")):
+        g[key] = num(info.get(src), 4)
+    g["v"] = GATE_VERSION
     return g
 
 
@@ -267,7 +307,8 @@ def refresh_fundamentals(tickers: list[str]) -> dict:
     now = time.time()
     # Also refresh entries saved before a field was added (e.g. "ps", "opMargin"), so new columns fill in on the next run.
     stale = [t for t in tickers
-             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {}) or "_gate" not in cache.get(t, {})]
+             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {}) or "_gate" not in cache.get(t, {})
+             or (cache.get(t, {}).get("type") == "EQUITY" and cache.get(t, {}).get("_gate", {}).get("v", 1) < GATE_VERSION)]
     stale.sort(key=lambda t: cache.get(t, {}).get("_fetched", 0))  # oldest first
     todo = stale[:FUND_PER_RUN]
     print(f"Refreshing company info for {len(todo)} of {len(stale)} stale tickers", flush=True)
