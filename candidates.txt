@@ -1,0 +1,20 @@
+# Stocks being considered for the watchlist (not shown on the site).
+# The data update saves their numbers to data/candidates.json so the Tier 1 gates can be run on them.
+# One ticker per line, same format as stocks.txt. Up to 80.
+
+# Construction, electrical and data-center build-out
+PWR MTZ PRIM ROAD LMB GVA MYRG ECG APG ACM TPC WLDN MOD
+# Power equipment and energy
+GEV ETN HUBB CEG TLN
+# Semiconductors and hardware
+TSM ASML LRCX AMAT KLAC ANET ALAB MPWR ONTO NVMI CAMT TER QCOM DELL PSTG AAOI
+# Defense and aerospace
+GD NOC HWM TDG HEI CRS LDOS
+# Cybersecurity and software
+CRWD PANW NET DDOG ZETA CLBT DUOL
+# Fintech and insurance
+SOFI AFRM NU DAVE PYPL COIN IBKR KNSL PLMR SKWD HCI
+# Health care and biotech
+LLY VRTX ISRG HALO UTHR EXEL CORT MEDP TMDX ADMA
+# Other fast growers
+UBER MELI SE CVNA TTD LRN USLM

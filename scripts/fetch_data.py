@@ -23,6 +23,10 @@ ROOT = Path(__file__).resolve().parent.parent
 LIST_FILE = ROOT / "stocks.txt"
 DATA_DIR = ROOT / "data"
 FUND_FILE = DATA_DIR / "fundamentals.json"
+# Optional: stocks being considered for the watchlist. They are NOT shown on the site; their numbers
+# are saved to data/candidates.json so the Tier 1 gates can be run on them before they are added.
+CAND_FILE = ROOT / "candidates.txt"
+CAND_MAX = 80
 
 BATCH_SIZE = 150            # tickers per price download
 FUND_MAX_AGE_HOURS = 20     # refresh company info roughly once a day
@@ -32,9 +36,9 @@ SPARK_DAYS = 30
 
 # ---------------------------------------------------------------- helpers
 
-def read_tickers() -> list[str]:
+def read_tickers(path: Path = LIST_FILE) -> list[str]:
     tickers, seen = [], set()
-    for line in LIST_FILE.read_text(encoding="utf-8").splitlines():
+    for line in path.read_text(encoding="utf-8").splitlines():
         line = line.split("#", 1)[0]
         for tok in re.split(r"[\s,;]+", line):
             t = tok.strip().upper().lstrip("$")
@@ -387,7 +391,37 @@ def main() -> int:
     FUND_FILE.write_text(json.dumps(fund, indent=0, sort_keys=True, allow_nan=False), encoding="utf-8")
 
     print(f"Wrote {len(stocks)} stocks; no data for {len(missing)}: {', '.join(missing) or '-'}", flush=True)
+    try:
+        write_candidates(set(tickers), updated)
+    except Exception as e:  # never let the optional candidates file break the main update
+        print(f"candidates: skipped ({e})", flush=True)
     return 0
+
+
+def write_candidates(have: set, updated: str) -> None:
+    """Fetch the same numbers for the tickers in candidates.txt (if the file exists)."""
+    if not CAND_FILE.exists():
+        return
+    cands = [t for t in read_tickers(CAND_FILE) if t not in have][:CAND_MAX]
+    if not cands:
+        return
+    print(f"{len(cands)} watchlist candidates", flush=True)
+    frames = download_prices(cands)
+    out, missing = {}, []
+    for t in cands:
+        df = frames.get(t)
+        info = fetch_info(t) if df is not None else None
+        if df is None or not info:
+            missing.append(t)
+            continue
+        row = dict(info)
+        row.pop("_fetched", None)
+        row.update(price_metrics(df))
+        out[t] = row
+        time.sleep(0.4)
+    (DATA_DIR / "candidates.json").write_text(
+        json.dumps({"updated": updated, "missing": missing, "stocks": out}, separators=(",", ":"), allow_nan=False), encoding="utf-8")
+    print(f"Wrote {len(out)} candidates; no data for: {', '.join(missing) or '-'}", flush=True)
 
 
 if __name__ == "__main__":
