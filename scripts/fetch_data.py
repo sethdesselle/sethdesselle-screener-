@@ -69,6 +69,12 @@ def pct(a, b):
     return num((a / b - 1) * 100, 2)
 
 
+def pctval(x):
+    """Yahoo gives ratios like 0.31; store as a percentage (31.0)."""
+    v = num(x, 6)
+    return None if v is None else num(v * 100, 1)
+
+
 def rsi(close: pd.Series, period: int = 14):
     if len(close) <= period:
         return None
@@ -191,6 +197,10 @@ def fetch_info(t: str) -> dict | None:
         "pe": num(info.get("trailingPE")),
         "forwardPe": num(info.get("forwardPE")),
         "ps": num(info.get("priceToSalesTrailing12Months")),
+        # Margins as percentages; used with P/S for the margin-adjusted P/S on the site.
+        "opMargin": pctval(info.get("operatingMargins")),
+        "netMargin": pctval(info.get("profitMargins")),
+        "revGrowth": pctval(info.get("revenueGrowth")),
         "eps": num(info.get("trailingEps")),
         "dividendRate": num(info.get("dividendRate") or info.get("trailingAnnualDividendRate")),
         "beta": num(info.get("beta")),
@@ -205,9 +215,9 @@ def fetch_info(t: str) -> dict | None:
 def refresh_fundamentals(tickers: list[str]) -> dict:
     cache = load_fund_cache()
     now = time.time()
-    # Also refresh entries saved before a field was added (e.g. "ps"), so new columns fill in on the next run.
+    # Also refresh entries saved before a field was added (e.g. "ps", "opMargin"), so new columns fill in on the next run.
     stale = [t for t in tickers
-             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "ps" not in cache.get(t, {})]
+             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {})]
     stale.sort(key=lambda t: cache.get(t, {}).get("_fetched", 0))  # oldest first
     todo = stale[:FUND_PER_RUN]
     print(f"Refreshing company info for {len(todo)} of {len(stale)} stale tickers", flush=True)

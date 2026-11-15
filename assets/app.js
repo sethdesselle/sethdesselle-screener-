@@ -58,6 +58,7 @@
     { id: "overbought", label: "Overbought (RSI > 70)", test: (s) => s.rsi > 70, sort: { key: "rsi", dir: "desc" } },
     { id: "value", label: "Low P/E (< 15)", test: (s) => s.pe > 0 && s.pe < 15, sort: { key: "pe", dir: "asc" } },
     { id: "lowps", label: "Low P/S (< 3)", test: (s) => s.ps > 0 && s.ps < 3, sort: { key: "ps", dir: "asc" } },
+    { id: "adjps", label: "Margin-adj P/S (< 3)", test: (s) => isNum(s.adjPs) && s.adjPs < 3, sort: { key: "adjPs", dir: "asc" } },
     { id: "dividend", label: "Dividend ≥ 3%", test: (s) => s.dividendYield >= 3, sort: { key: "dividendYield", dir: "desc" } },
     { id: "earnings", label: "Earnings ≤ 14 days", test: (s) => { const d = daysUntil(s.earningsDate); return d != null && d >= 0 && d <= 14; }, sort: { key: "earningsDate", dir: "asc" } },
     { id: "upside", label: "Analyst upside > 20%", test: (s) => s.upside > 20, sort: { key: "upside", dir: "desc" } },
@@ -74,6 +75,7 @@
     { key: "marketCap", label: "Mkt cap", desk: true, cell: (s) => big(s.marketCap) },
     { key: "pe", label: "P/E", desk: true, cell: (s) => s.pe > 0 ? fix(s.pe, 1) : "–" },
     { key: "ps", label: "P/S", desk: true, cell: (s) => s.ps > 0 ? fix(s.ps, 1) : "–" },
+    { key: "adjPs", label: "Adj P/S", desk: true, cell: (s) => isNum(s.adjPs) ? `<span class="${s.adjPs < 3 ? "up" : ""}" title="P/S ${fix(s.ps, 1)} at ${fix(s.opMargin, 0)}% operating margin">${fix(s.adjPs, 1)}</span>` : "–" },
     { key: "perfM1", label: "1M", desk: true, cell: (s) => `<span class="${dirCls(s.perfM1)}">${pct(s.perfM1, 1)}</span>` },
     { key: "perfYtd", label: "YTD", desk: true, cell: (s) => `<span class="${dirCls(s.perfYtd)}">${pct(s.perfYtd, 1)}</span>` },
     { key: "fromHigh", label: "52-wk range", desk: true, cell: rangeCell },
@@ -85,7 +87,7 @@
     ["marketCap", "desc", "Market cap"], ["changePct", "desc", "Day % (best)"], ["changePct", "asc", "Day % (worst)"],
     ["symbol", "asc", "Symbol A–Z"], ["relVolume", "desc", "Relative volume"], ["perfM1", "desc", "1-month %"],
     ["perfYtd", "desc", "YTD %"], ["fromHigh", "desc", "Closest to 52-wk high"], ["rsi", "asc", "RSI (low first)"],
-    ["pe", "asc", "P/E (low first)"], ["ps", "asc", "P/S (low first)"], ["dividendYield", "desc", "Dividend yield"], ["upside", "desc", "Analyst upside"],
+    ["pe", "asc", "P/E (low first)"], ["ps", "asc", "P/S (low first)"], ["adjPs", "asc", "Margin-adj P/S (low first)"], ["dividendYield", "desc", "Dividend yield"], ["upside", "desc", "Analyst upside"],
   ];
 
   function rangeCell(s) {
@@ -403,6 +405,9 @@
       stocks = (data.stocks || []).map((s) => ({
         ...s,
         t1: t1map[s.symbol] || null,
+        // Margin-adjusted P/S: P/S rescaled to a 15% operating-margin business, so one cutoff (3x) is fair across industries.
+        // adjPs <= 3 is the same as paying <= 20x operating profit. No value when the company has no operating profit.
+        adjPs: s.ps > 0 && s.opMargin > 0 ? s.ps * 15 / s.opMargin : null,
         upside: isNum(s.targetPrice) && isNum(s.price) && s.price ? (s.targetPrice / s.price - 1) * 100 : null,
       }));
       history = null; historyPromise = null;
@@ -450,7 +455,7 @@
     const f = state.f, n = (k) => (f[k] === "" || f[k] == null ? null : Number(f[k]));
     const lim = [
       ["priceMin", (v) => s.price >= v], ["priceMax", (v) => s.price <= v], ["capMin", (v) => s.marketCap >= v],
-      ["peMax", (v) => s.pe > 0 && s.pe <= v], ["psMax", (v) => s.ps > 0 && s.ps <= v], ["chgMin", (v) => s.changePct >= v], ["chgMax", (v) => s.changePct <= v],
+      ["peMax", (v) => s.pe > 0 && s.pe <= v], ["psMax", (v) => s.ps > 0 && s.ps <= v], ["adjPsMax", (v) => isNum(s.adjPs) && s.adjPs <= v], ["chgMin", (v) => s.changePct >= v], ["chgMax", (v) => s.changePct <= v],
       ["rsiMin", (v) => s.rsi >= v], ["rsiMax", (v) => s.rsi <= v], ["divMin", (v) => (s.dividendYield || 0) >= v],
       ["rvolMin", (v) => s.relVolume >= v],
     ];
@@ -570,6 +575,8 @@
     const trend = (a, b) => (isNum(a) && isNum(b) ? (a > b ? '<span class="up">above</span>' : '<span class="down">below</span>') : "");
     const stats = [
       ["Market cap", big(s.marketCap)], ["P/E (trailing)", s.pe > 0 ? fix(s.pe, 1) : "–"], ["P/E (forward)", s.forwardPe > 0 ? fix(s.forwardPe, 1) : "–"], ["P/S (trailing)", s.ps > 0 ? fix(s.ps, 2) : "–"],
+      ["P/S (margin-adj)", isNum(s.adjPs) ? fix(s.adjPs, 2) : "–"], ["Operating margin", isNum(s.opMargin) ? fix(s.opMargin, 1) + "%" : "–"],
+      ["Net margin", isNum(s.netMargin) ? fix(s.netMargin, 1) + "%" : "–"], ["Revenue growth", isNum(s.revGrowth) ? fix(s.revGrowth, 1) + "%" : "–"],
       ["EPS", money(s.eps)], ["Dividend yield", s.dividendYield ? fix(s.dividendYield, 2) + "%" : "–"], ["Beta", fix(s.beta, 2)],
       ["Volume", big(s.volume)], ["Avg volume (20d)", big(s.avgVolume)], ["Relative volume", isNum(s.relVolume) ? fix(s.relVolume, 2) + "×" : "–"],
       ["52-wk high", `${money(s.high52)} <span class="muted">${pct(s.fromHigh, 1)}</span>`], ["52-wk low", `${money(s.low52)} <span class="muted">${pct(s.fromLow, 1)}</span>`],
@@ -678,7 +685,7 @@
   }
 
   function exportCsv() {
-    const fields = ["symbol", "name", "sector", "industry", "price", "change", "changePct", "volume", "relVolume", "marketCap", "pe", "forwardPe", "ps",
+    const fields = ["symbol", "name", "sector", "industry", "price", "change", "changePct", "volume", "relVolume", "marketCap", "pe", "forwardPe", "ps", "adjPs", "opMargin", "netMargin", "revGrowth",
       "dividendYield", "beta", "rsi", "sma50", "sma200", "high52", "low52", "fromHigh", "perfW1", "perfM1", "perfM3", "perfM6", "perfYtd", "perfY1",
       "targetPrice", "rating", "earningsDate"];
     const q = (v) => (v == null ? "" : /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
@@ -715,7 +722,7 @@
       const c = COLS[+th.dataset.col]; if (c.sortable === false) return;
       state.sort = state.sort.key === c.key
         ? { key: c.key, dir: state.sort.dir === "asc" ? "desc" : "asc" }
-        : { key: c.key, dir: c.key === "symbol" || c.key === "pe" || c.key === "ps" ? "asc" : "desc" };
+        : { key: c.key, dir: c.key === "symbol" || c.key === "pe" || c.key === "ps" || c.key === "adjPs" ? "asc" : "desc" };
       store.set("sort", state.sort); syncSortSelect(); render();
     });
     $("#sort-select").addEventListener("change", (e) => {
