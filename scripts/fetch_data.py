@@ -173,10 +173,59 @@ def load_fund_cache() -> dict:
         return {}
 
 
+def _series(df, names, n=5):
+    """First matching income-statement row as a list, newest year first."""
+    for name in names:
+        try:
+            if name in df.index:
+                return [num(v, 4) for v in df.loc[name].tolist()[:n]]
+        except Exception:
+            pass
+    return None
+
+
+def fetch_gate_data(tk, info: dict) -> dict:
+    """Raw numbers behind the Tier 1 gates (multi-year growth, debt, analyst estimates).
+
+    Kept only in fundamentals.json (key "_gate"), not in stocks.json. Every piece is optional:
+    if Yahoo doesn't return something, it is simply left out.
+    """
+    g = {}
+    for src, key in (("totalDebt", "totalDebt"), ("totalCash", "totalCash"), ("ebitda", "ebitda"), ("bookValue", "bookValue"),
+                     ("returnOnEquity", "roe"), ("forwardEps", "forwardEps"), ("freeCashflow", "fcf"),
+                     ("sharesOutstanding", "shares"), ("earningsGrowth", "earningsGrowth")):
+        g[key] = num(info.get(src), 4)
+    try:
+        inc = tk.income_stmt
+        if inc is not None and not inc.empty:
+            g["years"] = [str(c)[:10] for c in inc.columns[:5]]
+            g["revenue"] = _series(inc, ["Total Revenue", "Operating Revenue"])
+            g["eps"] = _series(inc, ["Diluted EPS", "Basic EPS"])
+            g["opIncome"] = _series(inc, ["Operating Income", "Total Operating Income As Reported"])
+            g["netIncome"] = _series(inc, ["Net Income", "Net Income Common Stockholders"])
+            g["ebitdaHist"] = _series(inc, ["EBITDA", "Normalized EBITDA"])
+            g["interest"] = _series(inc, ["Interest Expense", "Interest Expense Non Operating"])
+    except Exception as e:
+        print(f"  income statement {tk.ticker}: {e}", flush=True)
+    for attr, key in (("revenue_estimate", "revEst"), ("earnings_estimate", "epsEst"), ("eps_trend", "epsTrend")):
+        try:
+            df = getattr(tk, attr)
+            if df is not None and not df.empty:
+                out = {}
+                for period in ("0y", "+1y"):
+                    if period in df.index:
+                        out[period] = {str(c): num(df.loc[period, c], 4) for c in df.columns}
+                g[key] = out
+        except Exception as e:
+            print(f"  {attr} {tk.ticker}: {e}", flush=True)
+    return g
+
+
 def fetch_info(t: str) -> dict | None:
     for attempt in range(2):
         try:
-            info = yf.Ticker(t).info or {}
+            tk = yf.Ticker(t)
+            info = tk.info or {}
             break
         except Exception as e:
             print(f"  info {t}: {e}", flush=True)
@@ -208,6 +257,7 @@ def fetch_info(t: str) -> dict | None:
         "rating": info.get("recommendationKey"),
         "analysts": info.get("numberOfAnalystOpinions"),
         "earningsDate": dt.datetime.fromtimestamp(earnings, dt.timezone.utc).strftime("%Y-%m-%d") if earnings else None,
+        "_gate": fetch_gate_data(tk, info) if info.get("quoteType") == "EQUITY" else {},
         "_fetched": time.time(),
     }
 
@@ -217,7 +267,7 @@ def refresh_fundamentals(tickers: list[str]) -> dict:
     now = time.time()
     # Also refresh entries saved before a field was added (e.g. "ps", "opMargin"), so new columns fill in on the next run.
     stale = [t for t in tickers
-             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {})]
+             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {}) or "_gate" not in cache.get(t, {})]
     stale.sort(key=lambda t: cache.get(t, {}).get("_fetched", 0))  # oldest first
     todo = stale[:FUND_PER_RUN]
     print(f"Refreshing company info for {len(todo)} of {len(stale)} stale tickers", flush=True)
