@@ -10430,6 +10430,230 @@ null
 "targetPrice": 249.53,
 "type": "EQUITY"
 },
+"DAVE": {
+"_fetched": 1794725850.5049016,
+"_gate": {
+"bookValue": 21.399,
+"capexHist": [
+-6774000.0,
+-7562000.0,
+-8583000.0,
+-9312000.0,
+null
+],
+"capexTtm": -8012000.0,
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": -0.48,
+"ebitda": 236084992.0,
+"ebitdaHist": [
+182201000.0,
+76024000.0,
+-31079000.0,
+-112643000.0,
+null
+],
+"ebitdaMargin": 0.3418,
+"eps": [
+13.53,
+4.19,
+-4.07,
+-10.9249,
+null
+],
+"epsEst": {
+"+1y": {
+"avg": 22.6206,
+"currency": null,
+"growth": 0.2867,
+"high": 24.66,
+"low": 20.27,
+"methodology": null,
+"numberOfAnalysts": 13.0,
+"yearAgoEps": 17.581
+},
+"0y": {
+"avg": 17.581,
+"currency": null,
+"growth": 0.3339,
+"high": 17.76,
+"low": 17.45,
+"methodology": null,
+"numberOfAnalysts": 12.0,
+"yearAgoEps": 13.18
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 22.2558,
+"60daysAgo": 21.9821,
+"7daysAgo": 22.567,
+"90daysAgo": 21.6581,
+"currency": null,
+"current": 22.6206,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 17.3862,
+"60daysAgo": 17.3314,
+"7daysAgo": 17.592,
+"90daysAgo": 17.3541,
+"currency": null,
+"current": 17.581,
+"methodology": null
+}
+},
+"ev": 3478845952.0,
+"fcf": 267481744.0,
+"fcfHist": [
+283249000.0,
+117575000.0,
+25171000.0,
+-54195000.0,
+null
+],
+"fcfTtm": 317085000.0,
+"forwardEps": 22.6206,
+"grossMargin": 0.7007,
+"interest": [
+7043000.0,
+7989000.0,
+11774000.0,
+9197000.0,
+null
+],
+"netIncome": [
+195865000.0,
+57873000.0,
+-48517000.0,
+-128906000.0,
+null
+],
+"ocfHist": [
+290023000.0,
+125137000.0,
+33754000.0,
+-44883000.0,
+null
+],
+"ocfInfo": 325096992.0,
+"ocfTtm": 325097000.0,
+"opIncome": [
+186623000.0,
+34611000.0,
+-42200000.0,
+-134395000.0,
+null
+],
+"qEps": [
+3.3,
+0.49,
+4.02,
+4.57,
+6.34
+],
+"qOpIncome": [
+48017000.0,
+52241000.0,
+59566000.0,
+64494000.0,
+45898000.0
+],
+"qRevenue": [
+197704000.0,
+170793000.0,
+158414000.0,
+163721000.0,
+150725000.0
+],
+"qShares": [
+13921273.0,
+13679803.0,
+14399635.0,
+14442729.0,
+14511041.0
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30"
+],
+"revEst": {
+"+1y": {
+"avg": 927580940.0,
+"currency": null,
+"growth": 0.2423,
+"high": 966400000.0,
+"low": 875700000.0,
+"numberOfAnalysts": 14.0,
+"yearAgoRevenue": 746692890.0
+},
+"0y": {
+"avg": 746692890.0,
+"currency": null,
+"growth": 0.3473,
+"high": 749800000.0,
+"low": 729400000.0,
+"numberOfAnalysts": 14.0,
+"yearAgoRevenue": 554200000.0
+}
+},
+"revenue": [
+554182000.0,
+347076000.0,
+259093000.0,
+204838000.0,
+null
+],
+"revenueTtm": 690632000.0,
+"roe": 0.6879,
+"sbcHist": [
+29896000.0,
+37327000.0,
+26674000.0,
+40639000.0,
+null
+],
+"sbcTtm": 52349000.0,
+"shares": 11478984.0,
+"totalCash": 334076000.0,
+"totalDebt": 268731008.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31",
+"2021-12-31"
+]
+},
+"analysts": 14,
+"beta": 4.08,
+"currency": "USD",
+"dividendRate": 0.0,
+"earningsDate": "2026-11-04",
+"eps": 13.7,
+"exchange": "NGM",
+"forwardPe": 12.25,
+"industry": "Software - Application",
+"marketCap": 3544191232,
+"name": "Dave Inc.",
+"netMargin": 28.1,
+"opMargin": 34.1,
+"pe": 20.22,
+"ps": 5.13,
+"rating": "buy",
+"revGrowth": 31.2,
+"sector": "Technology",
+"targetPrice": 428.29,
+"type": "EQUITY"
+},
 "DECK": {
 "_fetched": 1794724889.3331404,
 "_gate": {
@@ -13511,6 +13735,223 @@ null
 "revGrowth": 3.8,
 "sector": "Financial Services",
 "targetPrice": 151.71,
+"type": "EQUITY"
+},
+"EXEL": {
+"_fetched": 1794725851.7122872,
+"_gate": {
+"bookValue": 7.495,
+"capexHist": [
+-39928000.0,
+-66185000.0,
+-162969000.0,
+-138456000.0,
+null
+],
+"capexTtm": -28571000.0,
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": 0.232,
+"ebitda": 1031900992.0,
+"ebitdaHist": [
+921756000.0,
+718752000.0,
+196602000.0,
+222359000.0
+],
+"ebitdaMargin": 0.4133,
+"eps": [
+2.78,
+1.76,
+0.65,
+0.56
+],
+"epsEst": {
+"+1y": {
+"avg": 4.2744,
+"currency": null,
+"growth": 0.1395,
+"high": 5.34,
+"low": 3.44,
+"methodology": null,
+"numberOfAnalysts": 9.0,
+"yearAgoEps": 3.7511
+},
+"0y": {
+"avg": 3.7511,
+"currency": null,
+"growth": 0.2179,
+"high": 3.94,
+"low": 3.49,
+"methodology": null,
+"numberOfAnalysts": 9.0,
+"yearAgoEps": 3.08
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 4.255,
+"60daysAgo": 4.2609,
+"7daysAgo": 4.274,
+"90daysAgo": 4.0493,
+"currency": null,
+"current": 4.2744,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 3.588,
+"60daysAgo": 3.5818,
+"7daysAgo": 3.584,
+"90daysAgo": 3.5354,
+"currency": null,
+"current": 3.7511,
+"methodology": null
+}
+},
+"ev": 16106934272.0,
+"fcf": 759443008.0,
+"fcfHist": [
+844339000.0,
+633786000.0,
+170355000.0,
+224158000.0,
+null
+],
+"fcfTtm": 1144486000.0,
+"forwardEps": 4.2744,
+"grossMargin": 0.9626,
+"interest": null,
+"netIncome": [
+782570000.0,
+521267000.0,
+207765000.0,
+182282000.0
+],
+"ocfHist": [
+884267000.0,
+699971000.0,
+333324000.0,
+362614000.0,
+null
+],
+"ocfInfo": 1173057024.0,
+"ocfTtm": 1173057000.0,
+"opIncome": [
+892701000.0,
+689949000.0,
+170885000.0,
+201484000.0
+],
+"qEps": [
+0.85,
+0.82,
+0.79,
+0.88,
+0.69,
+null
+],
+"qOpIncome": [
+268423000.0,
+248414000.0,
+251341000.0,
+235910000.0,
+256356000.0,
+null
+],
+"qRevenue": [
+658696000.0,
+628690000.0,
+610812000.0,
+598663000.0,
+597755000.0,
+null
+],
+"qShares": [
+255754000.0,
+259675000.0,
+267322000.0,
+276348000.0,
+278535000.0,
+null
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30",
+"2025-06-30"
+],
+"revEst": {
+"+1y": {
+"avg": 2876405910.0,
+"currency": null,
+"growth": 0.1256,
+"high": 3045081000.0,
+"low": 2536400000.0,
+"numberOfAnalysts": 15.0,
+"yearAgoRevenue": 2555399790.0
+},
+"0y": {
+"avg": 2555399790.0,
+"currency": null,
+"growth": 0.1014,
+"high": 2587000000.0,
+"low": 2530138720.0,
+"numberOfAnalysts": 15.0,
+"yearAgoRevenue": 2320126000.0
+}
+},
+"revenue": [
+2320126000.0,
+2168701000.0,
+1830208000.0,
+1611062000.0
+],
+"revenueTtm": 2496860928.0,
+"roe": 0.4432,
+"sbcHist": [
+112983000.0,
+93836000.0,
+106345000.0,
+107574000.0,
+null
+],
+"sbcTtm": 110428000.0,
+"shares": 244010895.0,
+"totalCash": 892017984.0,
+"totalDebt": 162200992.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31"
+]
+},
+"analysts": 14,
+"beta": 0.418,
+"currency": "USD",
+"dividendRate": 0.0,
+"earningsDate": "2026-10-29",
+"eps": 3.34,
+"exchange": "NMS",
+"forwardPe": 16.14,
+"industry": "Biotechnology",
+"marketCap": 16836751360,
+"name": "Exelixis, Inc.",
+"netMargin": 35.4,
+"opMargin": 40.2,
+"pe": 20.66,
+"ps": 6.74,
+"rating": "buy",
+"revGrowth": 10.2,
+"sector": "Healthcare",
+"targetPrice": 61.57,
 "type": "EQUITY"
 },
 "EZPW": {
@@ -31079,6 +31520,226 @@ null,
 "sector": "ETF",
 "targetPrice": null,
 "type": "ETF"
+},
+"SE": {
+"_fetched": 1794725852.8581626,
+"_gate": {
+"bookValue": 21.447,
+"capexHist": [
+-524499000.0,
+-321593000.0,
+-258261000.0,
+-976283000.0,
+null
+],
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": 0.322,
+"ebitda": 2831768576.0,
+"ebitdaHist": [
+2686640000.0,
+1206797000.0,
+914314000.0,
+-1026793000.0
+],
+"ebitdaMargin": 0.0934,
+"eps": [
+2.52,
+0.74,
+0.25,
+-2.96
+],
+"epsEst": {
+"+1y": {
+"avg": 4.7693,
+"currency": null,
+"growth": 0.3023,
+"high": 5.476,
+"low": 3.994,
+"methodology": null,
+"numberOfAnalysts": 11.0,
+"yearAgoEps": 3.6622
+},
+"0y": {
+"avg": 3.6622,
+"currency": null,
+"growth": 0.1544,
+"high": 3.859,
+"low": 3.39,
+"methodology": null,
+"numberOfAnalysts": 8.0,
+"yearAgoEps": 3.1724
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 5.2087,
+"60daysAgo": 5.1903,
+"7daysAgo": 5.069,
+"90daysAgo": 5.1394,
+"currency": null,
+"current": 4.7693,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 3.9113,
+"60daysAgo": 3.8196,
+"7daysAgo": 3.899,
+"90daysAgo": 3.7463,
+"currency": null,
+"current": 3.6622,
+"methodology": null
+}
+},
+"ev": 42235162624.0,
+"fcf": 262447504.0,
+"fcfHist": [
+4500024000.0,
+2955827000.0,
+1821427000.0,
+-2031975000.0,
+null
+],
+"fcfTtm": 5016641000.0,
+"forwardEps": 4.7693,
+"grossMargin": 0.4495,
+"interest": [
+33610000.0,
+38341000.0,
+41075000.0,
+45396000.0
+],
+"netIncome": [
+1578149000.0,
+444321000.0,
+150726000.0,
+-1651421000.0
+],
+"ocfHist": [
+5024523000.0,
+3277420000.0,
+2079688000.0,
+-1055692000.0,
+null
+],
+"ocfInfo": 5541139968.0,
+"ocfTtm": 5541140000.0,
+"opIncome": [
+1985306000.0,
+662152000.0,
+342653000.0,
+-1132565000.0
+],
+"qEps": [
+null,
+null,
+0.67,
+0.63,
+0.59,
+null
+],
+"qOpIncome": [
+664171000.0,
+650329000.0,
+592987000.0,
+565237000.0,
+475946000.0,
+null
+],
+"qRevenue": [
+8582284000.0,
+7787779000.0,
+7097489000.0,
+6851868000.0,
+5986024000.0,
+null
+],
+"qShares": [
+null,
+null,
+636172778.0,
+639526914.0,
+635572881.0,
+null
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30",
+"2025-06-30"
+],
+"revEst": {
+"+1y": {
+"avg": 38903184580.0,
+"currency": null,
+"growth": 0.2256,
+"high": 43039000000.0,
+"low": 31648000000.0,
+"numberOfAnalysts": 26.0,
+"yearAgoRevenue": 31742422240.0
+},
+"0y": {
+"avg": 31742422240.0,
+"currency": null,
+"growth": 0.3838,
+"high": 33231033060.0,
+"low": 27486000000.0,
+"numberOfAnalysts": 26.0,
+"yearAgoRevenue": 22938469000.0
+}
+},
+"revenue": [
+22938469000.0,
+16819866000.0,
+13063560000.0,
+12449705000.0
+],
+"revenueTtm": 30319419392.0,
+"roe": 0.1523,
+"sbcHist": [
+624995000.0,
+715839000.0,
+685030000.0,
+705896000.0,
+null
+],
+"shares": 566956729.0,
+"totalCash": 8018123776.0,
+"totalDebt": 3355928064.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31"
+]
+},
+"analysts": 28,
+"beta": 1.56,
+"currency": "USD",
+"dividendRate": 0.0,
+"earningsDate": "2026-11-10",
+"eps": 2.78,
+"exchange": "NYQ",
+"forwardPe": 15.8,
+"industry": "Internet Retail",
+"marketCap": 46156836864,
+"name": "Sea Limited",
+"netMargin": 5.8,
+"opMargin": 8.2,
+"pe": 27.11,
+"ps": 1.52,
+"rating": "strong_buy",
+"revGrowth": 43.4,
+"sector": "Consumer Cyclical",
+"targetPrice": 132.14,
+"type": "EQUITY"
 },
 "SEZL": {
 "_fetched": 1794724993.1217782,
