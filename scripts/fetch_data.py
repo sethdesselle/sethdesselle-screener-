@@ -4,7 +4,7 @@
 Outputs (in data/):
   stocks.json        - one row per stock: price, change, technicals, fundamentals, 30-day sparkline
   history.json       - one year of daily closes per stock (loaded by the site only when you open a chart)
-  fundamentals.json  - cache of slower company info (name, sector, P/E ...), refreshed about once a day
+  fundamentals.json  - cache of slower company info (name, sector, P/E, P/S ...), refreshed about once a day
 """
 from __future__ import annotations
 
@@ -190,6 +190,7 @@ def fetch_info(t: str) -> dict | None:
         "marketCap": info.get("marketCap") or info.get("totalAssets"),
         "pe": num(info.get("trailingPE")),
         "forwardPe": num(info.get("forwardPE")),
+        "ps": num(info.get("priceToSalesTrailing12Months")),
         "eps": num(info.get("trailingEps")),
         "dividendRate": num(info.get("dividendRate") or info.get("trailingAnnualDividendRate")),
         "beta": num(info.get("beta")),
@@ -204,7 +205,9 @@ def fetch_info(t: str) -> dict | None:
 def refresh_fundamentals(tickers: list[str]) -> dict:
     cache = load_fund_cache()
     now = time.time()
-    stale = [t for t in tickers if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600]
+    # Also refresh entries saved before a field was added (e.g. "ps"), so new columns fill in on the next run.
+    stale = [t for t in tickers
+             if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "ps" not in cache.get(t, {})]
     stale.sort(key=lambda t: cache.get(t, {}).get("_fetched", 0))  # oldest first
     todo = stale[:FUND_PER_RUN]
     print(f"Refreshing company info for {len(todo)} of {len(stale)} stale tickers", flush=True)
