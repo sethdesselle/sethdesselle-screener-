@@ -50,5 +50,6 @@ jobs:
             exit 0
           fi
           git commit -m "Update stock data"
-          git pull --rebase
+          # If another update landed in the meantime, keep this run's newer data files instead of failing.
+          git pull --rebase -X theirs
           git push
