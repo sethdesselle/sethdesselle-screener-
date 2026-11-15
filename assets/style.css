@@ -280,6 +280,12 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .t1pill.zone.in { background: var(--up); border-color: var(--up); color: #fff; }
 .t1pill.zone.near { color: var(--star); border-color: var(--star); }
 .t1pill.zone.below { color: var(--down); border-color: var(--down); }
+.gates { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.gate { font-size: .75rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); white-space: nowrap; }
+.gate.up { border-color: var(--up); } .gate.down { border-color: var(--down); }
+.gate.unv { color: var(--star); border-color: var(--star); }
+.chk li.unv { color: var(--star); }
+.gate-list li .muted { font-weight: 400; }
 .link-btn { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: inherit; font-size: .85rem; }
 .perf-h, .sec-h { margin: 8px 0 4px; }
 .perf { width: 100%; border-collapse: collapse; font-size: .85rem; margin-bottom: 10px; }

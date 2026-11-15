@@ -144,15 +144,39 @@
     return n;
   };
 
+  // The buy-below price is the only entry price (no separate entry zone): tag names that are in or near the buy range.
   function zoneState(n, price) {
-    const z = n.entryZone;
-    if (!z || !isNum(z.low) || !isNum(z.high) || !isNum(price)) return null;
-    if (price >= z.low && price <= z.high) return { cls: "in", text: "In entry zone" };
-    if (price > z.high && price <= z.high * 1.03) return { cls: "near", text: "Near entry zone" };
-    if (price < z.low) return { cls: "below", text: "Below entry zone" };
+    const bb = buyBelow(n);
+    if (!isNum(bb) || !isNum(price)) return null;
+    if (price <= bb) return { cls: "in", text: "In buy range" };
+    if (price <= bb * 1.03) return { cls: "near", text: "Near buy price" };
     return null;
   }
-  const zoneTag = (n, price) => { const z = zoneState(n, price); return z ? ` <span class="t1pill zone ${z.cls}" title="Suggested zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)}">${z.text}</span>` : ""; };
+  const zoneTag = (n, price) => { const z = zoneState(n, price); return z ? ` <span class="t1pill zone ${z.cls}" title="Buy at or below $${money(buyBelow(n))}">${z.text}</span>` : ""; };
+
+  // The four hard gates plus the falling-estimates check, written by the daily task as n.gates:
+  // { revenueGrowth: { result: "pass" | "fail" | "unverified", detail: "14% 3-yr / 12% next yr" }, earnings, balanceSheet, marginPs, estimates }
+  const GATES = [["revenueGrowth", "Growth", "Revenue growth 10%+"], ["earnings", "Earnings", "Earnings keep up with revenue"],
+    ["balanceSheet", "Debt", "Net cash or low debt"], ["marginPs", "Sales", "Margin-adjusted P/S at or under 3"],
+    ["estimates", "Estimates", "Analyst estimates not being cut"]];
+  const GATE_MARK = { pass: ["✓", "up", "pass"], fail: ["✗", "down", "fail"], unverified: ["?", "unv", "unverified"] };
+  const gateOf = (n, key) => { const g = (n.gates || {})[key]; return g && GATE_MARK[g.result] ? g : null; };
+  function gateChips(n) {
+    const chips = GATES.map(([key, short, long]) => {
+      const g = gateOf(n, key); if (!g) return "";
+      const [mark, cls, word] = GATE_MARK[g.result];
+      return `<span class="gate ${cls}" title="${esc(long)}: ${word}${g.detail ? ". " + esc(g.detail) : ""}">${mark} ${short}</span>`;
+    }).join("");
+    return chips ? `<div class="gates">${chips}</div>` : "";
+  }
+  function gateList(n) {
+    const rows = GATES.map(([key, , long]) => {
+      const g = gateOf(n, key); if (!g) return "";
+      const [mark, cls, word] = GATE_MARK[g.result];
+      return `<li class="${cls}">${mark} <b>${long}</b>${g.result === "pass" ? "" : ` (${word})`}${g.detail ? ` <span class="muted">${esc(g.detail)}</span>` : ""}</li>`;
+    }).join("");
+    return rows ? `<ul class="chk gate-list">${rows}</ul>` : "";
+  }
 
   const buyBelow = (n) => {
     if (isNum(n.buyBelow)) return n.buyBelow;
@@ -220,6 +244,7 @@
   function t1Detail(n) {
     return `<div class="t1-top"><span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class] || ""}</span>${restrictedTag(n.symbol)} <span class="muted">as of ${esc(n.priceDate || "")}</span></div>
       <p>${esc(n.reason)}</p>
+      ${gateList(n)}
       <div class="stats">${t1Facts(n)}</div>
       ${fvBar(n, (stocks.find((x) => x.symbol === n.symbol) || {}).price ?? n.price)}
       ${fvDetail(n)}
@@ -255,10 +280,12 @@
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
         ${(() => { const v = verdict(n, price); return `<p class="verdict ${v.cls}"><b>${v.text}</b><span>${v.sub}</span></p>`; })()}
         ${fvBar(n, price)}
+        ${gateChips(n)}
         <p>${esc(n.reason)}</p>
         <details class="tech more"><summary>More detail</summary>
+          ${gateList(n)}
           <div class="stats">${t1Facts(n)}</div>
-          ${n.entry ? `<p class="muted"><b>Entry timing:</b> ${esc(n.entry)}${n.entryZone ? ` (zone $${money(n.entryZone.low)}-$${money(n.entryZone.high)})` : ""}</p>` : ""}
+          ${n.entry ? `<p class="muted"><b>Entry timing:</b> ${esc(n.entry)}</p>` : ""}
           ${n.upgrade ? `<p class="muted"><b>What would upgrade it:</b> ${esc(n.upgrade)}</p>` : ""}
           ${fvDetail(n)}
           ${techBlock(n, s)}
