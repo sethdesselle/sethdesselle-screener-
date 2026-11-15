@@ -1,609 +1,1184 @@
 {
-  "updated": "2026-11-14T16:55:00Z",
-  "asOf": "2026-11-13",
-  "test": true,
-  "summary": {
-    "screened": 11,
-    "strict": 0,
-    "approaching": 7,
-    "note": "Sample only: built from older data and assumed inputs. Monday's run replaces it with verified numbers."
-  },
-  "names": [
-    {
-      "symbol": "NBIX",
-      "rank": 1,
-      "class": "approaching",
-      "price": 167.4,
-      "priceDate": "2026-11-13",
-      "reason": "Q3 revenue +41%, operating margin ~29.5%, cheap on forward earnings. Single-franchise (Ingrezza) risk and the post-earnings pop thin the margin of safety.",
-      "revGrowth": 41,
-      "fwdPE": 14.8,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": 159.83,
-      "discountPct": -5,
-      "entry": "Wait for a pullback toward $150-160 (the Nov 5-6 gap area).",
-      "upgrade": "A pullback that gives 20%+ discount to fair value, or evidence the VYKAT XR launch is durable.",
-      "sources": [
-        {
-          "title": "Neurocrine Q3 release",
-          "url": "https://finviz.com/news/413707/neurocrine-biosciences-reports-third-quarter-2026-financial-results"
-        }
-      ],
-      "entryZone": {
-        "low": 150,
-        "high": 160
-      },
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "22.0x fwd EPS $11.41 (rule: 12 + 0.5 x EPS growth 32.9%, cap 22x, floor 10x)",
-            "value": 251.02,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "FCF yield (SBC-adjusted)",
-            "assumption": "5.5% on FCF/sh $7.28 after SBC (assumed SBC 15% of FCF)",
-            "value": 132.29,
-            "weight": 33,
-            "trimmed": false
-          },
-          {
-            "name": "EV/EBITDA",
-            "assumption": "14x TTM EBITDA $913M, net debt $72M",
-            "value": 125.08,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "Forward P/S",
-            "assumption": "3.5x fwd rev/sh $42.78",
-            "value": 149.73,
-            "weight": 17,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 32.9% halved -> P/E 16.5x (floor 10x, cap 20x)",
-            "value": 187.75,
-            "weight": 25,
-            "trimmed": false
-          },
-          {
-            "name": "DCF",
-            "assumption": "5y growth 15.0% on FCF/sh $7.28, 10% discount, 3% terminal",
-            "value": 175.36,
-            "weight": 25,
-            "trimmed": false
-          }
-        ],
-        "low": 125,
-        "high": 251,
-        "bear": 135,
-        "bull": 200,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 159.83,
-        "spreadPct": 42
-      },
-      "buyBelow": 132.29,
-      "rewardRisk": 1.0,
-      "impliedReturnPct": -1.5,
-      "spreadPct": 42,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
+ "updated": "2026-11-15T06:52:08+00:00",
+ "asOf": "2026-11-13",
+ "summary": {
+  "screened": 166,
+  "strict": 1,
+  "approaching": 9,
+  "note": "Manual weekend test run on Friday's closes. 99 names failed two or more gates; 10 had no failed gate; 1 was at or below its buy price. Numbers are from Yahoo data; news checks done for 4 names."
+ },
+ "names": [
+  {
+   "symbol": "STRL",
+   "rank": 1,
+   "class": "strict",
+   "price": 292.39,
+   "priceDate": "2026-11-13",
+   "reason": "builds data-center sites, roads and electrical systems. revenue 12% 3-yr / 26% next yr; P/S 2.1 at 18.6% margin (TTM) = 1.7. Analysis only, no new capital.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 12% 3-yr / 26% next yr"
     },
-    {
-      "symbol": "MNDY",
-      "rank": 2,
-      "class": "approaching",
-      "price": 78.0,
-      "priceDate": "2026-11-13",
-      "reason": "Forward P/E ~10.8x (non-GAAP), $870M cash plus $230M securities, 52% below its high. Growth is slowing to ~14% in Q4 and Q3 FCF margin was only ~4%.",
-      "revGrowth": 19,
-      "fwdPE": 10.8,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": 85.79,
-      "discountPct": 9,
-      "entry": "About 36% above its 52-week low after a ~7% post-earnings drop; no technicals pulled.",
-      "upgrade": "FCF margin recovery and signs growth is stabilizing near 15-20%.",
-      "sources": [
-        {
-          "title": "monday.com Q3 2026 results",
-          "url": "https://monday.com/newsroom/announcements/q3-2026-results"
-        }
-      ],
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "22.0x fwd EPS $6.16 (rule: 12 + 0.5 x EPS growth 21.5%, cap 22x, floor 10x)",
-            "value": 135.52,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "FCF yield (SBC-adjusted)",
-            "assumption": "5.5% on FCF/sh $4.23 after SBC (assumed SBC 40% of FCF)",
-            "value": 76.91,
-            "weight": 46,
-            "trimmed": false
-          },
-          {
-            "name": "Forward P/S",
-            "assumption": "3.0x fwd rev/sh $37.33",
-            "value": 111.99,
-            "weight": 15,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 21.5% halved -> P/E 10.7x (floor 10x, cap 20x)",
-            "value": 66.1,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "DCF",
-            "assumption": "5y growth 10.8% on FCF/sh $4.23, 10% discount, 3% terminal",
-            "value": 85.98,
-            "weight": 38,
-            "trimmed": false
-          }
-        ],
-        "low": 66,
-        "high": 136,
-        "bear": 85,
-        "bull": 135,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 85.79,
-        "spreadPct": 46
-      },
-      "buyBelow": 76.91,
-      "rewardRisk": null,
-      "impliedReturnPct": 3.2,
-      "spreadPct": 46,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 39% vs revenue 12% 3-yr; EPS 28% vs revenue 26% next yr"
     },
-    {
-      "symbol": "RGA",
-      "rank": 3,
-      "class": "approaching",
-      "price": 275.15,
-      "priceDate": "2026-11-13",
-      "reason": "Operating ROE ~19% at ~1.5x book ex-AOCI and ~9.5x forward earnings. Organic growth is below the 15% hurdle, Q3 EPS had an investment windfall, and the stock is at its 52-week high.",
-      "revGrowth": null,
-      "fwdPE": 9.5,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": 280.96,
-      "discountPct": 2,
-      "entry": "Extended after a breakout; prefer a pullback toward $255-265.",
-      "upgrade": "A pullback to the $255-265 area, or evidence earnings quality holds without one-time items.",
-      "sources": [
-        {
-          "title": "RGA Q3 2026 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/0000898174/000089817426000038/pressrelease3q26.htm"
-        }
-      ],
-      "entryZone": {
-        "low": 255,
-        "high": 265
-      },
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "10x fwd EPS $28.65 (financials: fixed multiple)",
-            "value": 286.5,
-            "weight": 40,
-            "trimmed": false
-          },
-          {
-            "name": "P/B vs ROE",
-            "assumption": "1.3x book value/sh $209.73 (ROE 11.7%)",
-            "value": 272.65,
-            "weight": 40,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 12.2% halved -> P/E 10.0x (floor 10x, cap 20x)",
-            "value": 286.5,
-            "weight": 20,
-            "trimmed": false
-          }
-        ],
-        "low": 273,
-        "high": 286,
-        "bear": 235,
-        "bull": 320,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 280.96,
-        "spreadPct": 5
-      },
-      "buyBelow": 272.65,
-      "rewardRisk": 1.1,
-      "impliedReturnPct": 0.7,
-      "spreadPct": 5,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
     },
-    {
-      "symbol": "EVER",
-      "rank": 4,
-      "class": "approaching",
-      "price": 28.3,
-      "priceDate": "2026-11-13",
-      "reason": "Q3 revenue +25%, $229M cash and no debt. Q4 guide implies only ~12% growth with thinner margins. Forward P/E rescaled to today's price is a rough ~13-14x.",
-      "revGrowth": 25,
-      "fwdPE": 13.5,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": 27.74,
-      "discountPct": -2,
-      "entry": "Up sharply from the pre-earnings $22.74; no technicals pulled.",
-      "upgrade": "Verified FCF yield and ROIC, and evidence Q4/Q1 growth stays above 15%.",
-      "sources": [
-        {
-          "title": "EverQuote Q3 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/0001640428/000119312526443633/ever-ex99_1.htm"
-        }
-      ],
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "16.0x fwd EPS $2.05 (rule: 12 + 0.5 x EPS growth 8.0%, cap 22x, floor 10x)",
-            "value": 32.8,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "FCF yield (SBC-adjusted)",
-            "assumption": "7% on FCF/sh $2.03 after SBC (assumed SBC 25% of FCF)",
-            "value": 28.93,
-            "weight": 33,
-            "trimmed": false
-          },
-          {
-            "name": "EV/EBITDA",
-            "assumption": "8x TTM EBITDA $83.6M + net cash $190M",
-            "value": 24.38,
-            "weight": 25,
-            "trimmed": false
-          },
-          {
-            "name": "Forward P/S",
-            "assumption": "1.0x fwd rev/sh $25.39",
-            "value": 25.39,
-            "weight": 17,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 8.0% halved -> P/E 10.0x (floor 10x, cap 20x)",
-            "value": 20.5,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "DCF",
-            "assumption": "5y growth 4.0% on FCF/sh $2.03, 10% discount, 3% terminal",
-            "value": 31.09,
-            "weight": 25,
-            "trimmed": false
-          }
-        ],
-        "low": 20,
-        "high": 33,
-        "bear": 20,
-        "bull": 36,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 27.74,
-        "spreadPct": 28
-      },
-      "buyBelow": 24.38,
-      "rewardRisk": 0.9,
-      "impliedReturnPct": -0.7,
-      "spreadPct": 28,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 2.1 at 18.6% margin (TTM) = 1.7"
     },
-    {
-      "symbol": "POWL",
-      "rank": 5,
-      "class": "approaching",
-      "price": 142.72,
-      "priceDate": "2026-11-13",
-      "reason": "Backlog $2.4B (+69%), no debt, strong cash conversion. But Q3 revenue growth was only ~9%, forward P/E ~22x and P/S ~4.4x. Oil and gas is ~34% of revenue.",
-      "revGrowth": 9,
-      "fwdPE": 22,
-      "fcfYield": 4.8,
-      "roic": null,
-      "fairValue": 118.3,
-      "discountPct": -21,
-      "entry": "Do not act before fiscal Q4 results on Mon Nov 16 after the close.",
-      "upgrade": "A strong Nov 16 print and a lower entry price (forward P/E near 20x or below).",
-      "sources": [
-        {
-          "title": "Powell Q3 FY26 8-K",
-          "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
-        }
-      ],
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "21.8x fwd EPS $6.46 (rule: 12 + 0.5 x EPS growth 19.6%, cap 22x, floor 10x)",
-            "value": 140.83,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "FCF yield (SBC-adjusted)",
-            "assumption": "5% on FCF/sh $6.50 after SBC (assumed SBC 3% of FCF)",
-            "value": 129.98,
-            "weight": 23,
-            "trimmed": false
-          },
-          {
-            "name": "EV/EBITDA",
-            "assumption": "14x TTM EBITDA $236M + net cash $631M",
-            "value": 108.1,
-            "weight": 38,
-            "trimmed": false
-          },
-          {
-            "name": "Forward P/S",
-            "assumption": "3.0x fwd rev/sh $37.71",
-            "value": 113.13,
-            "weight": 15,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 19.6% halved -> P/E 10.0x (floor 10x, cap 20x)",
-            "value": 64.6,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "DCF",
-            "assumption": "5y growth 9.8% on FCF/sh $6.50, 10% discount, 3% terminal",
-            "value": 127.08,
-            "weight": 23,
-            "trimmed": false
-          }
-        ],
-        "low": 65,
-        "high": 141,
-        "bear": 105,
-        "bull": 160,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 118.3,
-        "spreadPct": 20
-      },
-      "buyBelow": 108.1,
-      "rewardRisk": 0.5,
-      "impliedReturnPct": -6.1,
-      "spreadPct": 20,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 10% in 90 days ($25.28 to $27.90)"
     },
-    {
-      "symbol": "BN",
-      "rank": 6,
-      "class": "approaching",
-      "price": 40.97,
-      "priceDate": "2026-11-13",
-      "reason": "Q3 distributable earnings per share $0.73 (+16%), ~15x P/DE, buybacks. GAAP metrics are not meaningful and the discount to fair value is thin. Nov 13 close not verified.",
-      "revGrowth": null,
-      "fwdPE": null,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": null,
-      "discountPct": null,
-      "entry": "Support near $36; add on dips toward the high $30s.",
-      "upgrade": "A deeper discount to fair value (25%+) or evidence of faster DE growth.",
-      "sources": [
-        {
-          "title": "Brookfield Q3 2026 press release",
-          "url": "https://bn.brookfield.com/sites/brookfield-bn-v2/files/Brookfield-BN-IR-V2/2026/Q3/2026-q3-bn-press-release.pdf"
-        }
-      ],
-      "entryZone": {
-        "low": 36,
-        "high": 39
-      },
-      "fairValueDetail": {
-        "methods": [],
-        "note": "Fewer than 3 verifiable methods (conglomerate; FCF negative, no forward EPS or P/S). Fair value left blank."
-      }
-    },
-    {
-      "symbol": "GNRC",
-      "rank": 7,
-      "class": "approaching",
-      "price": 190.77,
-      "priceDate": "2026-11-13",
-      "reason": "Q3 sales +16%, ~$4.5B data-center backlog, FCF improving. Estimated P/S of ~2.5x probably fails the valuation requirement.",
-      "revGrowth": 16,
-      "fwdPE": null,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": 160.14,
-      "discountPct": -19,
-      "entry": "35% above its 52-week low; residential demand is cyclical and storm-driven.",
-      "upgrade": "A lower price (P/S near 2x) with the data-center backlog converting to sales.",
-      "sources": [
-        {
-          "title": "Generac Q3 2026 results",
-          "url": "https://finviz.com/news/409750/generac-reports-third-quarter-2026-results"
-        }
-      ],
-      "fairValueDetail": {
-        "methods": [
-          {
-            "name": "Forward P/E",
-            "assumption": "22.0x fwd EPS $12.23 (rule: 12 + 0.5 x EPS growth 39.4%, cap 22x, floor 10x)",
-            "value": 269.06,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "FCF yield (SBC-adjusted)",
-            "assumption": "5.5% on FCF/sh $6.33 after SBC (assumed SBC 10% of FCF)",
-            "value": 115.04,
-            "weight": 30,
-            "trimmed": false
-          },
-          {
-            "name": "EV/EBITDA",
-            "assumption": "12x TTM EBITDA $621M, net debt $1.02B",
-            "value": 109.08,
-            "weight": 0,
-            "trimmed": true
-          },
-          {
-            "name": "Forward P/S",
-            "assumption": "1.5x fwd rev/sh $105.85",
-            "value": 158.77,
-            "weight": 20,
-            "trimmed": false
-          },
-          {
-            "name": "PEG (growth haircut)",
-            "assumption": "EPS growth 39.4% halved -> P/E 19.7x (floor 10x, cap 20x)",
-            "value": 240.63,
-            "weight": 20,
-            "trimmed": false
-          },
-          {
-            "name": "DCF",
-            "assumption": "5y growth 15.0% on FCF/sh $6.33, 10% discount, 3% terminal",
-            "value": 152.49,
-            "weight": 30,
-            "trimmed": false
-          }
-        ],
-        "low": 109,
-        "high": 269,
-        "bear": 125,
-        "bull": 215,
-        "note": "Fair value = weighted composite of the kept methods; the buy price is the lowest kept method (cheap on every measure). Assumed target multiples and ASSUMED SBC share (data was unreliable); cyclical normalization not applied (say so in the daily run). Sample only.",
-        "composite": 160.14,
-        "spreadPct": 109
-      },
-      "buyBelow": 115.04,
-      "rewardRisk": 0.4,
-      "impliedReturnPct": -5.7,
-      "spreadPct": 109,
-      "strictChecks": {
-        "allMethods": false,
-        "rewardRisk": false
-      }
-    },
-    {
-      "symbol": "CALX",
-      "class": "not_qualified",
-      "price": 32.17,
-      "priceDate": "2026-11-13",
-      "reason": "Q3 growth of 14% is below the 15% hurdle, FCF margin ~1%, SBC ~7% of revenue and gross margin is pressured by memory costs.",
-      "revGrowth": 14,
-      "fwdPE": null,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": null,
-      "discountPct": null,
-      "entry": "Within ~5% of its 52-week low.",
-      "upgrade": "Growth back above 15% and FCF conversion improving.",
-      "sources": [
-        {
-          "title": "Calix Q3 shareholder letter",
-          "url": "https://www.sec.gov/Archives/edgar/data/0001406666/000140666626000040/ex992stockholderletter26q3.htm"
-        }
-      ]
-    },
-    {
-      "symbol": "ICHR",
-      "class": "not_qualified",
-      "price": 35.72,
-      "priceDate": "2026-11-13",
-      "reason": "Negative free cash flow, thin margins, trailing loss, two-customer concentration and high cyclicality. Forward growth is strong but fundamentals do not clear Tier 1.",
-      "revGrowth": 37,
-      "fwdPE": 14,
-      "fcfYield": null,
-      "roic": null,
-      "fairValue": null,
-      "discountPct": null,
-      "entry": "Extremely volatile; revisit only after FCF turns positive.",
-      "upgrade": "Positive free cash flow and margin expansion.",
-      "sources": [
-        {
-          "title": "Finsee Q3 review",
-          "url": "https://finsee.ai/earnings/ichr/2026/q3/en/"
-        }
-      ]
-    },
-    {
-      "symbol": "S",
-      "class": "not_qualified",
-      "price": 22.2,
-      "priceDate": "2026-11-13",
-      "reason": "Revenue +21% but GAAP operating margin -31%, ROIC negative, FCF yield under 1% and forward P/S ~6x. Nov 13 close not verified.",
-      "revGrowth": 21,
-      "fwdPE": 55,
-      "fcfYield": 0.6,
-      "roic": -12,
-      "fairValue": null,
-      "discountPct": null,
-      "entry": "Q3 earnings Dec 3; wait for that or a pullback toward $17-18.",
-      "upgrade": "GAAP profitability and a much lower valuation.",
-      "sources": [
-        {
-          "title": "SentinelOne Q2 FY27 results",
-          "url": "https://www.01net.it/sentinelone-announces-second-quarter-fiscal-year-2027-financial-results/"
-        }
-      ]
-    },
-    {
-      "symbol": "ONDS",
-      "class": "not_qualified",
-      "price": 5.16,
-      "priceDate": "2026-11-13",
-      "reason": "Growth is acquisition-driven with heavy dilution, falling gross margin, large operating losses, negative FCF and very high short interest.",
-      "revGrowth": null,
-      "fwdPE": null,
-      "fcfYield": -4.9,
-      "roic": -15,
-      "fairValue": null,
-      "discountPct": null,
-      "entry": "Near its 52-week low ($4.38); extremely volatile.",
-      "upgrade": "Organic growth proof, positive adjusted EBITDA and lower dilution.",
-      "sources": [
-        {
-          "title": "Ondas Q3 2026 results",
-          "url": "https://finance.yahoo.com/technology/articles/ondas-posts-record-q3-2026-130000934.html"
-        }
-      ]
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found. Q3 report Oct 28: revenue +127%, 2026 guidance raised; share price fall since Nov 4 was sector-wide"
     }
-  ],
-  "watchlist": {
-    "adds": [],
-    "removes": []
+   },
+   "revGrowth": 127.0,
+   "fwdPE": 10.41,
+   "fcfYield": 5.3,
+   "roic": null,
+   "fairValue": 456.84,
+   "buyBelow": 352.87,
+   "discountPct": 36.0,
+   "rewardRisk": null,
+   "impliedReturnPct": 16.0,
+   "spreadPct": 74.0,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $14.11/share grown 13.9% for 5 yrs, 10% discount, 3% terminal",
+      "value": 325.62,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield (6 - G/10) on TTM FCF less stock pay $14.11/share",
+      "value": 352.87,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "13.9x (0.5 x G of 28, floor 10x) on EPS $27.90",
+      "value": 387.77,
+      "weight": 6.7,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "14.0x (formula 7 + 0.35 x G of 28; history and industry medians not verified) on TTM EBITDA $0.90B",
+      "value": 407.79,
+      "weight": 26.7,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "22.0x (12 + 0.5 x G of 28) on next-year EPS $27.90",
+      "value": 613.86,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "3.72x sales (3 x 18.6% TTM margin / 15) on next-year revenue $188.08/share",
+      "value": 700.24,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 456.84,
+    "spreadPct": 74.0,
+    "low": 325.62,
+    "high": 700.24,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 35.5 (neutral); price below the 50-day average and below the 200-day average; 22.15% above the 52-week low; volume 0.69x the 30-day average; next earnings date not yet set",
+   "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
+   "tech": {
+    "rsi": 35.5,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 22.15,
+    "volVsAvg": 0.69,
+    "staging": "Analysis only, no new capital."
+   },
+   "sources": [
+    {
+     "title": "Sterling Q3 2026 earnings release (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0000874238/000087423826000122/a20261028ex991earningsrele.htm"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "ETOR",
+   "rank": 2,
+   "class": "approaching",
+   "price": 22.5,
+   "priceDate": "2026-11-13",
+   "reason": "online trading and investing platform. EPS growth turned profitable 3-yr / 27% next yr (financial: earnings used); price $22.50 vs book-value price $27.05.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "EPS growth turned profitable 3-yr / 27% next yr (financial: earnings used)"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "ROE 15.9% (latest; 3-yr average not available)"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "operating income 6.6x interest (latest fiscal year)"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "price $22.50 vs book-value price $27.05"
+    },
+    "estimates": {
+     "result": "fail",
+     "detail": "next-year EPS down 16% in 90 days ($3.08 to $2.58)"
+    },
+    "redFlags": {
+     "result": "fail",
+     "detail": "(3) latest-quarter revenue -64% vs a year earlier"
+    }
+   },
+   "revGrowth": -64.2,
+   "fwdPE": 8.73,
+   "fcfYield": 15.9,
+   "roic": null,
+   "fairValue": 30.68,
+   "buyBelow": 27.05,
+   "discountPct": 26.7,
+   "rewardRisk": null,
+   "impliedReturnPct": 10.9,
+   "spreadPct": 31.0,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "Price-to-book",
+      "assumption": "1.59x book (ROE 15.9% / 10) on book value $17.00",
+      "value": 27.05,
+      "weight": 45.0,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "13.0x (8 + 0.3 x G of 27) on next-year EPS $2.58",
+      "value": 33.49,
+      "weight": 50.0,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "13.7x (0.5 x G of 27, floor 10x) on EPS $2.58",
+      "value": 35.31,
+      "weight": 5.0,
+      "trimmed": false
+     }
+    ],
+    "composite": 30.68,
+    "spreadPct": 31.0,
+    "low": 27.05,
+    "high": 35.31,
+    "bear": null,
+    "bull": null,
+    "note": "company type FIN; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 40.5 (neutral); price below the 50-day average and below the 200-day average; 5.66% above the 52-week low; volume 0.99x the 30-day average; next earnings date not yet set",
+   "upgrade": "falling estimates: next-year EPS down 16% in 90 days ($3.08 to $2.58); red flag: (3) latest-quarter revenue -64% vs a year earlier",
+   "tech": {
+    "rsi": 40.5,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 5.66,
+    "volVsAvg": 0.99,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "FIX",
+   "rank": 3,
+   "class": "approaching",
+   "price": 1112.5,
+   "priceDate": "2026-11-13",
+   "reason": "installs heating, cooling and electrical systems, mostly for data centers and factories. revenue 30% 3-yr / 27% next yr; P/S 3.1 at 16.7% margin (TTM) = 2.8.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 30% 3-yr / 27% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 62% vs revenue 30% 3-yr; EPS 32% vs revenue 27% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 3.1 at 16.7% margin (TTM) = 2.8"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 12% in 90 days ($60.04 to $67.15)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found. Q3 report Oct 22: revenue +54%, record $17.8B backlog. CFO retires after 2026 results; successor already named"
+    }
+   },
+   "revGrowth": 53.7,
+   "fwdPE": 16.57,
+   "fcfYield": 6.3,
+   "roic": null,
+   "fairValue": 1519.49,
+   "buyBelow": 1085.55,
+   "discountPct": 26.8,
+   "rewardRisk": null,
+   "impliedReturnPct": 11.0,
+   "spreadPct": 52.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "EV/EBITDA",
+      "assumption": "14.0x (formula 7 + 0.35 x G of 32; history and industry medians not verified) on TTM EBITDA $2.27B",
+      "value": 957.56,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "PEG",
+      "assumption": "16.2x (0.5 x G of 32, floor 10x) on EPS $67.15",
+      "value": 1085.55,
+      "weight": 9.1,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "22.0x (12 + 0.5 x G of 32) on next-year EPS $67.15",
+      "value": 1477.4,
+      "weight": 45.5,
+      "trimmed": false
+     },
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $68.39/share grown 15.0% for 5 yrs, 10% discount, 3% terminal",
+      "value": 1648.3,
+      "weight": 27.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "3.33x sales (3 x 16.7% TTM margin / 15) on next-year revenue $494.86/share",
+      "value": 1648.5,
+      "weight": 18.2,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield (6 - G/10) on TTM FCF less stock pay $68.39/share",
+      "value": 1709.78,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 1519.49,
+    "spreadPct": 52.0,
+    "low": 957.56,
+    "high": 1709.78,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 39.1 (neutral); price below the 50-day average and below the 200-day average; 32.48% above the 52-week low; volume 0.56x the 30-day average; next earnings date not yet set",
+   "upgrade": "price must fall 2% to $1085.55",
+   "tech": {
+    "rsi": 39.1,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 32.48,
+    "volVsAvg": 0.56,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Comfort Systems Q3 2026 earnings release (SEC)",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001035983/000110465926118156/fix-ex99d1.htm"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "EME",
+   "rank": 4,
+   "class": "approaching",
+   "price": 659.36,
+   "priceDate": "2026-11-13",
+   "reason": "electrical and mechanical construction and building services. revenue 15% 3-yr / 14% next yr; P/S 1.5 at 9.9% margin (TTM) = 2.2.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 15% 3-yr / 14% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 52% vs revenue 15% 3-yr; EPS 17% vs revenue 14% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 1.5 at 9.9% margin (TTM) = 2.2"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 11% in 90 days ($36.74 to $40.91)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found. Q3 report Oct 29: revenue +29%, 2026 guidance raised"
+    }
+   },
+   "revGrowth": 28.8,
+   "fwdPE": 16.12,
+   "fcfYield": 5.1,
+   "roic": null,
+   "fairValue": 733.8,
+   "buyBelow": 613.24,
+   "discountPct": 10.1,
+   "rewardRisk": null,
+   "impliedReturnPct": 3.6,
+   "spreadPct": 37.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 17, floor 10x) on EPS $40.91",
+      "value": 409.06,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $32.96/share grown 8.6% for 5 yrs, 10% discount, 3% terminal",
+      "value": 613.24,
+      "weight": 17.6,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "13.0x (formula 7 + 0.35 x G of 17; history and industry medians not verified) on TTM EBITDA $2.17B",
+      "value": 643.97,
+      "weight": 23.5,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.3% yield (6 - G/10) on TTM FCF less stock pay $32.96/share",
+      "value": 769.7,
+      "weight": 29.4,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "20.6x (12 + 0.5 x G of 17) on next-year EPS $40.91",
+      "value": 842.09,
+      "weight": 29.4,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "1.98x sales (3 x 9.9% TTM margin / 15) on next-year revenue $537.61/share",
+      "value": 1062.26,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 733.8,
+    "spreadPct": 37.0,
+    "low": 409.06,
+    "high": 1062.26,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 44.6 (neutral); price below the 50-day average and below the 200-day average; 16.97% above the 52-week low; volume 0.54x the 30-day average; next earnings date not yet set",
+   "upgrade": "price must fall 7% to $613.24",
+   "tech": {
+    "rsi": 44.6,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 16.97,
+    "volVsAvg": 0.54,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "EMCOR Q3 2026 results (Earnings Whispers)",
+     "url": "https://www.earningswhispers.com/epsdetails/EME/202609"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "NBIX",
+   "rank": 5,
+   "class": "approaching",
+   "price": 167.4,
+   "priceDate": "2026-11-13",
+   "reason": "drug maker (INGREZZA, CRENESSITY, VYKAT XR). revenue 24% 3-yr / 15% next yr; P/S 4.6 at 24.6% margin (TTM) = 2.8.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 24% 3-yr / 15% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 44% vs revenue 24% 3-yr; EPS 16% vs revenue 15% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 4.6 at 24.6% margin (TTM) = 2.8"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 1% in 90 days ($12.17 to $12.30)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found. Q3 report Nov 2: revenue +41%, INGREZZA sales guidance raised"
+    }
+   },
+   "revGrowth": 41.2,
+   "fwdPE": 13.61,
+   "fcfYield": 6.1,
+   "roic": null,
+   "fairValue": 160.22,
+   "buyBelow": 131.27,
+   "discountPct": -4.5,
+   "rewardRisk": null,
+   "impliedReturnPct": -1.5,
+   "spreadPct": 63.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 16, floor 10x) on EPS $12.30",
+      "value": 122.99,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "12.6x (formula 7 + 0.35 x G of 16; history and industry medians not verified) on TTM EBITDA $1.07B",
+      "value": 131.27,
+      "weight": 28.6,
+      "trimmed": false
+     },
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $7.65/share grown 8.1% for 5 yrs, 10% discount, 3% terminal",
+      "value": 139.29,
+      "weight": 21.4,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.4% yield (6 - G/10) on TTM FCF less stock pay $7.65/share",
+      "value": 174.38,
+      "weight": 35.7,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "4.92x sales (3 x 24.6% TTM margin / 15) on next-year revenue $43.56/share",
+      "value": 214.12,
+      "weight": 14.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "20.1x (12 + 0.5 x G of 16) on next-year EPS $12.30",
+      "value": 246.85,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 160.22,
+    "spreadPct": 63.0,
+    "low": 122.99,
+    "high": 246.85,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 64.4 (neutral); price above the 50-day average and above the 200-day average; 37.06% above the 52-week low; volume 0.96x the 30-day average; next earnings date not yet set",
+   "upgrade": "price must fall 22% to $131.27",
+   "tech": {
+    "rsi": 64.4,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 37.06,
+    "volVsAvg": 0.96,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Neurocrine Q3 2026 results (Finviz / PR Newswire)",
+     "url": "https://finviz.com/news/413707/neurocrine-biosciences-reports-third-quarter-2026-financial-results"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "NVDA",
+   "rank": 6,
+   "class": "approaching",
+   "price": 162.85,
+   "priceDate": "2026-11-13",
+   "reason": "AI and graphics chips. revenue 100% 3-yr / 67% next yr; P/S 13.0 at 65.2% margin (TTM) = 3.0.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 100% 3-yr / 67% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 204% vs revenue 100% 3-yr; EPS 70% vs revenue 67% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 13.0 at 65.2% margin (TTM) = 3.0"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 24% in 90 days ($12.82 to $15.85)"
+    },
+    "redFlags": {
+     "result": "unverified",
+     "detail": "number checks (sales, share count, margin) are clean; news checks (guidance, CEO/CFO, deals, restatements) were not done in this run"
+    }
+   },
+   "revGrowth": 105.9,
+   "fwdPE": 10.27,
+   "fcfYield": 3.2,
+   "roic": null,
+   "fairValue": 216.72,
+   "buyBelow": 118.86,
+   "discountPct": 24.9,
+   "rewardRisk": null,
+   "impliedReturnPct": 10.0,
+   "spreadPct": 193.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "EV/EBITDA",
+      "assumption": "14.0x (formula 7 + 0.35 x G of 70; history and industry medians not verified) on TTM EBITDA $201.27B",
+      "value": 117.0,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $4.93/share grown 15.0% for 5 yrs, 10% discount, 3% terminal",
+      "value": 118.86,
+      "weight": 21.4,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield (6 - G/10) on TTM FCF less stock pay $4.93/share",
+      "value": 123.29,
+      "weight": 35.7,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "20.0x (0.5 x G of 70, floor 10x) on EPS $15.85",
+      "value": 317.07,
+      "weight": 7.1,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "22.0x (12 + 0.5 x G of 70) on next-year EPS $15.85",
+      "value": 348.78,
+      "weight": 35.7,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "13.04x sales (3 x 65.2% TTM margin / 15) on next-year revenue $28.36/share",
+      "value": 369.9,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 216.72,
+    "spreadPct": 193.0,
+    "low": 117.0,
+    "high": 369.9,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 24.9 (oversold); price below the 50-day average and below the 200-day average; 9.44% above the 52-week low; volume 1.85x the 30-day average; next earnings 2026-11-17 (4 days)",
+   "upgrade": "price must fall 27% to $118.86",
+   "tech": {
+    "rsi": 24.9,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 9.44,
+    "volVsAvg": 1.85,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "IESC",
+   "rank": 7,
+   "class": "approaching",
+   "price": 170.28,
+   "priceDate": "2026-11-13",
+   "reason": "electrical contractor and data-center infrastructure. revenue 16% 3-yr / 48% next yr; P/S 1.8 at 12.4% margin (TTM) = 2.2.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 16% 3-yr / 48% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 118% vs revenue 16% 3-yr; EPS 17% vs revenue 48% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 1.8 at 12.4% margin (TTM) = 2.2"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 22% in 90 days ($11.10 to $13.51)"
+    },
+    "redFlags": {
+     "result": "unverified",
+     "detail": "number checks (sales, share count, margin) are clean; news checks (guidance, CEO/CFO, deals, restatements) were not done in this run"
+    }
+   },
+   "revGrowth": 39.6,
+   "fwdPE": null,
+   "fcfYield": 3.2,
+   "roic": null,
+   "fairValue": 190.5,
+   "buyBelow": 122.39,
+   "discountPct": 10.6,
+   "rewardRisk": null,
+   "impliedReturnPct": 3.8,
+   "spreadPct": 125.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $5.29/share grown 8.4% for 5 yrs, 10% discount, 3% terminal",
+      "value": 97.62,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.3% yield (6 - G/10) on TTM FCF less stock pay $5.29/share",
+      "value": 122.39,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 17, floor 10x) on EPS $13.51",
+      "value": 135.1,
+      "weight": 6.7,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "12.9x (formula 7 + 0.35 x G of 17; history and industry medians not verified) on TTM EBITDA $0.55B",
+      "value": 183.36,
+      "weight": 26.7,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "20.4x (12 + 0.5 x G of 17) on next-year EPS $13.51",
+      "value": 275.38,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "2.48x sales (3 x 12.4% TTM margin / 15) on next-year revenue $155.34/share",
+      "value": 384.65,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 190.5,
+    "spreadPct": 125.0,
+    "low": 97.62,
+    "high": 384.65,
+    "bear": null,
+    "bull": null,
+    "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 31.2 (neutral); price below the 50-day average and below the 200-day average; 19.36% above the 52-week low; volume 0.42x the 30-day average; next earnings 2026-11-20 (7 days)",
+   "upgrade": "price must fall 28% to $122.39",
+   "tech": {
+    "rsi": 31.2,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 19.36,
+    "volVsAvg": 0.42,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "B",
+   "rank": 8,
+   "class": "approaching",
+   "price": 37.59,
+   "priceDate": "2026-11-13",
+   "reason": "gold and copper miner. revenue 15% 3-yr / 14% next yr; P/S 2.8 at 32.9% margin (4-yr average) = 1.3.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 15% 3-yr / 14% next yr"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 130% vs revenue 15% 3-yr; EPS 19% vs revenue 14% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 2.8 at 32.9% margin (4-yr average) = 1.3"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS down 4% in 90 days ($4.37 to $4.18)"
+    },
+    "redFlags": {
+     "result": "unverified",
+     "detail": "number checks (sales, share count, margin) are clean; news checks (guidance, CEO/CFO, deals, restatements) were not done in this run"
+    }
+   },
+   "revGrowth": 22.3,
+   "fwdPE": 8.98,
+   "fcfYield": 3.8,
+   "roic": null,
+   "fairValue": 49.41,
+   "buyBelow": 22.1,
+   "discountPct": 23.9,
+   "rewardRisk": null,
+   "impliedReturnPct": 9.5,
+   "spreadPct": 262.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $1.24/share grown 7.1% for 5 yrs, 10% discount, 3% terminal",
+      "value": 21.65,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 14, floor 10x) on EPS $2.21",
+      "value": 22.1,
+      "weight": 6.7,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.6% yield (6 - G/10) on mid-cycle FCF less stock pay $1.24/share",
+      "value": 27.03,
+      "weight": 26.7,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "19.1x (12 + 0.5 x G of 14) on next-year EPS $2.21 (mid-cycle)",
+      "value": 42.29,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "12.0x (formula 7 + 0.35 x G of 14; history and industry medians not verified) on mid-cycle EBITDA $10.86B",
+      "value": 79.91,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "6.59x sales (3 x 32.9% 4-yr average margin / 15) on next-year revenue $14.46/share",
+      "value": 95.23,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 49.41,
+    "spreadPct": 262.0,
+    "low": 21.65,
+    "high": 95.23,
+    "bear": null,
+    "bull": null,
+    "note": "company type CYC; G uses next-year growth only (2-3 year consensus not in the data); cyclical: 4-yr average margins used (5 yrs not available)"
+   },
+   "entry": "RSI(14) 42.1 (neutral); price below the 50-day average and below the 200-day average; 10.89% above the 52-week low; volume 0.83x the 30-day average; next earnings 2027-02-04 (83 days)",
+   "upgrade": "price must fall 41% to $22.10",
+   "tech": {
+    "rsi": 42.1,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 10.89,
+    "volVsAvg": 0.83,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "EZPW",
+   "rank": 9,
+   "class": "approaching",
+   "price": 27.55,
+   "priceDate": "2026-11-13",
+   "reason": "pawn shops in the US and Latin America. EPS growth: 3-yr n/a, next yr n/a; price $27.55 vs book-value price $29.18.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "unverified",
+     "detail": "EPS growth: 3-yr n/a, next yr n/a"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "ROE 15.0% (latest; 3-yr average not available)"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "operating income 7.2x interest (latest fiscal year)"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "price $27.55 vs book-value price $29.18"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 2% in 90 days ($2.43 to $2.49)"
+    },
+    "redFlags": {
+     "result": "unverified",
+     "detail": "number checks (sales, share count, margin) are clean; news checks (guidance, CEO/CFO, deals, restatements) were not done in this run"
+    }
+   },
+   "revGrowth": 32.7,
+   "fwdPE": 11.05,
+   "fcfYield": 8.3,
+   "roic": null,
+   "fairValue": 25.6,
+   "buyBelow": 22.44,
+   "discountPct": -7.6,
+   "rewardRisk": null,
+   "impliedReturnPct": -2.4,
+   "spreadPct": 30.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "Forward P/E",
+      "assumption": "9.0x (8 + 0.3 x G of 0) on next-year EPS $2.49",
+      "value": 22.44,
+      "weight": 50.0,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 0, floor 10x) on EPS $2.49",
+      "value": 24.93,
+      "weight": 5.0,
+      "trimmed": false
+     },
+     {
+      "name": "Price-to-book",
+      "assumption": "1.50x book (ROE 15.0% / 10) on book value $19.43",
+      "value": 29.18,
+      "weight": 45.0,
+      "trimmed": false
+     }
+    ],
+    "composite": 25.6,
+    "spreadPct": 30.0,
+    "low": 22.44,
+    "high": 29.18,
+    "bear": null,
+    "bull": null,
+    "note": "company type FIN; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 38.4 (neutral); price below the 50-day average and below the 200-day average; 66.97% above the 52-week low; volume 1.78x the 30-day average; next earnings 2027-02-09 (88 days)",
+   "upgrade": "growth gate unverified: EPS growth: 3-yr n/a, next yr n/a; price must fall 19% to $22.44",
+   "tech": {
+    "rsi": 38.4,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 66.97,
+    "volVsAvg": 1.78,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "CTRE",
+   "rank": 10,
+   "class": "approaching",
+   "price": 38.07,
+   "priceDate": "2026-11-13",
+   "reason": "owns nursing and senior-care properties (REIT). revenue 25% 3-yr / 35% next yr; FFO per share not in the data.",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 25% 3-yr / 35% next yr"
+    },
+    "earnings": {
+     "result": "unverified",
+     "detail": "FFO per share history not in the data"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "operating income 4.9x interest (latest fiscal year)"
+    },
+    "marginPs": {
+     "result": "unverified",
+     "detail": "FFO per share not in the data"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 8% in 90 days ($1.75 to $1.90)"
+    },
+    "redFlags": {
+     "result": "fail",
+     "detail": "(4) diluted shares up 14% in 12 months"
+    }
+   },
+   "revGrowth": 33.2,
+   "fwdPE": 20.28,
+   "fcfYield": 4.9,
+   "roic": null,
+   "fairValue": 31.23,
+   "buyBelow": 18.98,
+   "discountPct": -21.9,
+   "rewardRisk": null,
+   "impliedReturnPct": -6.4,
+   "spreadPct": 75.0,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "EV/EBITDA",
+      "assumption": "10.8x (formula 7 + 0.35 x G of 11; history and industry medians not verified) on TTM EBITDA $0.53B",
+      "value": 17.11,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 11, floor 10x) on EPS $1.90",
+      "value": 18.98,
+      "weight": 11.1,
+      "trimmed": false
+     },
+     {
+      "name": "DCF",
+      "assumption": "FCF less stock pay $1.96/share grown 5.5% for 5 yrs, 10% discount, 3% terminal",
+      "value": 32.09,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "17.5x (12 + 0.5 x G of 11) on next-year EPS $1.90",
+      "value": 33.17,
+      "weight": 55.6,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.9% yield (6 - G/10) on TTM FCF less stock pay $1.96/share",
+      "value": 40.03,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 31.23,
+    "spreadPct": 75.0,
+    "low": 17.11,
+    "high": 40.03,
+    "bear": null,
+    "bull": null,
+    "note": "company type REIT; G uses next-year growth only (2-3 year consensus not in the data)"
+   },
+   "entry": "RSI(14) 56.2 (neutral); price above the 50-day average and below the 200-day average; 13.03% above the 52-week low; volume 0.94x the 30-day average; next earnings date not yet set",
+   "upgrade": "earnings gate unverified: FFO per share history not in the data; sales-multiple gate unverified: FFO per share not in the data; red flag: (4) diluted shares up 14% in 12 months; price must fall 50% to $18.98",
+   "tech": {
+    "rsi": 56.2,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 13.03,
+    "volVsAvg": 0.94,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
   }
+ ],
+ "watchlist": {
+  "adds": [
+   {
+    "symbol": "DAVE",
+    "name": "Dave Inc.",
+    "confidence": "approaching",
+    "reason": "revenue 39% 3-yr / 24% next yr PASS; EPS turned profitable 3-yr; EPS 29% vs revenue 24% next yr PASS; net cash PASS; P/S 5.1 at 32.5% margin (TTM) = 2.4 PASS. Price $277.04, fair value $431.01, buy at or below $414.93. Estimates check: next-year EPS up 4% in 90 days ($21.66 to $22.62). Q3 report Nov 4: 2026 guidance raised. Meets every Strict test on this data."
+   },
+   {
+    "symbol": "SE",
+    "name": "Sea Limited",
+    "confidence": "approaching",
+    "reason": "revenue 23% 3-yr / 23% next yr PASS; EPS turned profitable 3-yr; EPS 30% vs revenue 23% next yr PASS; net cash PASS; P/S 1.5 at 8.2% margin (TTM) = 2.8 PASS. Price $75.36, fair value $117.76, buy at or below $72.09. Estimates check: next-year EPS down 7% in 90 days ($5.14 to $4.77)."
+   },
+   {
+    "symbol": "EXEL",
+    "name": "Exelixis, Inc.",
+    "confidence": "approaching",
+    "reason": "revenue 13% 3-yr / 13% next yr PASS; EPS 71% vs revenue 13% 3-yr; EPS 14% vs revenue 13% next yr PASS; net cash PASS; P/S 6.7 at 40.2% margin (TTM) = 2.5 PASS. Price $69.00, fair value $74.05, buy at or below $50.80. Estimates check: next-year EPS up 6% in 90 days ($4.05 to $4.27)."
+   },
+   {
+    "symbol": "LRN",
+    "name": "Stride, Inc.",
+    "confidence": "research",
+    "reason": "revenue 11% 3-yr / 5% next yr FAIL; EPS 34% vs revenue 11% 3-yr; EPS 7% vs revenue 5% next yr PASS; net cash PASS; P/S 1.3 at 18.4% margin (TTM) = 1.0 PASS. Price $75.82, fair value $143.61, buy at or below $114.89. Estimates check: next-year EPS up 2% in 90 days ($9.43 to $9.61)."
+   },
+   {
+    "symbol": "UBER",
+    "name": "Uber Technologies, Inc.",
+    "confidence": "research",
+    "reason": "revenue 18% 3-yr / 16% next yr PASS; EPS turned profitable 3-yr; EPS 69% vs revenue 16% next yr PASS; net debt 1.0x EBITDA PASS; P/S 2.5 at 12.4% margin (TTM) = 3.0 FAIL. Price $69.69, fair value $96.73, buy at or below $88.14. Estimates check: next-year EPS down 5% in 90 days ($4.62 to $4.41)."
+   }
+  ],
+  "removes": []
+ }
 }
