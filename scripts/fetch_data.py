@@ -333,7 +333,9 @@ def fetch_info(t: str) -> dict | None:
             time.sleep(5 * (attempt + 1))
     else:
         return None
-    if not info:
+    # A real Yahoo answer always carries quoteType. When Yahoo blocks the request (HTTP 401 "Invalid Crumb",
+    # 429) yfinance can hand back an empty or stub dict; saving that would overwrite good cached data with blanks.
+    if not info or not info.get("quoteType"):
         return None
     earnings = info.get("earningsTimestampStart") or info.get("earningsTimestamp")
     return {
@@ -369,15 +371,18 @@ def refresh_fundamentals(tickers: list[str]) -> dict:
     # Also refresh entries saved before a field was added (e.g. "ps", "opMargin"), so new columns fill in on the next run.
     stale = [t for t in tickers
              if now - cache.get(t, {}).get("_fetched", 0) > FUND_MAX_AGE_HOURS * 3600 or "opMargin" not in cache.get(t, {}) or "_gate" not in cache.get(t, {})
+             or not cache.get(t, {}).get("type")
              or (cache.get(t, {}).get("type") == "EQUITY" and cache.get(t, {}).get("_gate", {}).get("v", 1) < GATE_VERSION)]
     stale.sort(key=lambda t: cache.get(t, {}).get("_fetched", 0))  # oldest first
     todo = stale[:FUND_PER_RUN]
     print(f"Refreshing company info for {len(todo)} of {len(stale)} stale tickers", flush=True)
     failures_in_a_row = 0
+    fetched_ok: dict = {}
     for i, t in enumerate(todo, 1):
         info = fetch_info(t)
         if info:
             cache[t] = info
+            fetched_ok[t] = True
             failures_in_a_row = 0
         else:
             failures_in_a_row += 1
@@ -387,6 +392,9 @@ def refresh_fundamentals(tickers: list[str]) -> dict:
         if i % 25 == 0:
             print(f"  {i}/{len(todo)}", flush=True)
         time.sleep(0.25)
+    kept = sum(1 for t in todo if not fetched_ok.get(t))
+    if kept:
+        print(f"  {kept} of {len(todo)} company-info fetches failed; kept the previously saved info for them", flush=True)
     # Drop tickers no longer on the list
     return {t: v for t, v in cache.items() if t in set(tickers)}
 
@@ -472,9 +480,16 @@ def write_candidates(have: set, updated: str) -> None:
     print(f"{len(cands)} watchlist candidates", flush=True)
     frames = download_prices(cands)
     out, missing = {}, []
+    try:  # previously saved company info, used when Yahoo blocks today's request
+        old = json.loads((DATA_DIR / "candidates.json").read_text(encoding="utf-8")).get("stocks", {})
+    except (FileNotFoundError, json.JSONDecodeError):
+        old = {}
     for t in cands:
         df = frames.get(t)
         info = fetch_info(t) if df is not None else None
+        if df is not None and not info and old.get(t, {}).get("type"):
+            info = {k: v for k, v in old[t].items() if k in ("name", "sector", "industry", "type", "exchange", "currency", "marketCap", "pe", "forwardPe", "ps", "opMargin", "netMargin", "revGrowth", "eps", "dividendRate", "beta", "targetPrice", "rating", "analysts", "earningsDate", "_gate")}
+            print(f"  {t}: Yahoo company info unavailable, kept the saved copy", flush=True)
         if df is None or not info:
             missing.append(t)
             continue
