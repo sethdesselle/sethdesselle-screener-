@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-15T19:52:06+00:00",
+ "updated": "2026-11-16T19:43:54+00:00",
  "asOf": "2026-11-13",
  "summary": {
   "screened": 168,
   "strict": 5,
   "approaching": 5,
-  "note": "Re-valued on Sunday Nov 15 under the five valuation rulings made that day (PEG cannot set the buy price; cash methods use forward figures; forward P/E cap 30x and DCF growth cap 25%; cyclicals on a 50/50 blend; EV/EBITDA from the NYU Stern industry table, Jan 2026). Still Friday's closes; gates, estimate checks and red-flag checks are unchanged from the earlier recheck. Class changes come from the rule changes, not from the companies. The whole list is re-screened on Monday's run."
+  "note": "Full re-screen on Monday Nov 16 of all 168 company tickers on closes of Fri Nov 13, after repairing the site's data feed (Yahoo had blocked company data and the update had overwritten it with blanks). 96 had at most one failed gate; 72 were eliminated. 26 had no failed gate. Gates 1-2 are forward-only with the 3-analyst minimum (IESC now has two unverified gates). SKHY not scored: ADR figures are in Korean won and were not converted. Fair values and red-flag checks for DAVE, B, EME and NBIX carry over from the Nov 15 verified run. Market sweep and full news checks were not run today."
  },
  "names": [
   {
@@ -18,11 +18,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 100% 3-yr / 67% next yr"
+     "detail": "revenue 67% next yr, 57 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 204% vs revenue 100% 3-yr; EPS 70% vs revenue 67% next yr"
+     "detail": "EPS 70% vs revenue 67% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -30,15 +30,15 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 13.0 at 65.2% margin (TTM) = 3.0"
+     "detail": "P/S 13.0 at 65.2% margin = 3.0"
     },
     "estimates": {
      "result": "pass",
-     "detail": "next-year EPS up 24% in 90 days ($12.82 to $15.85)"
+     "detail": "next-year EPS up 23% in 90 days ($12.85 to $15.84)"
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q2 report Aug 26: revenue +106%, Q3 outlook $108B; next report Nov 17. Government suits: none filed; a Justice Department review of the Hugging Face purchase is reported, which is an inquiry and does not count. Quarterly operating margin 66.2% vs 60.8% a year ago."
+     "detail": "none found under the rules. Newer news (Nov 8-10): the board opened an independent investigation of CEO Jensen Huang's ties to a Megaspeed executive; a private shareholder class action (Rosen Law, N.D. Cal., filed Nov 9-10) names NVIDIA and Huang; the Justice Department's National Security Division is reported to be investigating Megaspeed (an inquiry about a distributor, not a suit against NVIDIA). Private suits and inquiries do not count. No guidance cut, no CEO/CFO departure. Q3 report due Nov 17. Quarterly operating margin 66.2% vs 60.8% a year ago."
     }
    },
    "revGrowth": 105.9,
@@ -107,7 +107,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price)"
    },
-   "entry": "RSI(14) 24.9 (oversold); price below the 50-day average and below the 200-day average; 9.44% above the 52-week low; volume 1.85x the 30-day average; next earnings 2026-11-17 (4 days)",
+   "entry": "RSI(14) 24.9 (oversold); price below the 50-day average and below the 200-day average; 9.44% above the 52-week low; volume 1.74x the 30-day average; next earnings 2026-11-17 (1 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
     "rsi": 24.9,
@@ -115,7 +115,7 @@
     "macd": null,
     "atrPct": null,
     "fromLowPct": 9.44,
-    "volVsAvg": 1.85,
+    "volVsAvg": 1.74,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -143,11 +143,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 12% 3-yr / 26% next yr"
+     "detail": "revenue 26% next yr, 8 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 39% vs revenue 12% 3-yr; EPS 28% vs revenue 26% next yr"
+     "detail": "EPS 28% vs revenue 26% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -155,7 +155,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.1 at 18.6% margin (TTM) = 1.7"
+     "detail": "P/S 2.1 at 18.6% margin = 1.7"
     },
     "estimates": {
      "result": "pass",
@@ -163,7 +163,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Oct 28: revenue +127%, 2026 guidance raised; share price fall since Nov 4 was sector-wide. Government suits: none found. Quarterly operating margin 19.9% vs 19.2% a year ago."
+     "detail": "none found. Q3 report (early Nov): revenue +127%, 2026 guidance raised to $4.63-4.73B revenue. Government suits: none found. Quarterly operating margin 19.9% vs 19.2% a year ago (Nov 15 check; Nov 16 news search found nothing new)."
     }
    },
    "revGrowth": 127.0,
@@ -232,7 +232,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price); PEG $387.71 is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 35.5 (neutral); price below the 50-day average and below the 200-day average; 22.15% above the 52-week low; volume 0.69x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 35.5 (neutral); price below the 50-day average and below the 200-day average; 22.15% above the 52-week low; volume 0.70x the 30-day average; next earnings 2026-10-28 (-19 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
     "rsi": 35.5,
@@ -240,7 +240,7 @@
     "macd": null,
     "atrPct": null,
     "fromLowPct": 22.15,
-    "volVsAvg": 0.69,
+    "volVsAvg": 0.7,
     "staging": "Analysis only, no new capital."
    },
    "sources": [
@@ -264,11 +264,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 30% 3-yr / 27% next yr"
+     "detail": "revenue 27% next yr, 12 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 62% vs revenue 30% 3-yr; EPS 32% vs revenue 27% next yr"
+     "detail": "EPS 32% vs revenue 27% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -276,7 +276,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 3.1 at 16.7% margin (TTM) = 2.8"
+     "detail": "P/S 3.1 at 16.8% margin = 2.8"
     },
     "estimates": {
      "result": "pass",
@@ -284,7 +284,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Oct 22: revenue +54%, record $17.8B backlog. CFO retires after 2026 results; successor already named. Government suits: none found. Quarterly operating margin 16.5% vs 15.4% a year ago."
+     "detail": "none found. Q3 report Oct 22: revenue +54%, record $17.8B backlog, guidance raised. CFO Bill George retires after the 2026 annual report; successor Julie Shaeff already named, so rule 7 is not triggered. Government suits: none found. Quarterly operating margin 16.5% vs 15.4% a year ago."
     }
    },
    "revGrowth": 53.7,
@@ -353,15 +353,15 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price)"
    },
-   "entry": "RSI(14) 39.1 (neutral); price below the 50-day average and below the 200-day average; 32.48% above the 52-week low; volume 0.56x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 39.1 (neutral); price below the 50-day average and below the 200-day average; 31.18% above the 52-week low; volume 0.55x the 30-day average; next earnings 2026-10-22 (-25 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
     "rsi": 39.1,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 32.48,
-    "volVsAvg": 0.56,
+    "fromLowPct": 31.18,
+    "volVsAvg": 0.55,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -381,15 +381,15 @@
    "class": "strict",
    "price": 170.28,
    "priceDate": "2026-11-13",
-   "reason": "electrical contractor and data-center infrastructure. revenue 16% 3-yr / 48% next yr; P/S 1.8 at 12.4% margin (TTM) = 2.2.",
+   "reason": "electrical contractor and data-center infrastructure. revenue 48% next yr (1 analyst); P/S 1.8 at 12.4% margin (TTM) = 2.2. Gates 1 and 2 UNVERIFIED: only 1 analyst on the estimates (needs 3); second source not checked, so check before acting. Not auto-addable.",
    "gates": {
     "revenueGrowth": {
-     "result": "pass",
-     "detail": "revenue 16% 3-yr / 48% next yr"
+     "result": "unverified",
+     "detail": "revenue 48% next yr; fewer than 3 analysts (1.0)"
     },
     "earnings": {
-     "result": "pass",
-     "detail": "EPS 118% vs revenue 16% 3-yr; EPS 17% vs revenue 48% next yr"
+     "result": "unverified",
+     "detail": "fewer than 3 analysts (EPS 1.0, rev 1.0)"
     },
     "balanceSheet": {
      "result": "pass",
@@ -397,7 +397,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.8 at 12.4% margin (TTM) = 2.2"
+     "detail": "P/S 1.8 at 12.4% margin = 2.2"
     },
     "estimates": {
      "result": "pass",
@@ -405,7 +405,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Fiscal Q3 report Jul 31: revenue +40%, backlog $4.5B; next report Nov 20. Government suits: none found. Quarterly operating margin 14.4% vs 12.6% a year ago."
+     "detail": "none found. Fiscal Q3 report Jul 31: revenue +40%, backlog $4.5B, two-for-one split announced; next report about Nov 20. Government suits: none found (Nov 16 news search found nothing new). Quarterly operating margin 14.4% vs 12.6% a year ago."
     }
    },
    "revGrowth": 39.6,
@@ -474,7 +474,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price); PEG $135.10 is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 31.2 (neutral); price below the 50-day average and below the 200-day average; 19.36% above the 52-week low; volume 0.42x the 30-day average; next earnings 2026-11-20 (7 days)",
+   "entry": "RSI(14) 31.2 (neutral); price below the 50-day average and below the 200-day average; 19.36% above the 52-week low; volume 0.45x the 30-day average; next earnings 2026-11-20 (4 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
     "rsi": 31.2,
@@ -482,7 +482,7 @@
     "macd": null,
     "atrPct": null,
     "fromLowPct": 19.36,
-    "volVsAvg": 0.42,
+    "volVsAvg": 0.45,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -506,11 +506,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 13% 3-yr / 13% next yr"
+     "detail": "revenue 13% next yr, 15 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 71% vs revenue 13% 3-yr; EPS 14% vs revenue 13% next yr"
+     "detail": "EPS 14% vs revenue 13% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -518,7 +518,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 6.7 at 40.2% margin (TTM) = 2.5"
+     "detail": "P/S 6.8 at 40.2% margin = 2.5"
     },
     "estimates": {
      "result": "pass",
@@ -526,7 +526,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Oct 29: revenue +10%, 2026 revenue guidance kept at $2.50-2.55B. Government suits: none found; the CABOMETYX patent trial that began Nov 2 is a private case and does not count. FDA decision on zanzalintinib moved to Mar 3 2027. Quarterly operating margin 40.8% vs 42.9% a year ago (2 points lower, inside the 5-point limit)."
+     "detail": "none found. Q3 report Oct 29: revenue +10%, 2026 revenue guidance kept at $2.50-2.55B (the cut was at the Q2 report in August, not the latest). Law-firm investigations and the CABOMETYX patent trial are private matters and do not count. Government suits: none found. Quarterly operating margin 40.8% vs 42.9% a year ago."
     }
    },
    "revGrowth": 10.2,
@@ -595,7 +595,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price)"
    },
-   "entry": "RSI(14) 58.6 (neutral); price above the 50-day average and above the 200-day average; 73.76% above the 52-week low; volume 0.53x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 58.6 (neutral); price above the 50-day average and above the 200-day average; 73.76% above the 52-week low; volume 0.54x the 30-day average; next earnings 2026-10-29 (-18 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
     "rsi": 58.6,
@@ -603,7 +603,7 @@
     "macd": null,
     "atrPct": null,
     "fromLowPct": 73.76,
-    "volVsAvg": 0.53,
+    "volVsAvg": 0.54,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -631,11 +631,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 39% 3-yr / 24% next yr"
+     "detail": "revenue 24% next yr, 14 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS turned profitable 3-yr; EPS 29% vs revenue 24% next yr"
+     "detail": "EPS 29% vs revenue 24% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -643,7 +643,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.1 at 32.5% margin (TTM) = 2.4"
+     "detail": "P/S 5.1 at 34.1% margin = 2.3"
     },
     "estimates": {
      "result": "pass",
@@ -651,7 +651,7 @@
     },
     "redFlags": {
      "result": "fail",
-     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised"
+     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised (last full check Nov 15; not repeated today)"
     }
    },
    "revGrowth": 31.2,
@@ -699,7 +699,7 @@
     "bull": null,
     "note": "company type LENDER (your Nov 15 ruling): valued on forward P/E, forward P/S and PEG only; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price); forward EPS reduced for stock pay; PEG $270.36 is lower but does not set the buy price; methods agree closely so the cushion is thin"
    },
-   "entry": "RSI(14) 38.2 (neutral); price below the 50-day average and below the 200-day average; 82.01% above the 52-week low; volume 0.71x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 38.2 (neutral); price below the 50-day average and below the 200-day average; 82.01% above the 52-week low; volume 0.71x the 30-day average; next earnings 2026-11-04 (-12 days)",
    "upgrade": "red flag: Justice Department / FTC lawsuit still open; red flag: quarterly operating margin 24.3% vs 30.5% a year earlier (the price is already at or below the buy price)",
    "tech": {
     "rsi": 38.2,
@@ -730,108 +730,8 @@
    ]
   },
   {
-   "symbol": "ETOR",
-   "rank": 7,
-   "class": "approaching",
-   "price": 22.5,
-   "priceDate": "2026-11-13",
-   "reason": "online trading and investing platform. EPS growth turned profitable 3-yr / 27% next yr (financial: earnings used); price $22.50 vs book-value price $27.05.",
-   "gates": {
-    "revenueGrowth": {
-     "result": "pass",
-     "detail": "EPS growth turned profitable 3-yr / 27% next yr (financial: earnings used)"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "ROE 15.9% (latest; 3-yr average not available)"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "operating income 6.6x interest (latest fiscal year)"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "price $22.50 vs book-value price $27.05"
-    },
-    "estimates": {
-     "result": "fail",
-     "detail": "next-year EPS down 16% in 90 days ($3.08 to $2.58)"
-    },
-    "redFlags": {
-     "result": "fail",
-     "detail": "(3) latest-quarter revenue -64% vs a year earlier. That figure counts crypto sales in full; the company's own measure (net contribution) fell 13% to $186M and net income fell 74% to $15M in the Q3 report Nov 10, which missed estimates. Government suits: none found in the US (SEC case settled 2024). Quarterly operating margin 1.8% vs 1.7% a year ago."
-    }
-   },
-   "revGrowth": -64.2,
-   "fwdPE": 8.73,
-   "fcfYield": 15.9,
-   "roic": null,
-   "fairValue": 30.68,
-   "buyBelow": 27.05,
-   "discountPct": 26.7,
-   "rewardRisk": null,
-   "impliedReturnPct": 10.9,
-   "spreadPct": 31.0,
-   "strictChecks": {
-    "allMethods": true
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "Price-to-book",
-      "assumption": "1.59x book (ROE 15.9% / 10) on book value $17.00",
-      "value": 27.05,
-      "weight": 45.0,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/E",
-      "assumption": "13.0x (8 + 0.3 x G of 27) on next-year EPS $2.58",
-      "value": 33.49,
-      "weight": 50.0,
-      "trimmed": false
-     },
-     {
-      "name": "PEG",
-      "assumption": "13.7x (0.5 x G of 27, floor 10x) on EPS $2.58",
-      "value": 35.31,
-      "weight": 5.0,
-      "trimmed": false
-     }
-    ],
-    "composite": 30.68,
-    "spreadPct": 31.0,
-    "low": 27.05,
-    "high": 35.31,
-    "bear": null,
-    "bull": null,
-    "note": "company type FIN; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 rule changes do not alter a financial (P/E range 9x-13x unchanged; PEG cannot set the buy price)"
-   },
-   "entry": "RSI(14) 40.5 (neutral); price below the 50-day average and below the 200-day average; 5.66% above the 52-week low; volume 0.99x the 30-day average; next earnings date not yet set",
-   "upgrade": "falling estimates: next-year EPS down 16% in 90 days ($3.08 to $2.58); red flag: latest-quarter revenue -64% vs a year earlier (net contribution -13%, net income -74%) (the price is already at or below the buy price)",
-   "tech": {
-    "rsi": 40.5,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 5.66,
-    "volVsAvg": 0.99,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "eToro Q3 2026 results (GlobeNewswire)",
-     "url": "https://globenewswire.com/news-release/2026/11/10/3399315/0/en/etoro-reports-third-quarter-2026-results.html"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates)",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
    "symbol": "B",
-   "rank": 8,
+   "rank": 7,
    "class": "approaching",
    "price": 37.59,
    "priceDate": "2026-11-13",
@@ -839,11 +739,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 15% 3-yr / 14% next yr"
+     "detail": "revenue 14% next yr, 15 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 130% vs revenue 15% 3-yr; EPS 19% vs revenue 14% next yr"
+     "detail": "EPS 19% vs revenue 14% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -859,7 +759,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Nov 9: 2026 production guidance kept; costs per ounce rose from a year ago. Government suits: none found; the Mali dispute was settled in Nov 2025. Filed Nov 10 to list its North American gold mines as a separate company (American Barrick). Quarterly operating margin 50.0% vs 50.3% a year ago."
+     "detail": "none found. Q3 report Nov 9: 2026 production guidance kept; costs per ounce rose from a year ago. Government suits: none found; the Mali dispute was settled in Nov 2025. Filed Nov 10 to list its North American gold mines as a separate company (American Barrick). Quarterly operating margin 50.0% vs 50.3% a year ago. Nov 16 search: Q3 guidance kept; plan to list North American gold assets; no new flags."
     }
    },
    "revGrowth": 22.3,
@@ -928,14 +828,14 @@
     "bull": null,
     "note": "company type CYC; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price); cyclical: 50/50 blend of mid-cycle and forward figures; 4-yr average margins used (5 yrs not available)"
    },
-   "entry": "RSI(14) 42.1 (neutral); price below the 50-day average and below the 200-day average; 10.89% above the 52-week low; volume 0.83x the 30-day average; next earnings 2027-02-04 (83 days)",
+   "entry": "RSI(14) 42.1 (neutral); price below the 50-day average and below the 200-day average; 10.88% above the 52-week low; volume 0.83x the 30-day average; next earnings 2027-02-04 (80 days)",
    "upgrade": "price must fall to $37.47 (now 0.3% above)",
    "tech": {
     "rsi": 42.1,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 10.89,
+    "fromLowPct": 10.88,
     "volVsAvg": 0.83,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
@@ -956,7 +856,7 @@
   },
   {
    "symbol": "EME",
-   "rank": 9,
+   "rank": 8,
    "class": "approaching",
    "price": 659.36,
    "priceDate": "2026-11-13",
@@ -964,11 +864,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 15% 3-yr / 14% next yr"
+     "detail": "revenue 14% next yr, 12 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 52% vs revenue 15% 3-yr; EPS 17% vs revenue 14% next yr"
+     "detail": "EPS 17% vs revenue 14% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -976,7 +876,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.5 at 9.9% margin (TTM) = 2.2"
+     "detail": "P/S 1.5 at 9.9% margin = 2.2"
     },
     "estimates": {
      "result": "pass",
@@ -984,7 +884,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Oct 29: revenue +29%, 2026 guidance raised. Government suits: none found. Quarterly operating margin 10.5% vs 9.4% a year ago."
+     "detail": "none found. Q3 report Oct 29: revenue +29%, 2026 guidance raised. Government suits: none found. Quarterly operating margin 10.5% vs 9.4% a year ago. (last full check Nov 15; not repeated today)"
     }
    },
    "revGrowth": 28.8,
@@ -1053,7 +953,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price)"
    },
-   "entry": "RSI(14) 44.6 (neutral); price below the 50-day average and below the 200-day average; 16.97% above the 52-week low; volume 0.54x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 44.6 (neutral); price below the 50-day average and below the 200-day average; 16.97% above the 52-week low; volume 0.53x the 30-day average; next earnings 2026-10-29 (-18 days)",
    "upgrade": "price must fall 3% to $642.45",
    "tech": {
     "rsi": 44.6,
@@ -1061,7 +961,7 @@
     "macd": null,
     "atrPct": null,
     "fromLowPct": 16.97,
-    "volVsAvg": 0.54,
+    "volVsAvg": 0.53,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1077,7 +977,7 @@
   },
   {
    "symbol": "NBIX",
-   "rank": 10,
+   "rank": 9,
    "class": "approaching",
    "price": 167.4,
    "priceDate": "2026-11-13",
@@ -1085,11 +985,11 @@
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 24% 3-yr / 15% next yr"
+     "detail": "revenue 15% next yr, 25 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 44% vs revenue 24% 3-yr; EPS 16% vs revenue 15% next yr"
+     "detail": "EPS 16% vs revenue 15% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -1097,7 +997,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 4.6 at 24.6% margin (TTM) = 2.8"
+     "detail": "P/S 4.6 at 26.6% margin = 2.6"
     },
     "estimates": {
      "result": "pass",
@@ -1105,7 +1005,7 @@
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found. Q3 report Nov 2: revenue +41%, INGREZZA sales guidance raised. Government suits: none filed; a Justice Department request for documents on INGREZZA marketing (Aug 2025) is still open, which is an investigation and does not count. Quarterly operating margin 30.6% vs 30.1% a year ago."
+     "detail": "none found. Q3 report Nov 2: revenue +41%, INGREZZA sales guidance raised. Government suits: none filed; a Justice Department request for documents on INGREZZA marketing (Aug 2025) is still open, which is an investigation and does not count. Quarterly operating margin 30.6% vs 30.1% a year ago. (last full check Nov 15; not repeated today)"
     }
    },
    "revGrowth": 41.2,
@@ -1174,7 +1074,7 @@
     "bull": null,
     "note": "company type STD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied (forward cash figures, 30x P/E cap, 25% DCF cap, industry EV/EBITDA, PEG cannot set the buy price)"
    },
-   "entry": "RSI(14) 64.4 (neutral); price above the 50-day average and above the 200-day average; 37.06% above the 52-week low; volume 0.96x the 30-day average; next earnings date not yet set",
+   "entry": "RSI(14) 64.4 (neutral); price above the 50-day average and above the 200-day average; 37.06% above the 52-week low; volume 0.96x the 30-day average; next earnings 2026-11-02 (-14 days)",
    "upgrade": "price must fall 12% to $147.97",
    "tech": {
     "rsi": 64.4,
@@ -1199,39 +1099,150 @@
      "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
     }
    ]
+  },
+  {
+   "symbol": "CLS",
+   "price": 240.34,
+   "priceDate": "2026-11-13",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 91% next yr, 18 analysts"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 87% vs revenue 91% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 1.7 at 8.3% margin = 3.0"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 11% in 90 days ($19.53 to $21.77)"
+    },
+    "redFlags": {
+     "result": "unverified",
+     "detail": "news and filing checks not run for this name today (it is Approaching, so the class does not depend on them). Data checks: latest-quarter revenue not below year ago; share count change within 10%; quarterly operating margin not 5 points below year ago."
+    }
+   },
+   "revGrowth": 82.5,
+   "fwdPE": 10.78,
+   "fcfYield": 1.8,
+   "roic": null,
+   "fairValue": 438.03,
+   "buyBelow": 204.83,
+   "discountPct": 45.1,
+   "rewardRisk": null,
+   "impliedReturnPct": 22.1,
+   "spreadPct": 173,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield on forward SBC-adj FCF $7.25/sh (F 91%)",
+      "value": 181.13,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "DCF yr1 $7.25 grown 25%/yr, 10% disc, 3% term",
+      "value": 204.83,
+      "weight": 30.0,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "20.0x (0.5 x G of 88, floor 10 cap 20) on EPS $21.77",
+      "value": 435.45,
+      "weight": 10.0,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "1.66x (3 x 8.3% margin / 15) on next-yr revenue $330.56/sh",
+      "value": 548.73,
+      "weight": 20.0,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "19.99x (industry: NYU Stern Jan 2026 \"Electronics (General)\"; own 5-yr median not verified) on forward EBITDA $3.25B",
+      "value": 558.22,
+      "weight": 40.0,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "30.0x on EPS $21.77 (G 88)",
+      "value": 653.18,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 438.03,
+    "spreadPct": 173,
+    "low": 181.13,
+    "high": 653.18,
+    "bear": null,
+    "bull": null,
+    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; own 5-yr EV/EBITDA median not verified, industry figure used; price is 17.3% above the buy price"
+   },
+   "sources": [],
+   "rank": 10,
+   "tech": {
+    "rsi": 41.7,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 21.69,
+    "volVsAvg": 0.93,
+    "staging": "Analysis only, no new capital."
+   },
+   "entry": "RSI(14) 41.7 (neutral); price below the 50-day average and below the 200-day average; 21.69% above the 52-week low; volume 0.93x the 30-day average; next earnings 2027-01-27 (72 days)",
+   "reason": "electronics maker for data-center and networking customers. revenue revenue 91% next yr, 18 analysts; P/S P/S 1.7 at 8.3% margin = 3.0. Analysis only, no new capital. Fair value from snapshot data (filing-level checks and news red-flag search not run for this name).",
+   "class": "approaching"
   }
  ],
  "watchlist": {
   "adds": [
    {
+    "symbol": "ADMA",
+    "name": "ADMA Biologics Inc",
+    "confidence": "approaching",
+    "reason": "revenue 15% next yr, 4 analysts PASS; EPS 16% vs revenue 15% next yr PASS; net debt 0.3x EBITDA PASS; P/S 5.9 at 44.9% margin = 2.0 PASS. Price $13.72 (Nov 16), fair value $16.18, buy at or below $12.62. Passes all four gates on snapshot data; not auto-added today because filing-level checks and the news red-flag search were not run."
+   },
+   {
+    "symbol": "MYRG",
+    "name": "MYR Group, Inc.",
+    "confidence": "approaching",
+    "reason": "revenue 15% next yr, 5 analysts PASS; EPS 18% vs revenue 15% next yr PASS; net debt 0.8x EBITDA PASS; P/S 1.0 at 6.1% margin = 2.4 PASS. Price $267.53 (Nov 16), fair value $279.64, buy at or below $207.69. Passes all four gates on snapshot data; not auto-added today because filing-level checks and the news red-flag search were not run."
+   },
+   {
+    "symbol": "CRS",
+    "name": "Carpenter Technology Corporatio",
+    "confidence": "approaching",
+    "reason": "revenue 10% next yr, 7 analysts PASS; EPS 19% vs revenue 10% next yr PASS; net debt 0.6x EBITDA PASS; P/S 4.4 at 23.2% margin = 2.8 PASS. Price $279.89 (Nov 16), fair value $246.43, buy at or below $167.89. Passes all four gates on snapshot data; not auto-added today because filing-level checks and the news red-flag search were not run."
+   },
+   {
     "symbol": "SE",
     "name": "Sea Limited",
     "confidence": "approaching",
-    "reason": "revenue 23% 3-yr / 23% next yr PASS; EPS turned profitable 3-yr; EPS 30% vs revenue 23% next yr PASS; net cash PASS; P/S 1.5 at 8.2% margin (TTM) = 2.8 PASS. Price $75.36, fair value $146.94, buy at or below $111.92 (Nov 15 valuation rules). Estimates check: next-year EPS down 7% in 90 days ($5.14 to $4.77). Not added: blocked by the falling-estimates check."
+    "reason": "revenue 22% next yr, 26 analysts PASS; EPS 30% vs revenue 22% next yr PASS; net cash PASS; P/S 1.5 at 8.2% margin = 2.7 PASS. Price $72.07 (Nov 16), fair value $118.01, buy at or below $112.70. Not added: blocked by the falling-estimates check (next-year EPS down more than 5% in 90 days)."
    },
    {
-    "symbol": "LRN",
-    "name": "Stride, Inc.",
-    "confidence": "research",
-    "reason": "revenue 11% 3-yr / 5% next yr FAIL; EPS 34% vs revenue 11% 3-yr; EPS 7% vs revenue 5% next yr PASS; net cash PASS; P/S 1.3 at 18.4% margin (TTM) = 1.0 PASS. Price $75.82, fair value $147.02, buy at or below $118.47 (Nov 15 valuation rules). Estimates check: next-year EPS up 2% in 90 days ($9.43 to $9.61)."
-   },
-   {
-    "symbol": "UBER",
-    "name": "Uber Technologies, Inc.",
-    "confidence": "research",
-    "reason": "revenue 18% 3-yr / 16% next yr PASS; EPS turned profitable 3-yr; EPS 69% vs revenue 16% next yr PASS; net debt 1.0x EBITDA PASS; P/S 2.5 at 12.4% margin (TTM) = 3.0 FAIL. Price $69.69, fair value $121.22, buy at or below $118.10 (Nov 15 valuation rules). Estimates check: next-year EPS down 5% in 90 days ($4.62 to $4.41)."
-   },
-   {
-    "symbol": "HALO",
-    "name": "Halozyme Therapeutics, Inc.",
-    "confidence": "research",
-    "reason": "revenue 28% 3-yr / 15% next yr PASS; EPS 21% vs revenue 28% 3-yr; EPS 19% vs revenue 15% next yr PASS; net debt 1.9x EBITDA FAIL; P/S 6.3 at 55.9% margin (TTM) = 1.7 PASS. Price $100.27, fair value $142.89, buy at or below $121.71 (Nov 15 valuation rules). Estimates check: next-year EPS up 2% in 90 days ($10.39 to $10.59)."
-   },
-   {
-    "symbol": "TPC",
-    "name": "Tutor Perini Corporation",
-    "confidence": "research",
-    "reason": "revenue 14% 3-yr / 14% next yr PASS; EPS turned profitable 3-yr; EPS 9% vs revenue 14% next yr FAIL; net cash PASS; P/S 0.8 at 5.6% margin (TTM) = 2.2 PASS. Price $98.79, fair value $147.81, buy at or below $106.70 (Nov 15 valuation rules). Estimates check: next-year EPS up 7% in 90 days ($6.07 to $6.52)."
+    "symbol": "UTHR",
+    "name": "United Therapeutics Corporation",
+    "confidence": "approaching",
+    "reason": "revenue 11% next yr, 14 analysts PASS; EPS 26% vs revenue 11% next yr PASS; net cash PASS; P/S 7.8 at 39.4% margin = 3.0 PASS. Price $585.20 (Nov 16), fair value $501.89, buy at or below $433.23. Not added: quarterly operating margin 29.0% vs 48.7% a year ago (red flag 9)."
    }
   ],
   "removes": []
