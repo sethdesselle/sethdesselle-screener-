@@ -31,6 +31,15 @@
   const fix = (x, d = 1) => isNum(x) ? x.toFixed(d) : "–";
   const pct = (x, d = 2) => isNum(x) ? (x > 0 ? "+" : "") + x.toFixed(d) + "%" : "–";
   const dirCls = (x) => !isNum(x) ? "" : x > 0 ? "up" : x < 0 ? "down" : "";
+  // Pre-market / after-hours price (only present when the latest data run happened outside regular hours)
+  const extTag = (s) => {
+    if (!s || !isNum(s.extPrice) || !s.extSession) return "";
+    const t = s.extTime ? new Date(s.extTime) : null;
+    if (t && Date.now() - t.getTime() > 4 * 86400000) return "";
+    const when = t ? t.toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" }) : "";
+    const label = s.extSession === "pre" ? "Pre" : "AH";
+    return `<span class="ext ${dirCls(s.extChangePct)}" title="${s.extSession === "pre" ? "Pre-market" : "After-hours"} price as of ${when} (vs. last close)">${label} ${money(s.extPrice)} ${pct(s.extChangePct)}</span>`;
+  };
   const big = (x) => {
     if (!isNum(x)) return "–";
     const a = Math.abs(x);
@@ -67,10 +76,10 @@
   // ------------------------------------------------------------ columns
   const COLS = [
     { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b>${t1Badge(s)}${restrictedTag(s.symbol)}<span class="nm">${esc(s.name)}</span></div></div>` },
-    { key: "price", label: "Price", desk: true, cell: (s) => money(s.price) },
+    { key: "price", label: "Price", desk: true, cell: (s) => `${money(s.price)}${extTag(s) ? `<div class="ext-row">${extTag(s)}</div>` : ""}` },
     { key: "changePct", label: "Day", desk: true, cell: (s) => `<span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` },
     { key: "perfM1", label: "30-day", sortable: false, cell: (s) => sparkSvg(s.spark) },
-    { key: "price", label: "", mobile: true, sortable: false, cell: (s) => `<div class="price-cell"><b>${money(s.price)}</b><span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span></div>` },
+    { key: "price", label: "", mobile: true, sortable: false, cell: (s) => `<div class="price-cell"><b>${money(s.price)}</b><span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>${extTag(s)}</div>` },
     { key: "relVolume", label: "Vol (rel)", desk: true, cell: (s) => `${big(s.volume)} <span class="muted">${isNum(s.relVolume) ? fix(s.relVolume, 1) + "×" : ""}</span>` },
     { key: "marketCap", label: "Mkt cap", desk: true, cell: (s) => big(s.marketCap) },
     { key: "pe", label: "P/E", desk: true, cell: (s) => s.pe > 0 ? fix(s.pe, 1) : "–" },
@@ -277,7 +286,7 @@
       return `<article class="t1-card" ${s ? `data-open="${esc(n.symbol)}"` : ""}>
         <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}${zoneTag(n, s && isNum(s.price) ? s.price : n.price)}
           <span class="nm">${esc(s ? s.name : "")}</span></div>
-          <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}</div></div>
+          <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}${extTag(s)}</div></div>
         ${(() => { const v = verdict(n, price); return `<p class="verdict ${v.cls}"><b>${v.text}</b><span>${v.sub}</span></p>`; })()}
         ${fvBar(n, price)}
         ${gateChips(n)}
@@ -594,6 +603,7 @@
     $("#d-price").textContent = (s.currency && s.currency !== "USD" ? s.currency + " " : "$") + money(s.price);
     $("#d-change").className = dirCls(s.changePct);
     $("#d-change").textContent = `${isNum(s.change) ? (s.change > 0 ? "+" : "") + money(s.change) : ""} (${pct(s.changePct)}) today`;
+    { let x = $("#d-ext"); if (!x) { x = document.createElement("div"); x.id = "d-ext"; $("#d-change").parentNode.appendChild(x); } x.innerHTML = extTag(s); }
     $("#d-fav").classList.toggle("on", favs.has(sym));
     $("#d-yahoo").href = `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}`;
     $("#d-news").href = `https://finance.yahoo.com/quote/${encodeURIComponent(sym)}/news`;

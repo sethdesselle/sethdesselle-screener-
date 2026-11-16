@@ -305,3 +305,10 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .fv-dot{position:absolute;top:-3px;width:16px;height:16px;border-radius:50%;background:var(--accent);border:2px solid var(--panel);transform:translateX(-8px)}
 .fv-lbl .lg{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:middle}.lg.buy{background:var(--up);opacity:.6}.lg.fair{background:var(--star);border-radius:2px;width:4px}.lg.now{background:var(--accent)}
 .tech.more>summary{font-weight:600}
+
+/* Pre-market / after-hours price */
+.ext { display: inline-block; font-size: 12px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.ext.up { color: var(--up, #16a34a); }
+.ext.down { color: var(--down, #dc2626); }
+.ext-row { margin-top: 2px; }
+.price-cell .ext { margin-top: 2px; }

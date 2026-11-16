@@ -168,6 +168,63 @@ def price_metrics(df: pd.DataFrame) -> dict:
     }
 
 
+def download_extended(tickers: list[str], frames: dict[str, pd.DataFrame]) -> dict[str, dict]:
+    """Latest pre-market / after-hours price for each ticker, from 1-minute bars that include extended hours.
+
+    Yahoo's extended session runs 4:00am-8:00pm New York time. Returns {ticker: {extPrice, extChange,
+    extChangePct, extSession ("pre"/"post"), extTime (ISO, UTC)}} only for tickers that have an
+    extended-hours bar newer than the last regular close. Never raises: extended prices are a bonus.
+    """
+    out: dict[str, dict] = {}
+    ny = "America/New_York"
+    for i in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[i:i + BATCH_SIZE]
+        try:
+            raw = yf.download(batch, period="2d", interval="1m", prepost=True, group_by="ticker",
+                              auto_adjust=False, threads=True, progress=False)
+        except Exception as e:
+            print(f"  extended-hours download failed ({e}); skipping batch", flush=True)
+            continue
+        if raw is None or raw.empty:
+            continue
+        for t in batch:
+            try:
+                df = raw[t] if isinstance(raw.columns, pd.MultiIndex) else raw
+                if isinstance(raw.columns, pd.MultiIndex) and t not in raw.columns.get_level_values(0):
+                    continue
+                close = df["Close"].dropna()
+                daily = frames.get(t)
+                if close.empty or daily is None or daily.empty:
+                    continue
+                idx = close.index.tz_convert(ny) if close.index.tz is not None else close.index.tz_localize("UTC").tz_convert(ny)
+                ts = idx[-1]
+                minutes = ts.hour * 60 + ts.minute
+                if minutes < 9 * 60 + 30:
+                    session, cutoff = "pre", ts.date()      # compare with closes from BEFORE today
+                    prior = daily["Close"].dropna()
+                    prior = prior[[pd.Timestamp(d).date() < cutoff for d in prior.index]]
+                elif minutes >= 16 * 60:
+                    session = "post"                         # compare with the close of that same day
+                    prior = daily["Close"].dropna()
+                    prior = prior[[pd.Timestamp(d).date() <= ts.date() for d in prior.index]]
+                else:
+                    continue                                 # regular hours: the normal price is already live
+                if prior.empty:
+                    continue
+                ref = float(prior.iloc[-1])
+                price = float(close.iloc[-1])
+                out[t] = {
+                    "extPrice": num(price),
+                    "extChange": num(price - ref),
+                    "extChangePct": pct(price, ref),
+                    "extSession": session,
+                    "extTime": ts.tz_convert("UTC").strftime("%Y-%m-%dT%H:%M:%SZ"),
+                }
+            except Exception as e:
+                print(f"  {t}: extended-hours skipped ({e})", flush=True)
+    return out
+
+
 # ---------------------------------------------------------------- fundamentals
 
 def load_fund_cache() -> dict:
@@ -354,6 +411,12 @@ def main() -> int:
         print("No price data downloaded; keeping previous data files.", file=sys.stderr)
         return 1
     fund = refresh_fundamentals(tickers)
+    try:
+        ext = download_extended(list(frames), frames)
+        print(f"Extended-hours prices for {len(ext)} tickers", flush=True)
+    except Exception as e:
+        print(f"Extended-hours prices skipped ({e})", flush=True)
+        ext = {}
 
     stocks, missing = [], []
     for t in tickers:
@@ -367,6 +430,7 @@ def main() -> int:
             row.update({k: v for k, v in info.items() if not k.startswith("_")})
             row["name"] = row.get("name") or t
             row.update(price_metrics(df))
+            row.update(ext.get(t, {}))
             if row.get("dividendRate") and row.get("price"):
                 row["dividendYield"] = num(row["dividendRate"] / row["price"] * 100, 2)
             stocks.append(row)

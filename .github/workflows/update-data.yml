@@ -6,6 +6,11 @@ on:
     - cron: "17 13-20 * * 1-5"
     # Once more after the close for final prices.
     - cron: "43 21 * * 1-5"
+    # Pre-market (starts 4:00am New York): hourly from about 4am to 8am Central.
+    - cron: "17 9-12 * * 1-5"
+    # After-hours (until 8:00pm New York): hourly from about 5pm to 8pm Central. The 00:43 UTC run belongs to the previous US day.
+    - cron: "43 22-23 * * 1-5"
+    - cron: "43 0 * * 2-6"
   # Lets you run it any time from the Actions tab ("Run workflow").
   workflow_dispatch:
   # Runs right away when you edit your stock list.

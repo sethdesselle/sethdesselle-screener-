@@ -15,11 +15,11 @@ stocks.txt ──► GitHub Action (scripts/fetch_data.py, Yahoo Finance) ──
 ```
 
 The Action **Update stock data** runs:
-- every hour while the US market is open (weekdays), plus once after the close,
+- every hour while the US market is open (weekdays), hourly before the open (from about 4am Central) and after the close (until about 8pm Central),
 - right after you change `stocks.txt`,
 - any time you start it by hand: **Actions** tab → **Update stock data** → **Run workflow**.
 
-No API key needed. Prices can be delayed about 15 minutes.
+No API key needed. Prices can be delayed about 15 minutes. Outside regular hours the site also shows the **pre-market (Pre)** or **after-hours (AH)** price and % change vs. the last close. Overnight (8pm–4am New York) quotes aren't available from Yahoo, so the last after-hours price stays until pre-market opens.
 
 ## Change your stock list
 
