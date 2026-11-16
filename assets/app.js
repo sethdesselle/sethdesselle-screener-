@@ -56,6 +56,7 @@
     { id: "all", label: "All" },
     { id: "tier1", label: "Tier 1 picks", test: (s) => s.t1 && s.t1.class !== "not_qualified" },
     { id: "fav", label: "★ Favorites", test: (s) => favs.has(s.symbol) },
+    { id: "extmovers", label: "Pre/AH movers", test: (s) => isNum(s.extChangePct) && !!extTag(s), sort: { key: "extAbs", dir: "desc" } },
     { id: "gainers", label: "Top gainers", test: (s) => s.changePct > 0, sort: { key: "changePct", dir: "desc" } },
     { id: "losers", label: "Top losers", test: (s) => s.changePct < 0, sort: { key: "changePct", dir: "asc" } },
     { id: "volume", label: "Unusual volume", test: (s) => s.relVolume >= 2, sort: { key: "relVolume", dir: "desc" } },
@@ -78,6 +79,7 @@
     { key: "symbol", label: "Symbol", cls: "l", cell: (s) => `<div class="sym"><button class="star ${favs.has(s.symbol) ? "on" : ""}" data-fav="${esc(s.symbol)}" aria-label="Favorite ${esc(s.symbol)}">★</button><div><b>${esc(s.symbol)}</b>${t1Badge(s)}${restrictedTag(s.symbol)}<span class="nm">${esc(s.name)}</span></div></div>` },
     { key: "price", label: "Price", desk: true, cell: (s) => `${money(s.price)}${extTag(s) ? `<div class="ext-row">${extTag(s)}</div>` : ""}` },
     { key: "changePct", label: "Day", desk: true, cell: (s) => `<span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` },
+    { key: "extChangePct", label: "Pre/AH", desk: true, cell: (s) => isNum(s.extChangePct) && s.extSession ? `<span class="pill ${dirCls(s.extChangePct) || "flat"}" title="${s.extSession === "pre" ? "Pre-market" : "After-hours"} change vs. last close">${s.extSession === "pre" ? "Pre" : "AH"} ${pct(s.extChangePct)}</span>` : "<span class=\"muted\">–</span>" },
     { key: "perfM1", label: "30-day", sortable: false, cell: (s) => sparkSvg(s.spark) },
     { key: "price", label: "", mobile: true, sortable: false, cell: (s) => `<div class="price-cell"><b>${money(s.price)}</b><span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>${extTag(s)}</div>` },
     { key: "relVolume", label: "Vol (rel)", desk: true, cell: (s) => `${big(s.volume)} <span class="muted">${isNum(s.relVolume) ? fix(s.relVolume, 1) + "×" : ""}</span>` },
@@ -94,7 +96,7 @@
 
   const SORTS = [
     ["marketCap", "desc", "Market cap"], ["changePct", "desc", "Day % (best)"], ["changePct", "asc", "Day % (worst)"],
-    ["symbol", "asc", "Symbol A–Z"], ["relVolume", "desc", "Relative volume"], ["perfM1", "desc", "1-month %"],
+    ["extChangePct", "desc", "Pre/AH % (best)"], ["extChangePct", "asc", "Pre/AH % (worst)"], ["extAbs", "desc", "Pre/AH biggest movers"], ["symbol", "asc", "Symbol A–Z"], ["relVolume", "desc", "Relative volume"], ["perfM1", "desc", "1-month %"],
     ["perfYtd", "desc", "YTD %"], ["fromHigh", "desc", "Closest to 52-wk high"], ["rsi", "asc", "RSI (low first)"],
     ["pe", "asc", "P/E (low first)"], ["ps", "asc", "P/S (low first)"], ["adjPs", "asc", "Margin-adj P/S (low first)"], ["dividendYield", "desc", "Dividend yield"], ["upside", "desc", "Analyst upside"],
   ];
@@ -441,6 +443,7 @@
       stocks = (data.stocks || []).map((s) => ({
         ...s,
         t1: t1map[s.symbol] || null,
+        extAbs: isNum(s.extChangePct) ? Math.abs(s.extChangePct) : null,
         // Margin-adjusted P/S: P/S rescaled to a 15% operating-margin business, so one cutoff (3x) is fair across industries.
         // adjPs <= 3 is the same as paying <= 20x operating profit. No value when the company has no operating profit.
         adjPs: s.ps > 0 && s.opMargin > 0 ? s.ps * 15 / s.opMargin : null,
