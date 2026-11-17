@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl:*query1.finance.yahoo.com/v1/finance/screener/*)"
+    ]
+  }
+}
