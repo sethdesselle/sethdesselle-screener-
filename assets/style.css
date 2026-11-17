@@ -312,3 +312,6 @@ dialog::backdrop { background: rgba(0,0,0,.45); }
 .ext.down { color: var(--down, #dc2626); }
 .ext-row { margin-top: 2px; }
 .price-cell .ext { margin-top: 2px; }
+.t1pill.overlap.up { color: var(--up); border-color: var(--up); }
+.t1pill.overlap.flat { color: var(--muted); }
+.t1pill.overlap.down { color: var(--down); border-color: var(--down); }
