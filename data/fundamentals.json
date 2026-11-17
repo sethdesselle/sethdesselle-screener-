@@ -7729,6 +7729,230 @@ null
 "targetPrice": 21.32,
 "type": "EQUITY"
 },
+"CHKP": {
+"_fetched": 1794910638.5612254,
+"_gate": {
+"bookValue": 26.017,
+"capexHist": [
+-26600000.0,
+-24200000.0,
+-18600000.0,
+-22100000.0,
+null
+],
+"capexTtm": -31900000.0,
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": -0.444,
+"ebitda": 816099968.0,
+"ebitdaHist": [
+1040000000.0,
+1057500000.0,
+1025300000.0,
+966300000.0,
+null
+],
+"ebitdaMargin": 0.296,
+"eps": [
+9.62,
+7.46,
+7.1,
+6.31,
+null
+],
+"epsEst": {
+"+1y": {
+"avg": 11.0407,
+"currency": null,
+"growth": 0.0718,
+"high": 11.81,
+"low": 10.4,
+"methodology": null,
+"numberOfAnalysts": 38.0,
+"yearAgoEps": 10.3011
+},
+"0y": {
+"avg": 10.3011,
+"currency": null,
+"growth": -0.1336,
+"high": 10.3684,
+"low": 10.2453,
+"methodology": null,
+"numberOfAnalysts": 36.0,
+"yearAgoEps": 11.89
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 11.2886,
+"60daysAgo": 11.2889,
+"7daysAgo": 11.0465,
+"90daysAgo": 11.3018,
+"currency": null,
+"current": 11.0407,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 10.4375,
+"60daysAgo": 10.4373,
+"7daysAgo": 10.3012,
+"90daysAgo": 10.4349,
+"currency": null,
+"current": 10.3011,
+"methodology": null
+}
+},
+"ev": 14803235840.0,
+"fcf": 716437504.0,
+"fcfHist": [
+1172800000.0,
+1028200000.0,
+1019300000.0,
+1076400000.0,
+null
+],
+"fcfTtm": 1131800000.0,
+"forwardEps": 11.0407,
+"grossMargin": 0.8719,
+"interest": [
+2000000.0,
+1800000.0,
+2300000.0,
+1800000.0,
+null
+],
+"netIncome": [
+1056900000.0,
+845700000.0,
+840300000.0,
+796900000.0,
+null
+],
+"ocfHist": [
+1199400000.0,
+1052400000.0,
+1037900000.0,
+1098500000.0,
+null
+],
+"ocfInfo": 1156600064.0,
+"ocfTtm": 1163700000.0,
+"opIncome": [
+831100000.0,
+876000000.0,
+899100000.0,
+884300000.0,
+null
+],
+"qEps": [
+1.82,
+1.87,
+1.81,
+2.81,
+3.28
+],
+"qOpIncome": [
+177200000.0,
+185100000.0,
+185100000.0,
+232900000.0,
+199100000.0
+],
+"qRevenue": [
+669800000.0,
+673600000.0,
+668400000.0,
+744900000.0,
+677500000.0
+],
+"qShares": [
+101900000.0,
+103500000.0,
+106100000.0,
+108400000.0,
+109500000.0
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30"
+],
+"revEst": {
+"+1y": {
+"avg": 2912995670.0,
+"currency": null,
+"growth": 0.0526,
+"high": 3051000000.0,
+"low": 2842537000.0,
+"numberOfAnalysts": 36.0,
+"yearAgoRevenue": 2767445680.0
+},
+"0y": {
+"avg": 2767445680.0,
+"currency": null,
+"growth": 0.0154,
+"high": 2937900000.0,
+"low": 2732081280.0,
+"numberOfAnalysts": 36.0,
+"yearAgoRevenue": 2725400000.0
+}
+},
+"revenue": [
+2725400000.0,
+2565000000.0,
+2414700000.0,
+2329900000.0,
+null
+],
+"revenueTtm": 2756699904.0,
+"roe": 0.3061,
+"sbcHist": [
+205600000.0,
+149700000.0,
+145300000.0,
+131400000.0,
+null
+],
+"sbcTtm": 226900000.0,
+"shares": 102100634.0,
+"totalCash": 2153900032.0,
+"totalDebt": 1976300032.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31",
+"2021-12-31"
+]
+},
+"analysts": 31,
+"beta": 0.42,
+"currency": "USD",
+"dividendRate": 0.0,
+"earningsDate": "2026-11-02",
+"eps": 8.31,
+"exchange": "NMS",
+"forwardPe": 13.38,
+"industry": "Software - Infrastructure",
+"marketCap": 15084348416,
+"name": "Check Point Software Technologi",
+"netMargin": 31.7,
+"opMargin": 28.3,
+"pe": 17.78,
+"ps": 5.47,
+"rating": "buy",
+"revGrowth": -1.1,
+"sector": "Technology",
+"targetPrice": 153.05,
+"type": "EQUITY"
+},
 "CIEN": {
 "_fetched": 1794857572.2792835,
 "_gate": {
