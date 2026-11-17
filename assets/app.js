@@ -372,14 +372,17 @@
   // ------------------------------------------------------------ positions
   const CORE = new Set(["SPYM", "QQQM", "VOO", "SCHD", "SCHG", "SPMO", "VXF", "FXAIX", "FSPGX", "FBGRX", "FIDRX", "WQTM", "SPAXX"]);
   let positions = store.get("positions", []);
+  let committedAsOf = "";
+  let committed = [];          // data/positions.json: weights only, shown when nothing is saved in this browser
   function renderPositions() {
-    const rows = positions.map((p) => {
+    const rows = (positions.length ? positions : committed).map((p) => {
       const s = stocks.find((x) => x.symbol === p.sym);
-      const value = isNum(p.manual) && p.manual > 0 ? p.manual : isNum(p.qty) && s && isNum(s.price) ? p.qty * s.price : null;
+      const value = isNum(p.pct) ? p.pct : isNum(p.manual) && p.manual > 0 ? p.manual : isNum(p.qty) && s && isNum(s.price) ? p.qty * s.price : null;
       return { ...p, s, value, core: CORE.has(p.sym) || (s && s.type === "ETF") };
     });
+    const pctOnly = !positions.length && committed.length > 0;
     const total = rows.reduce((a, r) => a + (r.value || 0), 0);
-    $("#pos-summary").textContent = rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
+    $("#pos-summary").textContent = pctOnly ? `Weights as of ${committedAsOf}. Add positions here to replace them.` : rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
     $("#pos-empty").hidden = rows.length > 0;
     const secs = {}, inds = {};
     rows.forEach((r) => {
@@ -400,7 +403,7 @@
       let status = '<span class="muted">no price</span>';
       if (r.core) status = '<span class="muted">Core (exempt)</span>';
       else if (w != null) status = w >= 10 ? '<span class="down">At/over 10%</span>' : w >= 5 ? '<span class="up">5-9% range</span>' : '<span class="muted">Under 5%</span>';
-      return `<tr><td class="l"><b>${esc(r.sym)}</b>${restrictedTag(r.sym)}${r.s ? `<span class="nm">${esc(r.s.name)}</span>` : ""}</td><td>${r.value != null ? "$" + money(r.value) : "–"}</td><td>${w != null ? fix(w, 1) + "%" : "–"}</td><td class="l">${status}</td><td><button class="btn ghost small" data-rm="${esc(r.sym)}" aria-label="Remove ${esc(r.sym)}">✕</button></td></tr>`;
+      return `<tr><td class="l"><b>${esc(r.sym)}</b>${restrictedTag(r.sym)}${r.s ? `<span class="nm">${esc(r.s.name)}</span>` : ""}</td><td>${r.value != null && !pctOnly ? "$" + money(r.value) : "–"}</td><td>${w != null ? fix(w, 1) + "%" : "–"}</td><td class="l">${status}</td><td>${pctOnly ? "" : `<button class="btn ghost small" data-rm="${esc(r.sym)}" aria-label="Remove ${esc(r.sym)}">✕</button>`}</td></tr>`;
     }).join("");
   }
   function bindPositions() {
@@ -420,6 +423,13 @@
   }
 
   // ------------------------------------------------------------ data
+  async function loadCommitted() {
+    try {
+      const r = await fetch("data/positions.json?t=" + Date.now(), { cache: "no-store" });
+      const j = r.ok ? await r.json() : null;
+      committed = j && j.positions || []; committedAsOf = j && j.asOf || "";
+    } catch { committed = []; }
+  }
   async function loadTier1() {
     try {
       const r = await fetch("data/tier1.json?t=" + Date.now(), { cache: "no-store" });
@@ -438,7 +448,7 @@
       const res = await fetch("data/stocks.json?t=" + Date.now(), { cache: "no-store" });
       if (!res.ok) throw new Error(res.status === 404 ? "nodata" : "HTTP " + res.status);
       const data = await res.json();
-      await loadTier1();
+      await Promise.all([loadTier1(), loadCommitted()]);
       const t1map = Object.fromEntries(((tier1 && tier1.names) || []).map((n) => [n.symbol, n]));
       stocks = (data.stocks || []).map((s) => ({
         ...s,

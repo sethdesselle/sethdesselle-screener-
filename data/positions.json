@@ -1,0 +1,50 @@
+{
+  "asOf": "2026-11-17",
+  "note": "Weights only, as % of listed positions priced at the 2026-11-17 update. Excludes SPAXX cash and the MSTR Dec 2028 $345 calls (x3). Positions you enter in the browser override these.",
+  "positions": [
+    {
+      "sym": "SPYM",
+      "pct": 19.1
+    },
+    {
+      "sym": "STRL",
+      "pct": 14.8
+    },
+    {
+      "sym": "CLS",
+      "pct": 11.1
+    },
+    {
+      "sym": "KTOS",
+      "pct": 10.0
+    },
+    {
+      "sym": "VST",
+      "pct": 8.6
+    },
+    {
+      "sym": "KRMN",
+      "pct": 7.2
+    },
+    {
+      "sym": "QQQM",
+      "pct": 6.9
+    },
+    {
+      "sym": "B",
+      "pct": 6.9
+    },
+    {
+      "sym": "LEU",
+      "pct": 5.7
+    },
+    {
+      "sym": "EVER",
+      "pct": 5.3
+    },
+    {
+      "sym": "CCJ",
+      "pct": 4.3
+    }
+  ]
+}
