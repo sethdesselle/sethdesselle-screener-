@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-17T07:48:45+00:00",
+ "updated": "2026-11-17T07:55:13+00:00",
  "asOf": "2026-11-16",
  "summary": {
   "screened": 171,
   "strict": 7,
   "approaching": 3,
-  "note": "Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new and Strict: Seth ruled Nov 17 that open actions by foreign regulators do not count under rule 8, so Reddit's UK privacy fine under appeal is not a red flag. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. Second-source checks (stockanalysis.com): IESC analyst count still not confirmed; WLDN and HCI estimates would fail a gate once enough analysts cover them. No auto-adds today. NOT done: the whole-market sweep (Finviz blocked; paused pending Seth's OK to use the Yahoo screener)."
+  "note": "Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new and Strict: Seth ruled Nov 17 that open actions by foreign regulators do not count under rule 8, so Reddit's UK privacy fine under appeal is not a red flag. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. Second-source checks (stockanalysis.com): IESC analyst count still not confirmed; WLDN and HCI estimates would fail a gate once enough analysts cover them. No auto-adds today. MARKET SWEEP (partial): Finviz blocked (robots rule). Yahoo screens (Undervalued Growth 258, Growth Technology 64, Aggressive Small Caps 453 matches) show only their first 25 rows: 75 rows, 52 names not already listed. 7 checked on stockanalysis.com data: SMCI passes Gates 3-4 with Gates 1-2 unverified but is blocked by red flag 4 (recommended above); PAAS and HL fail Gate 1 (next-year revenue +9.7%, +9.0%); AG fails Gate 2 (EPS +4.8% vs revenue +10.4%); LYG fails Gate 4 (P/B 1.23 vs 1.13 target); INTR's figures could not be reconciled. The other 45 first-page names were not checked and carry to the next run. Later result pages and the S&P 1500 cross-check were not reachable."
  },
  "names": [
   {
@@ -900,7 +900,7 @@
     },
     "redFlags": {
      "result": "fail",
-     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised Nov 16 check (no newer news found Nov 17) (no newer news found Nov 17): Q3 adjusted EPS $4.39 missed the $4.45 consensus by 5.6% but guidance was raised again (adjusted EBITDA outlook $327-330M); DOJ case still listed as pending; no new government action found."
+     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised Nov 16 check (no newer news found Nov 17) (no newer news found Nov 17) (no newer news found Nov 17): Q3 adjusted EPS $4.39 missed the $4.45 consensus by 5.6% but guidance was raised again (adjusted EBITDA outlook $327-330M); DOJ case still listed as pending; no new government action found."
     }
    },
    "reason": "banking app offering small cash advances (ExtraCash). revenue 39% 3-yr / 24% next yr; P/S 5.1 at 32.5% margin (TTM) = 2.4. Valued as a lender; an open Justice Department case and a drop in quarterly margin block a Strict buy.",
@@ -1227,6 +1227,12 @@
     "name": "United Therapeutics Corporation",
     "confidence": "approaching",
     "reason": "revenue 11% next yr, 14 analysts PASS; EPS 26% vs revenue 11% next yr PASS; net cash PASS; P/S 7.9 at 39.4% margin = 3.0 PASS. Price $587.88 (Nov 16), fair value $501.89, buy at or below $433.23. Not added: quarterly operating margin 29.0% vs 48.7% a year ago (red flag 9)."
+   },
+   {
+    "symbol": "SMCI",
+    "name": "Super Micro Computer, Inc.",
+    "confidence": "approaching",
+    "reason": "Found by the market sweep (Yahoo Undervalued Growth and Growth Technology screens). Snapshot from stockanalysis.com: revenue +16.3% next fiscal year (FY2028) UNVERIFIED (analyst count not shown for FY2028; 15 on FY2027); EPS +19.7% vs revenue +16.3% next yr UNVERIFIED (same reason); net debt $2.27B = 0.5x EBITDA PASS; P/S 0.33 at 8.3% margin = 0.6 PASS. Price $25.03 (Nov 16, Twelve Data), fair value about $156.70, buy at or below $122.14 (forward P/E 21.9x on FY2028 EPS $5.59; EV/EBITDA $200.60 at the Computers/Peripherals 25.42x, P/S $205.70, PEG $55.90; FCF methods left out because cash flow and stock pay were not verified). Not added: red flag 4 (shares outstanding up 13.3% in a year), and Gates 1-2 lack a 3-analyst count. Other red flags not fully checked; Nov 3 Q1 FY2027 report: revenue $19.9B (+298%), full-year guidance raised to $72-82B."
    },
    {
     "symbol": "WLDN",
