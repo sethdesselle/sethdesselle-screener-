@@ -381,7 +381,7 @@
       return { ...p, s, value, core: CORE.has(p.sym) || (s && s.type === "ETF") };
     });
     const pctOnly = !positions.length && committed.length > 0;
-    const total = rows.reduce((a, r) => a + (r.value || 0), 0);
+    const total = !positions.length && committed.length ? 100 : rows.reduce((a, r) => a + (r.value || 0), 0);
     $("#pos-summary").textContent = pctOnly ? `Weights as of ${committedAsOf}. Add positions here to replace them.` : rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
     $("#pos-empty").hidden = rows.length > 0;
     const secs = {}, inds = {};

@@ -1,58 +1,58 @@
 {
   "asOf": "2026-11-17",
-  "note": "Weights only, as % of listed positions (incl. $10k SPAXX cash and ~$5k MSTR Dec 2028 $345 calls) priced at the 2026-11-17 update. Positions you enter in the browser override these.",
+  "note": "Weights only, as % of account per the brokerage screenshot on 2026-11-17 (MSTR = Dec 2028 $345 calls x3). Positions you enter in the browser override these.",
   "positions": [
     {
       "sym": "SPYM",
-      "pct": 15.9
+      "pct": 16.13
     },
     {
       "sym": "STRL",
-      "pct": 12.3
-    },
-    {
-      "sym": "SPAXX",
-      "pct": 11.2
+      "pct": 12.49
     },
     {
       "sym": "CLS",
-      "pct": 9.3
+      "pct": 9.39
     },
     {
       "sym": "KTOS",
-      "pct": 8.3
+      "pct": 8.45
     },
     {
       "sym": "VST",
-      "pct": 7.1
+      "pct": 7.21
     },
     {
       "sym": "KRMN",
-      "pct": 6.0
+      "pct": 6.05
+    },
+    {
+      "sym": "SPAXX",
+      "pct": 5.86
     },
     {
       "sym": "QQQM",
-      "pct": 5.8
+      "pct": 5.83
     },
     {
       "sym": "B",
-      "pct": 5.7
-    },
-    {
-      "sym": "MSTR",
-      "pct": 5.6
+      "pct": 5.82
     },
     {
       "sym": "LEU",
-      "pct": 4.7
+      "pct": 4.81
     },
     {
       "sym": "EVER",
-      "pct": 4.4
+      "pct": 4.45
+    },
+    {
+      "sym": "MSTR",
+      "pct": 4.2
     },
     {
       "sym": "CCJ",
-      "pct": 3.6
+      "pct": 3.66
     }
   ]
 }
