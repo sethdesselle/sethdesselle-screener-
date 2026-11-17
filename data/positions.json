@@ -1,6 +1,6 @@
 {
   "asOf": "2026-11-17",
-  "note": "Weights only, as % of account per the brokerage screenshot on 2026-11-17 (MSTR = Dec 2028 $345 calls x3). Positions you enter in the browser override these.",
+  "note": "Weights only, as % of account per the brokerage screenshot on 2026-11-17 (MSTR = Dec 2028 $345 calls x3; SPAXX includes unsettled cash, ~$10k). Positions you enter in the browser override these.",
   "positions": [
     {
       "sym": "SPYM",
@@ -9,6 +9,10 @@
     {
       "sym": "STRL",
       "pct": 12.49
+    },
+    {
+      "sym": "SPAXX",
+      "pct": 11.51
     },
     {
       "sym": "CLS",
@@ -25,10 +29,6 @@
     {
       "sym": "KRMN",
       "pct": 6.05
-    },
-    {
-      "sym": "SPAXX",
-      "pct": 5.86
     },
     {
       "sym": "QQQM",
