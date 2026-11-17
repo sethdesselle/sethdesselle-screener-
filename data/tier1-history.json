@@ -146,6 +146,13 @@
     "rank": 10,
     "price": 13.47,
     "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "CHKP",
+    "class": "approaching",
+    "rank": 11,
+    "price": 147.74,
+    "priceDate": "2026-11-16"
    }
   ]
  }

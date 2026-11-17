@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-17T08:43:48+00:00",
+ "updated": "2026-11-17T12:25:23+00:00",
  "asOf": "2026-11-16",
  "summary": {
-  "screened": 171,
+  "screened": 172,
   "strict": 7,
-  "approaching": 3,
-  "note": "Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new and Strict: Seth ruled Nov 17 that open actions by foreign regulators do not count under rule 8, so Reddit's UK privacy fine under appeal is not a red flag. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. Second-source checks (stockanalysis.com): IESC analyst count still not confirmed; WLDN and HCI estimates would fail a gate once enough analysts cover them. No auto-adds today. MARKET SWEEP COMPLETION (Nov 17, later run): stockanalysis.com is behind a Cloudflare challenge (not bypassed); its screener could not be filtered, and SEC EDGAR and Twelve Data estimates/financials are not reachable, so Stage 3 filing verification was not possible. Yahoo screens reached: Undervalued Growth rows 1-100 of 260, Growth Technology all 69, Aggressive Small Caps rows 1-100 of 451 (Finviz blocked, S&P 1500 cross-check not done). 269 rows returned; 182 new US-listed common stocks not in stocks.txt/candidates.txt (funds, preferreds, warrants, duplicates and the 6 names checked earlier skipped). Yahoo consensus pages loaded for 114; 68 did not load (CVS, BBY, BP, CNQ, TECK, FIS, TAL, PATH-type names and others) and carry. Gates 1-2 snapshot (next-yr revenue +10% or more, EPS growth at least revenue growth or 15%, at least 3 analysts): 28 passed. Gates 3-4 on Yahoo TTM data: WDC, SIMO, FSLR, AGI pass all four on snapshot; HBM, PENG, SNX pass Gate 4 with Gate 3 unconfirmed; the other 21 fail Gate 3 or 4 (e.g. APH 3.09, STX 3.26, MKSI net debt 3.2x EBITDA, SMTC net debt 2.9x). AGI also fails the falling-estimates check (next-yr EPS 3.06 to 2.69 in 90 days, -12%). UPST (-10%) and HOPE (-16%) also fail it. NO auto-adds and NO recommendations: the AUTO-ADD RULE needs filing-verified numbers and a fair value, neither could be produced. Carried to next run for Stage 3: WDC, SIMO, FSLR, HBM, PENG, SNX (snapshot passers) plus the 68 unloaded names and later result pages. STAGE 3 SWEEP VERIFICATION (Nov 17, Nov 16 closes via Twelve Data; estimates from Yahoo analysis pages; numbers from SEC XBRL company facts on data.sec.gov): www.sec.gov document downloads (10-K/10-Q/8-K text) were refused for the generic User-Agent, so Legal Proceedings, 8-K guidance and officer-change text could not be read; red flags 2, 7 and 8 are UNVERIFIED for every sweep name. WDC: Gates 1-4 all PASS (revenue +40.5% next yr, 23 analysts; EPS +63.4%; net cash $1.31B cash vs $0.79B debt; P/S 7.45 at 39.4% margin = 2.84); falling-estimates PASS (+26.6% in 90 days); red flags 1,3,4,6,9 clear on XBRL, 2/7/8 unread, so NOT auto-added. Fair value about $549 (P/S $615, PEG $808, DCF $420 kept; P/E $1,212 and FCF yield $371 trimmed; EV/EBITDA left out: industry multiple not verified), buy at or below $420, price $280.93. FSLR: Gates 1-4 PASS (rev +20.7%, 33 analysts; EPS +31.4%; net cash; P/S 3.49 at 37.7% margin = 1.39) but red flag 3 FAILS (Q3 revenue $1.231B vs $1.595B a year earlier, -22.8%); not added. PENG: Gates PASS on snapshot but red flag 4 FAILS (diluted shares 64.0M vs 54.4M a year earlier, +17.8%); not added. SNX: Gate 3 FAILS (net debt about $4.77B = 1.9x TTM EBITDA $2.47B); not added. AGI: next-yr EPS 3.06 to 2.69 in 90 days (-12.1%) confirmed, stays blocked. SIMO and HBM are foreign filers whose quarterly figures are not in XBRL, so TTM Gates 3-4 could not be filing-verified; carried. Yahoo screener result pages beyond the first were not reachable (paging requests were blocked by policy), so the 68 unloaded names and later pages are carried. Counts: 269 returned, 28 passed snapshot, 5 verified (WDC, FSLR, PENG, SNX, plus AGI confirmed; SIMO/HBM not verifiable), 0 auto-added, 1 recommended (WDC), carried: SIMO, HBM, 68 unloaded names, later pages."
+  "approaching": 4,
+  "note": "SCHEDULED RUN Nov 17 (6:17 CT, still on Mon Nov 16 closes; markets reopen 9:30 ET): prices re-checked against Twelve Data for all 10 listed names and CHKP, all unchanged. CHKP (added to the watchlist by Seth this morning) is new in Approaching: 1 failed gate (revenue growth 5.3% next yr) and red flag 3; filings could not be read. Candidates TENB, QLYS, GEN and AKAM were screened and are Not Qualified (TENB and QLYS fail 3 gates, GEN 2, AKAM 3). NVDA: two earnings previews disagree on whether Huang resigned; SEC filings were not reachable, so the Nov 12 8-K reading is kept, not re-verified. Nvidia reports after the close today. EME is 0.6% under its buy price. Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new and Strict: Seth ruled Nov 17 that open actions by foreign regulators do not count under rule 8, so Reddit's UK privacy fine under appeal is not a red flag. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. Second-source checks (stockanalysis.com): IESC analyst count still not confirmed; WLDN and HCI estimates would fail a gate once enough analysts cover them. No auto-adds today. MARKET SWEEP COMPLETION (Nov 17, later run): stockanalysis.com is behind a Cloudflare challenge (not bypassed); its screener could not be filtered, and SEC EDGAR and Twelve Data estimates/financials are not reachable, so Stage 3 filing verification was not possible. Yahoo screens reached: Undervalued Growth rows 1-100 of 260, Growth Technology all 69, Aggressive Small Caps rows 1-100 of 451 (Finviz blocked, S&P 1500 cross-check not done). 269 rows returned; 182 new US-listed common stocks not in stocks.txt/candidates.txt (funds, preferreds, warrants, duplicates and the 6 names checked earlier skipped). Yahoo consensus pages loaded for 114; 68 did not load (CVS, BBY, BP, CNQ, TECK, FIS, TAL, PATH-type names and others) and carry. Gates 1-2 snapshot (next-yr revenue +10% or more, EPS growth at least revenue growth or 15%, at least 3 analysts): 28 passed. Gates 3-4 on Yahoo TTM data: WDC, SIMO, FSLR, AGI pass all four on snapshot; HBM, PENG, SNX pass Gate 4 with Gate 3 unconfirmed; the other 21 fail Gate 3 or 4 (e.g. APH 3.09, STX 3.26, MKSI net debt 3.2x EBITDA, SMTC net debt 2.9x). AGI also fails the falling-estimates check (next-yr EPS 3.06 to 2.69 in 90 days, -12%). UPST (-10%) and HOPE (-16%) also fail it. NO auto-adds and NO recommendations: the AUTO-ADD RULE needs filing-verified numbers and a fair value, neither could be produced. Carried to next run for Stage 3: WDC, SIMO, FSLR, HBM, PENG, SNX (snapshot passers) plus the 68 unloaded names and later result pages. STAGE 3 SWEEP VERIFICATION (Nov 17, Nov 16 closes via Twelve Data; estimates from Yahoo analysis pages; numbers from SEC XBRL company facts on data.sec.gov): www.sec.gov document downloads (10-K/10-Q/8-K text) were refused for the generic User-Agent, so Legal Proceedings, 8-K guidance and officer-change text could not be read; red flags 2, 7 and 8 are UNVERIFIED for every sweep name. WDC: Gates 1-4 all PASS (revenue +40.5% next yr, 23 analysts; EPS +63.4%; net cash $1.31B cash vs $0.79B debt; P/S 7.45 at 39.4% margin = 2.84); falling-estimates PASS (+26.6% in 90 days); red flags 1,3,4,6,9 clear on XBRL, 2/7/8 unread, so NOT auto-added. Fair value about $549 (P/S $615, PEG $808, DCF $420 kept; P/E $1,212 and FCF yield $371 trimmed; EV/EBITDA left out: industry multiple not verified), buy at or below $420, price $280.93. FSLR: Gates 1-4 PASS (rev +20.7%, 33 analysts; EPS +31.4%; net cash; P/S 3.49 at 37.7% margin = 1.39) but red flag 3 FAILS (Q3 revenue $1.231B vs $1.595B a year earlier, -22.8%); not added. PENG: Gates PASS on snapshot but red flag 4 FAILS (diluted shares 64.0M vs 54.4M a year earlier, +17.8%); not added. SNX: Gate 3 FAILS (net debt about $4.77B = 1.9x TTM EBITDA $2.47B); not added. AGI: next-yr EPS 3.06 to 2.69 in 90 days (-12.1%) confirmed, stays blocked. SIMO and HBM are foreign filers whose quarterly figures are not in XBRL, so TTM Gates 3-4 could not be filing-verified; carried. Yahoo screener result pages beyond the first were not reachable (paging requests were blocked by policy), so the 68 unloaded names and later pages are carried. Counts: 269 returned, 28 passed snapshot, 5 verified (WDC, FSLR, PENG, SNX, plus AGI confirmed; SIMO/HBM not verifiable), 0 auto-added, 1 recommended (WDC), carried: SIMO, HBM, 68 unloaded names, later pages."
  },
  "names": [
   {
@@ -1212,6 +1212,120 @@
      "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
     }
    ]
+  },
+  {
+   "symbol": "CHKP",
+   "rank": 11,
+   "class": "approaching",
+   "price": 147.74,
+   "priceDate": "2026-11-16",
+   "gates": {
+    "revenueGrowth": {
+     "result": "fail",
+     "detail": "5.3% next yr ($2.913B vs $2.767B), 36 analysts; 10% needed"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS +7.2% vs revenue +5.3% next yr (38 analysts on EPS)"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash: cash $2.154B vs debt $1.976B (Yahoo data, not read from filings)"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 5.47 at 28.3% margin = 2.90"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS $11.04 vs $11.30 90 days ago (-2.3%)"
+    },
+    "redFlags": {
+     "result": "fail",
+     "detail": "(3) Q3 revenue $669.8M vs $677.5M a year earlier (-1.1%). (2) Probable but not confirmed: full-year 2026 revenue guidance at the Nov 2 report ($2.732-2.782B) looks lower than the $2.8-2.9B given in July. Not flagged: share count down (101.9M vs 109.5M a year ago); quarterly operating margin 26.5% vs 29.4% (-2.9 points, under the 5.0 limit); plaintiff-firm investigations are not government actions. Government suits, CEO/CFO changes and going-concern text were not read from filings (SEC document downloads were refused)."
+    }
+   },
+   "reason": "Check Point Software: network and cloud security software (Israel-based foreign filer). Gate 1 FAILS: next-year revenue growth is 5.3% (36 analysts) against the 10% needed. Red flag 3: Q3 revenue $669.8M vs $677.5M a year earlier (-1.1%). Gate numbers are snapshot-level (Yahoo data saved on this site, second-checked against the Nov 2 results release); filings were not read.",
+   "revGrowth": -1.1,
+   "fwdPE": 13.38,
+   "fcfYield": 7.5,
+   "roic": null,
+   "fairValue": 140.82,
+   "buyBelow": 135.89,
+   "discountPct": -4.9,
+   "rewardRisk": null,
+   "impliedReturnPct": -1.6,
+   "spreadPct": 19,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "Forward P/E",
+      "assumption": "15.59x (12 + 0.5 x G of 7.2) on FY27 EPS $8.82 (published $11.04 minus stock pay $2.22/sh; Technology default: consensus excludes stock pay, and stock pay is 8.2% of revenue)",
+      "value": 137.48,
+      "weight": 41.7,
+      "trimmed": false
+     },
+     {
+      "name": "DCF",
+      "assumption": "year 1 $9.33/sh (TTM FCF $11.09 minus stock pay $2.22 = $8.86, x 1.053 for F of 5.3%), grown 3.6%/yr (50% of G, floor 3%), 10% discount, 3% terminal",
+      "value": 135.89,
+      "weight": 41.6,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "5.66x (3 x 28.3% TTM margin / 15) on next-yr revenue $28.53/sh",
+      "value": 161.48,
+      "weight": 16.7,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "5.28% yield (6 - G/10) on forward stock-pay-adjusted FCF $9.33/sh (TTM $8.86, F 5.3%)",
+      "value": 176.62,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 7.2, floor 10) on EPS $8.82",
+      "value": 88.18,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 140.82,
+    "spreadPct": 19,
+    "low": 88.18,
+    "high": 176.62,
+    "bear": null,
+    "bull": null,
+    "note": "company type SOFTWARE (Software - Infrastructure; no EV/EBITDA method); G uses next-year EPS growth only (no 2-3 year consensus in the data); Nov 15 valuation rules applied; PEG $88.18 is lower but does not set the buy price; snapshot-level inputs, not filing-verified"
+   },
+   "entry": "RSI(14) 55.0 (neutral); price above the 50-day average and above the 200-day average; 31.64% above the 52-week low; volume 0.71x the 30-day average; next earnings date not confirmed (last reported 2026-11-02)",
+   "upgrade": "Gate 1: next-year revenue growth must reach 10% (now 5.3%); red flag 3 must clear (Q3 revenue below a year earlier); price must fall 8.0% to $135.89",
+   "tech": {
+    "rsi": 55.0,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 31.64,
+    "volVsAvg": 0.71,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Check Point Q3 2026 results (Nov 2, 2026)",
+     "url": "https://www.morningstar.com/news/pr-newswire/20261102dc86338/check-point-software-reports-2026-third-quarter-financial-results"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 close checked against Twelve Data",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
   }
  ],
  "watchlist": {
@@ -1254,5 +1368,6 @@
    }
   ],
   "removes": []
- }
+ },
+ "reportUrl": "https://claude.ai/artifact/5x9sfx7Qy4d5k8rSWZZWiu"
 }
