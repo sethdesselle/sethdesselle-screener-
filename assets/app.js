@@ -144,8 +144,49 @@
   function t1Badge(s) {
     return s.t1 && s.t1.class !== "not_qualified" ? ` <span class="t1pill ${esc(s.t1.class)}">${s.t1.class === "strict" ? "T1" : "T1~"}</span>` : "";
   }
-  const t1Rows = () => (tier1 && tier1.names || []).filter((n) => n.class !== "not_qualified")
-    .sort((a, b) => (a.class === b.class ? (a.rank || 99) - (b.rank || 99) : a.class === "strict" ? -1 : 1));
+  // Portfolio overlap adjustment (ranking only). A name that overlaps nothing you own looks OVERLAP_SWING % closer to its buy-below
+  // price when ranked; a name that heavily overlaps your holdings looks that much farther. It never changes Strict/Approaching,
+  // the gates, the fair value or the buy-below price itself.
+  const OVERLAP_SWING = 7.5;       // max adjustment in % (your range: 5 to 10)
+  const OVERLAP_FULL_AT = 20;      // % of account in the same industry (plus part of same sector) that counts as fully overlapped
+  const OVERLAP_SECTOR_CREDIT = 0.25; // same sector, different industry counts for this share of an industry match
+  function overlapInfo(sym, held) {
+    const s = stocks.find((x) => x.symbol === sym);
+    if (!held || !held.total || !s || !s.industry) return null;
+    let ind = 0, sec = 0;
+    held.rows.forEach((r) => {
+      if (r.core || !r.s || !r.value) return;
+      const w = r.value / held.total * 100;
+      if (r.s.industry === s.industry) ind += w;
+      else if (s.sector && r.s.sector === s.sector) sec += w;
+    });
+    const o = Math.min(1, (ind + OVERLAP_SECTOR_CREDIT * sec) / OVERLAP_FULL_AT);
+    return { o, ind, sec, adj: OVERLAP_SWING * (1 - 2 * o) / 100, industry: s.industry };
+  }
+  function heldWeights() {
+    const rows = holdingRows(), total = rows.reduce((a, r) => a + (r.value || 0), 0);
+    return total > 0 ? { rows, total } : null;
+  }
+  function overlapTag(n) {
+    const ov = n.ov; if (!ov) return "";
+    const lvl = ov.o < 0.15 ? ["none", "up"] : ov.o < 0.5 ? ["some", "flat"] : ["high", "down"];
+    const eff = (ov.adj * 100 >= 0 ? "+" : "") + fix(ov.adj * 100, 1) + "%";
+    return ` <span class="t1pill overlap ${lvl[1]}" title="${esc(`${fix(ov.ind, 1)}% of your account is already in ${ov.industry}; ${fix(ov.sec, 1)}% in the same sector. Ranking effect ${eff}.`)}">Overlap: ${lvl[0]}</span>`;
+  }
+  function t1Rows() {
+    const held = heldWeights();
+    const failed = (n) => ["revenueGrowth", "earnings", "balanceSheet", "marginPs"].filter((k) => ((n.gates || {})[k] || {}).result === "fail").length; // the four Tier 1 gates
+    const rows = (tier1 && tier1.names || []).filter((n) => n.class !== "not_qualified").map((n) => {
+      const s = stocks.find((x) => x.symbol === n.symbol), price = s && isNum(s.price) ? s.price : n.price, bb = buyBelow(n);
+      const ov = overlapInfo(n.symbol, held);
+      // distance above the (overlap-adjusted) buy-below price; negative means already inside the buy range
+      n.ov = ov;
+      n.gap = isNum(price) && isNum(bb) && bb > 0 ? price / (bb * (1 + (ov ? ov.adj : 0))) - 1 : Infinity;
+      return n;
+    });
+    return rows.sort((a, b) => a.class !== b.class ? (a.class === "strict" ? -1 : 1)
+      : failed(a) - failed(b) || a.gap - b.gap || (a.rank || 99) - (b.rank || 99));
+  }
 
   const bizDaysSince = (iso) => {
     if (!iso) return null;
@@ -281,12 +322,13 @@
     const rep = /^https?:\/\//.test(tier1.reportUrl || "") ? `<p><a class="btn small" href="${esc(tier1.reportUrl)}" target="_blank" rel="noopener">Full daily report ↗</a></p>` : "";
     $("#t1-head").innerHTML = `${stale}<h2>Tier 1 screen</h2>${rep}
       <p class="muted">${tier1.test ? "<b>Test data.</b> " : ""}As of ${esc(tier1.asOf || "")} · ${esc(sm.screened ?? "?")} screened · <span class="up">${sm.strict ?? 0} Tier 1 BUY</span> · ${sm.approaching ?? 0} approaching</p>
+      <p class="muted">Order: fewest failed gates, then closest to the buy-below price, nudged up to ${OVERLAP_SWING}% for portfolio overlap (no overlap ranks higher, heavy overlap lower). It never changes who is Tier 1 BUY.</p>
       ${sm.note ? `<p class="muted">${esc(sm.note)}</p>` : ""}`;
     $("#t1-list").innerHTML = rows.length ? rows.map((n) => {
       const s = stocks.find((x) => x.symbol === n.symbol);
       const price = s && isNum(s.price) ? s.price : n.price;
       return `<article class="t1-card" ${s ? `data-open="${esc(n.symbol)}"` : ""}>
-        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${earnBadge(s)}${zoneTag(n, s && isNum(s.price) ? s.price : n.price)}
+        <div class="t1-card-head"><div><b class="t1-sym">${esc(n.symbol)}</b> <span class="t1pill ${esc(n.class)}">${T1_LABEL[n.class]}</span>${t1Move(n)}${restrictedTag(n.symbol)}${overlapTag(n)}${earnBadge(s)}${zoneTag(n, s && isNum(s.price) ? s.price : n.price)}
           <span class="nm">${esc(s ? s.name : "")}</span></div>
           <div class="t1-price"><b>$${money(price)}</b>${s ? ` <span class="pill ${dirCls(s.changePct) || "flat"}">${pct(s.changePct)}</span>` : ""}${extTag(s)}</div></div>
         ${(() => { const v = verdict(n, price); return `<p class="verdict ${v.cls}"><b>${v.text}</b><span>${v.sub}</span></p>`; })()}
@@ -374,12 +416,13 @@
   let positions = store.get("positions", []);
   let committedAsOf = "";
   let committed = [];          // data/positions.json: weights only, shown when nothing is saved in this browser
+  const holdingRows = () => (positions.length ? positions : committed).map((p) => {
+    const s = stocks.find((x) => x.symbol === p.sym);
+    const value = isNum(p.pct) ? p.pct : isNum(p.manual) && p.manual > 0 ? p.manual : isNum(p.qty) && s && isNum(s.price) ? p.qty * s.price : null;
+    return { ...p, s, value, core: CORE.has(p.sym) || (s && s.type === "ETF") };
+  });
   function renderPositions() {
-    const rows = (positions.length ? positions : committed).map((p) => {
-      const s = stocks.find((x) => x.symbol === p.sym);
-      const value = isNum(p.pct) ? p.pct : isNum(p.manual) && p.manual > 0 ? p.manual : isNum(p.qty) && s && isNum(s.price) ? p.qty * s.price : null;
-      return { ...p, s, value, core: CORE.has(p.sym) || (s && s.type === "ETF") };
-    });
+    const rows = holdingRows();
     const pctOnly = !positions.length && committed.length > 0;
     const total = !positions.length && committed.length ? 100 : rows.reduce((a, r) => a + (r.value || 0), 0);
     $("#pos-summary").textContent = pctOnly ? `Weights as of ${committedAsOf}. Add positions here to replace them.` : rows.length ? `Total entered: $${money(total)}. Weights are a share of what you've entered here.` : "";
