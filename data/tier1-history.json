@@ -73,5 +73,80 @@
     "priceDate": "2026-11-13"
    }
   ]
+ },
+ {
+  "date": "2026-11-16",
+  "names": [
+   {
+    "symbol": "STRL",
+    "class": "strict",
+    "rank": 1,
+    "price": 275.13,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "B",
+    "class": "strict",
+    "rank": 2,
+    "price": 36.49,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "IESC",
+    "class": "strict",
+    "rank": 3,
+    "price": 165.9,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "FIX",
+    "class": "strict",
+    "rank": 4,
+    "price": 1057.68,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "EME",
+    "class": "strict",
+    "rank": 5,
+    "price": 638.72,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "EXEL",
+    "class": "strict",
+    "rank": 6,
+    "price": 67.1,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "DAVE",
+    "class": "approaching",
+    "rank": 7,
+    "price": 273.08,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "NVDA",
+    "class": "approaching",
+    "rank": 8,
+    "price": 156.14,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "RDDT",
+    "class": "approaching",
+    "rank": 9,
+    "price": 92.87,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "ADMA",
+    "class": "approaching",
+    "rank": 10,
+    "price": 13.47,
+    "priceDate": "2026-11-16"
+   }
+  ]
  }
 ]
