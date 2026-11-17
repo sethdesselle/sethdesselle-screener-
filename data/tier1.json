@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-17T07:43:32+00:00",
+ "updated": "2026-11-17T07:48:45+00:00",
  "asOf": "2026-11-16",
  "summary": {
   "screened": 171,
-  "strict": 6,
-  "approaching": 4,
-  "note": "Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new: it passes all gates and is below its buy price, but is capped at Approaching by an open RULE GAP (a UK regulator's fine under appeal; rule 8 names US regulators) - Seth's ruling needed. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. No auto-adds today (SE, UTHR blocked; WLDN, HCI have unverified gates). NOT done: the whole-market sweep (no screener available that filters on forward estimates). IESC gates 1-2 unverified (1 analyst)."
+  "strict": 7,
+  "approaching": 3,
+  "note": "Re-screen Nov 17 on Mon Nov 16 closes (all ten prices checked against Twelve Data). 171 company tickers screened: 23 with no failed gate, 76 with one, 72 eliminated with two or more. CHANGES vs the Nov 16 run: NVDA moves to Approaching (red flag 7: CEO Jensen Huang resigned Nov 12, interim CEO only; the Nov 16 run missed this). EME is now at its buy price and becomes Strict. RDDT is new and Strict: Seth ruled Nov 17 that open actions by foreign regulators do not count under rule 8, so Reddit's UK privacy fine under appeal is not a red flag. ADR figures converted to dollars (USD/KRW 1,335.7, USD/TWD 32.96): SKHY and TSM both fail Gate 4. B's stock pay ($263M) verified from filings. Second-source checks (stockanalysis.com): IESC analyst count still not confirmed; WLDN and HCI estimates would fail a gate once enough analysts cover them. No auto-adds today. NOT done: the whole-market sweep (Finviz blocked; paused pending Seth's OK to use the Yahoo screener)."
  },
  "names": [
   {
@@ -290,7 +290,7 @@
      "detail": "none found (Nov 17 check). Fiscal Q3 report Jul 31: revenue +40%; next report about Nov 20. Aug 10 agreement to acquire DBM Global (~$650M): IES is the buyer, so rule 5 is not triggered. No government suit found. Quarterly operating margin 14.4% vs 12.6% a year ago."
     }
    },
-   "reason": "electrical contractor and data-center infrastructure. revenue 48% next yr; fewer than 3 analysts (1.0); P/S 1.8 at 12.4% margin = 2.1. Gates 1 and 2 UNVERIFIED: only 1 analyst on the revenue estimate (needs 3). It stays eligible under the rules; check before acting.",
+   "reason": "electrical contractor and data-center infrastructure. revenue 48% next yr; fewer than 3 analysts (1.0); P/S 1.8 at 12.4% margin = 2.1. Gates 1 and 2 UNVERIFIED: only 1 analyst on the revenue estimate (needs 3). Second source (stockanalysis.com) shows next fiscal year revenue +14.9% and EPS +15.3% but does not state the analyst count (1 price target). It stays eligible under the rules; check before acting.",
    "revGrowth": 39.6,
    "fwdPE": null,
    "fcfYield": null,
@@ -622,8 +622,137 @@
    ]
   },
   {
-   "symbol": "EXEL",
+   "symbol": "RDDT",
    "rank": 6,
+   "class": "strict",
+   "price": 92.87,
+   "priceDate": "2026-11-16",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 28% next yr, 31 analysts"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 24% vs revenue 28% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly)"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS down 3% in 90 days ($7.01 to $6.82)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found under the rules (Nov 17 check). The UK Information Commissioner's Office fine (GBP 14.47M / $19.5M, Feb 2026; Reddit appealed Apr 1, 2026) is a foreign regulator's action: under Seth's Nov 17 ruling, rule 8 covers US federal and state bodies only, so it does not count. Q3 report Oct 29: revenue +53% to $895M; Q4 revenue guidance $1.00-1.03B came in below analyst estimates, but Reddit guides one quarter at a time, so no earlier guidance was lowered (rule 2 not triggered). FTC non-public inquiry (Mar 2024) is an information request, and the securities class action (N.D. Cal., June 2025) is private: neither counts. No CEO/CFO departure found. Quarterly operating margin 29.2% vs 23.7% a year ago."
+    }
+   },
+   "reason": "online discussion platform (Reddit); about 95% of revenue is advertising. revenue 28% next yr, 31 analysts; P/S 5.8 at 29.4% margin = 3.0. New to the list. Gate 4 passes narrowly (2.95 vs 3.0).",
+   "revGrowth": 53.0,
+   "fwdPE": 10.21,
+   "fcfYield": 6.7,
+   "roic": null,
+   "fairValue": 118.9,
+   "buyBelow": 98.64,
+   "discountPct": 21.9,
+   "rewardRisk": null,
+   "impliedReturnPct": 8.6,
+   "spreadPct": 31,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "PEG",
+      "assumption": "12.0x (0.5 x G of 24, floor 10 cap 20) on EPS $4.90",
+      "value": 58.87,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "DCF yr1 $5.17 grown 12%/yr, 10% disc, 3% term",
+      "value": 98.64,
+      "weight": 20.0,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "24.0x on EPS $4.90 (published $6.82 less SBC $1.91) (G 24)",
+      "value": 117.73,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "5.88x (3 x 29.4% margin / 15) on next-yr revenue $21.53/sh",
+      "value": 126.61,
+      "weight": 13.3,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield on forward SBC-adj FCF $5.17/sh (F 28%)",
+      "value": 129.16,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "30.26x (industry: NYU Stern Jan 2026 \"Software (Internet)\"; own 5-yr median not verified) on forward EBITDA $1.19B",
+      "value": 192.87,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 118.9,
+    "spreadPct": 31,
+    "low": 58.87,
+    "high": 192.87,
+    "bear": null,
+    "bull": null,
+    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
+   },
+   "entry": "RSI(14) 31.2 (neutral); price below the 50-day average and below the 200-day average; 4.02% above the 52-week low; volume 0.63x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
+   "tech": {
+    "rsi": 31.2,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 4.02,
+    "volVsAvg": 0.63,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Reddit Q3 2026 earnings call highlights (MarketBeat)",
+     "url": "https://www.marketbeat.com/instant-alerts/transcript-reddit-q3-earnings-call-highlights-2026-10-31/"
+    },
+    {
+     "title": "Reddit appeals ICO fine (Digital Policy Alert)",
+     "url": "https://digitalpolicyalert.org/event/39500-reddit-appealed-fine-of-gbp-1447-imposed-by-information-commissioners-office-for-unlawful-processing-of-childrens-personal-data"
+    },
+    {
+     "title": "UK ICO fines Reddit GBP 14.47M (The Register)",
+     "url": "https://www.theregister.com/2026/02/24/ico_fines_reddit"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "EXEL",
+   "rank": 7,
    "class": "strict",
    "price": 67.1,
    "priceDate": "2026-11-16",
@@ -744,7 +873,7 @@
   },
   {
    "symbol": "DAVE",
-   "rank": 7,
+   "rank": 8,
    "class": "approaching",
    "price": 273.08,
    "priceDate": "2026-11-16",
@@ -771,7 +900,7 @@
     },
     "redFlags": {
      "result": "fail",
-     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised Nov 16 check (no newer news found Nov 17): Q3 adjusted EPS $4.39 missed the $4.45 consensus by 5.6% but guidance was raised again (adjusted EBITDA outlook $327-330M); DOJ case still listed as pending; no new government action found."
+     "detail": "(8) government lawsuit open: FTC complaint filed Nov 2024, taken over by the Justice Department Dec 2024, over ExtraCash fees and marketing; listed as pending. Baltimore also sued in Dec 2025. (9) quarterly operating margin 24.3% vs 30.5% a year earlier, down 6.2 points. Q3 report Nov 4: revenue +31%, 2026 guidance raised Nov 16 check (no newer news found Nov 17) (no newer news found Nov 17): Q3 adjusted EPS $4.39 missed the $4.45 consensus by 5.6% but guidance was raised again (adjusted EBITDA outlook $327-330M); DOJ case still listed as pending; no new government action found."
     }
    },
    "reason": "banking app offering small cash advances (ExtraCash). revenue 39% 3-yr / 24% next yr; P/S 5.1 at 32.5% margin (TTM) = 2.4. Valued as a lender; an open Justice Department case and a drop in quarterly margin block a Strict buy.",
@@ -840,7 +969,7 @@
   },
   {
    "symbol": "NVDA",
-   "rank": 8,
+   "rank": 9,
    "class": "approaching",
    "price": 156.14,
    "priceDate": "2026-11-16",
@@ -956,135 +1085,6 @@
     {
      "title": "Nvidia CEO Jensen Huang resigns (DatacenterDynamics)",
      "url": "https://datacenterdynamics.com/en/news/nvidia-ceo-jensen-huang-resigns-after-multiple-affairs"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
-   "symbol": "RDDT",
-   "rank": 9,
-   "class": "approaching",
-   "price": 92.87,
-   "priceDate": "2026-11-16",
-   "gates": {
-    "revenueGrowth": {
-     "result": "pass",
-     "detail": "revenue 28% next yr, 31 analysts"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "EPS 24% vs revenue 28% next yr"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "net cash"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly)"
-    },
-    "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS down 3% in 90 days ($7.01 to $6.82)"
-    },
-    "redFlags": {
-     "result": "fail",
-     "detail": "RULE GAP: RDDT: the UK Information Commissioner's Office fined Reddit GBP 14.47M ($19.5M) on Feb 23-24, 2026 over children's data; Reddit appealed to the First-tier Tribunal on Apr 1, 2026 and no resolution was found, so the action is open. Rule 8 names US federal and state regulators only; the closest rule (8) was applied literally, so it counts. Capped at Approaching by an open rule gap until Seth rules on foreign regulators. Other checks (Nov 17): Q3 report Oct 29: revenue +53% to $895M; Q4 revenue guidance $1.00-1.03B came in below analyst estimates, but Reddit guides one quarter at a time, so no earlier guidance was lowered (rule 2 not triggered). FTC non-public inquiry (Mar 2024) is an information request, and the securities class action (N.D. Cal., June 2025) is private: neither counts. No CEO/CFO departure found. Quarterly operating margin 29.2% vs 23.7% a year ago."
-    }
-   },
-   "reason": "online discussion platform (Reddit); about 95% of revenue is advertising. revenue 28% next yr, 31 analysts; P/S 5.8 at 29.4% margin = 3.0. New to the list. Capped at Approaching by an open rule gap (UK regulator fine under appeal; rule 8 covers US regulators only).",
-   "revGrowth": 53.0,
-   "fwdPE": 10.21,
-   "fcfYield": 6.7,
-   "roic": null,
-   "fairValue": 118.9,
-   "buyBelow": 98.64,
-   "discountPct": 21.9,
-   "rewardRisk": null,
-   "impliedReturnPct": 8.6,
-   "spreadPct": 31,
-   "strictChecks": {
-    "allMethods": true
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "PEG",
-      "assumption": "12.0x (0.5 x G of 24, floor 10 cap 20) on EPS $4.90",
-      "value": 58.87,
-      "weight": 0,
-      "trimmed": true
-     },
-     {
-      "name": "DCF",
-      "assumption": "DCF yr1 $5.17 grown 12%/yr, 10% disc, 3% term",
-      "value": 98.64,
-      "weight": 20.0,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/E",
-      "assumption": "24.0x on EPS $4.90 (published $6.82 less SBC $1.91) (G 24)",
-      "value": 117.73,
-      "weight": 33.3,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/S",
-      "assumption": "5.88x (3 x 29.4% margin / 15) on next-yr revenue $21.53/sh",
-      "value": 126.61,
-      "weight": 13.3,
-      "trimmed": false
-     },
-     {
-      "name": "FCF yield",
-      "assumption": "4.0% yield on forward SBC-adj FCF $5.17/sh (F 28%)",
-      "value": 129.16,
-      "weight": 33.3,
-      "trimmed": false
-     },
-     {
-      "name": "EV/EBITDA",
-      "assumption": "30.26x (industry: NYU Stern Jan 2026 \"Software (Internet)\"; own 5-yr median not verified) on forward EBITDA $1.19B",
-      "value": 192.87,
-      "weight": 0,
-      "trimmed": true
-     }
-    ],
-    "composite": 118.9,
-    "spreadPct": 31,
-    "low": 58.87,
-    "high": 192.87,
-    "bear": null,
-    "bull": null,
-    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; capped at Approaching by an open rule gap"
-   },
-   "entry": "RSI(14) 31.2 (neutral); price below the 50-day average and below the 200-day average; 4.02% above the 52-week low; volume 0.63x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
-   "upgrade": "Seth must rule on whether a foreign regulator's open enforcement action counts under rule 8 (if it does not, RDDT qualifies as Strict at today's price) (the price is already at or below the buy price)",
-   "tech": {
-    "rsi": 31.2,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 4.02,
-    "volVsAvg": 0.63,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "Reddit Q3 2026 earnings call highlights (MarketBeat)",
-     "url": "https://www.marketbeat.com/instant-alerts/transcript-reddit-q3-earnings-call-highlights-2026-10-31/"
-    },
-    {
-     "title": "Reddit appeals ICO fine (Digital Policy Alert)",
-     "url": "https://digitalpolicyalert.org/event/39500-reddit-appealed-fine-of-gbp-1447-imposed-by-information-commissioners-office-for-unlawful-processing-of-childrens-personal-data"
-    },
-    {
-     "title": "UK ICO fines Reddit GBP 14.47M (The Register)",
-     "url": "https://www.theregister.com/2026/02/24/ico_fines_reddit"
     },
     {
      "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
@@ -1232,13 +1232,13 @@
     "symbol": "WLDN",
     "name": "Willdan Group, Inc.",
     "confidence": "research",
-    "reason": "revenue 20% next yr; fewer than 3 analysts (1.0) UNVERIFIED; fewer than 3 analysts (EPS 2.0, rev 1.0) UNVERIFIED; net debt 0.5x EBITDA PASS; P/S 1.4 at 7.5% margin = 2.8 PASS. Price $70.13 (Nov 16), fair value $85.72, buy at or below $74.55. Not added: Gates 1 and 2 unverified (only 1-2 analysts; needs 3), so it cannot be auto-added. Price is below the buy price."
+    "reason": "revenue 20% next yr; fewer than 3 analysts (1.0) UNVERIFIED; fewer than 3 analysts (EPS 2.0, rev 1.0) UNVERIFIED; net debt 0.5x EBITDA PASS; P/S 1.4 at 7.5% margin = 2.8 PASS. Price $70.13 (Nov 16), fair value $85.72, buy at or below $74.55. Not added: Gates 1 and 2 unverified (only 1-2 analysts; needs 3), so it cannot be auto-added. Second source (stockanalysis.com) shows next-year revenue +16.1% but EPS only +7.0%, which would fail Gate 2 if the count were met. Price is below the buy price."
    },
    {
     "symbol": "HCI",
     "name": "HCI Group, Inc.",
     "confidence": "research",
-    "reason": "fewer than 3 analysts (2.0) UNVERIFIED; ROE 34.8% (latest year only) PASS; sector test: credit rating needed UNVERIFIED; price 193.06 vs P/B value 270.45 (BV 90.15 x 3.00) PASS. Price $193.06 (Nov 16), fair value $224.28, buy at or below $184.63. Not added: Gate 1 unverified (only 2 analysts on the EPS estimate; needs 3) and Gate 3 unverified (insurer: credit rating needed). Price is above the buy price."
+    "reason": "fewer than 3 analysts (2.0) UNVERIFIED; ROE 34.8% (latest year only) PASS; sector test: credit rating needed UNVERIFIED; price 193.06 vs P/B value 270.45 (BV 90.15 x 3.00) PASS. Price $193.06 (Nov 16), fair value $224.28, buy at or below $184.63. Not added: Gate 1 unverified (only 2 analysts on the EPS estimate; needs 3); second source (stockanalysis.com) shows next-year EPS down 6.9% to $20.03, which would fail Gate 1. Gate 3 unverified: its insurers are rated A by Demotech only, which is not an accepted agency (S&P, Moody's, Fitch, AM Best). Price is above the buy price."
    }
   ],
   "removes": []

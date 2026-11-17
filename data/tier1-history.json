@@ -113,31 +113,31 @@
     "priceDate": "2026-11-16"
    },
    {
-    "symbol": "EXEL",
+    "symbol": "RDDT",
     "class": "strict",
     "rank": 6,
+    "price": 92.87,
+    "priceDate": "2026-11-16"
+   },
+   {
+    "symbol": "EXEL",
+    "class": "strict",
+    "rank": 7,
     "price": 67.1,
     "priceDate": "2026-11-16"
    },
    {
     "symbol": "DAVE",
     "class": "approaching",
-    "rank": 7,
+    "rank": 8,
     "price": 273.08,
     "priceDate": "2026-11-16"
    },
    {
     "symbol": "NVDA",
     "class": "approaching",
-    "rank": 8,
-    "price": 156.14,
-    "priceDate": "2026-11-16"
-   },
-   {
-    "symbol": "RDDT",
-    "class": "approaching",
     "rank": 9,
-    "price": 92.87,
+    "price": 156.14,
     "priceDate": "2026-11-16"
    },
    {
