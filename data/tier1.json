@@ -1,16 +1,138 @@
 {
- "updated": "2026-11-18T12:24:12+00:00",
+ "updated": "2026-11-18T12:34:41+00:00",
  "asOf": "2026-11-17",
  "summary": {
-  "screened": 172,
-  "strict": 6,
-  "approaching": 5,
-  "note": "Nov 18 run on Tue Nov 17 closes; prices re-checked against Twelve Data for all 11 listed names. CHANGE vs the Nov 17 screen: EME closed $646.24, 0.6% above its $642.46 buy price, and moves from Strict to Approaching. NVDA reported Nov 17 after the close (revenue about $115.8B, Q4 outlook $130B plus or minus 3%); Colette Kress is still interim CEO, so red flag 7 stays and NVDA stays Approaching; analyst revisions are not in the data yet. 6 Strict, 5 Approaching. The other universe names were carried from the Nov 17 screen (Nov 16 closes: 23 with no failed gate, 76 with one, 72 eliminated), not re-run; stockanalysis.com and Finviz stay blocked and SEC filing text could not be read, so no auto-add was possible. Market sweep result: see the watchlist adds and the Docs report."
+  "screened": 174,
+  "strict": 7,
+  "approaching": 6,
+  "note": "Nov 18 run on Tue Nov 17 closes; prices re-checked against Twelve Data for all 13 listed names. CHANGES vs the Nov 17 screen: EME closed $646.24, 0.6% above its $642.46 buy price, and moves from Strict to Approaching. NVDA reported Nov 17 after the close (revenue about $115.8B, Q4 outlook $130B plus or minus 3%); Colette Kress is still interim CEO, so red flag 7 stays and NVDA stays Approaching. MARKET SWEEP (Yahoo screens, 668 unique tickers; consensus pages loaded for 245; 30 passed the snapshot; 4 verified from SEC filings): ADDED to the watchlist: HCC (Approaching, price 0.8% above its buy price) and DLO (Strict; caveats on its card). Recommended, not added: RIGL (red flag 9); HBM is blocked by red flags 4 and 9 and has no fair value yet. Not covered: 134 names whose Yahoo pages returned no estimates (including CVS, TAL, APA, APTV) and 6 small financials (Gate 3 needs a credit rating), carried to the next run. The other universe names were carried from the Nov 17 screen (23 with no failed gate), not re-run. Recommendations are capped at 5 a day, so WLDN and HCI (still unverified, not added) are not listed today."
  },
  "names": [
   {
-   "symbol": "STRL",
+   "symbol": "DLO",
    "rank": 1,
+   "class": "strict",
+   "price": 12.46,
+   "priceDate": "2026-11-17",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "FY27 revenue consensus $2.06B vs FY26 $1.57B = +31.2% (10 analysts)"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "FY27 EPS $1.12 vs FY26 $0.86 = +30.2% vs revenue +31.2% (30.2% is above the 15% line); 4 analysts on FY27 EPS, 2 on FY26"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash: cash $1,033.9M (corporate cash $536.9M) vs financial liabilities $163.5M + leases $3.8M at 9/30/26"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 2.43 (market value about $3.6B / TTM revenue $1,471.5M) at a 17.4% TTM operating margin = 2.10"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "FY27 EPS $1.12 now vs $1.13 90 days ago (-0.9%)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found: Q3 revenue $398.0M vs $282.5M; Q3 operating margin 19.1% vs 19.7%; guidance updated at Q2, not cut at Q3; shares falling (buybacks $120M); no leadership 6-K since August; the 20-F lists only private class actions (not counted); no US government action found. The Nov 17 drop of 6.6% has no cause in the sources I could reach."
+    }
+   },
+   "reason": "dLocal: payments platform for emerging markets (Uruguay-based foreign filer, IFRS, reported in USD); valued as a software company by its Yahoo industry. Revenue +31.2% next yr (10 analysts); net cash; P/S 2.43 at a 17.4% margin = 2.10. Strict by the rules, with caveats: the stock fell 6.6% on Nov 17 on 3.4x its usual volume and no cause was found; TTM free cash flow is inflated by merchant payables (rule applied literally); only 4 analysts cover next-year EPS. Added to the watchlist by the Nov 18 sweep; its numbers come from the Q3 6-K, checked by the sweep session, and I re-checked the price only. Check before acting.",
+   "revGrowth": 31.2,
+   "fwdPE": 11.1,
+   "fcfYield": 13.1,
+   "roic": null,
+   "fairValue": 34.56,
+   "buyBelow": 24.72,
+   "discountPct": 63.9,
+   "rewardRisk": null,
+   "impliedReturnPct": 40.5,
+   "spreadPct": 72.8,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "Forward P/E",
+      "assumption": "G 30.2 (one forward year); target 27.1x (12 + 0.5 x G) on FY27 EPS $1.12 (4 analysts); stock pay is 1.6% of revenue, so no adjustment",
+      "value": 30.35,
+      "weight": 41.7,
+      "trimmed": false
+     },
+     {
+      "name": "DCF",
+      "assumption": "year 1 forward SBC-adjusted FCF $2.03/sh, grown 15.1%/yr (50% of G), 10% discount, 3% terminal",
+      "value": 42.71,
+      "weight": 41.6,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "3.48x (3 x 17.4% TTM margin / 15; no consensus margin) on next-yr revenue $7.10/sh ($2.06B / about 290M shares)",
+      "value": 24.72,
+      "weight": 16.7,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4% yield (6 - G/10 floored at 4) on forward SBC-adjusted FCF $2.03/sh (TTM FCF $472.8M = $1.63/sh minus stock pay $0.08, x 1.312 for F of 31.2); TTM FCF inflated by merchant payables",
+      "value": 50.79,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "PEG",
+      "assumption": "15.1x (0.5 x G of 30.2) on EPS $1.12",
+      "value": 16.91,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 34.56,
+    "spreadPct": 72.8,
+    "low": 16.91,
+    "high": 50.79,
+    "bear": null,
+    "bull": null,
+    "note": "company type SOFTWARE (no EV/EBITDA method); buy price set by Forward P/S; methods spread widely (72.8%); free cash flow inflated by merchant working capital; PEG $16.91 is lower but does not set the buy price; share count about 290M is approximate"
+   },
+   "entry": "RSI(14) 33.6 (neutral); price below the 50-day average and below the 200-day average; 17.11% above the 52-week low; volume 3.43x the 30-day average; next earnings date not confirmed",
+   "upgrade": "Nothing required under the rules: all gates pass, no blockers, and the price is at or below the buy price. Check the caveats in the reason line before acting.",
+   "tech": {
+    "rsi": 33.6,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 17.11,
+    "volVsAvg": 3.43,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "dLocal Q3 2026 results, 6-K exhibit 99.1",
+     "url": "https://www.sec.gov/Archives/edgar/data/1846832/000184683226000037/ex_991-dlocalxearningsxres.htm"
+    },
+    {
+     "title": "dLocal 20-F FY2025",
+     "url": "https://www.sec.gov/Archives/edgar/data/1846832/000207097926000113/dlo-20251231.htm"
+    },
+    {
+     "title": "SEC XBRL company facts",
+     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001846832.json"
+    },
+    {
+     "title": "Yahoo analyst estimates",
+     "url": "https://finance.yahoo.com/quote/DLO/analysis/"
+    }
+   ]
+  },
+  {
+   "symbol": "STRL",
+   "rank": 2,
    "class": "strict",
    "price": 275.26,
    "priceDate": "2026-11-17",
@@ -131,7 +253,7 @@
   },
   {
    "symbol": "B",
-   "rank": 2,
+   "rank": 3,
    "class": "strict",
    "price": 36.63,
    "priceDate": "2026-11-17",
@@ -260,7 +382,7 @@
   },
   {
    "symbol": "IESC",
-   "rank": 3,
+   "rank": 4,
    "class": "strict",
    "price": 168.34,
    "priceDate": "2026-11-17",
@@ -381,7 +503,7 @@
   },
   {
    "symbol": "FIX",
-   "rank": 4,
+   "rank": 5,
    "class": "strict",
    "price": 1099.02,
    "priceDate": "2026-11-17",
@@ -502,7 +624,7 @@
   },
   {
    "symbol": "RDDT",
-   "rank": 5,
+   "rank": 6,
    "class": "strict",
    "price": 94.48,
    "priceDate": "2026-11-17",
@@ -631,7 +753,7 @@
   },
   {
    "symbol": "EXEL",
-   "rank": 6,
+   "rank": 7,
    "class": "strict",
    "price": 68.5,
    "priceDate": "2026-11-17",
@@ -752,7 +874,7 @@
   },
   {
    "symbol": "DAVE",
-   "rank": 7,
+   "rank": 8,
    "class": "approaching",
    "price": 262.81,
    "priceDate": "2026-11-17",
@@ -848,7 +970,7 @@
   },
   {
    "symbol": "NVDA",
-   "rank": 8,
+   "rank": 9,
    "class": "approaching",
    "price": 155.46,
    "priceDate": "2026-11-17",
@@ -973,7 +1095,7 @@
   },
   {
    "symbol": "EME",
-   "rank": 9,
+   "rank": 10,
    "class": "approaching",
    "price": 646.24,
    "priceDate": "2026-11-17",
@@ -1093,8 +1215,130 @@
    ]
   },
   {
+   "symbol": "HCC",
+   "rank": 11,
+   "class": "approaching",
+   "price": 79.0,
+   "priceDate": "2026-11-17",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "FY27 revenue consensus $2.26B vs FY26 $2.01B = +12.4% (6 analysts, Yahoo)"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "FY27 EPS $7.79 vs FY26 $5.62 = +38.5% vs revenue +12.4% (6 EPS analysts)"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash: cash and short-term investments $447.3M vs debt $154.8M + finance leases $77.6M = $232.4M at 9/30/26 ($266M including federal coal lease obligations)"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 2.24 (market value $4.18B / TTM revenue $1.860B) at the 5-year average operating margin 24.3% (2021-25) = 1.38; TTM margin 13.9%"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "FY27 EPS $7.79 now vs $6.83 90 days ago (+14.1%); 6 analysts"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found: Q3 revenue $507.9M vs $328.6M; Q3 operating margin 10.0% vs 6.3%; guidance reaffirmed Nov 4; diluted shares 52.88M vs 52.65M; TTM operating margin 13.9% vs 0.6% the year before; no CEO/CFO 8-K since Apr 21; 10-Q Note 8 shows no government action; no late filings, going-concern or restatement"
+    }
+   },
+   "reason": "Warrior Met Coal: steelmaking (metallurgical) coal producer, valued as a cyclical. Revenue +12.4% next yr (6 analysts); net cash; P/S 2.24 at the 5-year average margin of 24.3% = 1.38. Price is 0.8% above its buy price. Added to the watchlist by the Nov 18 sweep (numbers from the Q3 10-Q, checked by the sweep session; I re-checked the price only).",
+   "revGrowth": 12.4,
+   "fwdPE": 10.1,
+   "fcfYield": 3.2,
+   "roic": null,
+   "fairValue": 114.05,
+   "buyBelow": 78.38,
+   "discountPct": 30.7,
+   "rewardRisk": null,
+   "impliedReturnPct": 13.0,
+   "spreadPct": 90.1,
+   "strictChecks": {
+    "allMethods": false
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "Forward P/E",
+      "assumption": "cyclical blend; G 12.4 (cyclical G uses revenue; one forward year); target 18.2x (12 + 0.5 x G) on blended EPS $8.19 = average of mid-cycle forward EPS $8.59 and consensus FY27 EPS $7.79; no stock-pay adjustment (Basic Materials default)",
+      "value": 149.02,
+      "weight": 50,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.76% yield (6 - G/10) on blended SBC-adjusted FCF $3.73/sh = average of mid-cycle $5.08 and forward $2.38 (TTM FCF $132.6M = $2.51/sh minus stock pay $0.39, x 1.124 for F of 12.4)",
+      "value": 78.38,
+      "weight": 40,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 12.4 = 6.2, floored at 10) on blended EPS $8.19",
+      "value": 81.88,
+      "weight": 10,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "3.82x (3 x blended margin 19.1% / 15; blend of 5-year average 24.3% and TTM 13.9%; no consensus margin) on next-yr revenue $42.74/sh",
+      "value": 163.33,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "year 1 $3.73/sh (blended), grown 6.2%/yr (50% of G), 10% discount, 3% terminal",
+      "value": 59.19,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 114.05,
+    "spreadPct": 90.1,
+    "low": 59.19,
+    "high": 163.33,
+    "bear": null,
+    "bull": null,
+    "note": "company type CYCLICAL (cyclical blend used); EV/EBITDA left out: industry multiple not verified; PEG $81.88 is lower than the Forward P/E but does not set the buy price; $2.00 special dividend payable Nov 20 (record date Nov 9) not adjusted"
+   },
+   "entry": "RSI(14) 36.1 (neutral); price below the 50-day average and below the 200-day average; 10.04% above the 52-week low; volume 0.66x the 30-day average; next earnings date not confirmed (last reported 2026-11-04)",
+   "upgrade": "price must fall 0.8% to $78.38 (all gates pass, no blockers)",
+   "tech": {
+    "rsi": 36.1,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 10.04,
+    "volVsAvg": 0.66,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Warrior 10-Q Q3 2026",
+     "url": "https://www.sec.gov/Archives/edgar/data/1691303/000119312526447481/hcc-20260930.htm"
+    },
+    {
+     "title": "Warrior 8-K Q3 2026 press release",
+     "url": "https://www.sec.gov/Archives/edgar/data/1691303/000119312526447189/hcc-ex99_1.htm"
+    },
+    {
+     "title": "SEC XBRL company facts",
+     "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001691303.json"
+    },
+    {
+     "title": "Yahoo analyst estimates",
+     "url": "https://finance.yahoo.com/quote/HCC/analysis/"
+    }
+   ]
+  },
+  {
    "symbol": "ADMA",
-   "rank": 10,
+   "rank": 12,
    "class": "approaching",
    "price": 13.63,
    "priceDate": "2026-11-17",
@@ -1215,7 +1459,7 @@
   },
   {
    "symbol": "CHKP",
-   "rank": 11,
+   "rank": 13,
    "class": "approaching",
    "price": 148.39,
    "priceDate": "2026-11-17",
@@ -1331,6 +1575,30 @@
  "watchlist": {
   "adds": [
    {
+    "symbol": "HCC",
+    "name": "Warrior Met Coal, Inc.",
+    "confidence": "added",
+    "reason": "auto-added by the Nov 18 sweep: revenue +12.4% next yr (6 analysts) PASS; EPS +38.5% vs revenue +12.4% PASS; net cash ($447M cash and investments vs $232M debt and leases) PASS; P/S 2.24 at the 5-year average margin 24.3% = 1.38 PASS. Falling-estimates PASS (+14.1%), red flags none found. Price $79.00 (Nov 17), fair value $114.05, buy at or below $78.38 (0.8% above), so Approaching. Numbers from the Q3 10-Q."
+   },
+   {
+    "symbol": "DLO",
+    "name": "dLocal Limited",
+    "confidence": "added",
+    "reason": "auto-added by the Nov 18 sweep: revenue +31.2% next yr (10 analysts) PASS; EPS +30.2% vs revenue +31.2% (4 analysts on FY27 EPS) PASS; net cash PASS; P/S 2.43 at a 17.4% margin = 2.10 PASS. Falling-estimates PASS (-0.9%), red flags none found. Price $12.46 (Nov 17), fair value $34.56, buy at or below $24.72, so Strict. Numbers from the Q3 6-K; the stock fell 6.6% on Nov 17 with no cause found."
+   },
+   {
+    "symbol": "RIGL",
+    "name": "Rigel Pharmaceuticals, Inc.",
+    "confidence": "approaching",
+    "reason": "revenue +24.1% next yr (5 analysts) PASS; EPS +43.1% vs revenue +24.1% (4 analysts) PASS; net cash PASS; P/S about 2.8 at a 26.3% margin = 1.6 PASS. Falling-estimates PASS (+8.9%). Price $42.92 (Nov 17), fair value $107.96, buy at or below $99.02. Not added: red flag 9, quarterly operating margin 21.1% vs 40.9% a year ago. Numbers from the Q3 10-Q."
+   },
+   {
+    "symbol": "WDC",
+    "name": "Western Digital Corporation",
+    "confidence": "approaching",
+    "reason": "Found by the market sweep. revenue +40.5% next yr (FY2028), 23 analysts PASS; EPS +63.4% vs revenue +40.5% (23 analysts) PASS; net cash ($1.31B cash vs $0.79B debt, 10-Q Oct 2 2026) PASS; P/S 7.45 at 39.4% operating margin = 2.84 PASS. Falling-estimates PASS (next-yr EPS $40.40 vs $31.90 90 days ago). Red flags 1, 3, 4, 6, 9 clear on XBRL (Q1 revenue +55% y/y, margin 46.7% vs 28.1%, diluted shares +2.1%); flags 2, 7, 8 UNVERIFIED because SEC filing text was not readable; two 8-Ks with Item 5.02 (Nov 2025, May 2026) not read. Price $280.93 (Nov 16), fair value about $549, buy at or below $420 (DCF). Not added: red-flag check incomplete (Legal Proceedings and officer-change text unread). G = 63.4% from one forward year only, P/E capped at 30x. Needs a filing check before an auto-add."
+   },
+   {
     "symbol": "SE",
     "name": "Sea Limited",
     "confidence": "approaching",
@@ -1347,24 +1615,6 @@
     "name": "Super Micro Computer, Inc.",
     "confidence": "approaching",
     "reason": "Found by the market sweep (Yahoo Undervalued Growth and Growth Technology screens). Snapshot from stockanalysis.com: revenue +16.3% next fiscal year (FY2028) UNVERIFIED (analyst count not shown for FY2028; 15 on FY2027); EPS +19.7% vs revenue +16.3% next yr UNVERIFIED (same reason); net debt $2.27B = 0.5x EBITDA PASS; P/S 0.33 at 8.3% margin = 0.6 PASS. Price $25.03 (Nov 16, Twelve Data), fair value about $156.70, buy at or below $122.14 (forward P/E 21.9x on FY2028 EPS $5.59; EV/EBITDA $200.60 at the Computers/Peripherals 25.42x, P/S $205.70, PEG $55.90; FCF methods left out because cash flow and stock pay were not verified). Not added: red flag 4 (shares outstanding up 13.3% in a year), and Gates 1-2 lack a 3-analyst count. Other red flags not fully checked; Nov 3 Q1 FY2027 report: revenue $19.9B (+298%), full-year guidance raised to $72-82B."
-   },
-   {
-    "symbol": "WLDN",
-    "name": "Willdan Group, Inc.",
-    "confidence": "research",
-    "reason": "revenue 20% next yr; fewer than 3 analysts (1.0) UNVERIFIED; fewer than 3 analysts (EPS 2.0, rev 1.0) UNVERIFIED; net debt 0.5x EBITDA PASS; P/S 1.4 at 7.5% margin = 2.8 PASS. Price $70.13 (Nov 16), fair value $85.72, buy at or below $74.55. Not added: Gates 1 and 2 unverified (only 1-2 analysts; needs 3), so it cannot be auto-added. Second source (stockanalysis.com) shows next-year revenue +16.1% but EPS only +7.0%, which would fail Gate 2 if the count were met. Price is below the buy price."
-   },
-   {
-    "symbol": "HCI",
-    "name": "HCI Group, Inc.",
-    "confidence": "research",
-    "reason": "fewer than 3 analysts (2.0) UNVERIFIED; ROE 34.8% (latest year only) PASS; sector test: credit rating needed UNVERIFIED; price 193.06 vs P/B value 270.45 (BV 90.15 x 3.00) PASS. Price $193.06 (Nov 16), fair value $224.28, buy at or below $184.63. Not added: Gate 1 unverified (only 2 analysts on the EPS estimate; needs 3); second source (stockanalysis.com) shows next-year EPS down 6.9% to $20.03, which would fail Gate 1. Gate 3 unverified: its insurers are rated A by Demotech only, which is not an accepted agency (S&P, Moody's, Fitch, AM Best). Price is above the buy price."
-   },
-   {
-    "symbol": "WDC",
-    "name": "Western Digital Corporation",
-    "confidence": "approaching",
-    "reason": "Found by the market sweep. revenue +40.5% next yr (FY2028), 23 analysts PASS; EPS +63.4% vs revenue +40.5% (23 analysts) PASS; net cash ($1.31B cash vs $0.79B debt, 10-Q Oct 2 2026) PASS; P/S 7.45 at 39.4% operating margin = 2.84 PASS. Falling-estimates PASS (next-yr EPS $40.40 vs $31.90 90 days ago). Red flags 1, 3, 4, 6, 9 clear on XBRL (Q1 revenue +55% y/y, margin 46.7% vs 28.1%, diluted shares +2.1%); flags 2, 7, 8 UNVERIFIED because SEC filing text was not readable; two 8-Ks with Item 5.02 (Nov 2025, May 2026) not read. Price $280.93 (Nov 16), fair value about $549, buy at or below $420 (DCF). Not added: red-flag check incomplete (Legal Proceedings and officer-change text unread). G = 63.4% from one forward year only, P/E capped at 30x. Needs a filing check before an auto-add."
    }
   ],
   "removes": []
