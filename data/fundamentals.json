@@ -11546,6 +11546,235 @@ null
 "targetPrice": 96.98,
 "type": "EQUITY"
 },
+"DLO": {
+"_fetched": 1795005118.0386324,
+"_gate": {
+"bookValue": 2.006,
+"capexHist": [
+-36785000.0,
+-22647000.0,
+-18225000.0,
+-12352000.0,
+null
+],
+"capexTtm": -40206000.0,
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": 0.353,
+"ebitda": 248991008.0,
+"ebitdaHist": [
+255168000.0,
+168915000.0,
+191317000.0,
+128607000.0,
+null
+],
+"ebitdaMargin": 0.1692,
+"eps": [
+0.65,
+0.39,
+0.49,
+0.35,
+null
+],
+"epsEst": {
+"+1y": {
+"avg": 1.1237,
+"currency": null,
+"growth": 0.3067,
+"high": 1.16,
+"low": 1.0949,
+"methodology": null,
+"numberOfAnalysts": 4.0,
+"yearAgoEps": 0.86
+},
+"0y": {
+"avg": 0.86,
+"currency": null,
+"growth": 0.0662,
+"high": 0.91,
+"low": 0.81,
+"methodology": null,
+"numberOfAnalysts": 2.0,
+"yearAgoEps": 0.8066
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 1.1437,
+"60daysAgo": 1.1437,
+"7daysAgo": 1.1287,
+"90daysAgo": 1.1308,
+"currency": null,
+"current": 1.1237,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 0.8522,
+"60daysAgo": 0.8522,
+"7daysAgo": 0.8422,
+"90daysAgo": 0.86,
+"currency": null,
+"current": 0.86,
+"methodology": null
+}
+},
+"ev": 2647396096.0,
+"fcf": 424456736.0,
+"fcfHist": [
+378672000.0,
+-55431000.0,
+275228000.0,
+142099000.0,
+null
+],
+"fcfTtm": 472745000.0,
+"forwardEps": 1.1237,
+"grossMargin": 0.3355,
+"interest": [
+254000.0,
+501000.0,
+578000.0,
+177000.0,
+null
+],
+"netIncome": [
+196801000.0,
+120416000.0,
+148964000.0,
+108683000.0,
+null
+],
+"ocfHist": [
+415457000.0,
+-32784000.0,
+293453000.0,
+154451000.0,
+null
+],
+"ocfInfo": 512952000.0,
+"ocfTtm": 512951000.0,
+"opIncome": [
+222104000.0,
+140940000.0,
+176521000.0,
+133444000.0,
+null
+],
+"qEps": [
+0.23,
+0.18,
+0.14,
+0.18,
+0.17,
+null
+],
+"qOpIncome": [
+76434000.0,
+65591000.0,
+53552000.0,
+63109000.0,
+55584000.0,
+null
+],
+"qRevenue": [
+398049000.0,
+399664000.0,
+335862000.0,
+337887000.0,
+282483000.0,
+null
+],
+"qShares": [
+294565426.0,
+303544444.0,
+299821429.0,
+302757003.0,
+302115885.0,
+null
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30",
+"2025-03-31"
+],
+"revEst": {
+"+1y": {
+"avg": 2062530800.0,
+"currency": null,
+"growth": 0.3153,
+"high": 2198200680.0,
+"low": 1889644000.0,
+"numberOfAnalysts": 10.0,
+"yearAgoRevenue": 1568150590.0
+},
+"0y": {
+"avg": 1568150590.0,
+"currency": null,
+"growth": 0.434,
+"high": 1575000000.0,
+"low": 1554670000.0,
+"numberOfAnalysts": 5.0,
+"yearAgoRevenue": 1093587000.0
+}
+},
+"revenue": [
+1093587000.0,
+745974000.0,
+650351000.0,
+418925000.0,
+null
+],
+"revenueTtm": 1471462016.0,
+"roe": 0.4074,
+"sbcHist": [
+24136000.0,
+23780000.0,
+11922000.0,
+8684000.0,
+null
+],
+"sbcTtm": 23715000.0,
+"shares": 177506876.0,
+"totalCash": 1101698944.0,
+"totalDebt": 167268992.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31",
+"2021-12-31"
+]
+},
+"analysts": 10,
+"beta": 0.873,
+"currency": "USD",
+"dividendRate": 0.19,
+"earningsDate": "2026-11-12",
+"eps": 0.74,
+"exchange": "NMS",
+"forwardPe": 11.09,
+"industry": "Software - Infrastructure",
+"marketCap": 3569415680,
+"name": "DLocal Limited",
+"netMargin": 14.9,
+"opMargin": 17.4,
+"pe": 16.84,
+"ps": 2.43,
+"rating": "strong_buy",
+"revGrowth": 40.9,
+"sector": "Technology",
+"targetPrice": 18.5,
+"type": "EQUITY"
+},
 "DRS": {
 "_fetched": 1794940427.9822881,
 "_gate": {
@@ -18055,6 +18284,230 @@ null
 "revGrowth": 24.7,
 "sector": "Communication Services",
 "targetPrice": 393.0,
+"type": "EQUITY"
+},
+"HCC": {
+"_fetched": 1795005116.9176078,
+"_gate": {
+"bookValue": 44.291,
+"capexHist": [
+-329624000.0,
+-457221000.0,
+-491674000.0,
+-208742000.0,
+null
+],
+"capexTtm": -230359000.0,
+"cfQuarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31"
+],
+"earningsGrowth": 0.336,
+"ebitda": 498982016.0,
+"ebitdaHist": [
+252751000.0,
+441919000.0,
+696735000.0,
+929816000.0,
+null
+],
+"ebitdaMargin": 0.2678,
+"eps": [
+1.08,
+4.79,
+9.2,
+12.4,
+null
+],
+"epsEst": {
+"+1y": {
+"avg": 7.7878,
+"currency": null,
+"growth": 0.3854,
+"high": 11.12,
+"low": 3.99,
+"methodology": null,
+"numberOfAnalysts": 6.0,
+"yearAgoEps": 5.6213
+},
+"0y": {
+"avg": 5.6213,
+"currency": null,
+"growth": 4.1571,
+"high": 5.85,
+"low": 5.41,
+"methodology": null,
+"numberOfAnalysts": 4.0,
+"yearAgoEps": 1.09
+}
+},
+"epsTrend": {
+"+1y": {
+"30daysAgo": 7.0128,
+"60daysAgo": 6.8345,
+"7daysAgo": 7.7997,
+"90daysAgo": 6.8345,
+"currency": null,
+"current": 7.7878,
+"methodology": null
+},
+"0y": {
+"30daysAgo": 6.637,
+"60daysAgo": 6.3333,
+"7daysAgo": 5.6293,
+"90daysAgo": 6.3333,
+"currency": null,
+"current": 5.6213,
+"methodology": null
+}
+},
+"ev": 3956477952.0,
+"fcf": 77626872.0,
+"fcfHist": [
+-100378000.0,
+-89773000.0,
+209434000.0,
+633162000.0,
+null
+],
+"fcfTtm": 132269000.0,
+"forwardEps": 7.7878,
+"grossMargin": 0.3045,
+"interest": [
+9742000.0,
+4271000.0,
+17960000.0,
+31433000.0,
+null
+],
+"netIncome": [
+56998000.0,
+250603000.0,
+478629000.0,
+641298000.0,
+null
+],
+"ocfHist": [
+229246000.0,
+367448000.0,
+701108000.0,
+841904000.0,
+null
+],
+"ocfInfo": 362628000.0,
+"ocfTtm": 362628000.0,
+"opIncome": [
+45728000.0,
+255414000.0,
+549697000.0,
+837016000.0,
+null
+],
+"qEps": [
+0.93,
+1.65,
+1.37,
+0.44,
+0.7
+],
+"qOpIncome": [
+50794000.0,
+94521000.0,
+79368000.0,
+34666000.0,
+20724000.0
+],
+"qRevenue": [
+507928000.0,
+509690000.0,
+458588000.0,
+383988000.0,
+328589000.0
+],
+"qShares": [
+52883000.0,
+52871000.0,
+52760000.0,
+52666000.0,
+52650000.0
+],
+"quarters": [
+"2026-09-30",
+"2026-06-30",
+"2026-03-31",
+"2025-12-31",
+"2025-09-30"
+],
+"revEst": {
+"+1y": {
+"avg": 2262732360.0,
+"currency": null,
+"growth": 0.1263,
+"high": 2423000000.0,
+"low": 2171530620.0,
+"numberOfAnalysts": 6.0,
+"yearAgoRevenue": 2008911940.0
+},
+"0y": {
+"avg": 2008911940.0,
+"currency": null,
+"growth": 0.5335,
+"high": 2047000000.0,
+"low": 1948000000.0,
+"numberOfAnalysts": 6.0,
+"yearAgoRevenue": 1310043000.0
+}
+},
+"revenue": [
+1310043000.0,
+1525220000.0,
+1676625000.0,
+1738738000.0,
+null
+],
+"revenueTtm": 1863193984.0,
+"roe": 0.1041,
+"sbcHist": [
+19953000.0,
+22070000.0,
+18207000.0,
+17621000.0,
+null
+],
+"sbcTtm": 20621000.0,
+"shares": 52802087.0,
+"totalCash": 447256000.0,
+"totalDebt": 232368992.0,
+"v": 2,
+"years": [
+"2025-12-31",
+"2024-12-31",
+"2023-12-31",
+"2022-12-31",
+"2021-12-31"
+]
+},
+"analysts": 6,
+"beta": 0.746,
+"currency": "USD",
+"dividendRate": 0.32,
+"earningsDate": "2026-11-04",
+"eps": 4.39,
+"exchange": "NYQ",
+"forwardPe": 10.14,
+"industry": "Coking Coal",
+"marketCap": 4171364864,
+"name": "Warrior Met Coal, Inc.",
+"netMargin": 12.5,
+"opMargin": 13.9,
+"pe": 18.0,
+"ps": 2.24,
+"rating": "buy",
+"revGrowth": 55.0,
+"sector": "Basic Materials",
+"targetPrice": 106.5,
 "type": "EQUITY"
 },
 "HESM": {
