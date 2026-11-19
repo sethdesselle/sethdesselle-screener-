@@ -7745,7 +7745,7 @@ null
 "type": "EQUITY"
 },
 "CHKP": {
-"_fetched": 1794988637.697763,
+"_fetched": 1795075018.1777816,
 "_gate": {
 "bookValue": 26.017,
 "capexHist": [
@@ -7821,7 +7821,7 @@ null
 "methodology": null
 }
 },
-"ev": 14869145600.0,
+"ev": 15441042432.0,
 "fcf": 716437504.0,
 "fcfHist": [
 1172800000.0,
@@ -7954,14 +7954,14 @@ null
 "earningsDate": "2026-11-02",
 "eps": 8.31,
 "exchange": "NMS",
-"forwardPe": 13.44,
+"forwardPe": 13.95,
 "industry": "Software - Infrastructure",
-"marketCap": 15150712832,
+"marketCap": 15726560256,
 "name": "Check Point Software Technologi",
 "netMargin": 31.7,
 "opMargin": 28.3,
-"pe": 17.86,
-"ps": 5.5,
+"pe": 18.54,
+"ps": 5.7,
 "rating": "buy",
 "revGrowth": -1.1,
 "sector": "Technology",
