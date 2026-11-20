@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-20T12:22:48+00:00",
+ "updated": "2026-11-20T12:23:59+00:00",
  "asOf": "2026-11-19",
  "summary": {
   "screened": 174,
   "strict": 7,
   "approaching": 6,
-  "note": "Nov 20 run on Thu Nov 19 closes; prices re-checked against Twelve Data for all 13 listed names. CHANGES vs the Nov 19 screen: EME closed $636.08, 1.0% below its $642.46 buy price, and is Strict again; B drops from Strict to Approaching because the falling-estimates check now fails (next-year EPS estimate down 5.7% in 90 days, limit 5%). All four index ETFs fell about 2% on Thursday; DAVE fell 11.5% with no cause found, NVDA fell 3.3%, and RDDT is 0.7% above its 52-week low. IESC reports today. Fair values, buy prices and gate numbers are carried from the last screen; prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. Market sweep result: pending, see the watchlist adds and the Docs report."
+  "note": "Nov 20 run on Thu Nov 19 closes; prices re-checked against Twelve Data for all 13 listed names. CHANGES vs the Nov 19 screen: EME closed $636.08, 1.0% below its $642.46 buy price, and is Strict again; B drops from Strict to Approaching because the falling-estimates check now fails (next-year EPS estimate down 5.7% in 90 days, limit 5%). All four index ETFs fell about 2% on Thursday; DAVE fell 11.5% with no cause found, NVDA fell 3.3%, and RDDT is 0.7% above its 52-week low. IESC reports today. Fair values, buy prices and gate numbers are carried from the last screen; prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. MARKET SWEEP did not run today: Yahoo's per-ticker estimate pages returned error pages (the same failure as yesterday) and Twelve Data's analyst endpoint is paid-only, so Gates 1 and 2 could not be tested for any new name; nothing was verified or added. Carried to the next run: ACAD, ABX, AROW, DCOM, CUBI, LOB, HMY and the earlier backlog of names whose estimates never loaded. The recommendations in the watchlist list are carried from Nov 19 and were not re-checked."
  },
  "names": [
   {
