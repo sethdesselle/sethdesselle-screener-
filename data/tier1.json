@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-19T12:37:59+00:00",
- "asOf": "2026-11-18",
+ "updated": "2026-11-20T12:22:48+00:00",
+ "asOf": "2026-11-19",
  "summary": {
   "screened": 174,
   "strict": 7,
   "approaching": 6,
-  "note": "Nov 19 run on Wed Nov 18 closes; prices re-checked against Twelve Data for all 13 listed names. No class changes vs the Nov 18 screen: 7 Strict, 6 Approaching. Fair values, buy prices and gate numbers are carried from the last screen; prices, the 90-day estimate changes and the entry-timing facts were refreshed. Closest to the falling-estimates limit (a cut of more than 5% fails): B (EPS estimate down 4.3% in 90 days) and ADMA (down 4.1%). B fell 5.9% on Wednesday and is still 15.5% below its buy price. NVDA fell 2.9% after its results; Colette Kress is still interim CEO, so red flag 7 stays. The other universe names were carried from the Nov 17 screen, not re-run; SEC filing text could not be read from this session. MARKET SWEEP (Yahoo screens, 505 unique tickers; estimate tables loaded for 243 of 443 new names and about 200 never loaded; 36 passed the growth and EPS snapshot; 1 passed every snapshot filter): no auto-adds. NPKI passes all four gates but fails red flag 2 and its price is far above its buy price; it is listed as a recommendation. SMCI drops off the five-a-day recommendation list. Carried to the next run: about 196 names whose estimates never loaded, plus ACAD, ABX, AROW, DCOM, CUBI and LOB."
+  "note": "Nov 20 run on Thu Nov 19 closes; prices re-checked against Twelve Data for all 13 listed names. CHANGES vs the Nov 19 screen: EME closed $636.08, 1.0% below its $642.46 buy price, and is Strict again; B drops from Strict to Approaching because the falling-estimates check now fails (next-year EPS estimate down 5.7% in 90 days, limit 5%). All four index ETFs fell about 2% on Thursday; DAVE fell 11.5% with no cause found, NVDA fell 3.3%, and RDDT is 0.7% above its 52-week low. IESC reports today. Fair values, buy prices and gate numbers are carried from the last screen; prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. Market sweep result: pending, see the watchlist adds and the Docs report."
  },
  "names": [
   {
    "symbol": "DLO",
    "rank": 1,
    "class": "strict",
-   "price": 12.89,
-   "priceDate": "2026-11-18",
+   "price": 12.67,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -33,7 +33,7 @@
     },
     "estimates": {
      "result": "pass",
-     "detail": "FY27 EPS $1.12 now vs $1.13 90 days ago (-0.9%)"
+     "detail": "FY27 EPS $1.13 now vs $1.13 90 days ago (-0.4%)"
     },
     "redFlags": {
      "result": "pass",
@@ -47,9 +47,9 @@
    "roic": null,
    "fairValue": 34.56,
    "buyBelow": 24.72,
-   "discountPct": 62.7,
+   "discountPct": 63.3,
    "rewardRisk": null,
-   "impliedReturnPct": 38.9,
+   "impliedReturnPct": 39.7,
    "spreadPct": 72.8,
    "strictChecks": {
     "allMethods": true
@@ -100,15 +100,15 @@
     "bull": null,
     "note": "company type SOFTWARE (no EV/EBITDA method); buy price set by Forward P/S; methods spread widely (72.8%); free cash flow inflated by merchant working capital; PEG $16.91 is lower but does not set the buy price; share count about 290M is approximate"
    },
-   "entry": "RSI(14) 39.4 (neutral); price below the 50-day average and below the 200-day average; 23.18% above the 52-week low; volume 1.8x the 30-day average; next earnings last reported 2026-11-12; next date not confirmed",
+   "entry": "RSI(14) 37.6 (neutral); price below the 50-day average and below the 200-day average; 21.08% above the 52-week low; volume 1.09x the 30-day average; next earnings last reported 2026-11-12; next date not confirmed",
    "upgrade": "Nothing required under the rules: all gates pass, no blockers, and the price is at or below the buy price. Check the caveats in the reason line before acting.",
    "tech": {
-    "rsi": 39.4,
+    "rsi": 37.6,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 23.18,
-    "volVsAvg": 1.8,
+    "fromLowPct": 21.08,
+    "volVsAvg": 1.09,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -134,8 +134,8 @@
    "symbol": "STRL",
    "rank": 2,
    "class": "strict",
-   "price": 276.36,
-   "priceDate": "2026-11-18",
+   "price": 273.25,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -169,9 +169,9 @@
    "roic": null,
    "fairValue": 543.06,
    "buyBelow": 443.49,
-   "discountPct": 49.1,
+   "discountPct": 49.7,
    "rewardRisk": null,
-   "impliedReturnPct": 25.3,
+   "impliedReturnPct": 25.7,
    "spreadPct": 80,
    "strictChecks": {
     "allMethods": true
@@ -229,15 +229,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 33.5 (neutral); price below the 50-day average and below the 200-day average; 15.46% above the 52-week low; volume 0.57x the 30-day average; next earnings last reported 2026-10-28; next date not confirmed",
+   "entry": "RSI(14) 33.0 (neutral); price below the 50-day average and below the 200-day average; 14.16% above the 52-week low; volume 0.55x the 30-day average; next earnings last reported 2026-10-28; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 33.5,
+    "rsi": 33.0,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 15.46,
-    "volVsAvg": 0.57,
+    "fromLowPct": 14.16,
+    "volVsAvg": 0.55,
     "staging": "Analysis only, no new capital."
    },
    "sources": [
@@ -252,140 +252,11 @@
    ]
   },
   {
-   "symbol": "B",
+   "symbol": "IESC",
    "rank": 3,
    "class": "strict",
-   "price": 34.46,
-   "priceDate": "2026-11-18",
-   "gates": {
-    "revenueGrowth": {
-     "result": "pass",
-     "detail": "revenue 14% next yr, 15 analysts"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "EPS 19% vs revenue 14% next yr"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "net cash"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "P/S 2.8 at 32.9% margin = 1.3"
-    },
-    "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS down 5% in 90 days ($4.38 to $4.19)"
-    },
-    "redFlags": {
-     "result": "pass",
-     "detail": "none found (Nov 17 check). Q3 report Nov 9: revenue $5.07B, +22% a year; 2026 gold and copper production guidance kept. Nov 10: filed for an IPO of American Barrick (its North American gold assets), a partial listing of a subsidiary, not an agreement for Barrick to be acquired (rule 5 not triggered). No government suit found. Quarterly operating margin 50.0% vs 50.3% a year ago."
-    }
-   },
-   "reason": "gold and copper miner. revenue 14% next yr, 15 analysts; P/S 2.8 at 32.9% margin = 1.3.",
-   "revGrowth": 22.3,
-   "fwdPE": 8.72,
-   "fcfYield": 8.1,
-   "roic": null,
-   "fairValue": 67.35,
-   "buyBelow": 40.8,
-   "discountPct": 48.8,
-   "rewardRisk": null,
-   "impliedReturnPct": 25.0,
-   "spreadPct": 120,
-   "strictChecks": {
-    "allMethods": true
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "PEG",
-      "assumption": "10.0x (0.5 x G of 19, floor 10 cap 20) on EPS $3.20",
-      "value": 31.97,
-      "weight": 0,
-      "trimmed": true
-     },
-     {
-      "name": "DCF",
-      "assumption": "DCF yr1 $2.30 grown 10%/yr, 10% disc, 3% term",
-      "value": 40.8,
-      "weight": 17.6,
-      "trimmed": false
-     },
-     {
-      "name": "FCF yield",
-      "assumption": "4.1% yield on forward SBC-adj FCF $2.30/sh (F 14%)",
-      "value": 56.65,
-      "weight": 23.5,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/E",
-      "assumption": "21.7x on EPS $3.20 (G 19)",
-      "value": 69.49,
-      "weight": 29.4,
-      "trimmed": false
-     },
-     {
-      "name": "EV/EBITDA",
-      "assumption": "10.68x (industry: NYU Stern Jan 2026 \"Precious Metals\"; own 5-yr median not verified) on forward EBITDA $13.69B",
-      "value": 89.68,
-      "weight": 29.4,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/S",
-      "assumption": "8.49x (3 x 42.5% margin / 15) on next-yr revenue $14.46/sh",
-      "value": 122.82,
-      "weight": 0,
-      "trimmed": true
-     }
-    ],
-    "composite": 67.35,
-    "spreadPct": 120,
-    "low": 31.97,
-    "high": 122.82,
-    "bear": null,
-    "bull": null,
-    "note": "company type CYCLICAL; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; stock pay verified from filings ($263M trailing 12 months, stockanalysis.com), which enables the FCF and DCF methods"
-   },
-   "entry": "RSI(14) 33.5 (neutral); price below the 50-day average and below the 200-day average; 2.32% above the 52-week low; volume 1.47x the 30-day average; next earnings 2027-02-04 (77 days)",
-   "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
-   "tech": {
-    "rsi": 33.5,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 2.32,
-    "volVsAvg": 1.47,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "Barrick announces American Barrick IPO filing",
-     "url": "https://www.barrick.com/English/news/news-details/2026/barrick-announces-american-barrick-and-S1-filing-for-proposed-IPO/default.aspx"
-    },
-    {
-     "title": "Barrick Q3 2026 results (Kitco)",
-     "url": "https://www.kitco.com/news/article/2026-11-09/barrick-beats-q3-earnings-expectations-gold-production-improves-maintains"
-    },
-    {
-     "title": "Barrick cash flow statement (stockanalysis.com)",
-     "url": "https://stockanalysis.com/quote/tsx/ABX/financials/cash-flow-statement/"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
-   "symbol": "IESC",
-   "rank": 4,
-   "class": "strict",
-   "price": 166.05,
-   "priceDate": "2026-11-18",
+   "price": 166.9,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "unverified",
@@ -419,9 +290,9 @@
    "roic": null,
    "fairValue": 277.77,
    "buyBelow": 196.5,
-   "discountPct": 40.2,
+   "discountPct": 39.9,
    "rewardRisk": null,
-   "impliedReturnPct": 18.7,
+   "impliedReturnPct": 18.5,
    "spreadPct": 81,
    "strictChecks": {
     "allMethods": true
@@ -479,15 +350,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 30.9 (neutral); price below the 50-day average and below the 200-day average; 16.4% above the 52-week low; volume 0.95x the 30-day average; next earnings 2026-11-20 (1 days)",
+   "entry": "RSI(14) 31.5 (neutral); price below the 50-day average and below the 200-day average; 16.99% above the 52-week low; volume 1.51x the 30-day average; next earnings 2026-11-20 (0 days)",
    "upgrade": "Nothing required under the rules (unverified gates keep a stock eligible), but Gates 1 and 2 rest on 1 analyst: confirm the growth estimates before acting.",
    "tech": {
-    "rsi": 30.9,
+    "rsi": 31.5,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 16.4,
-    "volVsAvg": 0.95,
+    "fromLowPct": 16.99,
+    "volVsAvg": 1.51,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -503,10 +374,10 @@
   },
   {
    "symbol": "FIX",
-   "rank": 5,
+   "rank": 4,
    "class": "strict",
-   "price": 1140.59,
-   "priceDate": "2026-11-18",
+   "price": 1114.02,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -540,9 +411,9 @@
    "roic": null,
    "fairValue": 1733.96,
    "buyBelow": 1460.61,
-   "discountPct": 34.2,
+   "discountPct": 35.8,
    "rewardRisk": null,
-   "impliedReturnPct": 15.0,
+   "impliedReturnPct": 15.9,
    "spreadPct": 29,
    "strictChecks": {
     "allMethods": true
@@ -600,15 +471,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 42.9 (neutral); price below the 50-day average and below the 200-day average; 34.49% above the 52-week low; volume 0.75x the 30-day average; next earnings last reported 2026-10-22; next date not confirmed",
+   "entry": "RSI(14) 41.4 (neutral); price below the 50-day average and below the 200-day average; 31.36% above the 52-week low; volume 0.7x the 30-day average; next earnings last reported 2026-10-22; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 42.9,
+    "rsi": 41.4,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 34.49,
-    "volVsAvg": 0.75,
+    "fromLowPct": 31.36,
+    "volVsAvg": 0.7,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -623,11 +494,132 @@
    ]
   },
   {
+   "symbol": "EME",
+   "rank": 5,
+   "class": "strict",
+   "price": 636.08,
+   "priceDate": "2026-11-19",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 14% next yr, 12 analysts"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 17% vs revenue 14% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "pass",
+     "detail": "P/S 1.4 at 9.9% margin = 2.1"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 12% in 90 days ($36.74 to $41.06)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found (Nov 17 check). Q3 report Oct 29: revenue up, 2026 guidance raised, buyback raised $500M; recent stock weakness reported as data-center-cycle worries, not company news. No government suit, investigation or executive departure found. Quarterly operating margin 10.5% vs 9.4% a year ago."
+    }
+   },
+   "reason": "electrical and mechanical construction and building services. revenue 14% next yr, 12 analysts; P/S 1.4 at 9.9% margin = 2.1. Closed $636.08 on Nov 19, 1.0% below its $642.46 buy price, so it is Strict again (it was Approaching Nov 17 and 18).",
+   "revGrowth": 28.8,
+   "fwdPE": 15.61,
+   "fcfYield": 5.3,
+   "roic": null,
+   "fairValue": 845.65,
+   "buyBelow": 642.46,
+   "discountPct": 24.8,
+   "rewardRisk": null,
+   "impliedReturnPct": 10.0,
+   "spreadPct": 50,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "PEG",
+      "assumption": "10.0x (0.5 x G of 17, floor 10 cap 20) on EPS $40.91",
+      "value": 409.06,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "DCF yr1 $37.50 grown 9%/yr, 10% disc, 3% term",
+      "value": 642.46,
+      "weight": 17.6,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "20.6x on EPS $40.91 (G 17)",
+      "value": 842.09,
+      "weight": 29.4,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.3% yield on forward SBC-adj FCF $37.50/sh (F 14%)",
+      "value": 875.61,
+      "weight": 29.4,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "17.18x (industry: NYU Stern Jan 2026 \"Engineering/Construction\"; own 5-yr median not verified) on forward EBITDA $2.47B",
+      "value": 965.02,
+      "weight": 23.5,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "1.98x (3 x 9.9% margin / 15) on next-yr revenue $537.61/sh",
+      "value": 1064.47,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 845.65,
+    "spreadPct": 50,
+    "low": 409.06,
+    "high": 1064.47,
+    "bear": null,
+    "bull": null,
+    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
+   },
+   "entry": "RSI(14) 40.8 (neutral); price below the 50-day average and below the 200-day average; 12.84% above the 52-week low; volume 0.76x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price (thin: 1.0% below).",
+   "tech": {
+    "rsi": 40.8,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 12.84,
+    "volVsAvg": 0.76,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "EMCOR Q3 2026 results (Earnings Whispers)",
+     "url": "https://www.earningswhispers.com/epsdetails/EME/202609"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
    "symbol": "RDDT",
    "rank": 6,
    "class": "strict",
-   "price": 94.09,
-   "priceDate": "2026-11-18",
+   "price": 89.88,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -661,9 +653,9 @@
    "roic": null,
    "fairValue": 118.9,
    "buyBelow": 98.64,
-   "discountPct": 20.9,
+   "discountPct": 24.4,
    "rewardRisk": null,
-   "impliedReturnPct": 8.1,
+   "impliedReturnPct": 9.8,
    "spreadPct": 31,
    "strictChecks": {
     "allMethods": true
@@ -721,15 +713,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 32.6 (neutral); price below the 50-day average and below the 200-day average; 5.39% above the 52-week low; volume 0.41x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "entry": "RSI(14) 30.5 (neutral); price below the 50-day average and below the 200-day average; 0.67% above the 52-week low; volume 0.52x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 32.6,
+    "rsi": 30.5,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 5.39,
-    "volVsAvg": 0.41,
+    "fromLowPct": 0.67,
+    "volVsAvg": 0.52,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -755,8 +747,8 @@
    "symbol": "EXEL",
    "rank": 7,
    "class": "strict",
-   "price": 68.29,
-   "priceDate": "2026-11-18",
+   "price": 65.83,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -790,9 +782,9 @@
    "roic": null,
    "fairValue": 79.04,
    "buyBelow": 74.03,
-   "discountPct": 13.6,
+   "discountPct": 16.7,
    "rewardRisk": null,
-   "impliedReturnPct": 5.0,
+   "impliedReturnPct": 6.3,
    "spreadPct": 22,
    "strictChecks": {
     "allMethods": true
@@ -850,15 +842,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 55.0 (neutral); price above the 50-day average and above the 200-day average; 71.97% above the 52-week low; volume 0.63x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "entry": "RSI(14) 46.8 (neutral); price above the 50-day average and above the 200-day average; 65.78% above the 52-week low; volume 0.94x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 55.0,
+    "rsi": 46.8,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 71.97,
-    "volVsAvg": 0.63,
+    "fromLowPct": 65.78,
+    "volVsAvg": 0.94,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -876,8 +868,8 @@
    "symbol": "DAVE",
    "rank": 8,
    "class": "approaching",
-   "price": 268.45,
-   "priceDate": "2026-11-18",
+   "price": 237.57,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -911,9 +903,9 @@
    "roic": null,
    "fairValue": 457.79,
    "buyBelow": 454.42,
-   "discountPct": 41.4,
+   "discountPct": 48.1,
    "rewardRisk": null,
-   "impliedReturnPct": 19.5,
+   "impliedReturnPct": 24.4,
    "spreadPct": 84,
    "strictChecks": {
     "allMethods": true
@@ -950,15 +942,15 @@
     "bull": null,
     "note": "company type LENDER; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price; EV/EBITDA left out (industry multiple not verified or not used for this type)"
    },
-   "entry": "RSI(14) 37.3 (neutral); price below the 50-day average and below the 200-day average; 76.37% above the 52-week low; volume 0.93x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
+   "entry": "RSI(14) 31.0 (neutral); price below the 50-day average and below the 200-day average; 56.08% above the 52-week low; volume 1.5x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
    "upgrade": "red flag: Justice Department / FTC lawsuit still open; red flag: quarterly operating margin 24.3% vs 30.5% a year earlier (the price is already at or below the buy price)",
    "tech": {
-    "rsi": 37.3,
+    "rsi": 31.0,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 76.37,
-    "volVsAvg": 0.93,
+    "fromLowPct": 56.08,
+    "volVsAvg": 1.5,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -972,8 +964,8 @@
    "symbol": "NVDA",
    "rank": 9,
    "class": "approaching",
-   "price": 150.96,
-   "priceDate": "2026-11-18",
+   "price": 145.98,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -993,7 +985,7 @@
     },
     "estimates": {
      "result": "pass",
-     "detail": "next-year EPS up 27% in 90 days ($13.00 to $16.54) (data fetched Nov 18, after the Nov 17 report)"
+     "detail": "next-year EPS up 28% in 90 days ($13.00 to $16.61) (data fetched Nov 18, after the Nov 17 report)"
     },
     "redFlags": {
      "result": "fail",
@@ -1007,9 +999,9 @@
    "roic": null,
    "fairValue": 375.57,
    "buyBelow": 233.08,
-   "discountPct": 59.8,
+   "discountPct": 61.1,
    "rewardRisk": null,
-   "impliedReturnPct": 35.5,
+   "impliedReturnPct": 37.0,
    "spreadPct": 104,
    "strictChecks": {
     "allMethods": true
@@ -1067,15 +1059,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 21.1 (oversold); price below the 50-day average and below the 200-day average; 1.45% above the 52-week low; volume 1.46x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
+   "entry": "RSI(14) 19.6 (oversold); price below the 50-day average and below the 200-day average; 0.19% above the 52-week low; volume 1.28x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
    "upgrade": "red flag 7: a permanent CEO must be named (interim CEO only since Nov 12) (the price is already at or below the buy price)",
    "tech": {
-    "rsi": 21.1,
+    "rsi": 19.6,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 1.45,
-    "volVsAvg": 1.46,
+    "fromLowPct": 0.19,
+    "volVsAvg": 1.28,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1094,19 +1086,19 @@
    ]
   },
   {
-   "symbol": "EME",
+   "symbol": "B",
    "rank": 10,
    "class": "approaching",
-   "price": 646.23,
-   "priceDate": "2026-11-18",
+   "price": 33.37,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
-     "detail": "revenue 14% next yr, 12 analysts"
+     "detail": "revenue 14% next yr, 15 analysts"
     },
     "earnings": {
      "result": "pass",
-     "detail": "EPS 17% vs revenue 14% next yr"
+     "detail": "EPS 19% vs revenue 14% next yr"
     },
     "balanceSheet": {
      "result": "pass",
@@ -1114,99 +1106,107 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.4 at 9.9% margin = 2.1"
+     "detail": "P/S 2.8 at 32.9% margin = 1.3"
     },
     "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS up 12% in 90 days ($36.74 to $41.06)"
+     "result": "fail",
+     "detail": "next-year EPS down 5.7% in 90 days ($4.38 to $4.13); more than a 5% cut fails"
     },
     "redFlags": {
      "result": "pass",
-     "detail": "none found (Nov 17 check). Q3 report Oct 29: revenue up, 2026 guidance raised, buyback raised $500M; recent stock weakness reported as data-center-cycle worries, not company news. No government suit, investigation or executive departure found. Quarterly operating margin 10.5% vs 9.4% a year ago."
+     "detail": "none found (Nov 17 check). Q3 report Nov 9: revenue $5.07B, +22% a year; 2026 gold and copper production guidance kept. Nov 10: filed for an IPO of American Barrick (its North American gold assets), a partial listing of a subsidiary, not an agreement for Barrick to be acquired (rule 5 not triggered). No government suit found. Quarterly operating margin 50.0% vs 50.3% a year ago."
     }
    },
-   "reason": "electrical and mechanical construction and building services. revenue 14% next yr, 12 analysts; P/S 1.4 at 9.9% margin = 2.1. Closed $646.24 on Nov 17, 0.6% above its $642.46 buy price, so it moved down from Strict to Approaching.",
-   "revGrowth": 28.8,
-   "fwdPE": 15.61,
-   "fcfYield": 5.3,
+   "reason": "gold and copper miner. revenue 14% next yr, 15 analysts; P/S 2.8 at 32.9% margin = 1.3. Moved down from Strict on Nov 19: the falling-estimates check now fails (next-year EPS estimate down 5.7% in 90 days, limit 5%).",
+   "revGrowth": 22.3,
+   "fwdPE": 8.72,
+   "fcfYield": 8.1,
    "roic": null,
-   "fairValue": 845.65,
-   "buyBelow": 642.46,
-   "discountPct": 23.6,
+   "fairValue": 67.35,
+   "buyBelow": 40.8,
+   "discountPct": 50.5,
    "rewardRisk": null,
-   "impliedReturnPct": 9.4,
-   "spreadPct": 50,
+   "impliedReturnPct": 26.4,
+   "spreadPct": 120,
    "strictChecks": {
-    "allMethods": false
+    "allMethods": true
    },
    "fairValueDetail": {
     "methods": [
      {
       "name": "PEG",
-      "assumption": "10.0x (0.5 x G of 17, floor 10 cap 20) on EPS $40.91",
-      "value": 409.06,
+      "assumption": "10.0x (0.5 x G of 19, floor 10 cap 20) on EPS $3.20",
+      "value": 31.97,
       "weight": 0,
       "trimmed": true
      },
      {
       "name": "DCF",
-      "assumption": "DCF yr1 $37.50 grown 9%/yr, 10% disc, 3% term",
-      "value": 642.46,
+      "assumption": "DCF yr1 $2.30 grown 10%/yr, 10% disc, 3% term",
+      "value": 40.8,
       "weight": 17.6,
       "trimmed": false
      },
      {
-      "name": "Forward P/E",
-      "assumption": "20.6x on EPS $40.91 (G 17)",
-      "value": 842.09,
-      "weight": 29.4,
+      "name": "FCF yield",
+      "assumption": "4.1% yield on forward SBC-adj FCF $2.30/sh (F 14%)",
+      "value": 56.65,
+      "weight": 23.5,
       "trimmed": false
      },
      {
-      "name": "FCF yield",
-      "assumption": "4.3% yield on forward SBC-adj FCF $37.50/sh (F 14%)",
-      "value": 875.61,
+      "name": "Forward P/E",
+      "assumption": "21.7x on EPS $3.20 (G 19)",
+      "value": 69.49,
       "weight": 29.4,
       "trimmed": false
      },
      {
       "name": "EV/EBITDA",
-      "assumption": "17.18x (industry: NYU Stern Jan 2026 \"Engineering/Construction\"; own 5-yr median not verified) on forward EBITDA $2.47B",
-      "value": 965.02,
-      "weight": 23.5,
+      "assumption": "10.68x (industry: NYU Stern Jan 2026 \"Precious Metals\"; own 5-yr median not verified) on forward EBITDA $13.69B",
+      "value": 89.68,
+      "weight": 29.4,
       "trimmed": false
      },
      {
       "name": "Forward P/S",
-      "assumption": "1.98x (3 x 9.9% margin / 15) on next-yr revenue $537.61/sh",
-      "value": 1064.47,
+      "assumption": "8.49x (3 x 42.5% margin / 15) on next-yr revenue $14.46/sh",
+      "value": 122.82,
       "weight": 0,
       "trimmed": true
      }
     ],
-    "composite": 845.65,
-    "spreadPct": 50,
-    "low": 409.06,
-    "high": 1064.47,
+    "composite": 67.35,
+    "spreadPct": 120,
+    "low": 31.97,
+    "high": 122.82,
     "bear": null,
     "bull": null,
-    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
+    "note": "company type CYCLICAL; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; stock pay verified from filings ($263M trailing 12 months, stockanalysis.com), which enables the FCF and DCF methods"
    },
-   "entry": "RSI(14) 42.8 (neutral); price below the 50-day average and below the 200-day average; 14.64% above the 52-week low; volume 0.66x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
-   "upgrade": "price must fall 0.6% to $642.46 (all gates pass, no blockers)",
+   "entry": "RSI(14) 30.9 (neutral); price below the 50-day average and below the 200-day average; 0.12% above the 52-week low; volume 1.63x the 30-day average; next earnings 2027-02-04 (76 days)",
+   "upgrade": "falling-estimates check: the next-year EPS estimate must recover from $4.13 to at least $4.16 (within 5% of the $4.38 it was 90 days ago); the price is already 18.2% below the buy price",
    "tech": {
-    "rsi": 42.8,
+    "rsi": 30.9,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 14.64,
-    "volVsAvg": 0.66,
+    "fromLowPct": 0.12,
+    "volVsAvg": 1.63,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
     {
-     "title": "EMCOR Q3 2026 results (Earnings Whispers)",
-     "url": "https://www.earningswhispers.com/epsdetails/EME/202609"
+     "title": "Barrick announces American Barrick IPO filing",
+     "url": "https://www.barrick.com/English/news/news-details/2026/barrick-announces-american-barrick-and-S1-filing-for-proposed-IPO/default.aspx"
+    },
+    {
+     "title": "Barrick Q3 2026 results (Kitco)",
+     "url": "https://www.kitco.com/news/article/2026-11-09/barrick-beats-q3-earnings-expectations-gold-production-improves-maintains"
+    },
+    {
+     "title": "Barrick cash flow statement (stockanalysis.com)",
+     "url": "https://stockanalysis.com/quote/tsx/ABX/financials/cash-flow-statement/"
     },
     {
      "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
@@ -1218,8 +1218,8 @@
    "symbol": "HCC",
    "rank": 11,
    "class": "approaching",
-   "price": 79.16,
-   "priceDate": "2026-11-18",
+   "price": 79.15,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -1306,15 +1306,15 @@
     "bull": null,
     "note": "company type CYCLICAL (cyclical blend used); EV/EBITDA left out: industry multiple not verified; PEG $81.88 is lower than the Forward P/E but does not set the buy price; $2.00 special dividend payable Nov 20 (record date Nov 9) not adjusted"
    },
-   "entry": "RSI(14) 40.0 (neutral); price below the 50-day average and below the 200-day average; 13.36% above the 52-week low; volume 1.03x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
+   "entry": "RSI(14) 39.9 (neutral); price below the 50-day average and below the 200-day average; 13.35% above the 52-week low; volume 1.02x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
    "upgrade": "price must fall 1.0% to $78.38 (all gates pass, no blockers)",
    "tech": {
-    "rsi": 40.0,
+    "rsi": 39.9,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 13.36,
-    "volVsAvg": 1.03,
+    "fromLowPct": 13.35,
+    "volVsAvg": 1.02,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1340,8 +1340,8 @@
    "symbol": "ADMA",
    "rank": 12,
    "class": "approaching",
-   "price": 13.56,
-   "priceDate": "2026-11-18",
+   "price": 13.34,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -1375,9 +1375,9 @@
    "roic": null,
    "fairValue": 16.18,
    "buyBelow": 12.62,
-   "discountPct": 16.2,
+   "discountPct": 17.6,
    "rewardRisk": null,
-   "impliedReturnPct": 6.1,
+   "impliedReturnPct": 6.6,
    "spreadPct": 102,
    "strictChecks": {
     "allMethods": false
@@ -1435,15 +1435,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 68.1 (neutral); price above the 50-day average and above the 200-day average; 88.07% above the 52-week low; volume 0.77x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
-   "upgrade": "price must fall 6.9% to $12.62",
+   "entry": "RSI(14) 64.7 (neutral); price above the 50-day average and above the 200-day average; 85.02% above the 52-week low; volume 0.86x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
+   "upgrade": "price must fall 5.4% to $12.62",
    "tech": {
-    "rsi": 68.1,
+    "rsi": 64.7,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 88.07,
-    "volVsAvg": 0.77,
+    "fromLowPct": 85.02,
+    "volVsAvg": 0.86,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1461,8 +1461,8 @@
    "symbol": "CHKP",
    "rank": 13,
    "class": "approaching",
-   "price": 154.03,
-   "priceDate": "2026-11-18",
+   "price": 155.5,
+   "priceDate": "2026-11-19",
    "gates": {
     "revenueGrowth": {
      "result": "fail",
@@ -1496,9 +1496,9 @@
    "roic": null,
    "fairValue": 140.82,
    "buyBelow": 135.89,
-   "discountPct": -9.4,
+   "discountPct": -10.4,
    "rewardRisk": null,
-   "impliedReturnPct": -2.9,
+   "impliedReturnPct": -3.3,
    "spreadPct": 19,
    "strictChecks": {
     "allMethods": false
@@ -1549,15 +1549,15 @@
     "bull": null,
     "note": "company type SOFTWARE (Software - Infrastructure; no EV/EBITDA method); G uses next-year EPS growth only (no 2-3 year consensus in the data); Nov 15 valuation rules applied; PEG $88.18 is lower but does not set the buy price; snapshot-level inputs, not filing-verified"
    },
-   "entry": "RSI(14) 63.5 (neutral); price above the 50-day average and above the 200-day average; 37.24% above the 52-week low; volume 1.26x the 30-day average; next earnings last reported 2026-11-02; next date not confirmed",
-   "upgrade": "Gate 1: next-year revenue growth must reach 10% (now 5.3%); red flag 3 must clear (Q3 revenue below a year earlier); price must fall 11.8% to $135.89",
+   "entry": "RSI(14) 65.2 (neutral); price above the 50-day average and above the 200-day average; 38.55% above the 52-week low; volume 0.92x the 30-day average; next earnings last reported 2026-11-02; next date not confirmed",
+   "upgrade": "Gate 1: next-year revenue growth must reach 10% (now 5.3%); red flag 3 must clear (Q3 revenue below a year earlier); price must fall 12.6% to $135.89",
    "tech": {
-    "rsi": 63.5,
+    "rsi": 65.2,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 37.24,
-    "volVsAvg": 1.26,
+    "fromLowPct": 38.55,
+    "volVsAvg": 0.92,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1607,5 +1607,5 @@
   ],
   "removes": []
  },
- "reportUrl": "https://claude.ai/artifact/LNLDjkw4oCpawvMDAUHpd7"
+ "reportUrl": "https://claude.ai/artifact/ErGnxgtnp4CuTLmGbdGP3B"
 }
