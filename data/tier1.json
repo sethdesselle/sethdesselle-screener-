@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-23T12:23:40+00:00",
+ "updated": "2026-11-23T12:24:46+00:00",
  "asOf": "2026-11-20",
  "summary": {
   "screened": 174,
   "strict": 8,
   "approaching": 5,
-  "note": "Nov 23 run on Fri Nov 20 closes (the day the S&P 500 fell 3.7% into a correction and the Nasdaq-100 proxy fell 5.7%); prices re-checked against Twelve Data for all 13 listed names. CHANGE vs the Nov 20 screen: HCC closed $76.56, 2.3% below its $78.38 buy price, and is Strict. All seven other Strict names stay below their buy prices; 95 universe names fell 5% or more Friday. B stays Approaching (EPS estimate down 5.7% in 90 days) and closed at a new 52-week low; NVDA fell 14% to $125.53 on reports of an SEC civil probe and California AG scrutiny (neither confirmed by the agencies; no filed suit or company disclosure, so red flags 1 and 8 are not triggered) and is up 7.3% in extended trading; its red flag 7 (interim CEO) stays. IESC reported FQ4 Friday (revenue $1.39B, +55%). Fair values, buy prices and gate numbers are carried from earlier screens; prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. Market sweep result: see the watchlist adds and the Docs report."
+  "note": "Nov 23 run on Fri Nov 20 closes (the day the S&P 500 fell 3.7% into a correction and the Nasdaq-100 proxy fell 5.7%); prices re-checked against Twelve Data for all 13 listed names. CHANGE vs the Nov 20 screen: HCC closed $76.56, 2.3% below its $78.38 buy price, and is Strict. All seven other Strict names stay below their buy prices; 95 universe names fell 5% or more Friday. B stays Approaching (EPS estimate down 5.7% in 90 days) and closed at a new 52-week low; NVDA fell 14% to $125.53 on reports of an SEC civil probe and California AG scrutiny (neither confirmed by the agencies; no filed suit or company disclosure, so red flags 1 and 8 are not triggered) and is up 7.3% in extended trading; its red flag 7 (interim CEO) stays. IESC reported FQ4 Friday (revenue $1.39B, +55%). Fair values, buy prices and gate numbers are carried from earlier screens; prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. MARKET SWEEP did not run: Yahoo's per-ticker estimate pages returned HTTP 429 (too many requests) on all five test pages, so Gates 1 and 2 could not be tested for new names; nothing was verified or added. Carried to the next run: ACAD, ABX, AROW, DCOM, CUBI, LOB, HMY and the earlier backlog. The recommendations in the watchlist list are carried from Nov 19 and were not re-checked."
  },
  "names": [
   {
