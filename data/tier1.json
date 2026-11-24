@@ -3,9 +3,9 @@
  "asOf": "2026-11-23",
  "summary": {
   "screened": 174,
-  "strict": 6,
-  "approaching": 7,
-  "note": "Nov 24 run on Mon Nov 23 closes (best day for the major indexes since April 2025: SPY +4.7%, QQQ +7.0%, DIA +3.1%, IWM +3.6%; NVDA +31.5% after reports that the board reinstated Jensen Huang as CEO). Prices re-checked against Twelve Data for all 13 listed names. CHANGE vs the Nov 23 screen: EME (now $649.49, 1.1% above its $642.46 buy price) and HCC (now $79.34, 1.2% above $78.38) moved from Strict to Approaching because their prices rose above their buy prices; the other six Strict names stay at or below their buy prices. NVDA stays Approaching: red flag 7 is kept literally (no permanent CEO successor named) and the reported reinstatement of Huang is an open RULE GAP (Seth asked for a ruling). Near-miss counts (13 listed names only): 12 had no failed gate (IESC with 2 unverified gates), 9 of those are at or below their buy price, 3 are within 10% above it (EME, HCC, ADMA); DAVE, NVDA and B are below buy price but blocked (red flags 8 and 9; rule gap and red flag 7; falling estimates). Fair values, buy prices and gate numbers are carried from earlier screens (Nov 17-18): prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. ZS (not on the list) agreed Nov 22 to be acquired by CrowdStrike (red flag 5 if it were screened). MARKET SWEEP: see the report run notes."
+  "strict": 5,
+  "approaching": 8,
+  "note": "Nov 24 run on Mon Nov 23 closes (best day for the major indexes since April 2025: SPY +4.7%, QQQ +7.0%, DIA +3.1%, IWM +3.6%; NVDA +31.5% after reports that the board reinstated Jensen Huang as CEO). Gate 4 (P/S) values were rescaled to the Nov 23 closes; other gate numbers, fair values and buy prices are carried. Prices re-checked against Twelve Data for all 13 listed names. CHANGE vs the Nov 23 screen: EME (now $649.49, 1.1% above its $642.46 buy price) and HCC (now $79.34, 1.2% above $78.38) moved from Strict to Approaching because their prices rose above their buy prices; the other names stay as shown. RDDT also moved from Strict to Approaching: its Gate 4 (P/S) rescaled to the Nov 23 close is about 3.07 against the 3.0 limit, and NVDA's Gate 4 rescales to about 3.81 (fail), so NVDA now also has one failed gate. NVDA stays Approaching: red flag 7 is kept literally (no permanent CEO successor named) and the reported reinstatement of Huang is an open RULE GAP (Seth asked for a ruling). Near-miss counts (13 listed names only): 10 had no failed gate (IESC with 2 unverified gates), 7 of those are at or below their buy price, 3 are within 10% above it (EME, HCC, ADMA); DAVE and B are below buy price but blocked (red flags 8 and 9; falling estimates). Fair values, buy prices and gate numbers are carried from earlier screens (Nov 17-18): prices, 90-day estimate changes and entry facts were refreshed. The other universe names were carried from the Nov 17 screen, not re-run. ZS (not on the list) agreed Nov 22 to be acquired by CrowdStrike (red flag 5 if it were screened). MARKET SWEEP: see the report run notes."
  },
  "names": [
   {
@@ -29,7 +29,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.43 (market value about $3.6B / TTM revenue $1,471.5M) at a 17.4% TTM operating margin = 2.10"
+     "detail": "P/S 2.43 (market value about $3.6B / TTM revenue $1,471.5M) at a 17.4% TTM operating margin = 2.10; RESCALED to the Nov 23 close $12.65 (was $12.04 at the Nov 20 close): about 2.21, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -151,7 +151,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.9 at 18.6% margin = 1.6"
+     "detail": "P/S 1.9 at 18.6% margin = 1.6; RESCALED to the Nov 23 close $278.77 (was $247.92 at the Nov 20 close): about 1.80, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -272,7 +272,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.8 at 12.4% margin = 2.1"
+     "detail": "P/S 1.8 at 12.4% margin = 2.1; RESCALED to the Nov 23 close $170.92 (was $156.06 at the Nov 20 close): about 2.30, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -393,7 +393,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 3.0 at 16.8% margin = 2.6"
+     "detail": "P/S 3.0 at 16.8% margin = 2.6; RESCALED to the Nov 23 close $1158.53 (was $1042.47 at the Nov 20 close): about 2.89, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -494,137 +494,8 @@
    ]
   },
   {
-   "symbol": "RDDT",
-   "rank": 5,
-   "class": "strict",
-   "price": 88.76,
-   "priceDate": "2026-11-23",
-   "gates": {
-    "revenueGrowth": {
-     "result": "pass",
-     "detail": "revenue 28% next yr, 31 analysts"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "EPS 24% vs revenue 28% next yr"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "net cash"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly)"
-    },
-    "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS down 2.7% in 90 days ($7.01 to $6.82)"
-    },
-    "redFlags": {
-     "result": "pass",
-     "detail": "none found under the rules (Nov 17 check). The UK Information Commissioner's Office fine (GBP 14.47M / $19.5M, Feb 2026; Reddit appealed Apr 1, 2026) is a foreign regulator's action: under Seth's Nov 17 ruling, rule 8 covers US federal and state bodies only, so it does not count. Q3 report Oct 29: revenue +53% to $895M; Q4 revenue guidance $1.00-1.03B came in below analyst estimates, but Reddit guides one quarter at a time, so no earlier guidance was lowered (rule 2 not triggered). FTC non-public inquiry (Mar 2024) is an information request, and the securities class action (N.D. Cal., June 2025) is private: neither counts. No CEO/CFO departure found. Quarterly operating margin 29.2% vs 23.7% a year ago."
-    }
-   },
-   "reason": "online discussion platform (Reddit); about 95% of revenue is advertising. revenue 28% next yr, 31 analysts; P/S 5.8 at 29.4% margin = 3.0. New to the list. Gate 4 passes narrowly (2.95 vs 3.0).",
-   "revGrowth": 53.0,
-   "fwdPE": 10.21,
-   "fcfYield": 6.7,
-   "roic": null,
-   "fairValue": 118.9,
-   "buyBelow": 98.64,
-   "discountPct": 25.3,
-   "rewardRisk": null,
-   "impliedReturnPct": 10.2,
-   "spreadPct": 31,
-   "strictChecks": {
-    "allMethods": true
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "PEG",
-      "assumption": "12.0x (0.5 x G of 24, floor 10 cap 20) on EPS $4.90",
-      "value": 58.87,
-      "weight": 0,
-      "trimmed": true
-     },
-     {
-      "name": "DCF",
-      "assumption": "DCF yr1 $5.17 grown 12%/yr, 10% disc, 3% term",
-      "value": 98.64,
-      "weight": 20.0,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/E",
-      "assumption": "24.0x on EPS $4.90 (published $6.82 less SBC $1.91) (G 24)",
-      "value": 117.73,
-      "weight": 33.3,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/S",
-      "assumption": "5.88x (3 x 29.4% margin / 15) on next-yr revenue $21.53/sh",
-      "value": 126.61,
-      "weight": 13.3,
-      "trimmed": false
-     },
-     {
-      "name": "FCF yield",
-      "assumption": "4.0% yield on forward SBC-adj FCF $5.17/sh (F 28%)",
-      "value": 129.16,
-      "weight": 33.3,
-      "trimmed": false
-     },
-     {
-      "name": "EV/EBITDA",
-      "assumption": "30.26x (industry: NYU Stern Jan 2026 \"Software (Internet)\"; own 5-yr median not verified) on forward EBITDA $1.19B",
-      "value": 192.87,
-      "weight": 0,
-      "trimmed": true
-     }
-    ],
-    "composite": 118.9,
-    "spreadPct": 31,
-    "low": 58.87,
-    "high": 192.87,
-    "bear": null,
-    "bull": null,
-    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
-   },
-   "entry": "RSI(14) 32.2 (neutral); price below the 50-day average and below the 200-day average; 4.92% above the 52-week low; volume 0.57x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
-   "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
-   "tech": {
-    "rsi": 32.2,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 4.92,
-    "volVsAvg": 0.57,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "Reddit Q3 2026 earnings call highlights (MarketBeat)",
-     "url": "https://www.marketbeat.com/instant-alerts/transcript-reddit-q3-earnings-call-highlights-2026-10-31/"
-    },
-    {
-     "title": "Reddit appeals ICO fine (Digital Policy Alert)",
-     "url": "https://digitalpolicyalert.org/event/39500-reddit-appealed-fine-of-gbp-1447-imposed-by-information-commissioners-office-for-unlawful-processing-of-childrens-personal-data"
-    },
-    {
-     "title": "UK ICO fines Reddit GBP 14.47M (The Register)",
-     "url": "https://www.theregister.com/2026/02/24/ico_fines_reddit"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
    "symbol": "EXEL",
-   "rank": 6,
+   "rank": 5,
    "class": "strict",
    "price": 66.82,
    "priceDate": "2026-11-23",
@@ -643,7 +514,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 6.6 at 40.2% margin = 2.5"
+     "detail": "P/S 6.6 at 40.2% margin = 2.5; RESCALED to the Nov 23 close $66.82 (was $64.63 at the Nov 20 close): about 2.58, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -745,7 +616,7 @@
   },
   {
    "symbol": "DAVE",
-   "rank": 7,
+   "rank": 6,
    "class": "approaching",
    "price": 238.85,
    "priceDate": "2026-11-23",
@@ -764,7 +635,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.0 at 34.1% margin = 2.2"
+     "detail": "P/S 5.0 at 34.1% margin = 2.2; RESCALED to the Nov 23 close $238.85 (was $228.39 at the Nov 20 close): about 2.30, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -840,133 +711,8 @@
    ]
   },
   {
-   "symbol": "NVDA",
-   "rank": 8,
-   "class": "approaching",
-   "price": 165.05,
-   "priceDate": "2026-11-23",
-   "gates": {
-    "revenueGrowth": {
-     "result": "pass",
-     "detail": "revenue 67% next yr, 57 analysts"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "EPS 70% vs revenue 67% next yr"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "net cash"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "P/S 12.4 at 65.2% margin = 2.9"
-    },
-    "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS up 27.7% in 90 days ($13.00 to $16.61)"
-    },
-    "redFlags": {
-     "result": "fail",
-     "detail": "RULE GAP and red flag 7 (kept literally): Huang resigned Nov 12 (8-K); news reports of Nov 23 (CNN, Yahoo Finance, Motley Fool) say the board reinstated him as CEO and president effective immediately; no company filing was read and no permanent successor was named. Not counted under the rules: the board investigation, the private shareholder class action, the reported Justice Department inquiry into the distributor Megaspeed, and reported SEC/California AG scrutiny (no filed suit; unconfirmed). Quarterly operating margin 66.2% vs 60.8% a year ago; Q4 outlook not lowered."
-    }
-   },
-   "reason": "AI and graphics chips. revenue 67% next yr, 57 analysts; P/S 12.4 at 65.2% margin = 2.9. Red flag 7 (CEO resigned Nov 12) is kept literally, because the rule asks for a named successor; news reports of Nov 23 say the board reinstated Jensen Huang effective immediately, which the rule does not cover. RULE GAP: capped at Approaching until Seth rules. Shares closed Nov 23 at $165.05, up 31.5% on the day. Q3 fiscal 2027 (Nov 17): revenue about $115.8B (+103%), Q4 outlook $130B plus or minus 3% (not lowered).",
-   "revGrowth": 105.9,
-   "fwdPE": 9.86,
-   "fcfYield": 3.4,
-   "roic": null,
-   "fairValue": 375.57,
-   "buyBelow": 233.08,
-   "discountPct": 56.1,
-   "rewardRisk": null,
-   "impliedReturnPct": 31.5,
-   "spreadPct": 104,
-   "strictChecks": {
-    "allMethods": true
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "FCF yield",
-      "assumption": "4.0% yield on forward SBC-adj FCF $8.24/sh (F 67%)",
-      "value": 206.11,
-      "weight": 0,
-      "trimmed": true
-     },
-     {
-      "name": "DCF",
-      "assumption": "DCF yr1 $8.24 grown 25%/yr, 10% disc, 3% term",
-      "value": 233.08,
-      "weight": 27.3,
-      "trimmed": false
-     },
-     {
-      "name": "PEG",
-      "assumption": "20.0x (0.5 x G of 70, floor 10 cap 20) on EPS $15.84",
-      "value": 316.78,
-      "weight": 9.1,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/S",
-      "assumption": "13.04x (3 x 65.2% margin / 15) on next-yr revenue $28.35/sh",
-      "value": 369.69,
-      "weight": 18.2,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/E",
-      "assumption": "30.0x on EPS $15.84 (G 70)",
-      "value": 475.17,
-      "weight": 45.5,
-      "trimmed": false
-     },
-     {
-      "name": "EV/EBITDA",
-      "assumption": "34.75x (industry: NYU Stern Jan 2026 \"Semiconductor\"; own 5-yr median not verified) on forward EBITDA $336.46B",
-      "value": 482.42,
-      "weight": 0,
-      "trimmed": true
-     }
-    ],
-    "composite": 375.57,
-    "spreadPct": 104,
-    "low": 206.11,
-    "high": 482.42,
-    "bear": null,
-    "bull": null,
-    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied | Capped at Approaching by an open rule gap (CEO reinstated, red flag 7)."
-   },
-   "entry": "RSI(14) 42.9 (neutral); price below the 50-day average and below the 200-day average; 32.57% above the 52-week low; volume 2.71x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
-   "upgrade": "red flag 7 (literal reading): Jensen Huang resigned as CEO on Nov 12 and no permanent successor has been named; reports say the board reinstated him on Nov 23 (company filing not read). RULE GAP: the CEO-left rule does not say what happens when the same CEO returns; capped at Approaching until Seth rules. Price is already below the buy price.",
-   "tech": {
-    "rsi": 42.9,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 32.57,
-    "volVsAvg": 2.71,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "NVIDIA names Colette Kress interim CEO after Huang resignation (Unite.AI)",
-     "url": "https://www.unite.ai/?p=515159"
-    },
-    {
-     "title": "Nvidia CEO Jensen Huang resigns (DatacenterDynamics)",
-     "url": "https://datacenterdynamics.com/en/news/nvidia-ceo-jensen-huang-resigns-after-multiple-affairs"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
    "symbol": "B",
-   "rank": 9,
+   "rank": 7,
    "class": "approaching",
    "price": 33.92,
    "priceDate": "2026-11-23",
@@ -985,7 +731,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.8 at 32.9% margin = 1.3"
+     "detail": "P/S 2.8 at 32.9% margin = 1.3; RESCALED to the Nov 23 close $33.92 (was $31.54 at the Nov 20 close): about 1.40, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "fail",
@@ -1095,7 +841,7 @@
   },
   {
    "symbol": "EME",
-   "rank": 10,
+   "rank": 8,
    "class": "approaching",
    "price": 649.49,
    "priceDate": "2026-11-23",
@@ -1114,7 +860,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.4 at 9.9% margin = 2.1"
+     "detail": "P/S 1.4 at 9.9% margin = 2.1; RESCALED to the Nov 23 close $649.49 (was $603.32 at the Nov 20 close): about 2.26, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1216,7 +962,7 @@
   },
   {
    "symbol": "HCC",
-   "rank": 11,
+   "rank": 9,
    "class": "approaching",
    "price": 79.34,
    "priceDate": "2026-11-23",
@@ -1235,7 +981,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.24 (market value $4.18B / TTM revenue $1.860B) at the 5-year average operating margin 24.3% (2021-25) = 1.38; TTM margin 13.9%"
+     "detail": "P/S 2.24 (market value $4.18B / TTM revenue $1.860B) at the 5-year average operating margin 24.3% (2021-25) = 1.38; TTM margin 13.9%; RESCALED to the Nov 23 close $79.34 (was $76.56 at the Nov 20 close): about 1.43, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1338,7 +1084,7 @@
   },
   {
    "symbol": "ADMA",
-   "rank": 12,
+   "rank": 10,
    "class": "approaching",
    "price": 13.5,
    "priceDate": "2026-11-23",
@@ -1357,7 +1103,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.8 at 44.9% margin = 1.9"
+     "detail": "P/S 5.8 at 44.9% margin = 1.9; RESCALED to the Nov 23 close $13.50 (was $13.17 at the Nov 20 close): about 1.95, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1458,6 +1204,260 @@
    ]
   },
   {
+   "symbol": "NVDA",
+   "rank": 11,
+   "class": "approaching",
+   "price": 165.05,
+   "priceDate": "2026-11-23",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 67% next yr, 57 analysts"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 70% vs revenue 67% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "fail",
+     "detail": "P/S 12.4 at 65.2% margin = 2.9; RESCALED to the Nov 23 close $165.05 (was $125.53 at the Nov 20 close): about 3.81, limit 3.0 (TTM revenue and margin carried)"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS up 27.7% in 90 days ($13.00 to $16.61)"
+    },
+    "redFlags": {
+     "result": "fail",
+     "detail": "RULE GAP and red flag 7 (kept literally): Huang resigned Nov 12 (8-K); news reports of Nov 23 (CNN, Yahoo Finance, Motley Fool) say the board reinstated him as CEO and president effective immediately; no company filing was read and no permanent successor was named. Not counted under the rules: the board investigation, the private shareholder class action, the reported Justice Department inquiry into the distributor Megaspeed, and reported SEC/California AG scrutiny (no filed suit; unconfirmed). Quarterly operating margin 66.2% vs 60.8% a year ago; Q4 outlook not lowered."
+    }
+   },
+   "reason": "AI and graphics chips. revenue 67% next yr, 57 analysts; P/S 12.4 at 65.2% margin = 2.9. Red flag 7 (CEO resigned Nov 12) is kept literally, because the rule asks for a named successor; news reports of Nov 23 say the board reinstated Jensen Huang effective immediately, which the rule does not cover. RULE GAP: capped at Approaching until Seth rules. Shares closed Nov 23 at $165.05, up 31.5% on the day. Q3 fiscal 2027 (Nov 17): revenue about $115.8B (+103%), Q4 outlook $130B plus or minus 3% (not lowered). Gate 4 also fails on the Nov 23 close: P/S rescales to about 3.81 (limit 3.0).",
+   "revGrowth": 105.9,
+   "fwdPE": 9.86,
+   "fcfYield": 3.4,
+   "roic": null,
+   "fairValue": 375.57,
+   "buyBelow": 233.08,
+   "discountPct": 56.1,
+   "rewardRisk": null,
+   "impliedReturnPct": 31.5,
+   "spreadPct": 104,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield on forward SBC-adj FCF $8.24/sh (F 67%)",
+      "value": 206.11,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "DCF yr1 $8.24 grown 25%/yr, 10% disc, 3% term",
+      "value": 233.08,
+      "weight": 27.3,
+      "trimmed": false
+     },
+     {
+      "name": "PEG",
+      "assumption": "20.0x (0.5 x G of 70, floor 10 cap 20) on EPS $15.84",
+      "value": 316.78,
+      "weight": 9.1,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "13.04x (3 x 65.2% margin / 15) on next-yr revenue $28.35/sh",
+      "value": 369.69,
+      "weight": 18.2,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "30.0x on EPS $15.84 (G 70)",
+      "value": 475.17,
+      "weight": 45.5,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "34.75x (industry: NYU Stern Jan 2026 \"Semiconductor\"; own 5-yr median not verified) on forward EBITDA $336.46B",
+      "value": 482.42,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 375.57,
+    "spreadPct": 104,
+    "low": 206.11,
+    "high": 482.42,
+    "bear": null,
+    "bull": null,
+    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied | Capped at Approaching by an open rule gap (CEO reinstated, red flag 7)."
+   },
+   "entry": "RSI(14) 42.9 (neutral); price below the 50-day average and below the 200-day average; 32.57% above the 52-week low; volume 2.71x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
+   "upgrade": "red flag 7 (literal reading): Jensen Huang resigned as CEO on Nov 12 and no permanent successor has been named; reports say the board reinstated him on Nov 23 (company filing not read). RULE GAP: the CEO-left rule does not say what happens when the same CEO returns; capped at Approaching until Seth rules. Price is already below the buy price. Gate 4: margin-adjusted P/S about 3.81 vs 3.0: price would need to fall about 21% (to about $130).",
+   "tech": {
+    "rsi": 42.9,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 32.57,
+    "volVsAvg": 2.71,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "NVIDIA names Colette Kress interim CEO after Huang resignation (Unite.AI)",
+     "url": "https://www.unite.ai/?p=515159"
+    },
+    {
+     "title": "Nvidia CEO Jensen Huang resigns (DatacenterDynamics)",
+     "url": "https://datacenterdynamics.com/en/news/nvidia-ceo-jensen-huang-resigns-after-multiple-affairs"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
+   "symbol": "RDDT",
+   "rank": 12,
+   "class": "approaching",
+   "price": 88.76,
+   "priceDate": "2026-11-23",
+   "gates": {
+    "revenueGrowth": {
+     "result": "pass",
+     "detail": "revenue 28% next yr, 31 analysts"
+    },
+    "earnings": {
+     "result": "pass",
+     "detail": "EPS 24% vs revenue 28% next yr"
+    },
+    "balanceSheet": {
+     "result": "pass",
+     "detail": "net cash"
+    },
+    "marginPs": {
+     "result": "fail",
+     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly); RESCALED to the Nov 23 close $88.76 (was $85.33 at the Nov 20 close): about 3.07, limit 3.0 (TTM revenue and margin carried)"
+    },
+    "estimates": {
+     "result": "pass",
+     "detail": "next-year EPS down 2.7% in 90 days ($7.01 to $6.82)"
+    },
+    "redFlags": {
+     "result": "pass",
+     "detail": "none found under the rules (Nov 17 check). The UK Information Commissioner's Office fine (GBP 14.47M / $19.5M, Feb 2026; Reddit appealed Apr 1, 2026) is a foreign regulator's action: under Seth's Nov 17 ruling, rule 8 covers US federal and state bodies only, so it does not count. Q3 report Oct 29: revenue +53% to $895M; Q4 revenue guidance $1.00-1.03B came in below analyst estimates, but Reddit guides one quarter at a time, so no earlier guidance was lowered (rule 2 not triggered). FTC non-public inquiry (Mar 2024) is an information request, and the securities class action (N.D. Cal., June 2025) is private: neither counts. No CEO/CFO departure found. Quarterly operating margin 29.2% vs 23.7% a year ago."
+    }
+   },
+   "reason": "online discussion platform (Reddit); about 95% of revenue is advertising. revenue 28% next yr, 31 analysts; P/S 5.8 at 29.4% margin = 3.0. New to the list. Gate 4 passes narrowly (2.95 vs 3.0). On the Nov 23 close the P/S test (Gate 4) rescales to about 3.07 and FAILS (limit 3.0), so it moves from Strict to Approaching; fair value and buy price are carried.",
+   "revGrowth": 53.0,
+   "fwdPE": 10.21,
+   "fcfYield": 6.7,
+   "roic": null,
+   "fairValue": 118.9,
+   "buyBelow": 98.64,
+   "discountPct": 25.3,
+   "rewardRisk": null,
+   "impliedReturnPct": 10.2,
+   "spreadPct": 31,
+   "strictChecks": {
+    "allMethods": true
+   },
+   "fairValueDetail": {
+    "methods": [
+     {
+      "name": "PEG",
+      "assumption": "12.0x (0.5 x G of 24, floor 10 cap 20) on EPS $4.90",
+      "value": 58.87,
+      "weight": 0,
+      "trimmed": true
+     },
+     {
+      "name": "DCF",
+      "assumption": "DCF yr1 $5.17 grown 12%/yr, 10% disc, 3% term",
+      "value": 98.64,
+      "weight": 20.0,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/E",
+      "assumption": "24.0x on EPS $4.90 (published $6.82 less SBC $1.91) (G 24)",
+      "value": 117.73,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "Forward P/S",
+      "assumption": "5.88x (3 x 29.4% margin / 15) on next-yr revenue $21.53/sh",
+      "value": 126.61,
+      "weight": 13.3,
+      "trimmed": false
+     },
+     {
+      "name": "FCF yield",
+      "assumption": "4.0% yield on forward SBC-adj FCF $5.17/sh (F 28%)",
+      "value": 129.16,
+      "weight": 33.3,
+      "trimmed": false
+     },
+     {
+      "name": "EV/EBITDA",
+      "assumption": "30.26x (industry: NYU Stern Jan 2026 \"Software (Internet)\"; own 5-yr median not verified) on forward EBITDA $1.19B",
+      "value": 192.87,
+      "weight": 0,
+      "trimmed": true
+     }
+    ],
+    "composite": 118.9,
+    "spreadPct": 31,
+    "low": 58.87,
+    "high": 192.87,
+    "bear": null,
+    "bull": null,
+    "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
+   },
+   "entry": "RSI(14) 32.2 (neutral); price below the 50-day average and below the 200-day average; 4.92% above the 52-week low; volume 0.57x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "upgrade": "Gate 4: margin-adjusted P/S about 3.07 vs the 3.0 limit: the price must fall about 2.4% (to about $86.6), or TTM revenue and margin must rise; price is already below the buy price.",
+   "tech": {
+    "rsi": 32.2,
+    "rsiWeekly": null,
+    "macd": null,
+    "atrPct": null,
+    "fromLowPct": 4.92,
+    "volVsAvg": 0.57,
+    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
+   },
+   "sources": [
+    {
+     "title": "Reddit Q3 2026 earnings call highlights (MarketBeat)",
+     "url": "https://www.marketbeat.com/instant-alerts/transcript-reddit-q3-earnings-call-highlights-2026-10-31/"
+    },
+    {
+     "title": "Reddit appeals ICO fine (Digital Policy Alert)",
+     "url": "https://digitalpolicyalert.org/event/39500-reddit-appealed-fine-of-gbp-1447-imposed-by-information-commissioners-office-for-unlawful-processing-of-childrens-personal-data"
+    },
+    {
+     "title": "UK ICO fines Reddit GBP 14.47M (The Register)",
+     "url": "https://www.theregister.com/2026/02/24/ico_fines_reddit"
+    },
+    {
+     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
+     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
+    }
+   ]
+  },
+  {
    "symbol": "CHKP",
    "rank": 13,
    "class": "approaching",
@@ -1478,7 +1478,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.47 at 28.3% margin = 2.90"
+     "detail": "P/S 5.47 at 28.3% margin = 2.90; RESCALED to the Nov 23 close $159.25 (was $154.88 at the Nov 20 close): about 2.98, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1550,7 +1550,7 @@
     "note": "company type SOFTWARE (Software - Infrastructure; no EV/EBITDA method); G uses next-year EPS growth only (no 2-3 year consensus in the data); Nov 15 valuation rules applied; PEG $88.18 is lower but does not set the buy price; snapshot-level inputs, not filing-verified"
    },
    "entry": "RSI(14) 68.7 (neutral); price above the 50-day average and above the 200-day average; 41.9% above the 52-week low; volume 0.85x the 30-day average; next earnings last reported 2026-11-02; next date not confirmed",
-   "upgrade": "failed gate(s): revenueGrowth; red flag(s): see the red-flag line; price $159.25 is 17.2% above the buy price $135.89 (needs a 14.7% fall)",
+   "upgrade": "Gate 1: next-year revenue growth 5.3% vs the 10% needed; red flags 3 and 2 (see the red-flag line); price $159.25 is 17.2% above the buy price $135.89 (needs a 14.7% fall)",
    "tech": {
     "rsi": 68.7,
     "rsiWeekly": null,
