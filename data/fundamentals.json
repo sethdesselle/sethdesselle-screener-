@@ -1,6 +1,6 @@
 {
 "AA": {
-"_fetched": 1795550967.0266492,
+"_fetched": 1795634047.5536146,
 "_gate": {
 "bookValue": 31.235,
 "capexHist": [
@@ -76,7 +76,7 @@ null
 "methodology": null
 }
 },
-"ev": 9755893760.0,
+"ev": 9439129600.0,
 "fcf": 918625024.0,
 "fcfHist": [
 567000000.0,
@@ -214,14 +214,14 @@ null
 "earningsDate": "2027-01-21",
 "eps": 5.75,
 "exchange": "NYQ",
-"forwardPe": 6.55,
+"forwardPe": 6.74,
 "industry": "Aluminum",
-"marketCap": 9007972352,
+"marketCap": 9262702592,
 "name": "Alcoa Corporation",
 "netMargin": 10.7,
 "opMargin": 15.3,
-"pe": 5.93,
-"ps": 0.6294,
+"pe": 6.1,
+"ps": 0.6472,
 "rating": "buy",
 "revGrowth": 23.7,
 "sector": "Basic Materials",
@@ -229,7 +229,7 @@ null
 "type": "EQUITY"
 },
 "AAON": {
-"_fetched": 1795550968.4562697,
+"_fetched": 1795634048.505521,
 "_gate": {
 "bookValue": 13.155,
 "capexHist": [
@@ -305,7 +305,7 @@ null
 "methodology": null
 }
 },
-"ev": 7016890880.0,
+"ev": 6595507200.0,
 "fcf": -122433000.0,
 "fcfHist": [
 -204358000.0,
@@ -443,14 +443,14 @@ null
 "earningsDate": "2026-11-09",
 "eps": 2.44,
 "exchange": "NMS",
-"forwardPe": 19.6,
+"forwardPe": 19.82,
 "industry": "Building Products & Equipment",
-"marketCap": 6207779840,
+"marketCap": 6275398656,
 "name": "AAON, Inc.",
 "netMargin": 9.0,
 "opMargin": 12.3,
-"pe": 30.85,
-"ps": 2.74,
+"pe": 31.19,
+"ps": 2.77,
 "rating": "strong_buy",
 "revGrowth": 84.1,
 "sector": "Industrials",
@@ -458,7 +458,7 @@ null
 "type": "EQUITY"
 },
 "AAPL": {
-"_fetched": 1795550946.7497888,
+"_fetched": 1795634036.025757,
 "_gate": {
 "bookValue": 7.713,
 "capexHist": [
@@ -534,7 +534,7 @@ null
 "methodology": null
 }
 },
-"ev": 5110650896384.0,
+"ev": 5183166742528.0,
 "fcf": 105658376192.0,
 "fcfHist": [
 136056000000.0,
@@ -672,14 +672,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 8.98,
 "exchange": "NMS",
-"forwardPe": 33.3,
+"forwardPe": 33.54,
 "industry": "Consumer Electronics",
-"marketCap": 5115652079616,
+"marketCap": 5152966180864,
 "name": "Apple Inc.",
 "netMargin": 27.6,
 "opMargin": 33.0,
-"pe": 39.2,
-"ps": 10.68,
+"pe": 39.49,
+"ps": 10.76,
 "rating": "buy",
 "revGrowth": 11.7,
 "sector": "Technology",
@@ -687,7 +687,7 @@ null
 "type": "EQUITY"
 },
 "ABNB": {
-"_fetched": 1795550970.069059,
+"_fetched": 1795634049.3115978,
 "_gate": {
 "bookValue": 15.81,
 "capexHist": [
@@ -746,8 +746,8 @@ null
 "+1y": {
 "30daysAgo": 6.2615,
 "60daysAgo": 6.2449,
-"7daysAgo": 6.3594,
-"90daysAgo": 6.1859,
+"7daysAgo": 6.3923,
+"90daysAgo": 6.1861,
 "currency": null,
 "current": 6.3923,
 "methodology": null
@@ -755,14 +755,14 @@ null
 "0y": {
 "30daysAgo": 5.3115,
 "60daysAgo": 5.3134,
-"7daysAgo": 5.5516,
-"90daysAgo": 5.2913,
+"7daysAgo": 5.5808,
+"90daysAgo": 5.2918,
 "currency": null,
 "current": 5.5808,
 "methodology": null
 }
 },
-"ev": 92133842944.0,
+"ev": 91798937600.0,
 "fcf": 3249999872.0,
 "fcfHist": [
 4646000000.0,
@@ -900,14 +900,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 5.33,
 "exchange": "NMS",
-"forwardPe": 27.32,
+"forwardPe": 27.4,
 "industry": "Travel Services",
-"marketCap": 103666057216,
+"marketCap": 103964426240,
 "name": "Airbnb, Inc.",
 "netMargin": 23.0,
 "opMargin": 22.5,
-"pe": 32.59,
-"ps": 7.44,
+"pe": 32.69,
+"ps": 7.46,
 "rating": "buy",
 "revGrowth": 18.9,
 "sector": "Consumer Cyclical",
@@ -915,7 +915,7 @@ null
 "type": "EQUITY"
 },
 "ACCV": {
-"_fetched": 1795550971.6696239,
+"_fetched": 1795634050.1573012,
 "_gate": {
 "bookValue": null,
 "capexHist": [
@@ -942,17 +942,17 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 1.1781,
+"avg": 1.1824,
 "currency": null,
-"growth": 1.3494,
+"growth": 1.3783,
 "high": 1.374,
-"low": 1.03,
+"low": 1.0527,
 "methodology": null,
 "numberOfAnalysts": 7.0,
-"yearAgoEps": 0.5014
+"yearAgoEps": 0.4972
 },
 "0y": {
-"avg": 0.5014,
+"avg": 0.4972,
 "currency": null,
 "growth": null,
 "high": 0.55,
@@ -966,23 +966,23 @@ null
 "+1y": {
 "30daysAgo": 0.0,
 "60daysAgo": 0.0,
-"7daysAgo": 1.0089,
+"7daysAgo": 1.1142,
 "90daysAgo": 0.0,
 "currency": null,
-"current": 1.1781,
+"current": 1.1824,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 0.0,
 "60daysAgo": 0.0,
-"7daysAgo": 0.5046,
+"7daysAgo": 0.4951,
 "90daysAgo": 0.0,
 "currency": null,
-"current": 0.5014,
+"current": 0.4972,
 "methodology": null
 }
 },
-"ev": 1887888768.0,
+"ev": 1754663808.0,
 "fcf": null,
 "fcfHist": [
 -16385000.0,
@@ -1051,20 +1051,20 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 1694978470.0,
+"avg": 1697407040.0,
 "currency": null,
-"growth": 0.8624,
+"growth": 0.8628,
 "high": 1740286000.0,
 "low": 1621189000.0,
 "numberOfAnalysts": 7.0,
-"yearAgoRevenue": 910087470.0
+"yearAgoRevenue": 911230330.0
 },
 "0y": {
-"avg": 910087470.0,
+"avg": 911230330.0,
 "currency": null,
-"growth": 1.0323,
+"growth": 1.0348,
 "high": 913550000.0,
-"low": 902000000.0,
+"low": 909994000.0,
 "numberOfAnalysts": 7.0,
 "yearAgoRevenue": 447819000.0
 }
@@ -1096,22 +1096,22 @@ null
 "earningsDate": "2026-11-12",
 "eps": -0.09,
 "exchange": "NMS",
-"forwardPe": 8.05,
+"forwardPe": 8.29,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 2118600448,
+"marketCap": 2182024960,
 "name": "Accelevation Holdings Corp.",
 "netMargin": 4.8,
 "opMargin": 12.2,
 "pe": null,
-"ps": 2.63,
+"ps": 2.7,
 "rating": "strong_buy",
 "revGrowth": 65.9,
 "sector": "Industrials",
-"targetPrice": 19.0,
+"targetPrice": 18.57,
 "type": "EQUITY"
 },
 "ACTG": {
-"_fetched": 1795550973.4169178,
+"_fetched": 1795634051.0671947,
 "_gate": {
 "bookValue": 5.346,
 "capexHist": [
@@ -1187,7 +1187,7 @@ null
 "methodology": null
 }
 },
-"ev": 180800688.0,
+"ev": 173969120.0,
 "fcf": 2019125.0,
 "fcfHist": [
 58548000.0,
@@ -1325,14 +1325,14 @@ null
 "earningsDate": "2026-11-05",
 "eps": -0.19,
 "exchange": "NMS",
-"forwardPe": -19.02,
+"forwardPe": -19.0,
 "industry": "Business Equipment & Supplies",
-"marketCap": 389887104,
+"marketCap": 389418656,
 "name": "Acacia Research Corporation",
 "netMargin": -6.5,
 "opMargin": -6.0,
 "pe": null,
-"ps": 1.43,
+"ps": 1.42,
 "rating": "none",
 "revGrowth": -8.4,
 "sector": "Industrials",
@@ -1340,7 +1340,7 @@ null
 "type": "EQUITY"
 },
 "ADMA": {
-"_fetched": 1795551208.6642687,
+"_fetched": 1795634193.4678469,
 "_gate": {
 "bookValue": 1.968,
 "capexHist": [
@@ -1376,29 +1376,29 @@ null
 "+1y": {
 "avg": 0.9367,
 "currency": null,
-"growth": 0.1636,
+"growth": 0.1612,
 "high": 1.07,
 "low": 0.76,
 "methodology": null,
 "numberOfAnalysts": 3.0,
-"yearAgoEps": 0.805
+"yearAgoEps": 0.8067
 },
 "0y": {
-"avg": 0.805,
+"avg": 0.8067,
 "currency": null,
-"growth": 0.2258,
+"growth": 0.2284,
 "high": 0.81,
 "low": 0.8,
 "methodology": null,
-"numberOfAnalysts": 2.0,
+"numberOfAnalysts": 3.0,
 "yearAgoEps": 0.6567
 }
 },
 "epsTrend": {
 "+1y": {
 "30daysAgo": 0.9433,
-"60daysAgo": 0.9825,
-"7daysAgo": 0.9433,
+"60daysAgo": 0.9433,
+"7daysAgo": 0.9367,
 "90daysAgo": 0.9825,
 "currency": null,
 "current": 0.9367,
@@ -1407,14 +1407,14 @@ null
 "0y": {
 "30daysAgo": 0.7967,
 "60daysAgo": 0.7967,
-"7daysAgo": 0.7967,
+"7daysAgo": 0.805,
 "90daysAgo": 0.7967,
 "currency": null,
-"current": 0.805,
+"current": 0.8067,
 "methodology": null
 }
 },
-"ev": 3073283328.0,
+"ev": 3162024960.0,
 "fcf": 90261624.0,
 "fcfHist": [
 27505000.0,
@@ -1547,14 +1547,14 @@ null
 "earningsDate": "2026-11-04",
 "eps": 0.77,
 "exchange": "NGM",
-"forwardPe": 14.77,
+"forwardPe": 15.22,
 "industry": "Biotechnology",
-"marketCap": 3069355520,
+"marketCap": 3162534144,
 "name": "ADMA Biologics Inc",
 "netMargin": 35.1,
 "opMargin": 44.9,
-"pe": 17.97,
-"ps": 5.91,
+"pe": 18.51,
+"ps": 6.09,
 "rating": "buy",
 "revGrowth": 5.1,
 "sector": "Healthcare",
@@ -1562,7 +1562,7 @@ null
 "type": "EQUITY"
 },
 "AEP": {
-"_fetched": 1795550975.203294,
+"_fetched": 1795634052.1803398,
 "_gate": {
 "bookValue": 60.192,
 "capexHist": [
@@ -1638,7 +1638,7 @@ null
 "methodology": null
 }
 },
-"ev": 124981305344.0,
+"ev": 125041205248.0,
 "fcf": -7771250176.0,
 "fcfHist": [
 -5092000000.0,
@@ -1769,14 +1769,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 6.12,
 "exchange": "NMS",
-"forwardPe": 18.42,
+"forwardPe": 18.51,
 "industry": "Utilities - Regulated Electric",
-"marketCap": 69176623104,
+"marketCap": 69519679488,
 "name": "American Electric Power Company",
 "netMargin": 14.2,
 "opMargin": 24.3,
-"pe": 20.76,
-"ps": 2.93,
+"pe": 20.86,
+"ps": 2.94,
 "rating": "buy",
 "revGrowth": 13.7,
 "sector": "Utilities",
@@ -1784,7 +1784,7 @@ null
 "type": "EQUITY"
 },
 "AGX": {
-"_fetched": 1795550976.6350992,
+"_fetched": 1795634053.061101,
 "_gate": {
 "bookValue": 36.118,
 "capexHist": [
@@ -1820,19 +1820,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 15.976,
+"avg": 16.052,
 "currency": null,
-"growth": 0.2135,
+"growth": 0.2198,
 "high": 18.7199,
 "low": 12.66,
 "methodology": null,
 "numberOfAnalysts": 5.0,
-"yearAgoEps": 13.1652
+"yearAgoEps": 13.1592
 },
 "0y": {
-"avg": 13.1652,
+"avg": 13.1592,
 "currency": null,
-"growth": 0.3517,
+"growth": 0.3511,
 "high": 13.8162,
 "low": 12.5,
 "methodology": null,
@@ -1847,7 +1847,7 @@ null
 "7daysAgo": 16.1073,
 "90daysAgo": 15.99,
 "currency": null,
-"current": 15.976,
+"current": 16.052,
 "methodology": null
 },
 "0y": {
@@ -1856,11 +1856,11 @@ null
 "7daysAgo": 13.2695,
 "90daysAgo": 12.0921,
 "currency": null,
-"current": 13.1652,
+"current": 13.1592,
 "methodology": null
 }
 },
-"ev": 3125621760.0,
+"ev": 2785959168.0,
 "fcf": 467822016.0,
 "fcfHist": [
 410841000.0,
@@ -1870,7 +1870,7 @@ null
 null
 ],
 "fcfTtm": 545701000.0,
-"forwardEps": 15.976,
+"forwardEps": 16.052,
 "grossMargin": 0.2071,
 "interest": null,
 "netIncome": [
@@ -1933,18 +1933,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 1679288230.0,
+"avg": 1685260730.0,
 "currency": null,
-"growth": 0.1986,
-"high": 1850685370.0,
+"growth": 0.2034,
+"high": 1858900000.0,
 "low": 1501500000.0,
 "numberOfAnalysts": 6.0,
-"yearAgoRevenue": 1401034170.0
+"yearAgoRevenue": 1400367500.0
 },
 "0y": {
-"avg": 1401034170.0,
+"avg": 1400367500.0,
 "currency": null,
-"growth": 0.4832,
+"growth": 0.4825,
 "high": 1468371000.0,
 "low": 1351000000.0,
 "numberOfAnalysts": 6.0,
@@ -1987,22 +1987,22 @@ null
 "earningsDate": "2026-12-03",
 "eps": 12.65,
 "exchange": "NYQ",
-"forwardPe": 16.77,
+"forwardPe": 17.44,
 "industry": "Engineering & Construction",
-"marketCap": 3758875392,
+"marketCap": 3928075264,
 "name": "Argan, Inc.",
 "netMargin": 15.1,
 "opMargin": 15.4,
-"pe": 21.18,
-"ps": 3.16,
+"pe": 22.13,
+"ps": 3.31,
 "rating": "buy",
 "revGrowth": 61.5,
 "sector": "Industrials",
-"targetPrice": 530.0,
+"targetPrice": 530.17,
 "type": "EQUITY"
 },
 "ALL": {
-"_fetched": 1795550978.2946436,
+"_fetched": 1795634054.07795,
 "_gate": {
 "bookValue": 121.727,
 "capexHist": [
@@ -2072,7 +2072,7 @@ null
 "methodology": null
 }
 },
-"ev": 68791402496.0,
+"ev": 70055870464.0,
 "fcf": 8845750272.0,
 "fcfHist": [
 9882000000.0,
@@ -2082,7 +2082,7 @@ null
 null
 ],
 "fcfTtm": 12734000000.0,
-"forwardEps": 28.5136,
+"forwardEps": 28.5363,
 "grossMargin": 0.3487,
 "interest": [
 399000000.0,
@@ -2190,14 +2190,14 @@ null
 "earningsDate": "2027-02-03",
 "eps": 44.09,
 "exchange": "NYQ",
-"forwardPe": 9.48,
+"forwardPe": 9.47,
 "industry": "Insurance - Property & Casualty",
-"marketCap": 66921484288,
+"marketCap": 66891788288,
 "name": "Allstate Corporation (The)",
 "netMargin": 16.6,
 "opMargin": 21.7,
 "pe": 6.13,
-"ps": 0.9529,
+"ps": 0.9525,
 "rating": "hold",
 "revGrowth": 0.5,
 "sector": "Financial Services",
@@ -2205,7 +2205,7 @@ null
 "type": "EQUITY"
 },
 "ALM": {
-"_fetched": 1795550980.0980692,
+"_fetched": 1795634055.0981588,
 "_gate": {
 "bookValue": 1.3957,
 "capexHist": [
@@ -2281,7 +2281,7 @@ null
 "methodology": null
 }
 },
-"ev": 1705494656.0,
+"ev": 1591507200.0,
 "fcf": -20076500.0,
 "fcfHist": [
 -79985000.0,
@@ -2419,22 +2419,22 @@ null
 "earningsDate": "2026-11-13",
 "eps": 0.17,
 "exchange": "NCM",
-"forwardPe": 8.71,
+"forwardPe": 8.69,
 "industry": "Other Industrial Metals & Mining",
-"marketCap": 1948271488,
+"marketCap": 1943986432,
 "name": "Almonty Industries Inc.",
 "netMargin": 104.6,
 "opMargin": 18.4,
-"pe": 40.12,
-"ps": 16.37,
+"pe": 40.03,
+"ps": 16.34,
 "rating": "strong_buy",
 "revGrowth": 381.8,
 "sector": "Basic Materials",
-"targetPrice": 20.55,
+"targetPrice": 20.66,
 "type": "EQUITY"
 },
 "AMD": {
-"_fetched": 1795550958.9444847,
+"_fetched": 1795634043.1508877,
 "_gate": {
 "bookValue": 41.701,
 "capexHist": [
@@ -2470,19 +2470,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 17.6157,
+"avg": 17.607,
 "currency": null,
-"growth": 1.179,
+"growth": 1.1772,
 "high": 23.66,
 "low": 14.51,
 "methodology": null,
 "numberOfAnalysts": 49.0,
-"yearAgoEps": 8.0844
+"yearAgoEps": 8.0868
 },
 "0y": {
-"avg": 8.0844,
+"avg": 8.0868,
 "currency": null,
-"growth": 0.9387,
+"growth": 0.9393,
 "high": 8.72,
 "low": 7.85,
 "methodology": null,
@@ -2497,7 +2497,7 @@ null
 "7daysAgo": 17.6382,
 "90daysAgo": 15.3288,
 "currency": null,
-"current": 17.6157,
+"current": 17.607,
 "methodology": null
 },
 "0y": {
@@ -2506,11 +2506,11 @@ null
 "7daysAgo": 8.0844,
 "90daysAgo": 7.5635,
 "currency": null,
-"current": 8.0844,
+"current": 8.0868,
 "methodology": null
 }
 },
-"ev": 737148993536.0,
+"ev": 671233867776.0,
 "fcf": 7357125120.0,
 "fcfHist": [
 6735000000.0,
@@ -2520,7 +2520,7 @@ null
 null
 ],
 "fcfTtm": 7056000000.0,
-"forwardEps": 17.6382,
+"forwardEps": 17.6157,
 "grossMargin": 0.56,
 "interest": [
 131000000.0,
@@ -2589,16 +2589,16 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 95800846830.0,
+"avg": 95771906830.0,
 "currency": null,
-"growth": 0.8341,
+"growth": 0.8335,
 "high": 120267000000.0,
 "low": 80695000000.0,
 "numberOfAnalysts": 50.0,
-"yearAgoRevenue": 52234334570.0
+"yearAgoRevenue": 52234356790.0
 },
 "0y": {
-"avg": 52234334570.0,
+"avg": 52234356790.0,
 "currency": null,
 "growth": 0.508,
 "high": 55999000000.0,
@@ -2643,22 +2643,22 @@ null
 "earningsDate": "2027-02-02",
 "eps": 4.68,
 "exchange": "NMS",
-"forwardPe": 23.25,
+"forwardPe": 22.93,
 "industry": "Semiconductors",
-"marketCap": 678643105792,
+"marketCap": 668464447488,
 "name": "Advanced Micro Devices, Inc.",
 "netMargin": 16.8,
 "opMargin": 17.8,
-"pe": 87.62,
-"ps": 14.93,
+"pe": 86.3,
+"ps": 14.71,
 "rating": "strong_buy",
 "revGrowth": 44.7,
 "sector": "Technology",
-"targetPrice": 656.21,
+"targetPrice": 649.89,
 "type": "EQUITY"
 },
 "AMZN": {
-"_fetched": 1795550951.2882955,
+"_fetched": 1795634038.6551025,
 "_gate": {
 "bookValue": 56.757,
 "capexHist": [
@@ -2716,7 +2716,7 @@ null
 "+1y": {
 "30daysAgo": 10.5829,
 "60daysAgo": 10.5237,
-"7daysAgo": 10.685,
+"7daysAgo": 10.698,
 "90daysAgo": 10.5082,
 "currency": null,
 "current": 10.6704,
@@ -2725,14 +2725,14 @@ null
 "0y": {
 "30daysAgo": 12.9275,
 "60daysAgo": 12.9021,
-"7daysAgo": 12.8017,
+"7daysAgo": 12.7998,
 "90daysAgo": 12.8246,
 "currency": null,
 "current": 12.7986,
 "methodology": null
 }
 },
-"ev": 2952182366208.0,
+"ev": 2918661750784.0,
 "fcf": -34731749376.0,
 "fcfHist": [
 7695000000.0,
@@ -2865,14 +2865,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 12.37,
 "exchange": "NMS",
-"forwardPe": 23.02,
+"forwardPe": 22.48,
 "industry": "Internet Retail",
-"marketCap": 2720152944640,
+"marketCap": 2656463486976,
 "name": "Amazon.com, Inc.",
 "netMargin": 16.9,
 "opMargin": 13.1,
-"pe": 20.34,
-"ps": 3.41,
+"pe": 19.86,
+"ps": 3.33,
 "rating": "strong_buy",
 "revGrowth": 12.1,
 "sector": "Consumer Cyclical",
@@ -2880,7 +2880,7 @@ null
 "type": "EQUITY"
 },
 "APP": {
-"_fetched": 1795550981.6308928,
+"_fetched": 1795634056.1048746,
 "_gate": {
 "bookValue": 9.956,
 "capexHist": [
@@ -2955,7 +2955,7 @@ null
 "methodology": null
 }
 },
-"ev": 124230328320.0,
+"ev": 126612529152.0,
 "fcf": 3718514688.0,
 "fcfHist": [
 3942776000.0,
@@ -3073,7 +3073,7 @@ null
 191612000.0,
 null
 ],
-"shares": 301258000.0,
+"shares": 301258338.0,
 "totalCash": 3173731072.0,
 "totalDebt": 3516135936.0,
 "v": 2,
@@ -3092,14 +3092,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 14.85,
 "exchange": "NMS",
-"forwardPe": 18.3,
+"forwardPe": 18.23,
 "industry": "Advertising Agencies",
-"marketCap": 126505394176,
+"marketCap": 126016700416,
 "name": "Applovin Corporation",
 "netMargin": 65.9,
 "opMargin": 77.8,
-"pe": 25.71,
-"ps": 16.63,
+"pe": 25.61,
+"ps": 16.56,
 "rating": "buy",
 "revGrowth": 55.5,
 "sector": "Communication Services",
@@ -3107,7 +3107,7 @@ null
 "type": "EQUITY"
 },
 "ARM": {
-"_fetched": 1795550983.1230762,
+"_fetched": 1795634057.0158315,
 "_gate": {
 "bookValue": 8.493,
 "capexHist": [
@@ -3183,7 +3183,7 @@ null
 "methodology": null
 }
 },
-"ev": 185915899904.0,
+"ev": 169748201472.0,
 "fcf": 1137250048.0,
 "fcfHist": [
 949000000.0,
@@ -3310,14 +3310,14 @@ null
 "earningsDate": "2027-02-03",
 "eps": 0.87,
 "exchange": "NMS",
-"forwardPe": 52.16,
+"forwardPe": 52.35,
 "industry": "Semiconductors",
-"marketCap": 172280692736,
+"marketCap": 172906643456,
 "name": "Arm Holdings plc",
 "netMargin": 17.1,
 "opMargin": 17.0,
-"pe": 185.07,
-"ps": 31.53,
+"pe": 185.74,
+"ps": 31.64,
 "rating": "buy",
 "revGrowth": 27.1,
 "sector": "Technology",
@@ -3325,7 +3325,7 @@ null
 "type": "EQUITY"
 },
 "AVAV": {
-"_fetched": 1795550984.6728945,
+"_fetched": 1795634057.9745715,
 "_gate": {
 "bookValue": 86.819,
 "capexHist": [
@@ -3401,7 +3401,7 @@ null
 "methodology": null
 }
 },
-"ev": 4861414400.0,
+"ev": 4797111296.0,
 "fcf": -25920876.0,
 "fcfHist": [
 -164622000.0,
@@ -3539,14 +3539,14 @@ null
 "earningsDate": "2026-12-08",
 "eps": -4.05,
 "exchange": "NMS",
-"forwardPe": 20.39,
+"forwardPe": 20.72,
 "industry": "Aerospace & Defense",
-"marketCap": 4567693824,
+"marketCap": 4642979328,
 "name": "AeroVironment, Inc.",
 "netMargin": -10.1,
 "opMargin": -0.6,
 "pe": null,
-"ps": 2.28,
+"ps": 2.32,
 "rating": "buy",
 "revGrowth": 5.7,
 "sector": "Industrials",
@@ -3554,7 +3554,7 @@ null
 "type": "EQUITY"
 },
 "AVEX": {
-"_fetched": 1795550986.0430965,
+"_fetched": 1795634058.844603,
 "_gate": {
 "bookValue": 0.094,
 "capexHist": [
@@ -3621,7 +3621,7 @@ null
 "methodology": null
 }
 },
-"ev": 1827469952.0,
+"ev": 1783875456.0,
 "fcf": null,
 "fcfHist": [
 -106106000.0,
@@ -3735,14 +3735,14 @@ null,
 "earningsDate": "2026-11-11",
 "eps": -0.41,
 "exchange": "NYQ",
-"forwardPe": 17.49,
+"forwardPe": 18.5,
 "industry": "Aerospace & Defense",
-"marketCap": 816877760,
+"marketCap": 864278080,
 "name": "AEVEX Corp.",
 "netMargin": 1.5,
 "opMargin": 12.1,
 "pe": null,
-"ps": 1.07,
+"ps": 1.13,
 "rating": "strong_buy",
 "revGrowth": 56.5,
 "sector": "Industrials",
@@ -3750,7 +3750,7 @@ null,
 "type": "EQUITY"
 },
 "AVGO": {
-"_fetched": 1795550954.3944304,
+"_fetched": 1795634040.486597,
 "_gate": {
 "bookValue": 20.882,
 "capexHist": [
@@ -3783,19 +3783,19 @@ null,
 ],
 "epsEst": {
 "+1y": {
-"avg": 19.3325,
+"avg": 19.3265,
 "currency": null,
-"growth": 0.6588,
+"growth": 0.6584,
 "high": 22.44,
 "low": 17.4665,
 "methodology": null,
 "numberOfAnalysts": 50.0,
-"yearAgoEps": 11.6544
+"yearAgoEps": 11.654
 },
 "0y": {
-"avg": 11.6544,
+"avg": 11.654,
 "currency": null,
-"growth": 0.7089,
+"growth": 0.7088,
 "high": 12.38,
 "low": 11.35,
 "methodology": null,
@@ -3805,12 +3805,12 @@ null,
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 19.4037,
+"30daysAgo": 19.3977,
 "60daysAgo": 19.3533,
-"7daysAgo": 19.3547,
+"7daysAgo": 19.3487,
 "90daysAgo": 19.5202,
 "currency": null,
-"current": 19.3325,
+"current": 19.3265,
 "methodology": null
 },
 "0y": {
@@ -3819,11 +3819,11 @@ null,
 "7daysAgo": 11.6544,
 "90daysAgo": 11.6237,
 "currency": null,
-"current": 11.6544,
+"current": 11.654,
 "methodology": null
 }
 },
-"ev": 1532215689216.0,
+"ev": 1472688422912.0,
 "fcf": 30596499456.0,
 "fcfHist": [
 26914000000.0,
@@ -3832,7 +3832,7 @@ null,
 16312000000.0
 ],
 "fcfTtm": 39403000000.0,
-"forwardEps": 19.386,
+"forwardEps": 19.3325,
 "grossMargin": 0.7551,
 "interest": [
 3210000000.0,
@@ -3902,21 +3902,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 174692288450.0,
+"avg": 174745185180.0,
 "currency": null,
-"growth": 0.6483,
+"growth": 0.6489,
 "high": 199924000000.0,
 "low": 163082916000.0,
 "numberOfAnalysts": 49.0,
-"yearAgoRevenue": 105980690620.0
+"yearAgoRevenue": 105978113790.0
 },
 "0y": {
-"avg": 105980690620.0,
+"avg": 105978113790.0,
 "currency": null,
-"growth": 0.6589,
+"growth": 0.6588,
 "high": 106680502000.0,
 "low": 105797177130.0,
-"numberOfAnalysts": 43.0,
+"numberOfAnalysts": 44.0,
 "yearAgoRevenue": 63887000000.0
 }
 },
@@ -3953,22 +3953,22 @@ null
 "earningsDate": "2026-12-09",
 "eps": 7.83,
 "exchange": "NMS",
-"forwardPe": 15.55,
+"forwardPe": 15.36,
 "industry": "Semiconductors",
-"marketCap": 1439297175552,
+"marketCap": 1417433841664,
 "name": "Broadcom Inc.",
 "netMargin": 42.9,
 "opMargin": 48.8,
-"pe": 38.51,
-"ps": 16.15,
+"pe": 37.92,
+"ps": 15.91,
 "rating": "strong_buy",
 "revGrowth": 85.5,
 "sector": "Technology",
-"targetPrice": 525.51,
+"targetPrice": 523.28,
 "type": "EQUITY"
 },
 "AXON": {
-"_fetched": 1795550987.5590138,
+"_fetched": 1795634059.6935585,
 "_gate": {
 "bookValue": 46.221,
 "capexHist": [
@@ -4026,8 +4026,8 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 10.5444,
-"60daysAgo": 10.5739,
+"30daysAgo": 10.5099,
+"60daysAgo": 10.5519,
 "7daysAgo": 9.4445,
 "90daysAgo": 10.5594,
 "currency": null,
@@ -4035,7 +4035,7 @@ null
 "methodology": null
 },
 "0y": {
-"30daysAgo": 7.6478,
+"30daysAgo": 7.6413,
 "60daysAgo": 7.6696,
 "7daysAgo": 7.1093,
 "90daysAgo": 7.7131,
@@ -4044,7 +4044,7 @@ null
 "methodology": null
 }
 },
-"ev": 26381664256.0,
+"ev": 27336056832.0,
 "fcf": 66092000.0,
 "fcfHist": [
 75081000.0,
@@ -4177,14 +4177,14 @@ null
 "earningsDate": "2026-11-05",
 "eps": 3.11,
 "exchange": "NMS",
-"forwardPe": 33.97,
+"forwardPe": 36.32,
 "industry": "Aerospace & Defense",
-"marketCap": 26123612160,
+"marketCap": 27930605568,
 "name": "Axon Enterprise, Inc.",
 "netMargin": 7.6,
 "opMargin": 1.5,
-"pe": 103.15,
-"ps": 7.65,
+"pe": 110.29,
+"ps": 8.17,
 "rating": "buy",
 "revGrowth": 27.9,
 "sector": "Industrials",
@@ -4192,7 +4192,7 @@ null
 "type": "EQUITY"
 },
 "B": {
-"_fetched": 1795550989.1083105,
+"_fetched": 1795634060.612019,
 "_gate": {
 "bookValue": 16.931,
 "capexHist": [
@@ -4268,7 +4268,7 @@ null
 "methodology": null
 }
 },
-"ev": 64103219200.0,
+"ev": 63549485056.0,
 "fcf": 5373749760.0,
 "fcfHist": [
 3868000000.0,
@@ -4405,14 +4405,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 3.91,
 "exchange": "NYQ",
-"forwardPe": 8.06,
+"forwardPe": 8.23,
 "industry": "Gold",
-"marketCap": 54950080512,
+"marketCap": 56106405888,
 "name": "Barrick Mining Corporation",
 "netMargin": 30.3,
 "opMargin": 52.0,
-"pe": 8.63,
-"ps": 2.55,
+"pe": 8.81,
+"ps": 2.6,
 "rating": "buy",
 "revGrowth": 22.3,
 "sector": "Basic Materials",
@@ -4420,7 +4420,7 @@ null
 "type": "EQUITY"
 },
 "BAC": {
-"_fetched": 1795550965.1939938,
+"_fetched": 1795634046.622029,
 "_gate": {
 "bookValue": 39.255,
 "capexHist": null,
@@ -4483,7 +4483,7 @@ null
 "methodology": null
 }
 },
-"ev": 295700070400.0,
+"ev": 298598137856.0,
 "fcf": null,
 "fcfHist": [
 12613000000.0,
@@ -4608,14 +4608,14 @@ null
 "earningsDate": "2027-01-15",
 "eps": 4.19,
 "exchange": "NYQ",
-"forwardPe": 9.32,
+"forwardPe": 9.37,
 "industry": "Banks - Diversified",
-"marketCap": 333245579264,
+"marketCap": 334763655168,
 "name": "Bank of America Corporation",
 "netMargin": 28.1,
 "opMargin": 35.3,
-"pe": 11.53,
-"ps": 2.9,
+"pe": 11.58,
+"ps": 2.91,
 "rating": "strong_buy",
 "revGrowth": 3.4,
 "sector": "Financial Services",
@@ -4623,7 +4623,7 @@ null
 "type": "EQUITY"
 },
 "BE": {
-"_fetched": 1795550990.7010982,
+"_fetched": 1795634061.5183537,
 "_gate": {
 "bookValue": 6.54,
 "capexHist": [
@@ -4684,7 +4684,7 @@ null
 "30daysAgo": 5.3101,
 "60daysAgo": 4.9512,
 "7daysAgo": 5.3239,
-"90daysAgo": 4.8852,
+"90daysAgo": 4.9276,
 "currency": null,
 "current": 5.3541,
 "methodology": null
@@ -4693,13 +4693,13 @@ null
 "30daysAgo": 3.2642,
 "60daysAgo": 2.6909,
 "7daysAgo": 3.273,
-"90daysAgo": 2.7113,
+"90daysAgo": 2.7112,
 "currency": null,
 "current": 3.2686,
 "methodology": null
 }
 },
-"ev": 50044796928.0,
+"ev": 46573789184.0,
 "fcf": -1706500.0,
 "fcfHist": [
 57190000.0,
@@ -4709,7 +4709,7 @@ null
 null
 ],
 "fcfTtm": 436704000.0,
-"forwardEps": 5.3541,
+"forwardEps": 5.3239,
 "grossMargin": 0.3177,
 "interest": [
 53888000.0,
@@ -4837,22 +4837,22 @@ null
 "earningsDate": "2027-02-04",
 "eps": 1.65,
 "exchange": "NYQ",
-"forwardPe": 28.97,
+"forwardPe": 28.82,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 45854875648,
+"marketCap": 45359652864,
 "name": "Bloom Energy Corporation",
 "netMargin": 13.5,
 "opMargin": 14.3,
-"pe": 94.0,
-"ps": 11.97,
+"pe": 92.98,
+"ps": 11.84,
 "rating": "buy",
 "revGrowth": 138.1,
 "sector": "Industrials",
-"targetPrice": 282.69,
+"targetPrice": 279.31,
 "type": "EQUITY"
 },
 "BKR": {
-"_fetched": 1795550992.3222222,
+"_fetched": 1795634062.332609,
 "_gate": {
 "bookValue": 20.281,
 "capexHist": [
@@ -4910,9 +4910,9 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 2.9434,
+"30daysAgo": 2.941,
 "60daysAgo": 3.1109,
-"7daysAgo": 2.8796,
+"7daysAgo": 2.8042,
 "90daysAgo": 3.1607,
 "currency": null,
 "current": 2.8042,
@@ -4921,14 +4921,14 @@ null
 "0y": {
 "30daysAgo": 2.5546,
 "60daysAgo": 2.5761,
-"7daysAgo": 2.585,
+"7daysAgo": 2.5387,
 "90daysAgo": 2.603,
 "currency": null,
 "current": 2.5387,
 "methodology": null
 }
 },
-"ev": 59035332608.0,
+"ev": 58886369280.0,
 "fcf": 5079750144.0,
 "fcfHist": [
 2537000000.0,
@@ -4938,7 +4938,7 @@ null
 null
 ],
 "fcfTtm": 3228000000.0,
-"forwardEps": 2.8042,
+"forwardEps": 2.8135,
 "grossMargin": 0.237,
 "interest": [
 222000000.0,
@@ -5066,22 +5066,22 @@ null
 "earningsDate": "2027-01-25",
 "eps": 2.91,
 "exchange": "NMS",
-"forwardPe": 16.34,
+"forwardPe": 16.53,
 "industry": "Oil & Gas Equipment & Services",
-"marketCap": 45507821568,
+"marketCap": 46188077056,
 "name": "Baker Hughes Company",
 "netMargin": 10.1,
 "opMargin": 12.2,
-"pe": 15.75,
-"ps": 1.58,
+"pe": 15.98,
+"ps": 1.61,
 "rating": "buy",
 "revGrowth": 14.5,
 "sector": "Energy",
-"targetPrice": 69.75,
+"targetPrice": 69.33,
 "type": "EQUITY"
 },
 "BLBD": {
-"_fetched": 1795550993.919133,
+"_fetched": 1795634063.3745203,
 "_gate": {
 "bookValue": 20.675,
 "capexHist": [
@@ -5154,7 +5154,7 @@ null
 "methodology": null
 }
 },
-"ev": 1816814848.0,
+"ev": 1788306432.0,
 "fcf": -10407500.0,
 "fcfHist": [
 153342000.0,
@@ -5163,7 +5163,7 @@ null
 -30890000.0
 ],
 "fcfTtm": 153143000.0,
-"forwardEps": 4.1894,
+"forwardEps": 4.1434,
 "grossMargin": 0.2057,
 "interest": [
 7202000.0,
@@ -5284,14 +5284,14 @@ null
 "earningsDate": "2026-12-02",
 "eps": 8.45,
 "exchange": "NGM",
-"forwardPe": 13.54,
+"forwardPe": 13.59,
 "industry": "Farm & Heavy Construction Machinery",
-"marketCap": 1931783936,
+"marketCap": 1917313024,
 "name": "Blue Bird Corporation",
 "netMargin": 17.5,
 "opMargin": 11.8,
-"pe": 6.71,
-"ps": 1.2,
+"pe": 6.66,
+"ps": 1.19,
 "rating": "strong_buy",
 "revGrowth": 29.9,
 "sector": "Industrials",
@@ -5299,7 +5299,7 @@ null
 "type": "EQUITY"
 },
 "BN": {
-"_fetched": 1795550995.3415895,
+"_fetched": 1795634064.3287969,
 "_gate": {
 "bookValue": 19.299,
 "capexHist": [
@@ -5375,7 +5375,7 @@ null
 "methodology": null
 }
 },
-"ev": 492754534400.0,
+"ev": 493555875840.0,
 "fcf": -14867375104.0,
 "fcfHist": [
 -3794000000.0,
@@ -5506,14 +5506,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 1.0,
 "exchange": "NYQ",
-"forwardPe": 6.68,
+"forwardPe": 6.86,
 "industry": "Asset Management",
-"marketCap": 87323402240,
+"marketCap": 89582723072,
 "name": "Brookfield Corporation",
 "netMargin": 3.0,
 "opMargin": 27.5,
-"pe": 39.23,
-"ps": 1.05,
+"pe": 40.24,
+"ps": 1.08,
 "rating": "buy",
 "revGrowth": 13.1,
 "sector": "Financial Services",
@@ -5521,7 +5521,7 @@ null
 "type": "EQUITY"
 },
 "BRK-B": {
-"_fetched": 1795550955.8870685,
+"_fetched": 1795634041.2441473,
 "_gate": {
 "bookValue": 536413.0,
 "capexHist": [
@@ -5591,7 +5591,7 @@ null
 "methodology": null
 }
 },
-"ev": -243581337600.0,
+"ev": -243574472704.0,
 "fcf": 52474249216.0,
 "fcfHist": [
 25042000000.0,
@@ -5709,14 +5709,14 @@ null
 "earningsDate": "2026-11-09",
 "eps": 35.73,
 "exchange": "NYQ",
-"forwardPe": 25.26,
+"forwardPe": 25.44,
 "industry": "Insurance - Diversified",
-"marketCap": 1224679227392,
+"marketCap": 1233156046848,
 "name": "Berkshire Hathaway Inc. New",
 "netMargin": 19.5,
 "opMargin": 26.6,
-"pe": 16.13,
-"ps": 3.1,
+"pe": 16.25,
+"ps": 3.12,
 "rating": "hold",
 "revGrowth": 11.2,
 "sector": "Financial Services",
@@ -5724,7 +5724,7 @@ null
 "type": "EQUITY"
 },
 "BTC-USD": {
-"_fetched": 1795550937.2690592,
+"_fetched": 1795634030.0560544,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -5735,7 +5735,7 @@ null
 "exchange": "CCC",
 "forwardPe": null,
 "industry": null,
-"marketCap": 1198801027072,
+"marketCap": 1204934148096,
 "name": "Bitcoin USD",
 "netMargin": null,
 "opMargin": null,
@@ -5748,7 +5748,7 @@ null
 "type": "CRYPTOCURRENCY"
 },
 "BTSG": {
-"_fetched": 1795550997.0013533,
+"_fetched": 1795634065.3595865,
 "_gate": {
 "bookValue": 10.514,
 "capexHist": [
@@ -5824,7 +5824,7 @@ null
 "methodology": null
 }
 },
-"ev": 14994352128.0,
+"ev": 15203443712.0,
 "fcf": 1108556288.0,
 "fcfHist": [
 394685000.0,
@@ -5962,14 +5962,14 @@ null
 "earningsDate": "2026-10-30",
 "eps": 1.41,
 "exchange": "NMS",
-"forwardPe": 26.84,
+"forwardPe": 26.73,
 "industry": "Health Information Services",
-"marketCap": 12975785984,
+"marketCap": 12923055104,
 "name": "BrightSpring Health Services, I",
 "netMargin": 2.7,
 "opMargin": 3.5,
-"pe": 46.25,
-"ps": 0.8508,
+"pe": 46.06,
+"ps": 0.8474,
 "rating": "strong_buy",
 "revGrowth": 26.4,
 "sector": "Healthcare",
@@ -5977,7 +5977,7 @@ null
 "type": "EQUITY"
 },
 "BWXT": {
-"_fetched": 1795550998.4305694,
+"_fetched": 1795634066.2949004,
 "_gate": {
 "bookValue": 15.48,
 "capexHist": [
@@ -6051,7 +6051,7 @@ null
 "methodology": null
 }
 },
-"ev": 12066243584.0,
+"ev": 11819771904.0,
 "fcf": 289066624.0,
 "fcfHist": [
 295291000.0,
@@ -6179,13 +6179,13 @@ null
 "earningsDate": "2027-02-22",
 "eps": 4.07,
 "exchange": "NYQ",
-"forwardPe": 21.84,
+"forwardPe": 21.82,
 "industry": "Aerospace & Defense",
-"marketCap": 10416410624,
+"marketCap": 10408622080,
 "name": "BWX Technologies, Inc.",
 "netMargin": 10.4,
 "opMargin": 10.4,
-"pe": 27.93,
+"pe": 27.91,
 "ps": 2.89,
 "rating": "buy",
 "revGrowth": 10.0,
@@ -6194,7 +6194,7 @@ null
 "type": "EQUITY"
 },
 "CAAP": {
-"_fetched": 1795550999.8940573,
+"_fetched": 1795634067.1830897,
 "_gate": {
 "bookValue": 11.272,
 "capexHist": [
@@ -6270,7 +6270,7 @@ null
 "methodology": null
 }
 },
-"ev": 4036635136.0,
+"ev": 3974556928.0,
 "fcf": 616310272.0,
 "fcfHist": [
 446505000.0,
@@ -6408,14 +6408,14 @@ null
 "earningsDate": "2026-11-17",
 "eps": 1.95,
 "exchange": "NYQ",
-"forwardPe": 9.62,
+"forwardPe": 9.85,
 "industry": "Airports & Air Services",
-"marketCap": 3610339584,
+"marketCap": 3695288832,
 "name": "Corporacion America Airports SA",
 "netMargin": 14.1,
 "opMargin": 23.0,
-"pe": 11.33,
-"ps": 1.59,
+"pe": 11.6,
+"ps": 1.63,
 "rating": "buy",
 "revGrowth": 16.6,
 "sector": "Industrials",
@@ -6423,7 +6423,7 @@ null
 "type": "EQUITY"
 },
 "CALX": {
-"_fetched": 1795551001.4731045,
+"_fetched": 1795634068.0796664,
 "_gate": {
 "bookValue": 11.289,
 "capexHist": [
@@ -6499,7 +6499,7 @@ null
 "methodology": null
 }
 },
-"ev": 2004885760.0,
+"ev": 1915272448.0,
 "fcf": 44674624.0,
 "fcfHist": [
 115518000.0,
@@ -6632,14 +6632,14 @@ null
 "earningsDate": "2027-01-25",
 "eps": 0.69,
 "exchange": "NYQ",
-"forwardPe": 13.63,
+"forwardPe": 13.87,
 "industry": "Software - Infrastructure",
-"marketCap": 2058014720,
+"marketCap": 2093860096,
 "name": "Calix, Inc",
 "netMargin": 4.0,
 "opMargin": 5.3,
-"pe": 48.26,
-"ps": 1.79,
+"pe": 49.1,
+"ps": 1.82,
 "rating": "buy",
 "revGrowth": 13.7,
 "sector": "Technology",
@@ -6647,7 +6647,7 @@ null
 "type": "EQUITY"
 },
 "CARR": {
-"_fetched": 1795551003.0570354,
+"_fetched": 1795634068.955411,
 "_gate": {
 "bookValue": 12.281,
 "capexHist": [
@@ -6723,7 +6723,7 @@ null
 "methodology": null
 }
 },
-"ev": 53457874944.0,
+"ev": 54022406144.0,
 "fcf": 1944125056.0,
 "fcfHist": [
 2121000000.0,
@@ -6861,14 +6861,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": -2.21,
 "exchange": "NYQ",
-"forwardPe": 16.54,
+"forwardPe": 16.99,
 "industry": "Building Products & Equipment",
-"marketCap": 43067953152,
+"marketCap": 44233830400,
 "name": "Carrier Global Corporation",
 "netMargin": -7.9,
 "opMargin": 8.6,
 "pe": null,
-"ps": 1.89,
+"ps": 1.94,
 "rating": "buy",
 "revGrowth": 12.3,
 "sector": "Industrials",
@@ -6876,7 +6876,7 @@ null
 "type": "EQUITY"
 },
 "CCI": {
-"_fetched": 1795551004.8630748,
+"_fetched": 1795634069.9820616,
 "_gate": {
 "bookValue": -8.038,
 "capexHist": [
@@ -6952,7 +6952,7 @@ null
 "methodology": null
 }
 },
-"ev": 57355091968.0,
+"ev": 57980551168.0,
 "fcf": 981000000.0,
 "fcfHist": [
 2875000000.0,
@@ -7090,14 +7090,14 @@ null
 "earningsDate": "2027-02-03",
 "eps": 2.49,
 "exchange": "NYQ",
-"forwardPe": 28.13,
+"forwardPe": 28.77,
 "industry": "REIT - Specialty",
-"marketCap": 35059650560,
+"marketCap": 35855298560,
 "name": "Crown Castle Inc.",
 "netMargin": 20.1,
 "opMargin": 47.8,
-"pe": 33.09,
-"ps": 8.58,
+"pe": 33.84,
+"ps": 8.78,
 "rating": "buy",
 "revGrowth": -7.2,
 "sector": "Real Estate",
@@ -7105,7 +7105,7 @@ null
 "type": "EQUITY"
 },
 "CCJ": {
-"_fetched": 1795551006.5568874,
+"_fetched": 1795634070.863081,
 "_gate": {
 "bookValue": 11.8269,
 "capexHist": [
@@ -7115,12 +7115,12 @@ null
 -143448000.0,
 null
 ],
-"capexTtm": -430639000.0,
+"capexTtm": -416655000.0,
 "cfQuarters": [
 "2026-09-30",
-"2026-06-30",
 "2026-03-31",
-"2025-12-31"
+"2025-12-31",
+"2025-09-30"
 ],
 "earningsGrowth": null,
 "ebitda": 778331008.0,
@@ -7141,47 +7141,47 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 2.4059,
+"avg": 2.3503,
 "currency": null,
-"growth": 1.2195,
-"high": 4.1,
+"growth": 1.1625,
+"high": 3.86,
 "low": 1.48,
 "methodology": null,
 "numberOfAnalysts": 18.0,
-"yearAgoEps": 1.084
+"yearAgoEps": 1.0869
 },
 "0y": {
-"avg": 1.084,
+"avg": 1.0869,
 "currency": null,
-"growth": -0.2472,
+"growth": -0.2452,
 "high": 1.51,
 "low": 0.9,
 "methodology": null,
-"numberOfAnalysts": 15.0,
+"numberOfAnalysts": 16.0,
 "yearAgoEps": 1.44
 }
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 2.5999,
-"60daysAgo": 2.6184,
-"7daysAgo": 2.4833,
-"90daysAgo": 2.608,
+"30daysAgo": 2.6566,
+"60daysAgo": 2.5838,
+"7daysAgo": 2.4059,
+"90daysAgo": 2.6068,
 "currency": null,
-"current": 2.4059,
+"current": 2.3503,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 1.4516,
-"60daysAgo": 1.492,
-"7daysAgo": 1.1293,
+"30daysAgo": 1.4467,
+"60daysAgo": 1.4488,
+"7daysAgo": 1.084,
 "90daysAgo": 1.4815,
 "currency": null,
-"current": 1.084,
+"current": 1.0869,
 "methodology": null
 }
 },
-"ev": 26934534144.0,
+"ev": 26189772800.0,
 "fcf": 197079248.0,
 "fcfHist": [
 1075407000.0,
@@ -7190,7 +7190,7 @@ null
 161159000.0,
 null
 ],
-"fcfTtm": 358730000.0,
+"fcfTtm": 397397000.0,
 "forwardEps": 1.6736,
 "grossMargin": 0.3383,
 "interest": [
@@ -7215,7 +7215,7 @@ null
 null
 ],
 "ocfInfo": 789369024.0,
-"ocfTtm": 789369000.0,
+"ocfTtm": 814052000.0,
 "opIncome": [
 621259000.0,
 511156000.0,
@@ -7225,58 +7225,58 @@ null
 ],
 "qEps": [
 0.1,
-0.06,
 0.3,
 null,
 0.0,
-0.74
+0.74,
+0.16
 ],
 "qOpIncome": [
 56793000.0,
-74139000.0,
 164148000.0,
 204322000.0,
 82511000.0,
+156260000.0,
 null
 ],
 "qRevenue": [
 619064000.0,
-813772000.0,
 845365000.0,
 1200930000.0,
 614555000.0,
+877016000.0,
 null
 ],
 "qShares": [
 435568000.0,
-435568000.0,
 435632000.0,
 null,
 435390000.0,
-435331000.0
+435331000.0,
+435514000.0
 ],
 "quarters": [
 "2026-09-30",
-"2026-06-30",
 "2026-03-31",
 "2025-12-31",
 "2025-09-30",
-"2025-06-30"
+"2025-06-30",
+"2025-03-31"
 ],
 "revEst": {
 "+1y": {
-"avg": 3969488820.0,
+"avg": 3964619040.0,
 "currency": null,
-"growth": 0.1544,
+"growth": 0.156,
 "high": 4385766440.0,
 "low": 3576000000.0,
 "numberOfAnalysts": 15.0,
-"yearAgoRevenue": 3438600710.0
+"yearAgoRevenue": 3429708840.0
 },
 "0y": {
-"avg": 3438600710.0,
+"avg": 3429708840.0,
 "currency": null,
-"growth": -0.0125,
+"growth": -0.015,
 "high": 3568476450.0,
 "low": 3328000000.0,
 "numberOfAnalysts": 15.0,
@@ -7299,7 +7299,7 @@ null
 3318000.0,
 null
 ],
-"sbcTtm": 11538000.0,
+"sbcTtm": 11042000.0,
 "shares": 435532978.0,
 "totalCash": 859820032.0,
 "totalDebt": 1009043968.0,
@@ -7319,22 +7319,22 @@ null
 "earningsDate": "2027-02-12",
 "eps": 0.66,
 "exchange": "NYQ",
-"forwardPe": 35.68,
+"forwardPe": 36.65,
 "industry": "Uranium",
-"marketCap": 26010030080,
+"marketCap": 26713415680,
 "name": "Cameco Corporation",
 "netMargin": 11.4,
 "opMargin": 12.9,
-"pe": 90.48,
-"ps": 7.48,
+"pe": 92.93,
+"ps": 7.68,
 "rating": "buy",
 "revGrowth": 0.7,
 "sector": "Energy",
-"targetPrice": 115.84,
+"targetPrice": 114.14,
 "type": "EQUITY"
 },
 "CCL": {
-"_fetched": 1795551008.2115061,
+"_fetched": 1795634071.8686953,
 "_gate": {
 "bookValue": 10.494,
 "capexHist": [
@@ -7410,7 +7410,7 @@ null
 "methodology": null
 }
 },
-"ev": 61489070080.0,
+"ev": 62147928064.0,
 "fcf": 1807624960.0,
 "fcfHist": [
 2607000000.0,
@@ -7550,11 +7550,11 @@ null
 "exchange": "NYQ",
 "forwardPe": 10.91,
 "industry": "Travel Services",
-"marketCap": 37850775552,
+"marketCap": 37870948352,
 "name": "Carnival Corporation Ltd.",
 "netMargin": 11.4,
 "opMargin": 15.9,
-"pe": 12.4,
+"pe": 12.41,
 "ps": 1.37,
 "rating": "buy",
 "revGrowth": 3.5,
@@ -7563,7 +7563,7 @@ null
 "type": "EQUITY"
 },
 "CDE": {
-"_fetched": 1795551009.871252,
+"_fetched": 1795634072.7994092,
 "_gate": {
 "bookValue": 10.187,
 "capexHist": [
@@ -7639,7 +7639,7 @@ null
 "methodology": null
 }
 },
-"ev": 11237379072.0,
+"ev": 10971683840.0,
 "fcf": 836206720.0,
 "fcfHist": [
 665717000.0,
@@ -7777,14 +7777,14 @@ null
 "earningsDate": "2027-02-17",
 "eps": 0.86,
 "exchange": "NYQ",
-"forwardPe": 6.35,
+"forwardPe": 6.67,
 "industry": "Gold",
-"marketCap": 11419771904,
+"marketCap": 11981103104,
 "name": "Coeur Mining, Inc.",
 "netMargin": 19.2,
 "opMargin": 30.2,
-"pe": 12.99,
-"ps": 3.17,
+"pe": 13.63,
+"ps": 3.33,
 "rating": "buy",
 "revGrowth": 77.4,
 "sector": "Basic Materials",
@@ -7792,7 +7792,7 @@ null
 "type": "EQUITY"
 },
 "CHKP": {
-"_fetched": 1795551213.4391906,
+"_fetched": 1795634196.4077222,
 "_gate": {
 "bookValue": 26.017,
 "capexHist": [
@@ -7868,7 +7868,7 @@ null
 "methodology": null
 }
 },
-"ev": 15970350080.0,
+"ev": 15979475968.0,
 "fcf": 716437504.0,
 "fcfHist": [
 1172800000.0,
@@ -7947,21 +7947,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 2913067890.0,
+"avg": 2909126970.0,
 "currency": null,
 "growth": 0.0527,
-"high": 3051000000.0,
+"high": 2977590000.0,
 "low": 2842537000.0,
-"numberOfAnalysts": 36.0,
-"yearAgoRevenue": 2767342900.0
+"numberOfAnalysts": 35.0,
+"yearAgoRevenue": 2763495560.0
 },
 "0y": {
-"avg": 2767342900.0,
+"avg": 2763495560.0,
 "currency": null,
-"growth": 0.0154,
+"growth": 0.014,
 "high": 2937900000.0,
 "low": 2732081280.0,
-"numberOfAnalysts": 36.0,
+"numberOfAnalysts": 35.0,
 "yearAgoRevenue": 2725400000.0
 }
 },
@@ -7994,29 +7994,29 @@ null
 "2021-12-31"
 ]
 },
-"analysts": 31,
+"analysts": 30,
 "beta": 0.42,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2027-02-18",
 "eps": 8.31,
 "exchange": "NMS",
-"forwardPe": 14.62,
+"forwardPe": 14.82,
 "industry": "Software - Infrastructure",
-"marketCap": 16479041536,
+"marketCap": 16703664128,
 "name": "Check Point Software Technologi",
 "netMargin": 31.7,
 "opMargin": 28.3,
-"pe": 19.42,
-"ps": 5.98,
+"pe": 19.69,
+"ps": 6.06,
 "rating": "buy",
 "revGrowth": -1.1,
 "sector": "Technology",
-"targetPrice": 153.05,
+"targetPrice": 153.42,
 "type": "EQUITY"
 },
 "CIEN": {
-"_fetched": 1795551011.5621367,
+"_fetched": 1795634073.5746632,
 "_gate": {
 "bookValue": 21.542,
 "capexHist": [
@@ -8071,10 +8071,10 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 10.2352,
-"60daysAgo": 9.2212,
+"30daysAgo": 10.3309,
+"60daysAgo": 10.2352,
 "7daysAgo": 10.3309,
-"90daysAgo": 8.01,
+"90daysAgo": 8.0837,
 "currency": null,
 "current": 10.3309,
 "methodology": null
@@ -8089,7 +8089,7 @@ null
 "methodology": null
 }
 },
-"ev": 38196846592.0,
+"ev": 34586402816.0,
 "fcf": 633368384.0,
 "fcfHist": [
 665292000.0,
@@ -8217,24 +8217,24 @@ null
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2026-12-10",
-"eps": 5.05,
+"eps": 4.47,
 "exchange": "NYQ",
-"forwardPe": 20.27,
+"forwardPe": 20.17,
 "industry": "Communication Equipment",
-"marketCap": 34105661440,
+"marketCap": 33924003840,
 "name": "Ciena Corporation",
 "netMargin": 10.9,
 "opMargin": 14.1,
-"pe": 47.62,
-"ps": 5.66,
+"pe": 53.52,
+"ps": 5.63,
 "rating": "buy",
 "revGrowth": 37.0,
 "sector": "Technology",
-"targetPrice": 502.99,
+"targetPrice": 489.74,
 "type": "EQUITY"
 },
 "CLF": {
-"_fetched": 1795551013.0622208,
+"_fetched": 1795634074.5950904,
 "_gate": {
 "bookValue": 9.967,
 "capexHist": [
@@ -8310,7 +8310,7 @@ null
 "methodology": null
 }
 },
-"ev": 14233728000.0,
+"ev": 14119611392.0,
 "fcf": 220250000.0,
 "fcfHist": [
 -1023000000.0,
@@ -8441,14 +8441,14 @@ null
 "earningsDate": "2027-02-08",
 "eps": -0.83,
 "exchange": "NYQ",
-"forwardPe": 5.39,
+"forwardPe": 5.6,
 "industry": "Steel",
-"marketCap": 6225081856,
+"marketCap": 6473286656,
 "name": "Cleveland-Cliffs Inc.",
 "netMargin": -2.4,
 "opMargin": -0.2,
 "pe": null,
-"ps": 0.3101,
+"ps": 0.3225,
 "rating": "hold",
 "revGrowth": 18.5,
 "sector": "Basic Materials",
@@ -8456,7 +8456,7 @@ null
 "type": "EQUITY"
 },
 "CLS": {
-"_fetched": 1795551014.5523663,
+"_fetched": 1795634075.573999,
 "_gate": {
 "bookValue": 49.278,
 "capexHist": [
@@ -8492,19 +8492,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 21.7726,
+"avg": 21.7826,
 "currency": null,
-"growth": 0.8683,
+"growth": 0.869,
 "high": 23.6,
 "low": 20.65,
 "methodology": null,
 "numberOfAnalysts": 9.0,
-"yearAgoEps": 11.6538
+"yearAgoEps": 11.6549
 },
 "0y": {
-"avg": 11.5714,
+"avg": 11.5718,
 "currency": null,
-"growth": 0.9126,
+"growth": 0.9127,
 "high": 11.9,
 "low": 11.43,
 "methodology": null,
@@ -8514,25 +8514,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 19.3605,
+"30daysAgo": 19.4542,
 "60daysAgo": 19.3605,
-"7daysAgo": 21.6942,
-"90daysAgo": 19.5301,
+"7daysAgo": 21.7726,
+"90daysAgo": 19.3605,
 "currency": null,
-"current": 21.7726,
+"current": 21.7826,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 11.1802,
-"60daysAgo": 11.2174,
-"7daysAgo": 11.5557,
-"90daysAgo": 11.238,
+"30daysAgo": 11.168,
+"60daysAgo": 11.223,
+"7daysAgo": 11.5714,
+"90daysAgo": 11.2174,
 "currency": null,
-"current": 11.5714,
+"current": 11.5718,
 "methodology": null
 }
 },
-"ev": 23968909312.0,
+"ev": 21866625024.0,
 "fcf": 802750016.0,
 "fcfHist": [
 458300000.0,
@@ -8616,16 +8616,16 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 40262034950.0,
+"avg": 40271423840.0,
 "currency": null,
-"growth": 0.913,
+"growth": 0.9133,
 "high": 41182000000.0,
 "low": 39761578740.0,
 "numberOfAnalysts": 18.0,
-"yearAgoRevenue": 21046954470.0
+"yearAgoRevenue": 21047796570.0
 },
 "0y": {
-"avg": 21046954470.0,
+"avg": 21047796570.0,
 "currency": null,
 "growth": 0.6986,
 "high": 21262050000.0,
@@ -8670,22 +8670,22 @@ null
 "earningsDate": "2027-01-27",
 "eps": 10.6,
 "exchange": "NYQ",
-"forwardPe": 8.78,
+"forwardPe": 8.58,
 "industry": "Electronic Components",
-"marketCap": 24700258304,
+"marketCap": 24127205376,
 "name": "Celestica, Inc.",
 "netMargin": 6.8,
 "opMargin": 8.3,
-"pe": 18.48,
-"ps": 1.35,
+"pe": 18.05,
+"ps": 1.32,
 "rating": "strong_buy",
 "revGrowth": 82.5,
 "sector": "Technology",
-"targetPrice": 456.17,
+"targetPrice": 452.0,
 "type": "EQUITY"
 },
 "CNC": {
-"_fetched": 1795551016.143582,
+"_fetched": 1795634076.3964472,
 "_gate": {
 "bookValue": 44.865,
 "capexHist": [
@@ -8761,7 +8761,7 @@ null
 "methodology": null
 }
 },
-"ev": 23403706368.0,
+"ev": 23913625600.0,
 "fcf": 3082749952.0,
 "fcfHist": [
 4321000000.0,
@@ -8899,14 +8899,14 @@ null
 "earningsDate": "2027-02-09",
 "eps": 2.91,
 "exchange": "NYQ",
-"forwardPe": 11.72,
+"forwardPe": 11.73,
 "industry": "Healthcare Plans",
-"marketCap": 32327942144,
+"marketCap": 32352692224,
 "name": "Centene Corporation",
 "netMargin": 0.8,
 "opMargin": 1.9,
-"pe": 22.44,
-"ps": 0.1792,
+"pe": 22.46,
+"ps": 0.1793,
 "rating": "buy",
 "revGrowth": 0.2,
 "sector": "Healthcare",
@@ -8914,7 +8914,7 @@ null
 "type": "EQUITY"
 },
 "COHR": {
-"_fetched": 1795551017.7533402,
+"_fetched": 1795634077.3518453,
 "_gate": {
 "bookValue": 57.533,
 "capexHist": [
@@ -8948,9 +8948,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 15.7793,
+"avg": 15.7514,
 "currency": null,
-"growth": 0.5212,
+"growth": 0.5185,
 "high": 18.04,
 "low": 12.47,
 "methodology": null,
@@ -8975,7 +8975,7 @@ null
 "7daysAgo": 15.7793,
 "90daysAgo": 13.9489,
 "currency": null,
-"current": 15.7793,
+"current": 15.7514,
 "methodology": null
 },
 "0y": {
@@ -8988,7 +8988,7 @@ null
 "methodology": null
 }
 },
-"ev": 45429415936.0,
+"ev": 41574936576.0,
 "fcf": -1684611840.0,
 "fcfHist": [
 -1030569000.0,
@@ -8998,7 +8998,7 @@ null
 null
 ],
 "fcfTtm": -1840806000.0,
-"forwardEps": 15.7793,
+"forwardEps": 15.7514,
 "grossMargin": 0.3816,
 "interest": [
 190267000.0,
@@ -9069,9 +9069,9 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 15581966680.0,
+"avg": 15548830320.0,
 "currency": null,
-"growth": 0.3906,
+"growth": 0.3877,
 "high": 18714000000.0,
 "low": 13698000000.0,
 "numberOfAnalysts": 22.0,
@@ -9121,22 +9121,22 @@ null
 "earningsDate": "2027-02-03",
 "eps": 4.83,
 "exchange": "NYQ",
-"forwardPe": 12.32,
+"forwardPe": 12.49,
 "industry": "Scientific & Technical Instruments",
-"marketCap": 38304522240,
+"marketCap": 38759497728,
 "name": "Coherent Corp.",
 "netMargin": 12.2,
 "opMargin": 14.1,
-"pe": 40.27,
-"ps": 4.84,
-"rating": "strong_buy",
+"pe": 40.74,
+"ps": 4.9,
+"rating": "buy",
 "revGrowth": 49.9,
 "sector": "Technology",
-"targetPrice": 371.92,
+"targetPrice": 367.12,
 "type": "EQUITY"
 },
 "CRDO": {
-"_fetched": 1795551019.37036,
+"_fetched": 1795634078.4771593,
 "_gate": {
 "bookValue": 14.531,
 "capexHist": [
@@ -9172,9 +9172,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 9.7121,
+"avg": 9.7116,
 "currency": null,
-"growth": 0.5393,
+"growth": 0.5392,
 "high": 11.309,
 "low": 8.69,
 "methodology": null,
@@ -9194,16 +9194,16 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 9.6906,
+"30daysAgo": 9.7121,
 "60daysAgo": 9.6906,
 "7daysAgo": 9.7121,
 "90daysAgo": 9.1203,
 "currency": null,
-"current": 9.7121,
+"current": 9.7116,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 6.3063,
+"30daysAgo": 6.3093,
 "60daysAgo": 6.3063,
 "7daysAgo": 6.3093,
 "90daysAgo": 6.1512,
@@ -9212,7 +9212,7 @@ null
 "methodology": null
 }
 },
-"ev": 22278539264.0,
+"ev": 19271307264.0,
 "fcf": 248290880.0,
 "fcfHist": [
 406996000.0,
@@ -9222,7 +9222,7 @@ null
 null
 ],
 "fcfTtm": 438598000.0,
-"forwardEps": 9.7121,
+"forwardEps": 9.7116,
 "grossMargin": 0.6707,
 "interest": null,
 "netIncome": [
@@ -9290,9 +9290,9 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 3879571640.0,
+"avg": 3879308480.0,
 "currency": null,
-"growth": 0.5499,
+"growth": 0.5498,
 "high": 4413900300.0,
 "low": 3590000000.0,
 "numberOfAnalysts": 19.0,
@@ -9344,22 +9344,22 @@ null
 "earningsDate": "2026-12-01",
 "eps": 2.82,
 "exchange": "NMS",
-"forwardPe": 10.98,
+"forwardPe": 10.79,
 "industry": "Semiconductors",
-"marketCap": 20051650560,
+"marketCap": 19694542848,
 "name": "Credo Technology Group Holding ",
 "netMargin": 33.8,
 "opMargin": 31.7,
-"pe": 37.83,
-"ps": 12.6,
+"pe": 37.16,
+"ps": 12.38,
 "rating": "strong_buy",
 "revGrowth": 114.7,
 "sector": "Technology",
-"targetPrice": 274.31,
+"targetPrice": 269.05,
 "type": "EQUITY"
 },
 "CRS": {
-"_fetched": 1795551211.7825618,
+"_fetched": 1795634195.4242446,
 "_gate": {
 "bookValue": 44.069,
 "capexHist": [
@@ -9435,7 +9435,7 @@ null
 "methodology": null
 }
 },
-"ev": 14264069120.0,
+"ev": 13403051008.0,
 "fcf": 211687504.0,
 "fcfHist": [
 362300000.0,
@@ -9573,14 +9573,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 11.34,
 "exchange": "NYQ",
-"forwardPe": 16.35,
+"forwardPe": 16.26,
 "industry": "Metal Fabrication",
-"marketCap": 12939543552,
+"marketCap": 12873163776,
 "name": "Carpenter Technology Corporatio",
 "netMargin": 17.9,
 "opMargin": 23.2,
-"pe": 23.03,
-"ps": 4.06,
+"pe": 22.91,
+"ps": 4.04,
 "rating": "buy",
 "revGrowth": 8.8,
 "sector": "Industrials",
@@ -9588,7 +9588,7 @@ null
 "type": "EQUITY"
 },
 "CRWV": {
-"_fetched": 1795551020.9555166,
+"_fetched": 1795634079.3736603,
 "_gate": {
 "bookValue": 7.265,
 "capexHist": [
@@ -9621,19 +9621,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": -3.6383,
+"avg": -3.5991,
 "currency": null,
-"growth": 0.2339,
+"growth": 0.2405,
 "high": -0.0687,
 "low": -10.47,
 "methodology": null,
 "numberOfAnalysts": 25.0,
-"yearAgoEps": -4.7491
+"yearAgoEps": -4.7391
 },
 "0y": {
-"avg": -4.7491,
+"avg": -4.7391,
 "currency": null,
-"growth": -0.7269,
+"growth": -0.7233,
 "high": -4.2132,
 "low": -5.43,
 "methodology": null,
@@ -9643,25 +9643,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": -4.5028,
-"60daysAgo": -4.225,
+"30daysAgo": -4.6876,
+"60daysAgo": -4.3573,
 "7daysAgo": -3.6423,
-"90daysAgo": -4.2377,
+"90daysAgo": -4.3724,
 "currency": null,
-"current": -3.6383,
+"current": -3.5991,
 "methodology": null
 },
 "0y": {
-"30daysAgo": -5.1523,
-"60daysAgo": -5.1608,
+"30daysAgo": -5.1813,
+"60daysAgo": -5.1163,
 "7daysAgo": -4.7516,
-"90daysAgo": -5.1975,
+"90daysAgo": -5.1875,
 "currency": null,
-"current": -4.7491,
+"current": -4.7391,
 "methodology": null
 }
 },
-"ev": 88870559744.0,
+"ev": 85686738944.0,
 "fcf": -19649423360.0,
 "fcfHist": [
 -7251000000.0,
@@ -9791,22 +9791,22 @@ null
 "earningsDate": "2026-11-10",
 "eps": -4.74,
 "exchange": "NMS",
-"forwardPe": -23.66,
+"forwardPe": -23.09,
 "industry": "Software - Infrastructure",
-"marketCap": 23432355840,
+"marketCap": 22867888128,
 "name": "CoreWeave, Inc.",
 "netMargin": -25.6,
 "opMargin": -0.5,
 "pe": null,
-"ps": 2.37,
+"ps": 2.31,
 "rating": "buy",
 "revGrowth": 168.2,
 "sector": "Technology",
-"targetPrice": 114.55,
+"targetPrice": 114.45,
 "type": "EQUITY"
 },
 "CSTM": {
-"_fetched": 1795551022.5389214,
+"_fetched": 1795634080.3858273,
 "_gate": {
 "bookValue": 9.916,
 "capexHist": [
@@ -9882,7 +9882,7 @@ null
 "methodology": null
 }
 },
-"ev": 4539701760.0,
+"ev": 4425345536.0,
 "fcf": 78875000.0,
 "fcfHist": [
 159000000.0,
@@ -10013,22 +10013,22 @@ null
 "earningsDate": "2027-02-17",
 "eps": 4.1,
 "exchange": "NYQ",
-"forwardPe": 7.06,
+"forwardPe": 7.02,
 "industry": "Aluminum",
-"marketCap": 2771454208,
+"marketCap": 2756655104,
 "name": "Constellium SE",
 "netMargin": 5.7,
 "opMargin": 8.6,
-"pe": 5.02,
-"ps": 0.2758,
+"pe": 5.0,
+"ps": 0.2743,
 "rating": "none",
 "revGrowth": 21.8,
 "sector": "Basic Materials",
-"targetPrice": 32.96,
+"targetPrice": 33.02,
 "type": "EQUITY"
 },
 "CTRE": {
-"_fetched": 1795551024.01847,
+"_fetched": 1795634081.3029249,
 "_gate": {
 "bookValue": 20.702,
 "capexHist": [
@@ -10104,7 +10104,7 @@ null
 "methodology": null
 }
 },
-"ev": 11282100224.0,
+"ev": 11511415808.0,
 "fcf": -787906112.0,
 "fcfHist": [
 379037000.0,
@@ -10242,14 +10242,14 @@ null
 "earningsDate": "2027-02-18",
 "eps": 1.59,
 "exchange": "NYQ",
-"forwardPe": 19.85,
+"forwardPe": 20.14,
 "industry": "REIT - Healthcare Facilities",
-"marketCap": 9847687168,
+"marketCap": 9990687744,
 "name": "CareTrust REIT, Inc.",
 "netMargin": 59.2,
 "opMargin": 66.2,
-"pe": 24.04,
-"ps": 16.0,
+"pe": 24.39,
+"ps": 16.24,
 "rating": "buy",
 "revGrowth": 33.2,
 "sector": "Real Estate",
@@ -10257,7 +10257,7 @@ null
 "type": "EQUITY"
 },
 "CVLT": {
-"_fetched": 1795551025.4936864,
+"_fetched": 1795634082.3976994,
 "_gate": {
 "bookValue": 0.307,
 "capexHist": [
@@ -10333,7 +10333,7 @@ null
 "methodology": null
 }
 },
-"ev": 6230559232.0,
+"ev": 6314020864.0,
 "fcf": 321926240.0,
 "fcfHist": [
 237151000.0,
@@ -10471,14 +10471,14 @@ null
 "earningsDate": "2027-01-26",
 "eps": 1.93,
 "exchange": "NMS",
-"forwardPe": 24.24,
+"forwardPe": 24.83,
 "industry": "Software - Application",
-"marketCap": 6241625088,
+"marketCap": 6391979008,
 "name": "Commvault Systems, Inc.",
 "netMargin": 6.6,
 "opMargin": 10.3,
-"pe": 79.05,
-"ps": 4.99,
+"pe": 80.95,
+"ps": 5.11,
 "rating": "buy",
 "revGrowth": 13.1,
 "sector": "Technology",
@@ -10486,7 +10486,7 @@ null
 "type": "EQUITY"
 },
 "CVSA": {
-"_fetched": 1795551026.9000926,
+"_fetched": 1795634083.2149584,
 "_gate": {
 "bookValue": 42.35,
 "capexHist": [
@@ -10562,7 +10562,7 @@ null
 "methodology": null
 }
 },
-"ev": 4213386240.0,
+"ev": 4292866304.0,
 "fcf": 329952864.0,
 "fcfHist": [
 392726000.0,
@@ -10700,14 +10700,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 7.92,
 "exchange": "NYQ",
-"forwardPe": 11.08,
+"forwardPe": 11.31,
 "industry": "Education & Training Services",
-"marketCap": 3724587008,
+"marketCap": 3800242688,
 "name": "Covista Inc.",
 "netMargin": 12.8,
 "opMargin": 20.1,
-"pe": 14.14,
-"ps": 1.86,
+"pe": 14.43,
+"ps": 1.9,
 "rating": "none",
 "revGrowth": 10.7,
 "sector": "Consumer Defensive",
@@ -10715,7 +10715,7 @@ null
 "type": "EQUITY"
 },
 "CW": {
-"_fetched": 1795551028.4105864,
+"_fetched": 1795634084.2387881,
 "_gate": {
 "bookValue": 70.302,
 "capexHist": [
@@ -10791,7 +10791,7 @@ null
 "methodology": null
 }
 },
-"ev": 17650354176.0,
+"ev": 17150884864.0,
 "fcf": 503076736.0,
 "fcfHist": [
 553710000.0,
@@ -10924,14 +10924,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 14.99,
 "exchange": "NYQ",
-"forwardPe": 25.78,
+"forwardPe": 25.68,
 "industry": "Aerospace & Defense",
-"marketCap": 16359519232,
+"marketCap": 16297489408,
 "name": "Curtiss-Wright Corporation",
 "netMargin": 14.9,
 "opMargin": 20.0,
-"pe": 30.09,
-"ps": 4.38,
+"pe": 29.97,
+"ps": 4.36,
 "rating": "buy",
 "revGrowth": 9.6,
 "sector": "Industrials",
@@ -10939,7 +10939,7 @@ null
 "type": "EQUITY"
 },
 "DASH": {
-"_fetched": 1795551030.1221557,
+"_fetched": 1795634085.2407782,
 "_gate": {
 "bookValue": 24.583,
 "capexHist": [
@@ -11009,13 +11009,13 @@ null
 "30daysAgo": 2.5743,
 "60daysAgo": 2.5857,
 "7daysAgo": 2.7975,
-"90daysAgo": 2.5835,
+"90daysAgo": 2.6148,
 "currency": null,
 "current": 2.7998,
 "methodology": null
 }
 },
-"ev": 67670781952.0,
+"ev": 67138891776.0,
 "fcf": 6371375104.0,
 "fcfHist": [
 1826000000.0,
@@ -11153,14 +11153,14 @@ null
 "earningsDate": "2027-02-17",
 "eps": 2.41,
 "exchange": "NMS",
-"forwardPe": 20.94,
+"forwardPe": 22.06,
 "industry": "Internet Retail",
-"marketCap": 69629779968,
+"marketCap": 73357369344,
 "name": "DoorDash, Inc.",
 "netMargin": 6.2,
 "opMargin": 6.2,
-"pe": 66.27,
-"ps": 4.08,
+"pe": 69.82,
+"ps": 4.3,
 "rating": "strong_buy",
 "revGrowth": 34.0,
 "sector": "Consumer Cyclical",
@@ -11168,7 +11168,7 @@ null
 "type": "EQUITY"
 },
 "DAVE": {
-"_fetched": 1795551205.6805518,
+"_fetched": 1795634191.7782257,
 "_gate": {
 "bookValue": 21.399,
 "capexHist": [
@@ -11244,7 +11244,7 @@ null
 "methodology": null
 }
 },
-"ev": 2990278912.0,
+"ev": 2876548352.0,
 "fcf": 267481744.0,
 "fcfHist": [
 283249000.0,
@@ -11377,14 +11377,14 @@ null
 "earningsDate": "2026-11-04",
 "eps": 13.7,
 "exchange": "NGM",
-"forwardPe": 10.19,
+"forwardPe": 10.42,
 "industry": "Software - Application",
-"marketCap": 2953663232,
+"marketCap": 3020442880,
 "name": "Dave Inc.",
 "netMargin": 28.1,
 "opMargin": 34.1,
-"pe": 16.85,
-"ps": 4.28,
+"pe": 17.23,
+"ps": 4.37,
 "rating": "buy",
 "revGrowth": 31.2,
 "sector": "Technology",
@@ -11392,7 +11392,7 @@ null
 "type": "EQUITY"
 },
 "DECK": {
-"_fetched": 1795551031.5749404,
+"_fetched": 1795634086.1391613,
 "_gate": {
 "bookValue": 17.368,
 "capexHist": [
@@ -11466,7 +11466,7 @@ null
 "methodology": null
 }
 },
-"ev": 10213755904.0,
+"ev": 10580826112.0,
 "fcf": 815705728.0,
 "fcfHist": [
 1097332000.0,
@@ -11594,14 +11594,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 7.55,
 "exchange": "NYQ",
-"forwardPe": 10.22,
+"forwardPe": 10.44,
 "industry": "Footwear & Accessories",
-"marketCap": 11179615232,
+"marketCap": 11420547072,
 "name": "Deckers Outdoor Corporation",
 "netMargin": 19.0,
 "opMargin": 23.6,
-"pe": 11.09,
-"ps": 2.0,
+"pe": 11.33,
+"ps": 2.05,
 "rating": "hold",
 "revGrowth": 3.5,
 "sector": "Consumer Cyclical",
@@ -11609,7 +11609,7 @@ null
 "type": "EQUITY"
 },
 "DLO": {
-"_fetched": 1795550936.6424732,
+"_fetched": 1795634029.6923418,
 "_gate": {
 "bookValue": 2.006,
 "capexHist": [
@@ -11685,7 +11685,7 @@ null
 "methodology": null
 }
 },
-"ev": 2702007552.0,
+"ev": 2601407488.0,
 "fcf": 424456736.0,
 "fcfHist": [
 378672000.0,
@@ -11823,14 +11823,14 @@ null
 "earningsDate": "2026-11-12",
 "eps": 0.74,
 "exchange": "NMS",
-"forwardPe": 11.16,
+"forwardPe": 11.2,
 "industry": "Software - Infrastructure",
-"marketCap": 3560821504,
+"marketCap": 3573712640,
 "name": "DLocal Limited",
 "netMargin": 14.9,
 "opMargin": 17.4,
-"pe": 16.8,
-"ps": 2.42,
+"pe": 16.86,
+"ps": 2.43,
 "rating": "strong_buy",
 "revGrowth": 40.9,
 "sector": "Technology",
@@ -11838,7 +11838,7 @@ null
 "type": "EQUITY"
 },
 "DRS": {
-"_fetched": 1795551032.9113078,
+"_fetched": 1795634087.0074325,
 "_gate": {
 "bookValue": 10.836,
 "capexHist": [
@@ -11912,7 +11912,7 @@ null
 "methodology": null
 }
 },
-"ev": 8742504448.0,
+"ev": 8723841024.0,
 "fcf": 313124992.0,
 "fcfHist": [
 227000000.0,
@@ -11922,7 +11922,7 @@ null
 null
 ],
 "fcfTtm": 344000000.0,
-"forwardEps": 1.5543,
+"forwardEps": 1.5526,
 "grossMargin": 0.2525,
 "interest": [
 8000000.0,
@@ -12045,14 +12045,14 @@ null
 "earningsDate": "2026-10-29",
 "eps": 1.36,
 "exchange": "NMS",
-"forwardPe": 20.97,
+"forwardPe": 21.45,
 "industry": "Aerospace & Defense",
-"marketCap": 8689181696,
+"marketCap": 8881148928,
 "name": "Leonardo DRS, Inc.",
 "netMargin": 9.4,
 "opMargin": 10.9,
-"pe": 23.96,
-"ps": 2.24,
+"pe": 24.49,
+"ps": 2.29,
 "rating": "strong_buy",
 "revGrowth": 11.0,
 "sector": "Industrials",
@@ -12060,7 +12060,7 @@ null
 "type": "EQUITY"
 },
 "DXCM": {
-"_fetched": 1795551034.2938476,
+"_fetched": 1795634087.8971586,
 "_gate": {
 "bookValue": 6.797,
 "capexHist": [
@@ -12136,7 +12136,7 @@ null
 "methodology": null
 }
 },
-"ev": 30313615360.0,
+"ev": 31141566464.0,
 "fcf": 811900032.0,
 "fcfHist": [
 1077200000.0,
@@ -12269,14 +12269,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 2.54,
 "exchange": "NMS",
-"forwardPe": 26.9,
+"forwardPe": 27.11,
 "industry": "Medical Devices",
-"marketCap": 31505027072,
+"marketCap": 31756771328,
 "name": "DexCom, Inc.",
 "netMargin": 19.4,
 "opMargin": 24.0,
-"pe": 33.26,
-"ps": 6.17,
+"pe": 33.52,
+"ps": 6.22,
 "rating": "strong_buy",
 "revGrowth": 11.2,
 "sector": "Healthcare",
@@ -12284,7 +12284,7 @@ null
 "type": "EQUITY"
 },
 "DY": {
-"_fetched": 1795551035.7165425,
+"_fetched": 1795634088.7758048,
 "_gate": {
 "bookValue": 68.443,
 "capexHist": [
@@ -12301,8 +12301,8 @@ null
 "2026-01-31",
 "2025-10-31"
 ],
-"earningsGrowth": 0.144,
-"ebitda": 931982976.0,
+"earningsGrowth": -0.121,
+"ebitda": 1005678016.0,
 "ebitdaHist": [
 703953000.0,
 567355000.0,
@@ -12310,7 +12310,7 @@ null
 364921000.0,
 null
 ],
-"ebitdaMargin": 0.1355,
+"ebitdaMargin": 0.1344,
 "eps": [
 9.56,
 7.92,
@@ -12320,48 +12320,48 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 20.6669,
+"avg": 20.3464,
 "currency": null,
-"growth": 0.2363,
-"high": 22.4512,
-"low": 19.83,
+"growth": 0.154,
+"high": 21.9464,
+"low": 18.14,
 "methodology": null,
-"numberOfAnalysts": 7.0,
-"yearAgoEps": 16.7167
+"numberOfAnalysts": 10.0,
+"yearAgoEps": 17.6314
 },
 "0y": {
-"avg": 16.7167,
+"avg": 17.6314,
 "currency": null,
-"growth": 0.3965,
-"high": 16.83,
-"low": 16.64,
+"growth": 0.473,
+"high": 17.94,
+"low": 17.48,
 "methodology": null,
-"numberOfAnalysts": 3.0,
+"numberOfAnalysts": 8.0,
 "yearAgoEps": 11.97
 }
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 20.7822,
-"60daysAgo": 20.6842,
+"30daysAgo": 20.7677,
+"60daysAgo": 20.7822,
 "7daysAgo": 20.7447,
-"90daysAgo": 19.948,
+"90daysAgo": 20.499,
 "currency": null,
-"current": 20.6669,
+"current": 20.3464,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 17.0618,
 "60daysAgo": 17.0463,
 "7daysAgo": 17.0432,
-"90daysAgo": 16.6296,
+"90daysAgo": 17.0854,
 "currency": null,
-"current": 16.7167,
+"current": 17.6314,
 "methodology": null
 }
 },
-"ev": 9282957312.0,
-"fcf": 326561504.0,
+"ev": 8222335488.0,
+"fcf": null,
 "fcfHist": [
 401712000.0,
 98639000.0,
@@ -12371,7 +12371,7 @@ null
 ],
 "fcfTtm": 468671000.0,
 "forwardEps": 20.6669,
-"grossMargin": 0.2053,
+"grossMargin": 0.2034,
 "interest": [
 66512000.0,
 60994000.0,
@@ -12393,7 +12393,7 @@ null
 164789000.0,
 null
 ],
-"ocfInfo": 718107008.0,
+"ocfInfo": null,
 "ocfTtm": 718107000.0,
 "opIncome": [
 425067000.0,
@@ -12439,21 +12439,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 8553166690.0,
+"avg": 8337848120.0,
 "currency": null,
-"growth": 0.1244,
-"high": 8818745890.0,
-"low": 8298469600.0,
-"numberOfAnalysts": 8.0,
-"yearAgoRevenue": 7607208560.0
+"growth": 0.0837,
+"high": 8550000000.0,
+"low": 8133100000.0,
+"numberOfAnalysts": 11.0,
+"yearAgoRevenue": 7693672600.0
 },
 "0y": {
-"avg": 7607208560.0,
+"avg": 7693672600.0,
 "currency": null,
-"growth": 0.3717,
-"high": 7645690000.0,
-"low": 7570000000.0,
-"numberOfAnalysts": 7.0,
+"growth": 0.3873,
+"high": 7713800000.0,
+"low": 7645690000.0,
+"numberOfAnalysts": 10.0,
 "yearAgoRevenue": 5545912000.0
 }
 },
@@ -12464,8 +12464,8 @@ null
 3808462000.0,
 null
 ],
-"revenueTtm": 6880050176.0,
-"roe": 0.192,
+"revenueTtm": 7484580864.0,
+"roe": 0.1799,
 "sbcHist": [
 34468000.0,
 40320000.0,
@@ -12475,8 +12475,8 @@ null
 ],
 "sbcTtm": 38131000.0,
 "shares": 30160957.0,
-"totalCash": 351748992.0,
-"totalDebt": 3048457984.0,
+"totalCash": 202760000.0,
+"totalDebt": 3056740096.0,
 "v": 2,
 "years": [
 "2026-01-31",
@@ -12490,25 +12490,25 @@ null
 "beta": 1.55,
 "currency": "USD",
 "dividendRate": 0.0,
-"earningsDate": "2026-11-24",
+"earningsDate": "2027-03-03",
 "eps": 10.95,
 "exchange": "NYQ",
-"forwardPe": 8.72,
+"forwardPe": 8.57,
 "industry": "Engineering & Construction",
-"marketCap": 5435004416,
+"marketCap": 5341203456,
 "name": "Dycom Industries, Inc.",
-"netMargin": 4.8,
-"opMargin": 8.1,
-"pe": 16.46,
-"ps": 0.79,
+"netMargin": 4.3,
+"opMargin": 7.6,
+"pe": 16.17,
+"ps": 0.7136,
 "rating": "strong_buy",
-"revGrowth": 45.6,
+"revGrowth": 41.6,
 "sector": "Industrials",
-"targetPrice": 490.45,
+"targetPrice": 338.91,
 "type": "EQUITY"
 },
 "EAT": {
-"_fetched": 1795551037.1755078,
+"_fetched": 1795634089.6685545,
 "_gate": {
 "bookValue": 9.544,
 "capexHist": [
@@ -12584,7 +12584,7 @@ null
 "methodology": null
 }
 },
-"ev": 9668160512.0,
+"ev": 9892075520.0,
 "fcf": 403587488.0,
 "fcfHist": [
 557500000.0,
@@ -12594,7 +12594,7 @@ null
 null
 ],
 "fcfTtm": 601000000.0,
-"forwardEps": 14.9391,
+"forwardEps": 14.9353,
 "grossMargin": 0.1897,
 "interest": [
 40500000.0,
@@ -12722,14 +12722,14 @@ null
 "earningsDate": "2027-01-27",
 "eps": 11.34,
 "exchange": "NYQ",
-"forwardPe": 13.02,
+"forwardPe": 13.55,
 "industry": "Restaurants",
-"marketCap": 8080886272,
+"marketCap": 8405126656,
 "name": "Brinker International, Inc.",
 "netMargin": 8.4,
 "opMargin": 11.1,
-"pe": 17.15,
-"ps": 1.36,
+"pe": 17.84,
+"ps": 1.42,
 "rating": "strong_buy",
 "revGrowth": 9.4,
 "sector": "Consumer Cyclical",
@@ -12737,7 +12737,7 @@ null
 "type": "EQUITY"
 },
 "ECO": {
-"_fetched": 1795551038.634002,
+"_fetched": 1795634090.5350149,
 "_gate": {
 "bookValue": 24.897,
 "capexHist": [
@@ -12772,23 +12772,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 11.685,
+"avg": 12.54,
 "currency": null,
-"growth": -0.5945,
+"growth": -0.5548,
 "high": 12.54,
-"low": 10.83,
+"low": 12.54,
 "methodology": null,
-"numberOfAnalysts": 2.0,
-"yearAgoEps": 28.815
+"numberOfAnalysts": 1.0,
+"yearAgoEps": 28.17
 },
 "0y": {
-"avg": 28.815,
+"avg": 28.17,
 "currency": null,
-"growth": 6.6432,
-"high": 29.46,
+"growth": 6.4721,
+"high": 28.17,
 "low": 28.17,
 "methodology": null,
-"numberOfAnalysts": 2.0,
+"numberOfAnalysts": 1.0,
 "yearAgoEps": 3.77
 }
 },
@@ -12796,23 +12796,23 @@ null
 "+1y": {
 "30daysAgo": 5.93,
 "60daysAgo": 5.93,
-"7daysAgo": 12.54,
+"7daysAgo": 5.93,
 "90daysAgo": 5.93,
 "currency": null,
-"current": 11.685,
+"current": 12.54,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 15.33,
 "60daysAgo": 15.33,
-"7daysAgo": 28.17,
+"7daysAgo": 15.33,
 "90daysAgo": 15.33,
 "currency": null,
-"current": 28.815,
+"current": 28.17,
 "methodology": null
 }
 },
-"ev": 3668499968.0,
+"ev": 3727847936.0,
 "fcf": -147982784.0,
 "fcfHist": [
 71107867.0,
@@ -12822,7 +12822,7 @@ null
 null
 ],
 "fcfTtm": 173132459.0,
-"forwardEps": 11.685,
+"forwardEps": 12.54,
 "grossMargin": 0.6993,
 "interest": [
 42153588.0,
@@ -12941,16 +12941,16 @@ null
 "currency": "USD",
 "dividendRate": 15.8,
 "earningsDate": "2027-02-17",
-"eps": 16.47,
+"eps": 17.75,
 "exchange": "NYQ",
-"forwardPe": 6.88,
+"forwardPe": 6.52,
 "industry": "Marine Shipping",
-"marketCap": 3138799872,
+"marketCap": 3192294912,
 "name": "Okeanis Eco Tankers Corp.",
 "netMargin": 60.6,
 "opMargin": 63.7,
-"pe": 4.88,
-"ps": 2.81,
+"pe": 4.61,
+"ps": 2.86,
 "rating": "strong_buy",
 "revGrowth": 453.5,
 "sector": "Industrials",
@@ -12958,7 +12958,7 @@ null
 "type": "EQUITY"
 },
 "EHC": {
-"_fetched": 1795551040.3494263,
+"_fetched": 1795634091.391354,
 "_gate": {
 "bookValue": 27.276,
 "capexHist": [
@@ -13034,7 +13034,7 @@ null
 "methodology": null
 }
 },
-"ev": 16772445184.0,
+"ev": 17008922624.0,
 "fcf": 265812496.0,
 "fcfHist": [
 439200000.0,
@@ -13167,14 +13167,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 6.25,
 "exchange": "NYQ",
-"forwardPe": 19.8,
+"forwardPe": 19.87,
 "industry": "Medical Care Facilities",
-"marketCap": 13381608448,
+"marketCap": 13430178816,
 "name": "Encompass Health Corporation",
 "netMargin": 10.2,
 "opMargin": 18.4,
-"pe": 21.82,
-"ps": 2.11,
+"pe": 21.9,
+"ps": 2.12,
 "rating": "none",
 "revGrowth": 8.9,
 "sector": "Healthcare",
@@ -13182,7 +13182,7 @@ null
 "type": "EQUITY"
 },
 "EME": {
-"_fetched": 1795551042.0302615,
+"_fetched": 1795634092.2006748,
 "_gate": {
 "bookValue": 97.195,
 "capexHist": [
@@ -13258,7 +13258,7 @@ null
 "methodology": null
 }
 },
-"ev": 28228771840.0,
+"ev": 27462150144.0,
 "fcf": 1285164672.0,
 "fcfHist": [
 1189313000.0,
@@ -13396,13 +13396,13 @@ null
 "earningsDate": "2026-10-29",
 "eps": 34.59,
 "exchange": "NYQ",
-"forwardPe": 15.39,
+"forwardPe": 15.33,
 "industry": "Engineering & Construction",
-"marketCap": 27659718656,
+"marketCap": 27555956736,
 "name": "EMCOR Group, Inc.",
 "netMargin": 7.8,
 "opMargin": 9.9,
-"pe": 18.26,
+"pe": 18.2,
 "ps": 1.39,
 "rating": "buy",
 "revGrowth": 28.8,
@@ -13411,7 +13411,7 @@ null
 "type": "EQUITY"
 },
 "ENSG": {
-"_fetched": 1795551043.6743188,
+"_fetched": 1795634093.1112754,
 "_gate": {
 "bookValue": 44.235,
 "capexHist": [
@@ -13486,7 +13486,7 @@ null
 "methodology": null
 }
 },
-"ev": 12184200192.0,
+"ev": 12291796992.0,
 "fcf": 371996128.0,
 "fcfHist": [
 370713000.0,
@@ -13619,14 +13619,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 6.72,
 "exchange": "NMS",
-"forwardPe": 20.48,
+"forwardPe": 20.84,
 "industry": "Medical Care Facilities",
-"marketCap": 10478274560,
+"marketCap": 10665256960,
 "name": "The Ensign Group, Inc.",
 "netMargin": 7.0,
 "opMargin": 8.8,
-"pe": 26.73,
-"ps": 1.85,
+"pe": 27.2,
+"ps": 1.88,
 "rating": "none",
 "revGrowth": 14.5,
 "sector": "Healthcare",
@@ -13634,7 +13634,7 @@ null
 "type": "EQUITY"
 },
 "EQPT": {
-"_fetched": 1795551045.4129097,
+"_fetched": 1795634093.985801,
 "_gate": {
 "bookValue": 4.921,
 "capexHist": [
@@ -13667,19 +13667,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 0.9448,
+"avg": 0.8998,
 "currency": null,
-"growth": 0.6067,
-"high": 1.37,
+"growth": 0.5489,
+"high": 1.25,
 "low": 0.7,
 "methodology": null,
 "numberOfAnalysts": 6.0,
-"yearAgoEps": 0.5881
+"yearAgoEps": 0.5809
 },
 "0y": {
-"avg": 0.5881,
+"avg": 0.5809,
 "currency": null,
-"growth": 15.2448,
+"growth": 15.0475,
 "high": 0.72,
 "low": 0.4002,
 "methodology": null,
@@ -13689,25 +13689,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 0.9278,
+"30daysAgo": 0.9686,
 "60daysAgo": 0.9112,
-"7daysAgo": 0.9553,
-"90daysAgo": 0.9362,
+"7daysAgo": 0.9448,
+"90daysAgo": 0.9112,
 "currency": null,
-"current": 0.9448,
+"current": 0.8998,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 0.4843,
+"30daysAgo": 0.5545,
 "60daysAgo": 0.4357,
-"7daysAgo": 0.635,
-"90daysAgo": 0.4186,
+"7daysAgo": 0.6194,
+"90daysAgo": 0.4357,
 "currency": null,
-"current": 0.5881,
+"current": 0.5809,
 "methodology": null
 }
 },
-"ev": 9115397120.0,
+"ev": 9087485952.0,
 "fcf": -1269074944.0,
 "fcfHist": [
 -1803000000.0,
@@ -13781,20 +13781,20 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 7029866510.0,
+"avg": 7044002880.0,
 "currency": null,
-"growth": 0.1851,
+"growth": 0.1814,
 "high": 7652400000.0,
 "low": 6592307930.0,
 "numberOfAnalysts": 11.0,
-"yearAgoRevenue": 5931812390.0
+"yearAgoRevenue": 5962466940.0
 },
 "0y": {
-"avg": 5931812390.0,
+"avg": 5962466940.0,
 "currency": null,
-"growth": 0.3546,
+"growth": 0.3616,
 "high": 6075800000.0,
-"low": 5588800000.0,
+"low": 5870664710.0,
 "numberOfAnalysts": 11.0,
 "yearAgoRevenue": 4379000000.0
 }
@@ -13832,22 +13832,22 @@ null
 "earningsDate": "2026-11-09",
 "eps": 0.14,
 "exchange": "NMS",
-"forwardPe": 15.63,
+"forwardPe": 16.45,
 "industry": "Rental & Leasing Services",
-"marketCap": 3567587840,
+"marketCap": 3756624384,
 "name": "EquipmentShare.com Inc",
 "netMargin": 0.7,
 "opMargin": 7.1,
-"pe": 100.43,
-"ps": 0.6515,
+"pe": 105.75,
+"ps": 0.686,
 "rating": "buy",
 "revGrowth": 55.3,
 "sector": "Industrials",
-"targetPrice": 28.2,
+"targetPrice": 28.0,
 "type": "EQUITY"
 },
 "ETOR": {
-"_fetched": 1795551046.8652709,
+"_fetched": 1795634094.7956283,
 "_gate": {
 "bookValue": 17.002,
 "capexHist": [
@@ -13920,7 +13920,7 @@ null
 "methodology": null
 }
 },
-"ev": 720526080.0,
+"ev": 691231680.0,
 "fcf": null,
 "fcfHist": [
 312769000.0,
@@ -14045,14 +14045,14 @@ null
 "earningsDate": "2027-02-16",
 "eps": 2.31,
 "exchange": "NMS",
-"forwardPe": 7.4,
+"forwardPe": 7.62,
 "industry": "Capital Markets",
-"marketCap": 1507435904,
+"marketCap": 1553164032,
 "name": "eToro Group Ltd.",
 "netMargin": 2.3,
 "opMargin": 2.9,
-"pe": 8.21,
-"ps": 0.1612,
+"pe": 8.45,
+"ps": 0.1661,
 "rating": "buy",
 "revGrowth": -64.2,
 "sector": "Financial Services",
@@ -14060,7 +14060,7 @@ null
 "type": "EQUITY"
 },
 "ETR": {
-"_fetched": 1795551048.492413,
+"_fetched": 1795634095.805853,
 "_gate": {
 "bookValue": 41.44,
 "capexHist": [
@@ -14096,9 +14096,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 5.1147,
+"avg": 5.1136,
 "currency": null,
-"growth": 0.1613,
+"growth": 0.1611,
 "high": 5.22,
 "low": 5.0,
 "methodology": null,
@@ -14118,25 +14118,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 5.1029,
+"30daysAgo": 5.1043,
 "60daysAgo": 5.1044,
-"7daysAgo": 5.1135,
-"90daysAgo": 5.0967,
+"7daysAgo": 5.1147,
+"90daysAgo": 5.0968,
 "currency": null,
-"current": 5.1147,
+"current": 5.1136,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 4.4026,
+"30daysAgo": 4.4094,
 "60daysAgo": 4.3996,
-"7daysAgo": 4.4012,
-"90daysAgo": 4.3968,
+"7daysAgo": 4.4043,
+"90daysAgo": 4.3971,
 "currency": null,
 "current": 4.4043,
 "methodology": null
 }
 },
-"ev": 82173198336.0,
+"ev": 81537687552.0,
 "fcf": -5097647616.0,
 "fcfHist": [
 -2790700000.0,
@@ -14146,7 +14146,7 @@ null
 null
 ],
 "fcfTtm": -2908213000.0,
-"forwardEps": 5.1147,
+"forwardEps": 5.1136,
 "grossMargin": 0.4793,
 "interest": [
 1336651000.0,
@@ -14220,18 +14220,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 15335122660.0,
+"avg": 15347665640.0,
 "currency": null,
-"growth": 0.0928,
+"growth": 0.0927,
 "high": 16536650000.0,
 "low": 14523000000.0,
 "numberOfAnalysts": 17.0,
-"yearAgoRevenue": 14032447020.0
+"yearAgoRevenue": 14045232180.0
 },
 "0y": {
-"avg": 14032447020.0,
+"avg": 14045232180.0,
 "currency": null,
-"growth": 0.0839,
+"growth": 0.0849,
 "high": 14533830000.0,
 "low": 13548000000.0,
 "numberOfAnalysts": 16.0,
@@ -14267,14 +14267,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 4.37,
 "exchange": "NYQ",
-"forwardPe": 20.64,
+"forwardPe": 20.91,
 "industry": "Utilities - Regulated Electric",
-"marketCap": 50430353408,
+"marketCap": 51098836992,
 "name": "Entergy Corporation",
 "netMargin": 14.6,
 "opMargin": 25.0,
-"pe": 24.15,
-"ps": 3.59,
+"pe": 24.47,
+"ps": 3.64,
 "rating": "buy",
 "revGrowth": 14.5,
 "sector": "Utilities",
@@ -14282,7 +14282,7 @@ null
 "type": "EQUITY"
 },
 "EVER": {
-"_fetched": 1795551050.1444008,
+"_fetched": 1795634096.8207526,
 "_gate": {
 "bookValue": 7.918,
 "capexHist": [
@@ -14356,7 +14356,7 @@ null
 "methodology": null
 }
 },
-"ev": 742717760.0,
+"ev": 749102784.0,
 "fcf": 82744248.0,
 "fcfHist": [
 90324000.0,
@@ -14484,14 +14484,14 @@ null
 "earningsDate": "2027-02-22",
 "eps": 3.06,
 "exchange": "NGM",
-"forwardPe": 9.86,
+"forwardPe": 9.67,
 "industry": "Internet Content & Information",
-"marketCap": 988963008,
+"marketCap": 969098624,
 "name": "EverQuote, Inc.",
 "netMargin": 14.2,
 "opMargin": 11.2,
-"pe": 9.11,
-"ps": 1.24,
+"pe": 8.93,
+"ps": 1.21,
 "rating": "buy",
 "revGrowth": 25.4,
 "sector": "Communication Services",
@@ -14499,7 +14499,7 @@ null
 "type": "EQUITY"
 },
 "EWBC": {
-"_fetched": 1795551051.8842597,
+"_fetched": 1795634097.7081163,
 "_gate": {
 "bookValue": 65.974,
 "capexHist": [
@@ -14568,7 +14568,7 @@ null
 "methodology": null
 }
 },
-"ev": 16394603520.0,
+"ev": 16476826624.0,
 "fcf": null,
 "fcfHist": [
 1501700000.0,
@@ -14689,14 +14689,14 @@ null
 "earningsDate": "2027-01-19",
 "eps": 10.52,
 "exchange": "NMS",
-"forwardPe": 10.52,
+"forwardPe": 10.55,
 "industry": "Banks - Regional",
-"marketCap": 17005647872,
+"marketCap": 17061147648,
 "name": "East West Bancorp, Inc.",
 "netMargin": 50.1,
 "opMargin": 65.7,
-"pe": 11.8,
-"ps": 5.83,
+"pe": 11.83,
+"ps": 5.85,
 "rating": "buy",
 "revGrowth": 3.8,
 "sector": "Financial Services",
@@ -14704,7 +14704,7 @@ null
 "type": "EQUITY"
 },
 "EXEL": {
-"_fetched": 1795551207.128902,
+"_fetched": 1795634192.60431,
 "_gate": {
 "bookValue": 7.495,
 "capexHist": [
@@ -14778,7 +14778,7 @@ null
 "methodology": null
 }
 },
-"ev": 15574990848.0,
+"ev": 15728717824.0,
 "fcf": 759443008.0,
 "fcfHist": [
 844339000.0,
@@ -14906,14 +14906,14 @@ null
 "earningsDate": "2027-02-09",
 "eps": 3.34,
 "exchange": "NMS",
-"forwardPe": 15.87,
+"forwardPe": 15.69,
 "industry": "Biotechnology",
-"marketCap": 16551259136,
+"marketCap": 16368250880,
 "name": "Exelixis, Inc.",
 "netMargin": 35.4,
 "opMargin": 40.2,
-"pe": 20.31,
-"ps": 6.63,
+"pe": 20.08,
+"ps": 6.56,
 "rating": "buy",
 "revGrowth": 10.2,
 "sector": "Healthcare",
@@ -14921,7 +14921,7 @@ null
 "type": "EQUITY"
 },
 "EZPW": {
-"_fetched": 1795551053.5221488,
+"_fetched": 1795634098.6589656,
 "_gate": {
 "bookValue": 19.427,
 "capexHist": [
@@ -14997,7 +14997,7 @@ null
 "methodology": null
 }
 },
-"ev": 2074773376.0,
+"ev": 1989805952.0,
 "fcf": -19890624.0,
 "fcfHist": [
 140760000.0,
@@ -15135,14 +15135,14 @@ null
 "earningsDate": "2027-02-09",
 "eps": 2.07,
 "exchange": "NMS",
-"forwardPe": 9.64,
+"forwardPe": 9.79,
 "industry": "Credit Services",
-"marketCap": 1474819968,
+"marketCap": 1497512704,
 "name": "EZCORP, Inc.",
 "netMargin": 9.8,
 "opMargin": 14.3,
-"pe": 11.61,
-"ps": 0.8702,
+"pe": 11.79,
+"ps": 0.8836,
 "rating": "buy",
 "revGrowth": 32.7,
 "sector": "Financial Services",
@@ -15150,7 +15150,7 @@ null
 "type": "EQUITY"
 },
 "FBGRX": {
-"_fetched": 1795550937.8484411,
+"_fetched": 1795634030.458254,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -15174,7 +15174,7 @@ null
 "type": "MUTUALFUND"
 },
 "FCX": {
-"_fetched": 1795551055.1877694,
+"_fetched": 1795634099.624033,
 "_gate": {
 "bookValue": 14.621,
 "capexHist": [
@@ -15209,9 +15209,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 4.2196,
+"avg": 4.189,
 "currency": null,
-"growth": 0.3428,
+"growth": 0.3331,
 "high": 5.0,
 "low": 2.53,
 "methodology": null,
@@ -15233,10 +15233,10 @@ null
 "+1y": {
 "30daysAgo": 4.355,
 "60daysAgo": 4.1424,
-"7daysAgo": 4.2224,
-"90daysAgo": 4.123,
+"7daysAgo": 4.2199,
+"90daysAgo": 4.1348,
 "currency": null,
-"current": 4.2196,
+"current": 4.189,
 "methodology": null
 },
 "0y": {
@@ -15249,7 +15249,7 @@ null
 "methodology": null
 }
 },
-"ev": 89983672320.0,
+"ev": 87142498304.0,
 "fcf": 1867000064.0,
 "fcfHist": [
 1116000000.0,
@@ -15331,18 +15331,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 36312853530.0,
+"avg": 36204612580.0,
 "currency": null,
-"growth": 0.2159,
+"growth": 0.2108,
 "high": 41283991530.0,
 "low": 31303738660.0,
 "numberOfAnalysts": 16.0,
-"yearAgoRevenue": 29864460900.0
+"yearAgoRevenue": 29902022720.0
 },
 "0y": {
-"avg": 29864460900.0,
+"avg": 29902022720.0,
 "currency": null,
-"growth": 0.1524,
+"growth": 0.1538,
 "high": 32306000000.0,
 "low": 28640865460.0,
 "numberOfAnalysts": 17.0,
@@ -15384,14 +15384,14 @@ null
 "earningsDate": "2027-01-21",
 "eps": 2.38,
 "exchange": "NYQ",
-"forwardPe": 11.32,
+"forwardPe": 11.54,
 "industry": "Copper",
-"marketCap": 68023140352,
+"marketCap": 69336113152,
 "name": "Freeport-McMoRan, Inc.",
 "netMargin": 13.0,
 "opMargin": 28.6,
-"pe": 19.92,
-"ps": 2.57,
+"pe": 20.3,
+"ps": 2.62,
 "rating": "buy",
 "revGrowth": 8.2,
 "sector": "Basic Materials",
@@ -15399,7 +15399,7 @@ null
 "type": "EQUITY"
 },
 "FIDRX": {
-"_fetched": 1795550938.4866352,
+"_fetched": 1795634030.8207676,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -15423,7 +15423,7 @@ null
 "type": "MUTUALFUND"
 },
 "FIX": {
-"_fetched": 1795551056.8086343,
+"_fetched": 1795634100.5097172,
 "_gate": {
 "bookValue": 95.467,
 "capexHist": [
@@ -15497,7 +15497,7 @@ null
 "methodology": null
 }
 },
-"ev": 38615658496.0,
+"ev": 36451176448.0,
 "fcf": 2128619008.0,
 "fcfHist": [
 1031453000.0,
@@ -15625,13 +15625,13 @@ null
 "earningsDate": "2027-02-18",
 "eps": 46.3,
 "exchange": "NYQ",
-"forwardPe": 16.28,
+"forwardPe": 16.31,
 "industry": "Engineering & Construction",
-"marketCap": 38335102976,
+"marketCap": 38409449472,
 "name": "Comfort Systems USA, Inc.",
 "netMargin": 13.0,
 "opMargin": 16.8,
-"pe": 23.67,
+"pe": 23.71,
 "ps": 3.06,
 "rating": "strong_buy",
 "revGrowth": 53.7,
@@ -15640,7 +15640,7 @@ null
 "type": "EQUITY"
 },
 "FLEX": {
-"_fetched": 1795551058.3733318,
+"_fetched": 1795634101.3449976,
 "_gate": {
 "bookValue": 15.718,
 "capexHist": [
@@ -15676,23 +15676,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 7.8433,
+"avg": 7.9076,
 "currency": null,
-"growth": 0.5506,
+"growth": 0.5689,
 "high": 8.8,
 "low": 6.96,
 "methodology": null,
-"numberOfAnalysts": 10.0,
-"yearAgoEps": 5.0582
+"numberOfAnalysts": 11.0,
+"yearAgoEps": 5.0403
 },
 "0y": {
-"avg": 5.0582,
+"avg": 5.0403,
 "currency": null,
-"growth": 0.5328,
+"growth": 0.5274,
 "high": 5.24,
-"low": 4.9971,
+"low": 4.8614,
 "methodology": null,
-"numberOfAnalysts": 10.0,
+"numberOfAnalysts": 11.0,
 "yearAgoEps": 3.3
 }
 },
@@ -15703,7 +15703,7 @@ null
 "7daysAgo": 7.8433,
 "90daysAgo": 7.1111,
 "currency": null,
-"current": 7.8433,
+"current": 7.9076,
 "methodology": null
 },
 "0y": {
@@ -15712,11 +15712,11 @@ null
 "7daysAgo": 5.0582,
 "90daysAgo": 4.7243,
 "currency": null,
-"current": 5.0582,
+"current": 5.0403,
 "methodology": null
 }
 },
-"ev": 30217932800.0,
+"ev": 27446976512.0,
 "fcf": 620374976.0,
 "fcfHist": [
 1052000000.0,
@@ -15800,21 +15800,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 46467344450.0,
+"avg": 46559203730.0,
 "currency": null,
-"growth": 0.3096,
+"growth": 0.3127,
 "high": 47568000000.0,
 "low": 45458900000.0,
-"numberOfAnalysts": 9.0,
-"yearAgoRevenue": 35482561710.0
+"numberOfAnalysts": 10.0,
+"yearAgoRevenue": 35468094540.0
 },
 "0y": {
-"avg": 35482561710.0,
+"avg": 35468094540.0,
 "currency": null,
-"growth": 0.2711,
+"growth": 0.2706,
 "high": 35886000000.0,
 "low": 35312400000.0,
-"numberOfAnalysts": 9.0,
+"numberOfAnalysts": 10.0,
 "yearAgoRevenue": 27914000000.0
 }
 },
@@ -15846,29 +15846,29 @@ null
 "2022-03-31"
 ]
 },
-"analysts": 10,
+"analysts": 11,
 "beta": 1.79,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2027-01-27",
 "eps": 2.78,
 "exchange": "NMS",
-"forwardPe": 8.55,
+"forwardPe": 8.56,
 "industry": "Electronic Components",
-"marketCap": 24787124224,
+"marketCap": 24801902592,
 "name": "Flex Ltd.",
 "netMargin": 3.4,
 "opMargin": 5.3,
-"pe": 24.13,
-"ps": 0.8008,
+"pe": 24.15,
+"ps": 0.8013,
 "rating": "strong_buy",
 "revGrowth": 24.8,
 "sector": "Technology",
-"targetPrice": 149.3,
+"targetPrice": 144.82,
 "type": "EQUITY"
 },
 "FLNG": {
-"_fetched": 1795551059.9312675,
+"_fetched": 1795634102.2783277,
 "_gate": {
 "bookValue": 13.029,
 "capexHist": [
@@ -15943,7 +15943,7 @@ null
 "methodology": null
 }
 },
-"ev": 2681765632.0,
+"ev": 2693666048.0,
 "fcf": 143862368.0,
 "fcfHist": [
 140736000.0,
@@ -15953,7 +15953,7 @@ null
 null
 ],
 "fcfTtm": 164719000.0,
-"forwardEps": 2.012,
+"forwardEps": 2.0112,
 "grossMargin": 0.7416,
 "interest": [
 92625000.0,
@@ -16081,14 +16081,14 @@ null
 "earningsDate": "2026-11-11",
 "eps": 2.38,
 "exchange": "NYQ",
-"forwardPe": 11.83,
+"forwardPe": 12.13,
 "industry": "Oil & Gas Midstream",
-"marketCap": 1287939456,
+"marketCap": 1319853952,
 "name": "FLEX LNG Ltd.",
 "netMargin": 34.6,
 "opMargin": 50.7,
-"pe": 10.0,
-"ps": 3.46,
+"pe": 10.25,
+"ps": 3.55,
 "rating": "underperform",
 "revGrowth": 13.7,
 "sector": "Energy",
@@ -16096,7 +16096,7 @@ null
 "type": "EQUITY"
 },
 "FN": {
-"_fetched": 1795551061.409332,
+"_fetched": 1795634103.1972313,
 "_gate": {
 "bookValue": 70.216,
 "capexHist": [
@@ -16130,9 +16130,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 24.111,
+"avg": 24.001,
 "currency": null,
-"growth": 0.2226,
+"growth": 0.2171,
 "high": 25.504,
 "low": 22.29,
 "methodology": null,
@@ -16152,25 +16152,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 21.7877,
+"30daysAgo": 21.9377,
 "60daysAgo": 21.7877,
-"7daysAgo": 21.9377,
-"90daysAgo": 21.3995,
+"7daysAgo": 24.111,
+"90daysAgo": 21.7877,
 "currency": null,
-"current": 24.111,
+"current": 24.001,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 18.2868,
+"30daysAgo": 18.3268,
 "60daysAgo": 18.2868,
-"7daysAgo": 18.3268,
-"90daysAgo": 17.2481,
+"7daysAgo": 19.7204,
+"90daysAgo": 18.2868,
 "currency": null,
 "current": 19.7204,
 "methodology": null
 }
 },
-"ev": 11081487360.0,
+"ev": 9684932608.0,
 "fcf": -246700752.0,
 "fcfHist": [
 3041000.0,
@@ -16251,9 +16251,9 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 8072309340.0,
+"avg": 8030452190.0,
 "currency": null,
-"growth": 0.2237,
+"growth": 0.2174,
 "high": 8687782350.0,
 "low": 7493900000.0,
 "numberOfAnalysts": 7.0,
@@ -16303,22 +16303,22 @@ null
 "earningsDate": "2027-02-01",
 "eps": 13.25,
 "exchange": "NYQ",
-"forwardPe": 12.19,
+"forwardPe": 11.97,
 "industry": "Electronic Components",
-"marketCap": 10502021120,
+"marketCap": 10309682176,
 "name": "Fabrinet",
 "netMargin": 9.4,
 "opMargin": 10.0,
-"pe": 22.19,
-"ps": 2.04,
-"rating": "none",
+"pe": 21.78,
+"ps": 2.01,
+"rating": "buy",
 "revGrowth": 50.7,
 "sector": "Technology",
-"targetPrice": 564.44,
+"targetPrice": 531.11,
 "type": "EQUITY"
 },
 "FORM": {
-"_fetched": 1795551063.0011692,
+"_fetched": 1795634104.0799043,
 "_gate": {
 "bookValue": 15.067,
 "capexHist": [
@@ -16328,12 +16328,12 @@ null
 -65254000.0,
 null
 ],
-"capexTtm": -75752000.0,
+"capexTtm": -73658000.0,
 "cfQuarters": [
 "2026-09-30",
-"2026-06-30",
 "2026-03-31",
-"2025-12-31"
+"2025-12-31",
+"2025-09-30"
 ],
 "earningsGrowth": 3.65,
 "ebitda": 251935008.0,
@@ -16392,7 +16392,7 @@ null
 "methodology": null
 }
 },
-"ev": 6027689984.0,
+"ev": 5379296256.0,
 "fcf": 160899872.0,
 "fcfHist": [
 11740000.0,
@@ -16401,7 +16401,7 @@ null
 66532000.0,
 null
 ],
-"fcfTtm": 181257000.0,
+"fcfTtm": 148539000.0,
 "forwardEps": 4.2945,
 "grossMargin": 0.5022,
 "interest": [
@@ -16424,7 +16424,7 @@ null
 null
 ],
 "ocfInfo": 257008992.0,
-"ocfTtm": 257009000.0,
+"ocfTtm": 222197000.0,
 "opIncome": [
 60095000.0,
 44199000.0,
@@ -16441,19 +16441,19 @@ null
 ],
 "qOpIncome": [
 88056000.0,
-62658000.0,
+null,
 23722000.0,
 25194000.0,
 18969000.0,
-null
+12663000.0
 ],
 "qRevenue": [
 280547000.0,
-258242000.0,
+null,
 226144000.0,
 215163000.0,
 202676000.0,
-null
+195798000.0
 ],
 "qShares": [
 79447000.0,
@@ -16506,7 +16506,7 @@ null
 31337000.0,
 null
 ],
-"sbcTtm": 35429000.0,
+"sbcTtm": 36287000.0,
 "shares": 78235341.0,
 "totalCash": 395412000.0,
 "totalDebt": 27760000.0,
@@ -16525,13 +16525,13 @@ null
 "earningsDate": "2027-02-03",
 "eps": 2.18,
 "exchange": "NMS",
-"forwardPe": 16.93,
+"forwardPe": 16.91,
 "industry": "Semiconductor Equipment & Materials",
-"marketCap": 5689274368,
+"marketCap": 5681451008,
 "name": "FormFactor, Inc.",
 "netMargin": 17.7,
 "opMargin": 22.0,
-"pe": 33.36,
+"pe": 33.31,
 "ps": 5.8,
 "rating": "buy",
 "revGrowth": 38.4,
@@ -16540,7 +16540,7 @@ null
 "type": "EQUITY"
 },
 "FR": {
-"_fetched": 1795551064.7699802,
+"_fetched": 1795634105.0748754,
 "_gate": {
 "bookValue": 20.94,
 "capexHist": null,
@@ -16607,7 +16607,7 @@ null
 "methodology": null
 }
 },
-"ev": 9879055360.0,
+"ev": 10023565312.0,
 "fcf": 338719008.0,
 "fcfHist": [
 461336000.0,
@@ -16733,14 +16733,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 2.7,
 "exchange": "NYQ",
-"forwardPe": 30.27,
+"forwardPe": 30.92,
 "industry": "REIT - Industrial",
-"marketCap": 7515755008,
+"marketCap": 7675387392,
 "name": "First Industrial Realty Trust, ",
 "netMargin": 46.1,
 "opMargin": 41.6,
-"pe": 20.31,
-"ps": 9.69,
+"pe": 20.75,
+"ps": 9.89,
 "rating": "buy",
 "revGrowth": 8.5,
 "sector": "Real Estate",
@@ -16748,7 +16748,7 @@ null
 "type": "EQUITY"
 },
 "FSPGX": {
-"_fetched": 1795550939.0572112,
+"_fetched": 1795634031.2069044,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -16772,7 +16772,7 @@ null
 "type": "MUTUALFUND"
 },
 "FTAI": {
-"_fetched": 1795551066.2694573,
+"_fetched": 1795634106.3986692,
 "_gate": {
 "bookValue": 4.23,
 "capexHist": [
@@ -16848,7 +16848,7 @@ null
 "methodology": null
 }
 },
-"ev": 19834722304.0,
+"ev": 19189450752.0,
 "fcf": -586256768.0,
 "fcfHist": [
 -997256000.0,
@@ -16986,14 +16986,14 @@ null
 "earningsDate": "2026-10-29",
 "eps": 4.93,
 "exchange": "NMS",
-"forwardPe": 12.62,
+"forwardPe": 12.98,
 "industry": "Aerospace & Defense",
-"marketCap": 16115402752,
+"marketCap": 16564330496,
 "name": "FTAI Aviation Ltd.",
 "netMargin": 15.5,
 "opMargin": 23.4,
-"pe": 31.97,
-"ps": 4.71,
+"pe": 32.86,
+"ps": 4.84,
 "rating": "strong_buy",
 "revGrowth": 46.6,
 "sector": "Industrials",
@@ -17001,7 +17001,7 @@ null
 "type": "EQUITY"
 },
 "FTI": {
-"_fetched": 1795551068.0345669,
+"_fetched": 1795634107.4191926,
 "_gate": {
 "bookValue": 8.543,
 "capexHist": null,
@@ -17071,7 +17071,7 @@ null
 "methodology": null
 }
 },
-"ev": 23424090112.0,
+"ev": 23031369728.0,
 "fcf": 1484525056.0,
 "fcfHist": [
 1447400000.0,
@@ -17202,14 +17202,14 @@ null
 "earningsDate": "2026-10-29",
 "eps": 3.18,
 "exchange": "NYQ",
-"forwardPe": 15.42,
+"forwardPe": 15.6,
 "industry": "Oil & Gas Equipment & Services",
-"marketCap": 22826461184,
+"marketCap": 23096700928,
 "name": "TechnipFMC plc",
 "netMargin": 12.0,
 "opMargin": 15.6,
-"pe": 18.46,
-"ps": 2.14,
+"pe": 18.68,
+"ps": 2.16,
 "rating": "buy",
 "revGrowth": 9.4,
 "sector": "Energy",
@@ -17217,7 +17217,7 @@ null
 "type": "EQUITY"
 },
 "FTNT": {
-"_fetched": 1795551069.7062535,
+"_fetched": 1795634108.383378,
 "_gate": {
 "bookValue": 3.059,
 "capexHist": [
@@ -17293,7 +17293,7 @@ null
 "methodology": null
 }
 },
-"ev": 92081946624.0,
+"ev": 93110542336.0,
 "fcf": 2487812608.0,
 "fcfHist": [
 2225800000.0,
@@ -17426,14 +17426,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 3.06,
 "exchange": "NMS",
-"forwardPe": 33.87,
+"forwardPe": 34.44,
 "industry": "Software - Infrastructure",
-"marketCap": 97091887104,
+"marketCap": 98730303488,
 "name": "Fortinet, Inc.",
 "netMargin": 29.0,
 "opMargin": 32.9,
-"pe": 43.19,
-"ps": 12.32,
+"pe": 43.92,
+"ps": 12.53,
 "rating": "hold",
 "revGrowth": 20.5,
 "sector": "Technology",
@@ -17441,7 +17441,7 @@ null
 "type": "EQUITY"
 },
 "FXAIX": {
-"_fetched": 1795550939.6448035,
+"_fetched": 1795634031.5713077,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -17465,7 +17465,7 @@ null
 "type": "MUTUALFUND"
 },
 "GM": {
-"_fetched": 1795551071.208263,
+"_fetched": 1795634109.2608273,
 "_gate": {
 "bookValue": 73.976,
 "capexHist": [
@@ -17539,7 +17539,7 @@ null
 "methodology": null
 }
 },
-"ev": 173482377216.0,
+"ev": 174055981056.0,
 "fcf": 28518250496.0,
 "fcfHist": [
 1771000000.0,
@@ -17665,14 +17665,14 @@ null,
 "earningsDate": "2027-01-27",
 "eps": 4.57,
 "exchange": "NMS",
-"forwardPe": 5.56,
+"forwardPe": 5.76,
 "industry": "Auto Manufacturers",
-"marketCap": 68993908736,
+"marketCap": 71452860416,
 "name": "General Motors Company",
 "netMargin": 2.1,
 "opMargin": 6.8,
-"pe": 17.9,
-"ps": 0.369,
+"pe": 18.54,
+"ps": 0.3822,
 "rating": "buy",
 "revGrowth": 2.9,
 "sector": "Consumer Cyclical",
@@ -17680,7 +17680,7 @@ null,
 "type": "EQUITY"
 },
 "GMED": {
-"_fetched": 1795551072.634326,
+"_fetched": 1795634110.0881522,
 "_gate": {
 "bookValue": 36.153,
 "capexHist": [
@@ -17756,7 +17756,7 @@ null
 "methodology": null
 }
 },
-"ev": 8735273984.0,
+"ev": 8936631296.0,
 "fcf": 509871136.0,
 "fcfHist": [
 579022000.0,
@@ -17883,14 +17883,14 @@ null
 "earningsDate": "2026-11-05",
 "eps": 4.06,
 "exchange": "NYQ",
-"forwardPe": 13.17,
+"forwardPe": 13.68,
 "industry": "Medical Devices",
-"marketCap": 9310110720,
+"marketCap": 9669108736,
 "name": "Globus Medical, Inc.",
 "netMargin": 17.8,
 "opMargin": 23.8,
-"pe": 17.31,
-"ps": 2.97,
+"pe": 17.98,
+"ps": 3.08,
 "rating": "buy",
 "revGrowth": -0.7,
 "sector": "Healthcare",
@@ -17898,7 +17898,7 @@ null
 "type": "EQUITY"
 },
 "GNRC": {
-"_fetched": 1795551074.057149,
+"_fetched": 1795634111.0233576,
 "_gate": {
 "bookValue": 51.063,
 "capexHist": [
@@ -17974,7 +17974,7 @@ null
 "methodology": null
 }
 },
-"ev": 13102814208.0,
+"ev": 12725874688.0,
 "fcf": 335098368.0,
 "fcfHist": [
 268128000.0,
@@ -17984,7 +17984,7 @@ null
 null
 ],
 "fcfTtm": 414491000.0,
-"forwardEps": 14.1107,
+"forwardEps": 13.9752,
 "grossMargin": 0.3818,
 "interest": [
 70697000.0,
@@ -18112,14 +18112,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 5.07,
 "exchange": "NYQ",
-"forwardPe": 14.11,
+"forwardPe": 14.51,
 "industry": "Specialty Industrial Machinery",
-"marketCap": 11743232000,
+"marketCap": 11962375168,
 "name": "Generac Holdlings Inc.",
 "netMargin": 6.5,
 "opMargin": 8.6,
-"pe": 39.27,
-"ps": 2.54,
+"pe": 40.0,
+"ps": 2.59,
 "rating": "buy",
 "revGrowth": 16.2,
 "sector": "Industrials",
@@ -18127,7 +18127,7 @@ null
 "type": "EQUITY"
 },
 "GOOG": {
-"_fetched": 1795551075.7668388,
+"_fetched": 1795634111.9181592,
 "_gate": {
 "bookValue": 53.646,
 "capexHist": [
@@ -18201,7 +18201,7 @@ null
 "methodology": null
 }
 },
-"ev": 3339797921792.0,
+"ev": 3303530561536.0,
 "fcf": -1162499968.0,
 "fcfHist": [
 73266000000.0,
@@ -18211,7 +18211,7 @@ null
 null
 ],
 "fcfTtm": 19747000000.0,
-"forwardEps": 15.2974,
+"forwardEps": 15.295,
 "grossMargin": 0.6086,
 "interest": [
 736000000.0,
@@ -18334,14 +18334,14 @@ null
 "earningsDate": "2027-02-03",
 "eps": 19.15,
 "exchange": "NMS",
-"forwardPe": 17.99,
+"forwardPe": 17.67,
 "industry": "Internet Content & Information",
-"marketCap": 3383308845056,
+"marketCap": 3323436728320,
 "name": "Alphabet Inc.",
 "netMargin": 50.0,
 "opMargin": 33.3,
-"pe": 14.37,
-"ps": 7.18,
+"pe": 14.12,
+"ps": 7.05,
 "rating": "strong_buy",
 "revGrowth": 24.7,
 "sector": "Communication Services",
@@ -18349,7 +18349,7 @@ null
 "type": "EQUITY"
 },
 "HCC": {
-"_fetched": 1795550934.9766953,
+"_fetched": 1795634028.934876,
 "_gate": {
 "bookValue": 44.291,
 "capexHist": [
@@ -18425,7 +18425,7 @@ null
 "methodology": null
 }
 },
-"ev": 3974430464.0,
+"ev": 4017728256.0,
 "fcf": 77626872.0,
 "fcfHist": [
 -100378000.0,
@@ -18558,14 +18558,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 4.39,
 "exchange": "NYQ",
-"forwardPe": 10.26,
+"forwardPe": 10.63,
 "industry": "Coking Coal",
-"marketCap": 4217830656,
+"marketCap": 4371220992,
 "name": "Warrior Met Coal, Inc.",
 "netMargin": 12.5,
 "opMargin": 13.9,
-"pe": 18.2,
-"ps": 2.26,
+"pe": 18.86,
+"ps": 2.35,
 "rating": "buy",
 "revGrowth": 55.0,
 "sector": "Basic Materials",
@@ -18573,7 +18573,7 @@ null
 "type": "EQUITY"
 },
 "HESM": {
-"_fetched": 1795551077.4152546,
+"_fetched": 1795634112.7549708,
 "_gate": {
 "bookValue": 3.995,
 "capexHist": [
@@ -18649,7 +18649,7 @@ null
 "methodology": null
 }
 },
-"ev": 7236362240.0,
+"ev": 7250480640.0,
 "fcf": 551587520.0,
 "fcfHist": [
 728200000.0,
@@ -18787,14 +18787,14 @@ null
 "earningsDate": "2027-02-01",
 "eps": 2.92,
 "exchange": "NYQ",
-"forwardPe": 10.68,
+"forwardPe": 10.87,
 "industry": "Oil & Gas Midstream",
-"marketCap": 6024531968,
+"marketCap": 6128652288,
 "name": "Hess Midstream LP",
 "netMargin": 23.5,
 "opMargin": 62.7,
-"pe": 10.01,
-"ps": 3.76,
+"pe": 10.18,
+"ps": 3.82,
 "rating": "underperform",
 "revGrowth": -2.6,
 "sector": "Energy",
@@ -18802,7 +18802,7 @@ null
 "type": "EQUITY"
 },
 "HII": {
-"_fetched": 1795551078.7550633,
+"_fetched": 1795634113.6359437,
 "_gate": {
 "bookValue": 139.371,
 "capexHist": [
@@ -18878,7 +18878,7 @@ null
 "methodology": null
 }
 },
-"ev": 13834594304.0,
+"ev": 14080488448.0,
 "fcf": 193375008.0,
 "fcfHist": [
 794000000.0,
@@ -19016,14 +19016,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 18.57,
 "exchange": "NYQ",
-"forwardPe": 14.34,
+"forwardPe": 14.61,
 "industry": "Aerospace & Defense",
-"marketCap": 11596020736,
+"marketCap": 11820241920,
 "name": "Huntington Ingalls Industries, ",
 "netMargin": 5.4,
 "opMargin": 6.8,
-"pe": 15.85,
-"ps": 0.8571,
+"pe": 16.15,
+"ps": 0.8736,
 "rating": "buy",
 "revGrowth": 10.8,
 "sector": "Industrials",
@@ -19031,7 +19031,7 @@ null
 "type": "EQUITY"
 },
 "HIMS": {
-"_fetched": 1795551080.544026,
+"_fetched": 1795634114.3896198,
 "_gate": {
 "bookValue": 1.516,
 "capexHist": [
@@ -19107,7 +19107,7 @@ null
 "methodology": null
 }
 },
-"ev": 4378786304.0,
+"ev": 4303774208.0,
 "fcf": 573203392.0,
 "fcfHist": [
 57415000.0,
@@ -19240,14 +19240,14 @@ null
 "earningsDate": "2026-11-09",
 "eps": -0.83,
 "exchange": "NYQ",
-"forwardPe": 49.07,
+"forwardPe": 49.53,
 "industry": "Drug Manufacturers - Specialty & Generic",
-"marketCap": 3450550784,
+"marketCap": 3483368448,
 "name": "Hims & Hers Health, Inc.",
 "netMargin": -6.7,
 "opMargin": -6.4,
 "pe": null,
-"ps": 1.2,
+"ps": 1.21,
 "rating": "hold",
 "revGrowth": 48.6,
 "sector": "Healthcare",
@@ -19255,7 +19255,7 @@ null
 "type": "EQUITY"
 },
 "HONA": {
-"_fetched": 1795551082.001787,
+"_fetched": 1795634115.3431869,
 "_gate": {
 "bookValue": -8.113,
 "capexHist": [
@@ -19325,7 +19325,7 @@ null
 "methodology": null
 }
 },
-"ev": 63723462656.0,
+"ev": 63771017216.0,
 "fcf": null,
 "fcfHist": [
 3201000000.0,
@@ -19447,14 +19447,14 @@ null,
 "earningsDate": "2026-10-28",
 "eps": 3.53,
 "exchange": "NMS",
-"forwardPe": 17.63,
+"forwardPe": 18.02,
 "industry": "Aerospace & Defense",
-"marketCap": 48827658240,
+"marketCap": 49923956736,
 "name": "Honeywell Aerospace Inc.",
 "netMargin": 11.2,
 "opMargin": 21.1,
-"pe": 43.63,
-"ps": 2.71,
+"pe": 44.61,
+"ps": 2.77,
 "rating": "hold",
 "revGrowth": 2.4,
 "sector": "Industrials",
@@ -19462,7 +19462,7 @@ null,
 "type": "EQUITY"
 },
 "HOOD": {
-"_fetched": 1795551083.6637127,
+"_fetched": 1795634116.2795002,
 "_gate": {
 "bookValue": 11.1,
 "capexHist": [
@@ -19498,23 +19498,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 2.9218,
+"avg": 2.9277,
 "currency": null,
-"growth": 0.3972,
+"growth": 0.3985,
 "high": 3.5,
 "low": 2.55,
 "methodology": null,
-"numberOfAnalysts": 26.0,
-"yearAgoEps": 2.0912
+"numberOfAnalysts": 27.0,
+"yearAgoEps": 2.0935
 },
 "0y": {
-"avg": 2.0912,
+"avg": 2.0935,
 "currency": null,
-"growth": 0.0201,
+"growth": 0.0212,
 "high": 2.27,
 "low": 1.9877,
 "methodology": null,
-"numberOfAnalysts": 25.0,
+"numberOfAnalysts": 26.0,
 "yearAgoEps": 2.05
 }
 },
@@ -19525,7 +19525,7 @@ null
 "7daysAgo": 2.9265,
 "90daysAgo": 2.7032,
 "currency": null,
-"current": 2.9218,
+"current": 2.9277,
 "methodology": null
 },
 "0y": {
@@ -19534,11 +19534,11 @@ null
 "7daysAgo": 2.0944,
 "90daysAgo": 2.0728,
 "currency": null,
-"current": 2.0912,
+"current": 2.0935,
 "methodology": null
 }
 },
-"ev": 58466099200.0,
+"ev": 56917254144.0,
 "fcf": null,
 "fcfHist": [
 1584000000.0,
@@ -19616,21 +19616,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 6877549930.0,
+"avg": 6879703380.0,
 "currency": null,
-"growth": 0.2939,
+"growth": 0.2941,
 "high": 7745400000.0,
 "low": 6508000000.0,
-"numberOfAnalysts": 28.0,
-"yearAgoRevenue": 5315283880.0
+"numberOfAnalysts": 29.0,
+"yearAgoRevenue": 5316101680.0
 },
 "0y": {
-"avg": 5315283880.0,
+"avg": 5316101680.0,
 "currency": null,
-"growth": 0.1883,
+"growth": 0.1885,
 "high": 5447000000.0,
 "low": 5206989680.0,
-"numberOfAnalysts": 28.0,
+"numberOfAnalysts": 29.0,
 "yearAgoRevenue": 4473000000.0
 }
 },
@@ -19663,29 +19663,29 @@ null
 "2021-12-31"
 ]
 },
-"analysts": 30,
+"analysts": 31,
 "beta": 2.53,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2027-02-10",
 "eps": 2.17,
 "exchange": "NMS",
-"forwardPe": 19.15,
+"forwardPe": 19.2,
 "industry": "Capital Markets",
-"marketCap": 58911846400,
+"marketCap": 59054219264,
 "name": "Robinhood Markets, Inc.",
 "netMargin": 39.0,
 "opMargin": 45.7,
-"pe": 30.15,
-"ps": 11.59,
+"pe": 30.22,
+"ps": 11.62,
 "rating": "buy",
 "revGrowth": 11.8,
 "sector": "Financial Services",
-"targetPrice": 125.0,
+"targetPrice": 123.55,
 "type": "EQUITY"
 },
 "HPE": {
-"_fetched": 1795551085.408473,
+"_fetched": 1795634117.1785283,
 "_gate": {
 "bookValue": 19.964,
 "capexHist": [
@@ -19701,15 +19701,15 @@ null
 "2026-01-31",
 "2025-10-31"
 ],
-"earningsGrowth": 4.102,
-"ebitda": 6889999872.0,
+"earningsGrowth": 10.472,
+"ebitda": 8400000000.0,
 "ebitdaHist": [
 4381000000.0,
 5058000000.0,
 5058000000.0,
 4707000000.0
 ],
-"ebitdaMargin": 0.1646,
+"ebitdaMargin": 0.1797,
 "eps": [
 -0.04,
 1.93,
@@ -19718,23 +19718,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 5.857,
+"avg": 5.9716,
 "currency": null,
-"growth": 0.1095,
-"high": 6.379,
+"growth": 0.1289,
+"high": 6.72,
 "low": 5.3,
 "methodology": null,
-"numberOfAnalysts": 17.0,
-"yearAgoEps": 5.279
+"numberOfAnalysts": 18.0,
+"yearAgoEps": 5.2898
 },
 "0y": {
-"avg": 5.279,
+"avg": 5.2898,
 "currency": null,
-"growth": 0.3297,
+"growth": 0.3324,
 "high": 5.61,
 "low": 5.127,
 "methodology": null,
-"numberOfAnalysts": 14.0,
+"numberOfAnalysts": 17.0,
 "yearAgoEps": 3.97
 }
 },
@@ -19745,7 +19745,7 @@ null
 "7daysAgo": 5.4586,
 "90daysAgo": 4.4406,
 "currency": null,
-"current": 5.857,
+"current": 5.9716,
 "methodology": null
 },
 "0y": {
@@ -19754,12 +19754,12 @@ null
 "7daysAgo": 4.7351,
 "90daysAgo": 4.1235,
 "currency": null,
-"current": 5.279,
+"current": 5.2898,
 "methodology": null
 }
 },
-"ev": 77911859200.0,
-"fcf": 4738625024.0,
+"ev": 65847042048.0,
+"fcf": 4289999872.0,
 "fcfHist": [
 627000000.0,
 1974000000.0,
@@ -19768,7 +19768,7 @@ null
 ],
 "fcfTtm": 4156000000.0,
 "forwardEps": 4.7677,
-"grossMargin": 0.3662,
+"grossMargin": 0.3796,
 "interest": [
 null,
 117000000.0,
@@ -19787,7 +19787,7 @@ null,
 4428000000.0,
 4593000000.0
 ],
-"ocfInfo": 6694000128.0,
+"ocfInfo": 6566000128.0,
 "ocfTtm": 6694000000.0,
 "opIncome": [
 1644000000.0,
@@ -19837,21 +19837,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 64154214240.0,
+"avg": 65694690350.0,
 "currency": null,
-"growth": 0.0424,
+"growth": 0.0673,
 "high": 72676000000.0,
 "low": 54347115790.0,
 "numberOfAnalysts": 18.0,
-"yearAgoRevenue": 61544095170.0
+"yearAgoRevenue": 61553611070.0
 },
 "0y": {
-"avg": 61544095170.0,
+"avg": 61553611070.0,
 "currency": null,
-"growth": 0.3168,
+"growth": 0.317,
 "high": 63749000000.0,
-"low": 60527400000.0,
-"numberOfAnalysts": 13.0,
+"low": 60200000000.0,
+"numberOfAnalysts": 16.0,
 "yearAgoRevenue": 46739000000.0
 }
 },
@@ -19861,8 +19861,8 @@ null
 29135000000.0,
 28496000000.0
 ],
-"revenueTtm": 41870999552.0,
-"roe": 0.1094,
+"revenueTtm": 46739001344.0,
+"roe": 0.1693,
 "sbcHist": [
 643000000.0,
 430000000.0,
@@ -19870,9 +19870,9 @@ null
 391000000.0
 ],
 "sbcTtm": 795000000.0,
-"shares": 1327464779.0,
-"totalCash": 6216000000.0,
-"totalDebt": 20320999424.0,
+"shares": 1316000000.0,
+"totalCash": 5752999936.0,
+"totalDebt": 18645000192.0,
 "v": 2,
 "years": [
 "2025-10-31",
@@ -19884,26 +19884,26 @@ null
 "analysts": 21,
 "beta": 1.47,
 "currency": "USD",
-"dividendRate": 0.57,
-"earningsDate": "2026-11-23",
+"dividendRate": 0.68,
+"earningsDate": "2027-03-02",
 "eps": 1.94,
 "exchange": "NYQ",
-"forwardPe": 8.33,
+"forwardPe": 8.49,
 "industry": "Communication Equipment",
-"marketCap": 52720267264,
+"marketCap": 53265096704,
 "name": "Hewlett Packard Enterprise Comp",
-"netMargin": 6.7,
-"opMargin": 8.1,
-"pe": 20.47,
-"ps": 1.26,
+"netMargin": 9.5,
+"opMargin": 10.6,
+"pe": 20.86,
+"ps": 1.14,
 "rating": "buy",
-"revGrowth": 33.7,
+"revGrowth": 50.3,
 "sector": "Technology",
-"targetPrice": 67.63,
+"targetPrice": 66.3,
 "type": "EQUITY"
 },
 "ICHR": {
-"_fetched": 1795551087.20305,
+"_fetched": 1795634118.175091,
 "_gate": {
 "bookValue": 23.642,
 "capexHist": [
@@ -19977,7 +19977,7 @@ null
 "methodology": null
 }
 },
-"ev": 1125647232.0,
+"ev": 929874688.0,
 "fcf": -52263376.0,
 "fcfHist": [
 -6283000.0,
@@ -20110,14 +20110,14 @@ null
 "earningsDate": "2027-02-08",
 "eps": 0.07,
 "exchange": "NMS",
-"forwardPe": 7.63,
+"forwardPe": 7.49,
 "industry": "Semiconductor Equipment & Materials",
-"marketCap": 994644736,
+"marketCap": 975480832,
 "name": "Ichor Holdings",
 "netMargin": 0.3,
 "opMargin": 4.4,
-"pe": 378.14,
-"ps": 0.9016,
+"pe": 370.86,
+"ps": 0.8843,
 "rating": "none",
 "revGrowth": 37.4,
 "sector": "Technology",
@@ -20125,7 +20125,7 @@ null
 "type": "EQUITY"
 },
 "IESC": {
-"_fetched": 1795551088.7914085,
+"_fetched": 1795634119.1323493,
 "_gate": {
 "bookValue": 35.385,
 "capexHist": [
@@ -20201,7 +20201,7 @@ null
 "methodology": null
 }
 },
-"ev": 6499717120.0,
+"ev": 6304947200.0,
 "fcf": 214648000.0,
 "fcfHist": [
 201435000.0,
@@ -20340,20 +20340,20 @@ null
 "exchange": "NGM",
 "forwardPe": null,
 "industry": "Engineering & Construction",
-"marketCap": 6644937728,
+"marketCap": 6851653120,
 "name": "IES Holdings, Inc.",
 "netMargin": 12.0,
 "opMargin": 13.5,
-"pe": 12.57,
-"ps": 1.48,
-"rating": "none",
+"pe": 12.97,
+"ps": 1.53,
+"rating": "strong_buy",
 "revGrowth": 54.8,
 "sector": "Industrials",
 "targetPrice": 400.0,
 "type": "EQUITY"
 },
 "INCY": {
-"_fetched": 1795551090.350536,
+"_fetched": 1795634120.1298673,
 "_gate": {
 "bookValue": 27.661,
 "capexHist": [
@@ -20429,7 +20429,7 @@ null
 "methodology": null
 }
 },
-"ev": 20102582272.0,
+"ev": 21378574336.0,
 "fcf": 1286754432.0,
 "fcfHist": [
 1329631000.0,
@@ -20567,14 +20567,14 @@ null
 "earningsDate": "2027-02-09",
 "eps": 1.96,
 "exchange": "NMS",
-"forwardPe": 14.36,
+"forwardPe": 14.31,
 "industry": "Biotechnology",
-"marketCap": 25126430720,
+"marketCap": 25040822272,
 "name": "Incyte Corporation",
 "netMargin": 6.7,
 "opMargin": 32.2,
-"pe": 62.89,
-"ps": 4.18,
+"pe": 62.68,
+"ps": 4.17,
 "rating": "buy",
 "revGrowth": 14.0,
 "sector": "Healthcare",
@@ -20582,7 +20582,7 @@ null
 "type": "EQUITY"
 },
 "INTC": {
-"_fetched": 1795550960.5580666,
+"_fetched": 1795634043.9855125,
 "_gate": {
 "bookValue": 21.641,
 "capexHist": [
@@ -20656,7 +20656,7 @@ null
 "methodology": null
 }
 },
-"ev": 329863888896.0,
+"ev": 304033005568.0,
 "fcf": 806499968.0,
 "fcfHist": [
 -4949000000.0,
@@ -20789,14 +20789,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": -2.35,
 "exchange": "NMS",
-"forwardPe": 30.6,
+"forwardPe": 30.07,
 "industry": "Semiconductors",
-"marketCap": 291180675072,
+"marketCap": 286159601664,
 "name": "Intel Corporation",
 "netMargin": -20.1,
 "opMargin": 10.3,
 "pe": null,
-"ps": 4.86,
+"ps": 4.78,
 "rating": "hold",
 "revGrowth": 20.9,
 "sector": "Technology",
@@ -20804,7 +20804,7 @@ null
 "type": "EQUITY"
 },
 "IOT": {
-"_fetched": 1795551092.056938,
+"_fetched": 1795634121.0780206,
 "_gate": {
 "bookValue": 2.737,
 "capexHist": [
@@ -20880,7 +20880,7 @@ null
 "methodology": null
 }
 },
-"ev": 21944477696.0,
+"ev": 22325121024.0,
 "fcf": 260455008.0,
 "fcfHist": [
 207444000.0,
@@ -21018,14 +21018,14 @@ null
 "earningsDate": "2026-12-03",
 "eps": 0.14,
 "exchange": "NYQ",
-"forwardPe": 41.53,
+"forwardPe": 40.71,
 "industry": "Software - Infrastructure",
-"marketCap": 23055276032,
+"marketCap": 22598504448,
 "name": "Samsara Inc.",
 "netMargin": 4.9,
 "opMargin": 1.0,
-"pe": 281.21,
-"ps": 12.48,
+"pe": 275.64,
+"ps": 12.23,
 "rating": "buy",
 "revGrowth": 29.9,
 "sector": "Technology",
@@ -21033,7 +21033,7 @@ null
 "type": "EQUITY"
 },
 "IREN": {
-"_fetched": 1795551093.6403694,
+"_fetched": 1795634122.1119857,
 "_gate": {
 "bookValue": 12.574,
 "capexHist": [
@@ -21109,7 +21109,7 @@ null
 "methodology": null
 }
 },
-"ev": 12905591808.0,
+"ev": 12188428288.0,
 "fcf": -8780918784.0,
 "fcfHist": [
 -2350426000.0,
@@ -21247,14 +21247,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": -4.08,
 "exchange": "NMS",
-"forwardPe": 47.83,
+"forwardPe": 47.96,
 "industry": "Capital Markets",
-"marketCap": 5480575488,
+"marketCap": 5495470592,
 "name": "IREN LIMITED",
 "netMargin": -194.3,
 "opMargin": -72.9,
 "pe": null,
-"ps": 7.89,
+"ps": 7.91,
 "rating": "buy",
 "revGrowth": -5.0,
 "sector": "Financial Services",
@@ -21262,7 +21262,7 @@ null
 "type": "EQUITY"
 },
 "JBL": {
-"_fetched": 1795551095.1701963,
+"_fetched": 1795634122.9339504,
 "_gate": {
 "bookValue": 15.439,
 "capexHist": [
@@ -21338,7 +21338,7 @@ null
 "methodology": null
 }
 },
-"ev": 27548534784.0,
+"ev": 25947283456.0,
 "fcf": 1282875008.0,
 "fcfHist": [
 1374000000.0,
@@ -21475,14 +21475,14 @@ null
 "earningsDate": "2026-12-16",
 "eps": 9.75,
 "exchange": "NYQ",
-"forwardPe": 10.26,
+"forwardPe": 10.27,
 "industry": "Electronic Components",
-"marketCap": 23416909824,
+"marketCap": 23439048704,
 "name": "Jabil Inc.",
 "netMargin": 2.9,
 "opMargin": 5.1,
-"pe": 23.32,
-"ps": 0.6513,
+"pe": 23.35,
+"ps": 0.6519,
 "rating": "strong_buy",
 "revGrowth": 28.6,
 "sector": "Technology",
@@ -21490,7 +21490,7 @@ null
 "type": "EQUITY"
 },
 "KEYS": {
-"_fetched": 1795551096.6489644,
+"_fetched": 1795634123.9790933,
 "_gate": {
 "bookValue": 40.918,
 "capexHist": [
@@ -21565,7 +21565,7 @@ null
 "methodology": null
 }
 },
-"ev": 49021136896.0,
+"ev": 46063177728.0,
 "fcf": 1309874944.0,
 "fcfHist": [
 1281000000.0,
@@ -21698,16 +21698,16 @@ null,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2027-02-23",
-"eps": 9.69,
+"eps": 8.75,
 "exchange": "NYQ",
-"forwardPe": 15.8,
+"forwardPe": 15.51,
 "industry": "Scientific & Technical Instruments",
-"marketCap": 46377603072,
+"marketCap": 45535752192,
 "name": "Keysight Technologies Inc.",
 "netMargin": 21.1,
 "opMargin": 23.8,
-"pe": 28.17,
-"ps": 6.48,
+"pe": 30.63,
+"ps": 6.36,
 "rating": "strong_buy",
 "revGrowth": 40.5,
 "sector": "Technology",
@@ -21715,7 +21715,7 @@ null,
 "type": "EQUITY"
 },
 "KGC": {
-"_fetched": 1795551098.3116138,
+"_fetched": 1795634124.8189547,
 "_gate": {
 "bookValue": 8.464,
 "capexHist": [
@@ -21751,19 +21751,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 2.5904,
+"avg": 2.5751,
 "currency": null,
-"growth": 0.0744,
+"growth": 0.0675,
 "high": 3.25,
 "low": 1.87,
 "methodology": null,
 "numberOfAnalysts": 17.0,
-"yearAgoEps": 2.4111
+"yearAgoEps": 2.4123
 },
 "0y": {
-"avg": 2.4111,
+"avg": 2.4123,
 "currency": null,
-"growth": 0.3104,
+"growth": 0.311,
 "high": 2.51,
 "low": 2.3,
 "methodology": null,
@@ -21774,24 +21774,24 @@ null
 "epsTrend": {
 "+1y": {
 "30daysAgo": 2.6529,
-"60daysAgo": 2.778,
-"7daysAgo": 2.5983,
+"60daysAgo": 2.771,
+"7daysAgo": 2.5901,
 "90daysAgo": 3.0352,
 "currency": null,
-"current": 2.5904,
+"current": 2.5751,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 2.4606,
-"60daysAgo": 2.5125,
-"7daysAgo": 2.4077,
+"60daysAgo": 2.505,
+"7daysAgo": 2.4108,
 "90daysAgo": 2.685,
 "currency": null,
-"current": 2.4111,
+"current": 2.4123,
 "methodology": null
 }
 },
-"ev": 19679391744.0,
+"ev": 19198337024.0,
 "fcf": 2464037376.0,
 "fcfHist": [
 2566300000.0,
@@ -21801,7 +21801,7 @@ null
 null
 ],
 "fcfTtm": 2644700000.0,
-"forwardEps": 2.5904,
+"forwardEps": 2.5751,
 "grossMargin": 0.6861,
 "interest": [
 81800000.0,
@@ -21875,18 +21875,18 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 8933569460.0,
+"avg": 8889972410.0,
 "currency": null,
-"growth": 0.0667,
+"growth": 0.061,
 "high": 9900000000.0,
-"low": 8206200000.0,
+"low": 8205102610.0,
 "numberOfAnalysts": 11.0,
-"yearAgoRevenue": 8374910180.0
+"yearAgoRevenue": 8378857590.0
 },
 "0y": {
-"avg": 8374910180.0,
+"avg": 8378857590.0,
 "currency": null,
-"growth": 0.1877,
+"growth": 0.1883,
 "high": 8534373299.0,
 "low": 8187000000.0,
 "numberOfAnalysts": 9.0,
@@ -21929,22 +21929,22 @@ null
 "earningsDate": "2027-02-17",
 "eps": 2.64,
 "exchange": "NYQ",
-"forwardPe": 6.91,
+"forwardPe": 7.14,
 "industry": "Gold",
-"marketCap": 21086881792,
+"marketCap": 21670012928,
 "name": "Kinross Gold Corporation",
 "netMargin": 37.6,
 "opMargin": 51.0,
-"pe": 6.78,
-"ps": 2.5,
+"pe": 6.97,
+"ps": 2.57,
 "rating": "buy",
 "revGrowth": -1.5,
 "sector": "Basic Materials",
-"targetPrice": 30.07,
+"targetPrice": 29.45,
 "type": "EQUITY"
 },
 "KRMN": {
-"_fetched": 1795551099.8610585,
+"_fetched": 1795634125.7777195,
 "_gate": {
 "bookValue": 3.333,
 "capexHist": [
@@ -22017,7 +22017,7 @@ null
 "methodology": null
 }
 },
-"ev": 4959302144.0,
+"ev": 4784357376.0,
 "fcf": -34481376.0,
 "fcfHist": [
 -42455000.0,
@@ -22147,14 +22147,14 @@ null
 "earningsDate": "2026-11-05",
 "eps": 0.38,
 "exchange": "NYQ",
-"forwardPe": 30.42,
+"forwardPe": 30.25,
 "industry": "Aerospace & Defense",
-"marketCap": 3910407168,
+"marketCap": 3888539136,
 "name": "Karman Holdings Inc.",
 "netMargin": 7.5,
 "opMargin": 16.6,
-"pe": 77.64,
-"ps": 5.85,
+"pe": 77.21,
+"ps": 5.81,
 "rating": "strong_buy",
 "revGrowth": 65.6,
 "sector": "Industrials",
@@ -22162,7 +22162,7 @@ null
 "type": "EQUITY"
 },
 "KTOS": {
-"_fetched": 1795551101.3300407,
+"_fetched": 1795634126.7373471,
 "_gate": {
 "bookValue": 18.385,
 "capexHist": [
@@ -22238,7 +22238,7 @@ null
 "methodology": null
 }
 },
-"ev": 4207494912.0,
+"ev": 4152895744.0,
 "fcf": -111575000.0,
 "fcfHist": [
 -137400000.0,
@@ -22376,14 +22376,14 @@ null
 "earningsDate": "2027-02-23",
 "eps": 0.12,
 "exchange": "NMS",
-"forwardPe": 25.49,
+"forwardPe": 26.14,
 "industry": "Aerospace & Defense",
-"marketCap": 5354498560,
+"marketCap": 5490996736,
 "name": "Kratos Defense & Security Solut",
 "netMargin": 1.3,
 "opMargin": 0.8,
-"pe": 237.0,
-"ps": 3.25,
+"pe": 243.04,
+"ps": 3.33,
 "rating": "strong_buy",
 "revGrowth": 35.7,
 "sector": "Industrials",
@@ -22391,7 +22391,7 @@ null
 "type": "EQUITY"
 },
 "LEU": {
-"_fetched": 1795551102.8668969,
+"_fetched": 1795634127.7396019,
 "_gate": {
 "bookValue": 54.031,
 "capexHist": [
@@ -22467,7 +22467,7 @@ null
 "methodology": null
 }
 },
-"ev": 732587648.0,
+"ev": 675474560.0,
 "fcf": -233300000.0,
 "fcfHist": [
 31300000.0,
@@ -22553,18 +22553,18 @@ null
 "+1y": {
 "avg": 511310600.0,
 "currency": null,
-"growth": 0.0738,
+"growth": 0.0727,
 "high": 613160910.0,
 "low": 439300000.0,
 "numberOfAnalysts": 19.0,
-"yearAgoRevenue": 476175480.0
+"yearAgoRevenue": 476647700.0
 },
 "0y": {
-"avg": 476175480.0,
+"avg": 476647700.0,
 "currency": null,
-"growth": 0.0612,
+"growth": 0.0623,
 "high": 507000000.0,
-"low": 446794970.0,
+"low": 455767050.0,
 "numberOfAnalysts": 19.0,
 "yearAgoRevenue": 448700000.0
 }
@@ -22605,22 +22605,22 @@ null
 "earningsDate": "2027-02-10",
 "eps": 3.37,
 "exchange": "NYQ",
-"forwardPe": 18.96,
+"forwardPe": 18.87,
 "industry": "Uranium",
-"marketCap": 1729156096,
+"marketCap": 1721125120,
 "name": "Centrus Energy Corp.",
 "netMargin": 16.8,
 "opMargin": -2.8,
-"pe": 24.89,
-"ps": 3.8,
+"pe": 24.77,
+"ps": 3.79,
 "rating": "buy",
 "revGrowth": -25.9,
 "sector": "Energy",
-"targetPrice": 180.25,
+"targetPrice": 177.9,
 "type": "EQUITY"
 },
 "LHX": {
-"_fetched": 1795551104.3787847,
+"_fetched": 1795634128.862133,
 "_gate": {
 "bookValue": 108.733,
 "capexHist": [
@@ -22696,7 +22696,7 @@ null
 "methodology": null
 }
 },
-"ev": 57398534144.0,
+"ev": 58003685376.0,
 "fcf": 3432999936.0,
 "fcfHist": [
 2682000000.0,
@@ -22834,14 +22834,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 10.74,
 "exchange": "NYQ",
-"forwardPe": 19.05,
+"forwardPe": 19.14,
 "industry": "Aerospace & Defense",
-"marketCap": 48449433600,
+"marketCap": 48680321024,
 "name": "L3Harris Technologies, Inc.",
 "netMargin": 8.8,
 "opMargin": 13.3,
-"pe": 24.23,
-"ps": 2.08,
+"pe": 24.34,
+"ps": 2.09,
 "rating": "buy",
 "revGrowth": 7.1,
 "sector": "Industrials",
@@ -22849,7 +22849,7 @@ null
 "type": "EQUITY"
 },
 "LMT": {
-"_fetched": 1795551106.010737,
+"_fetched": 1795634129.648204,
 "_gate": {
 "bookValue": 43.752,
 "capexHist": [
@@ -22925,7 +22925,7 @@ null
 "methodology": null
 }
 },
-"ev": 146596429824.0,
+"ev": 150052257792.0,
 "fcf": 5645499904.0,
 "fcfHist": [
 6908000000.0,
@@ -23063,14 +23063,14 @@ null
 "earningsDate": "2027-01-26",
 "eps": 28.16,
 "exchange": "NYQ",
-"forwardPe": 17.71,
+"forwardPe": 17.93,
 "industry": "Aerospace & Defense",
-"marketCap": 136337784832,
+"marketCap": 138096885760,
 "name": "Lockheed Martin Corporation",
 "netMargin": 8.2,
 "opMargin": 10.8,
-"pe": 20.96,
-"ps": 1.72,
+"pe": 21.23,
+"ps": 1.75,
 "rating": "buy",
 "revGrowth": 11.3,
 "sector": "Industrials",
@@ -23078,7 +23078,7 @@ null
 "type": "EQUITY"
 },
 "LUNMF": {
-"_fetched": 1795551107.5833724,
+"_fetched": 1795634130.5464425,
 "_gate": {
 "bookValue": 8.431,
 "capexHist": [
@@ -23114,19 +23114,19 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 1.4864,
+"avg": 1.4785,
 "currency": null,
-"growth": 0.1202,
+"growth": 0.1121,
 "high": 1.96,
 "low": 0.96,
 "methodology": null,
 "numberOfAnalysts": 19.0,
-"yearAgoEps": 1.3269
+"yearAgoEps": 1.3295
 },
 "0y": {
-"avg": 1.3269,
+"avg": 1.3295,
 "currency": null,
-"growth": 0.4743,
+"growth": 0.4772,
 "high": 1.77,
 "low": 1.17,
 "methodology": null,
@@ -23141,7 +23141,7 @@ null
 "7daysAgo": 1.4861,
 "90daysAgo": 1.4372,
 "currency": null,
-"current": 1.4864,
+"current": 1.4785,
 "methodology": null
 },
 "0y": {
@@ -23150,11 +23150,11 @@ null
 "7daysAgo": 1.3268,
 "90daysAgo": 1.2927,
 "currency": null,
-"current": 1.3269,
+"current": 1.3295,
 "methodology": null
 }
 },
-"ev": 15474780160.0,
+"ev": 14946929664.0,
 "fcf": 1013712512.0,
 "fcfHist": [
 658000000.0,
@@ -23240,16 +23240,16 @@ null,
 "+1y": {
 "avg": 5051098920.0,
 "currency": null,
-"growth": 0.088,
+"growth": 0.0868,
 "high": 5673000000.0,
 "low": 4060000000.0,
 "numberOfAnalysts": 20.0,
-"yearAgoRevenue": 4642614110.0
+"yearAgoRevenue": 4647491740.0
 },
 "0y": {
-"avg": 4642614110.0,
+"avg": 4647491740.0,
 "currency": null,
-"growth": 0.1454,
+"growth": 0.1466,
 "high": 4789000000.0,
 "low": 4450000000.0,
 "numberOfAnalysts": 19.0,
@@ -23292,22 +23292,22 @@ null
 "earningsDate": "2027-02-18",
 "eps": 1.66,
 "exchange": "PNK",
-"forwardPe": 10.71,
+"forwardPe": 10.92,
 "industry": "Copper",
-"marketCap": 13630451712,
+"marketCap": 13902891008,
 "name": "Lundin Mining Corp.",
 "netMargin": 33.0,
 "opMargin": 42.1,
-"pe": 9.64,
-"ps": 2.85,
+"pe": 9.84,
+"ps": 2.91,
 "rating": "buy",
 "revGrowth": 16.3,
 "sector": "Basic Materials",
-"targetPrice": 32.0,
+"targetPrice": 21.0,
 "type": "EQUITY"
 },
 "LUNR": {
-"_fetched": 1795551109.1670806,
+"_fetched": 1795634131.637873,
 "_gate": {
 "bookValue": 1.324,
 "capexHist": [
@@ -23367,8 +23367,8 @@ null
 "+1y": {
 "30daysAgo": -0.155,
 "60daysAgo": -0.155,
-"7daysAgo": -0.155,
-"90daysAgo": -0.16,
+"7daysAgo": -0.1767,
+"90daysAgo": -0.155,
 "currency": null,
 "current": -0.1767,
 "methodology": null
@@ -23376,14 +23376,14 @@ null
 "0y": {
 "30daysAgo": -0.52,
 "60daysAgo": -0.52,
-"7daysAgo": -0.52,
+"7daysAgo": -0.3367,
 "90daysAgo": -0.52,
 "currency": null,
 "current": -0.3367,
 "methodology": null
 }
 },
-"ev": 2612083456.0,
+"ev": 2466619904.0,
 "fcf": 1074375.0,
 "fcfHist": [
 -56015000.0,
@@ -23467,21 +23467,21 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 1172029400.0,
+"avg": 1168258910.0,
 "currency": null,
-"growth": 0.2536,
+"growth": 0.2496,
 "high": 1204232000.0,
 "low": 1120000000.0,
-"numberOfAnalysts": 8.0,
-"yearAgoRevenue": 934922170.0
+"numberOfAnalysts": 9.0,
+"yearAgoRevenue": 934930480.0
 },
 "0y": {
-"avg": 934922170.0,
+"avg": 934930480.0,
 "currency": null,
 "growth": 3.4508,
 "high": 939600000.0,
 "low": 922246000.0,
-"numberOfAnalysts": 8.0,
+"numberOfAnalysts": 9.0,
 "yearAgoRevenue": 210059000.0
 }
 },
@@ -23514,29 +23514,29 @@ null
 "2021-12-31"
 ]
 },
-"analysts": 10,
+"analysts": 11,
 "beta": 1.91,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2026-11-12",
 "eps": -0.9,
 "exchange": "NGM",
-"forwardPe": -51.59,
+"forwardPe": -52.41,
 "industry": "Aerospace & Defense",
-"marketCap": 1616951808,
+"marketCap": 1642674048,
 "name": "Intuitive Machines, Inc.",
 "netMargin": -18.1,
 "opMargin": -15.9,
 "pe": null,
-"ps": 2.29,
+"ps": 2.32,
 "rating": "strong_buy",
 "revGrowth": 413.7,
 "sector": "Industrials",
-"targetPrice": 25.2,
+"targetPrice": 24.27,
 "type": "EQUITY"
 },
 "LYB": {
-"_fetched": 1795551110.6390126,
+"_fetched": 1795634132.6615505,
 "_gate": {
 "bookValue": 34.811,
 "capexHist": [
@@ -23610,7 +23610,7 @@ null
 "methodology": null
 }
 },
-"ev": 28274294784.0,
+"ev": 28558747648.0,
 "fcf": 1778625024.0,
 "fcfHist": [
 384000000.0,
@@ -23743,14 +23743,14 @@ null
 "earningsDate": "2027-01-29",
 "eps": 4.13,
 "exchange": "NYQ",
-"forwardPe": 8.82,
+"forwardPe": 9.0,
 "industry": "Specialty Chemicals",
-"marketCap": 18067640320,
+"marketCap": 18442600448,
 "name": "LyondellBasell Industries NV",
 "netMargin": 4.1,
 "opMargin": 9.2,
-"pe": 13.53,
-"ps": 0.5652,
+"pe": 13.81,
+"ps": 0.577,
 "rating": "hold",
 "revGrowth": 10.0,
 "sector": "Basic Materials",
@@ -23758,7 +23758,7 @@ null
 "type": "EQUITY"
 },
 "META": {
-"_fetched": 1795550952.9213877,
+"_fetched": 1795634039.5957403,
 "_gate": {
 "bookValue": 106.567,
 "capexHist": [
@@ -23834,7 +23834,7 @@ null
 "methodology": null
 }
 },
-"ev": 1560002822144.0,
+"ev": 1540115267584.0,
 "fcf": 16848499712.0,
 "fcfHist": [
 46109000000.0,
@@ -23972,14 +23972,14 @@ null
 "earningsDate": "2027-01-27",
 "eps": 29.31,
 "exchange": "NMS",
-"forwardPe": 16.51,
+"forwardPe": 16.94,
 "industry": "Internet Content & Information",
-"marketCap": 1505229799424,
+"marketCap": 1544583118848,
 "name": "Meta Platforms, Inc.",
 "netMargin": 31.1,
 "opMargin": 37.8,
-"pe": 20.09,
-"ps": 6.23,
+"pe": 20.62,
+"ps": 6.39,
 "rating": "strong_buy",
 "revGrowth": 26.1,
 "sector": "Communication Services",
@@ -23987,7 +23987,7 @@ null
 "type": "EQUITY"
 },
 "MFC": {
-"_fetched": 1795551112.0631752,
+"_fetched": 1795634133.637197,
 "_gate": {
 "bookValue": 22.2461,
 "capexHist": null,
@@ -24050,7 +24050,7 @@ null
 "methodology": null
 }
 },
-"ev": 67481321472.0,
+"ev": 67993427968.0,
 "fcf": 5045374976.0,
 "fcfHist": [
 32105000000.0,
@@ -24174,22 +24174,22 @@ null,
 "earningsDate": "2027-02-10",
 "eps": 2.51,
 "exchange": "NYQ",
-"forwardPe": 11.75,
+"forwardPe": 11.82,
 "industry": "Insurance - Life",
-"marketCap": 69473173504,
+"marketCap": 69902680064,
 "name": "Manulife Financial Corporation",
 "netMargin": 19.0,
 "opMargin": 29.2,
-"pe": 16.75,
-"ps": 2.05,
+"pe": 16.86,
+"ps": 2.06,
 "rating": "buy",
 "revGrowth": 7.3,
 "sector": "Financial Services",
-"targetPrice": 34.62,
+"targetPrice": 34.79,
 "type": "EQUITY"
 },
 "MNDY": {
-"_fetched": 1795551113.6434093,
+"_fetched": 1795634134.4697802,
 "_gate": {
 "bookValue": 16.168,
 "capexHist": [
@@ -24265,7 +24265,7 @@ null
 "methodology": null
 }
 },
-"ev": 2244724224.0,
+"ev": 2291997952.0,
 "fcf": 237002496.0,
 "fcfHist": [
 309902000.0,
@@ -24403,22 +24403,22 @@ null
 "earningsDate": "2027-02-08",
 "eps": 2.91,
 "exchange": "NMS",
-"forwardPe": 10.09,
+"forwardPe": 10.47,
 "industry": "Software - Application",
-"marketCap": 3190639104,
+"marketCap": 3308583936,
 "name": "monday.com Ltd.",
 "netMargin": 10.0,
 "opMargin": 5.8,
-"pe": 25.94,
-"ps": 2.24,
-"rating": "buy",
+"pe": 26.9,
+"ps": 2.32,
+"rating": "none",
 "revGrowth": 19.2,
 "sector": "Technology",
 "targetPrice": 100.93,
 "type": "EQUITY"
 },
 "MP": {
-"_fetched": 1795551115.1203778,
+"_fetched": 1795634135.345018,
 "_gate": {
 "bookValue": 10.941,
 "capexHist": [
@@ -24454,9 +24454,9 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 0.3171,
+"avg": 0.3165,
 "currency": null,
-"growth": 7.5513,
+"growth": 7.5383,
 "high": 1.34,
 "low": -0.44,
 "methodology": null,
@@ -24481,7 +24481,7 @@ null
 "7daysAgo": 0.4446,
 "90daysAgo": 0.8552,
 "currency": null,
-"current": 0.3171,
+"current": 0.3165,
 "methodology": null
 },
 "0y": {
@@ -24494,7 +24494,7 @@ null
 "methodology": null
 }
 },
-"ev": 6394960896.0,
+"ev": 6460919808.0,
 "fcf": -410353376.0,
 "fcfHist": [
 -328130000.0,
@@ -24504,7 +24504,7 @@ null
 null
 ],
 "fcfTtm": -537267000.0,
-"forwardEps": 0.3171,
+"forwardEps": 0.3165,
 "grossMargin": 0.4653,
 "interest": [
 31481000.0,
@@ -24578,12 +24578,12 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 677526270.0,
+"avg": 684986790.0,
 "currency": null,
-"growth": 0.4481,
+"growth": 0.464,
 "high": 828070000.0,
-"low": 588000000.0,
-"numberOfAnalysts": 13.0,
+"low": 610053780.0,
+"numberOfAnalysts": 12.0,
 "yearAgoRevenue": 467880620.0
 },
 "0y": {
@@ -24632,14 +24632,14 @@ null
 "earningsDate": "2026-11-05",
 "eps": -0.2,
 "exchange": "NYQ",
-"forwardPe": 112.9,
+"forwardPe": 111.18,
 "industry": "Other Industrial Metals & Mining",
-"marketCap": 6382884864,
+"marketCap": 6273249792,
 "name": "MP Materials Corp.",
 "netMargin": -7.6,
 "opMargin": -12.7,
 "pe": null,
-"ps": 12.31,
+"ps": 12.1,
 "rating": "strong_buy",
 "revGrowth": 190.9,
 "sector": "Basic Materials",
@@ -24647,7 +24647,7 @@ null
 "type": "EQUITY"
 },
 "MPC": {
-"_fetched": 1795551116.6725283,
+"_fetched": 1795634136.3956172,
 "_gate": {
 "bookValue": 84.396,
 "capexHist": [
@@ -24723,7 +24723,7 @@ null
 "methodology": null
 }
 },
-"ev": 124880650240.0,
+"ev": 124191776768.0,
 "fcf": 16243250176.0,
 "fcfHist": [
 4767000000.0,
@@ -24854,14 +24854,14 @@ null
 "earningsDate": "2027-02-02",
 "eps": 50.47,
 "exchange": "NYQ",
-"forwardPe": 6.16,
+"forwardPe": 6.04,
 "industry": "Oil & Gas Refining & Marketing",
-"marketCap": 96619364352,
+"marketCap": 94811406336,
 "name": "Marathon Petroleum Corporation",
 "netMargin": 8.3,
 "opMargin": 11.7,
-"pe": 7.03,
-"ps": 0.5509,
+"pe": 6.9,
+"ps": 0.5405,
 "rating": "buy",
 "revGrowth": 60.9,
 "sector": "Energy",
@@ -24869,7 +24869,7 @@ null
 "type": "EQUITY"
 },
 "MRVL": {
-"_fetched": 1795551118.0641015,
+"_fetched": 1795634137.3080993,
 "_gate": {
 "bookValue": 21.135,
 "capexHist": [
@@ -24945,7 +24945,7 @@ null
 "methodology": null
 }
 },
-"ev": 128275808256.0,
+"ev": 116727029760.0,
 "fcf": 2408049920.0,
 "fcfHist": [
 1391900000.0,
@@ -25071,29 +25071,29 @@ null
 "2022-01-31"
 ]
 },
-"analysts": 40,
+"analysts": 39,
 "beta": 2.33,
 "currency": "USD",
 "dividendRate": 0.24,
 "earningsDate": "2026-12-01",
 "eps": 3.04,
 "exchange": "NMS",
-"forwardPe": 17.94,
+"forwardPe": 17.57,
 "industry": "Semiconductors",
-"marketCap": 118982795264,
+"marketCap": 116519682048,
 "name": "Marvell Technology, Inc.",
 "netMargin": 27.9,
 "opMargin": 16.8,
-"pe": 43.5,
-"ps": 12.59,
+"pe": 42.6,
+"ps": 12.33,
 "rating": "strong_buy",
 "revGrowth": 36.5,
 "sector": "Technology",
-"targetPrice": 301.02,
+"targetPrice": 298.99,
 "type": "EQUITY"
 },
 "MSFT": {
-"_fetched": 1795550948.2317436,
+"_fetched": 1795634036.961835,
 "_gate": {
 "bookValue": 63.351,
 "capexHist": [
@@ -25167,7 +25167,7 @@ null
 "methodology": null
 }
 },
-"ev": 3726822866944.0,
+"ev": 3753779920896.0,
 "fcf": 2994125056.0,
 "fcfHist": [
 66987000000.0,
@@ -25177,7 +25177,7 @@ null
 null
 ],
 "fcfTtm": 59957000000.0,
-"forwardEps": 24.2008,
+"forwardEps": 24.2038,
 "grossMargin": 0.6766,
 "interest": [
 3051000000.0,
@@ -25295,14 +25295,14 @@ null
 "earningsDate": "2027-01-27",
 "eps": 19.16,
 "exchange": "NMS",
-"forwardPe": 20.4,
+"forwardPe": 20.31,
 "industry": "Software - Infrastructure",
-"marketCap": 3666460803072,
+"marketCap": 3649727889408,
 "name": "Microsoft Corporation",
 "netMargin": 41.2,
 "opMargin": 47.1,
-"pe": 25.77,
-"ps": 10.58,
+"pe": 25.65,
+"ps": 10.53,
 "rating": "strong_buy",
 "revGrowth": 18.8,
 "sector": "Technology",
@@ -25310,7 +25310,7 @@ null
 "type": "EQUITY"
 },
 "MSTR": {
-"_fetched": 1795551119.5857015,
+"_fetched": 1795634138.2457213,
 "_gate": {
 "bookValue": 131.384,
 "capexHist": [
@@ -25386,7 +25386,7 @@ null
 "methodology": null
 }
 },
-"ev": 49573294080.0,
+"ev": 46680162304.0,
 "fcf": -3240532992.0,
 "fcfHist": [
 -22579536000.0,
@@ -25524,14 +25524,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": -52.33,
 "exchange": "NMS",
-"forwardPe": 4.56,
+"forwardPe": 4.63,
 "industry": "Software - Application",
-"marketCap": 33449576448,
+"marketCap": 33926086656,
 "name": "Strategy Inc",
 "netMargin": 0.0,
 "opMargin": -1100.1,
 "pe": null,
-"ps": 67.56,
+"ps": 68.53,
 "rating": "strong_buy",
 "revGrowth": -2.5,
 "sector": "Technology",
@@ -25539,7 +25539,7 @@ null
 "type": "EQUITY"
 },
 "MU": {
-"_fetched": 1795551121.269543,
+"_fetched": 1795634139.1367705,
 "_gate": {
 "bookValue": 122.35,
 "capexHist": [
@@ -25577,28 +25577,28 @@ null
 "+1y": {
 "avg": 204.9897,
 "currency": null,
-"growth": 0.1635,
+"growth": 0.1708,
 "high": 335.5,
 "low": 128.49,
 "methodology": null,
 "numberOfAnalysts": 36.0,
-"yearAgoEps": 176.1836
+"yearAgoEps": 175.0832
 },
 "0y": {
-"avg": 176.1836,
+"avg": 175.0832,
 "currency": null,
-"growth": 1.3329,
-"high": 214.7,
+"growth": 1.3184,
+"high": 208.07,
 "low": 155.51,
 "methodology": null,
-"numberOfAnalysts": 36.0,
+"numberOfAnalysts": 35.0,
 "yearAgoEps": 75.52
 }
 },
 "epsTrend": {
 "+1y": {
 "30daysAgo": 206.8938,
-"60daysAgo": 179.3059,
+"60daysAgo": 179.5134,
 "7daysAgo": 207.7605,
 "90daysAgo": 171.0249,
 "currency": null,
@@ -25606,16 +25606,16 @@ null
 "methodology": null
 },
 "0y": {
-"30daysAgo": 176.584,
-"60daysAgo": 160.1381,
-"7daysAgo": 176.5017,
+"30daysAgo": 175.463,
+"60daysAgo": 160.0418,
+"7daysAgo": 175.4103,
 "90daysAgo": 156.2494,
 "currency": null,
-"current": 176.1836,
+"current": 175.0832,
 "methodology": null
 }
 },
-"ev": 762453229568.0,
+"ev": 674304032768.0,
 "fcf": 29140250624.0,
 "fcfHist": [
 58963000000.0,
@@ -25748,14 +25748,14 @@ null
 "earningsDate": "2026-12-17",
 "eps": 74.33,
 "exchange": "NMS",
-"forwardPe": 3.06,
+"forwardPe": 2.9,
 "industry": "Semiconductors",
-"marketCap": 709832474624,
+"marketCap": 672348241920,
 "name": "Micron Technology, Inc.",
 "netMargin": 63.8,
 "opMargin": 74.6,
-"pe": 8.44,
-"ps": 5.33,
+"pe": 7.99,
+"ps": 5.05,
 "rating": "strong_buy",
 "revGrowth": 379.3,
 "sector": "Technology",
@@ -25763,7 +25763,7 @@ null
 "type": "EQUITY"
 },
 "MXL": {
-"_fetched": 1795551122.8011835,
+"_fetched": 1795634139.9964328,
 "_gate": {
 "bookValue": 5.857,
 "capexHist": [
@@ -25839,7 +25839,7 @@ null
 "methodology": null
 }
 },
-"ev": 4683130368.0,
+"ev": 3916910336.0,
 "fcf": -39575752.0,
 "fcfHist": [
 -176000.0,
@@ -25977,14 +25977,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": -0.33,
 "exchange": "NMS",
-"forwardPe": 9.84,
+"forwardPe": 9.67,
 "industry": "Semiconductors",
-"marketCap": 3849755392,
+"marketCap": 3782870272,
 "name": "MaxLinear, Inc",
 "netMargin": -4.4,
 "opMargin": -0.8,
 "pe": null,
-"ps": 5.83,
+"ps": 5.73,
 "rating": "none",
 "revGrowth": 72.4,
 "sector": "Technology",
@@ -25992,7 +25992,7 @@ null
 "type": "EQUITY"
 },
 "MYRG": {
-"_fetched": 1795551210.10438,
+"_fetched": 1795634194.3766272,
 "_gate": {
 "bookValue": 52.6,
 "capexHist": [
@@ -26068,7 +26068,7 @@ null
 "methodology": null
 }
 },
-"ev": 4501666816.0,
+"ev": 4289136384.0,
 "fcf": 48959124.0,
 "fcfHist": [
 232195000.0,
@@ -26201,14 +26201,14 @@ null
 "earningsDate": "2026-10-28",
 "eps": 12.3,
 "exchange": "NMS",
-"forwardPe": 16.42,
+"forwardPe": 16.54,
 "industry": "Engineering & Construction",
-"marketCap": 4037380864,
+"marketCap": 4066574592,
 "name": "MYR Group, Inc.",
 "netMargin": 4.5,
 "opMargin": 6.1,
-"pe": 21.08,
-"ps": 0.9357,
+"pe": 21.23,
+"ps": 0.9425,
 "rating": "strong_buy",
 "revGrowth": 32.5,
 "sector": "Industrials",
@@ -26216,7 +26216,7 @@ null
 "type": "EQUITY"
 },
 "NBIS": {
-"_fetched": 1795551124.358296,
+"_fetched": 1795634140.9638815,
 "_gate": {
 "bookValue": 41.966,
 "capexHist": [
@@ -26292,7 +26292,7 @@ null
 "methodology": null
 }
 },
-"ev": 37317853184.0,
+"ev": 34245308416.0,
 "fcf": -20390912000.0,
 "fcfHist": [
 -3681200000.0,
@@ -26425,14 +26425,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": -0.26,
 "exchange": "NMS",
-"forwardPe": -28.55,
+"forwardPe": -28.36,
 "industry": "Internet Content & Information",
-"marketCap": 25453219840,
+"marketCap": 25283334144,
 "name": "Nebius Group N.V.",
 "netMargin": 5.7,
 "opMargin": -18.7,
 "pe": null,
-"ps": 11.62,
+"ps": 11.55,
 "rating": "buy",
 "revGrowth": 571.3,
 "sector": "Communication Services",
@@ -26440,7 +26440,7 @@ null
 "type": "EQUITY"
 },
 "NBIX": {
-"_fetched": 1795551125.9656708,
+"_fetched": 1795634141.9708018,
 "_gate": {
 "bookValue": 38.289,
 "capexHist": [
@@ -26506,16 +26506,16 @@ null
 "methodology": null
 },
 "0y": {
-"30daysAgo": 10.2144,
+"30daysAgo": 10.2676,
 "60daysAgo": 10.1968,
-"7daysAgo": 10.24,
-"90daysAgo": 10.1699,
+"7daysAgo": 10.5897,
+"90daysAgo": 10.1887,
 "currency": null,
 "current": 10.5897,
 "methodology": null
 }
 },
-"ev": 15714542592.0,
+"ev": 16260111360.0,
 "fcf": 1018237504.0,
 "fcfHist": [
 748700000.0,
@@ -26653,14 +26653,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 6.74,
 "exchange": "NMS",
-"forwardPe": 13.24,
+"forwardPe": 13.37,
 "industry": "Drug Manufacturers - Specialty & Generic",
-"marketCap": 16483456000,
+"marketCap": 16645911552,
 "name": "Neurocrine Biosciences, Inc.",
 "netMargin": 19.0,
 "opMargin": 26.6,
-"pe": 24.16,
-"ps": 4.45,
+"pe": 24.4,
+"ps": 4.5,
 "rating": "strong_buy",
 "revGrowth": 41.2,
 "sector": "Healthcare",
@@ -26668,7 +26668,7 @@ null
 "type": "EQUITY"
 },
 "NEM": {
-"_fetched": 1795551127.5085049,
+"_fetched": 1795634142.9060612,
 "_gate": {
 "bookValue": 34.204,
 "capexHist": [
@@ -26744,7 +26744,7 @@ null
 "methodology": null
 }
 },
-"ev": 101609930752.0,
+"ev": 100529168384.0,
 "fcf": 9154124800.0,
 "fcfHist": [
 7299000000.0,
@@ -26881,14 +26881,14 @@ null
 "earningsDate": "2027-02-18",
 "eps": 8.62,
 "exchange": "NYQ",
-"forwardPe": 10.07,
+"forwardPe": 10.24,
 "industry": "Gold",
-"marketCap": 104012849152,
+"marketCap": 105743106048,
 "name": "Newmont Corporation",
 "netMargin": 34.7,
 "opMargin": 55.6,
-"pe": 11.61,
-"ps": 3.91,
+"pe": 11.8,
+"ps": 3.97,
 "rating": "buy",
 "revGrowth": 15.2,
 "sector": "Basic Materials",
@@ -26896,7 +26896,7 @@ null
 "type": "EQUITY"
 },
 "NEXA": {
-"_fetched": 1795551129.1826591,
+"_fetched": 1795634143.8166935,
 "_gate": {
 "bookValue": 8.613,
 "capexHist": [
@@ -26972,7 +26972,7 @@ null
 "methodology": null
 }
 },
-"ev": 3166960640.0,
+"ev": 3113985024.0,
 "fcf": 351015360.0,
 "fcfHist": [
 11094000.0,
@@ -27103,14 +27103,14 @@ null
 "earningsDate": "2026-10-29",
 "eps": 1.1,
 "exchange": "NYQ",
-"forwardPe": 2.94,
+"forwardPe": 3.07,
 "industry": "Other Industrial Metals & Mining",
-"marketCap": 1321737216,
+"marketCap": 1382659072,
 "name": "Nexa Resources S.A.",
 "netMargin": 4.0,
 "opMargin": 20.7,
-"pe": 9.07,
-"ps": 0.3635,
+"pe": 9.49,
+"ps": 0.3802,
 "rating": "hold",
 "revGrowth": 22.7,
 "sector": "Basic Materials",
@@ -27118,7 +27118,7 @@ null
 "type": "EQUITY"
 },
 "NFLX": {
-"_fetched": 1795550957.3092675,
+"_fetched": 1795634042.2304928,
 "_gate": {
 "bookValue": 7.132,
 "capexHist": [
@@ -27194,7 +27194,7 @@ null
 "methodology": null
 }
 },
-"ev": 247884365824.0,
+"ev": 251046248448.0,
 "fcf": 25475807232.0,
 "fcfHist": [
 9461053000.0,
@@ -27327,14 +27327,14 @@ null
 "earningsDate": "2027-01-19",
 "eps": 3.46,
 "exchange": "NMS",
-"forwardPe": 15.64,
+"forwardPe": 15.68,
 "industry": "Entertainment",
-"marketCap": 242047385600,
+"marketCap": 242683854848,
 "name": "Netflix, Inc.",
 "netMargin": 29.7,
 "opMargin": 31.3,
-"pe": 17.04,
-"ps": 4.87,
+"pe": 17.08,
+"ps": 4.88,
 "rating": "buy",
 "revGrowth": 11.8,
 "sector": "Communication Services",
@@ -27342,7 +27342,7 @@ null
 "type": "EQUITY"
 },
 "NNN": {
-"_fetched": 1795551130.610738,
+"_fetched": 1795634144.640299,
 "_gate": {
 "bookValue": 23.467,
 "capexHist": null,
@@ -27411,7 +27411,7 @@ null
 "methodology": null
 }
 },
-"ev": 12931488768.0,
+"ev": 13113801728.0,
 "fcf": -1345597568.0,
 "fcfHist": [
 667131000.0,
@@ -27548,14 +27548,14 @@ null,
 "earningsDate": "2027-02-11",
 "eps": 2.09,
 "exchange": "NYQ",
-"forwardPe": 19.77,
+"forwardPe": 20.01,
 "industry": "REIT - Retail",
-"marketCap": 8101288960,
+"marketCap": 8202142720,
 "name": "NNN REIT, Inc.",
 "netMargin": 40.9,
 "opMargin": 61.5,
-"pe": 19.99,
-"ps": 8.33,
+"pe": 20.23,
+"ps": 8.43,
 "rating": "hold",
 "revGrowth": 8.5,
 "sector": "Real Estate",
@@ -27563,7 +27563,7 @@ null,
 "type": "EQUITY"
 },
 "NOW": {
-"_fetched": 1795551132.2438688,
+"_fetched": 1795634145.5748515,
 "_gate": {
 "bookValue": 12.618,
 "capexHist": [
@@ -27639,7 +27639,7 @@ null
 "methodology": null
 }
 },
-"ev": 99005751296.0,
+"ev": 99026501632.0,
 "fcf": 5754250240.0,
 "fcfHist": [
 4533000000.0,
@@ -27649,7 +27649,7 @@ null
 null
 ],
 "fcfTtm": 4750000000.0,
-"forwardEps": 4.8023,
+"forwardEps": 4.8052,
 "grossMargin": 0.7308,
 "interest": [
 23000000.0,
@@ -27772,14 +27772,14 @@ null
 "earningsDate": "2027-01-27",
 "eps": 1.39,
 "exchange": "NYQ",
-"forwardPe": 19.0,
+"forwardPe": 19.27,
 "industry": "Software - Application",
-"marketCap": 94709923840,
+"marketCap": 96090357760,
 "name": "ServiceNow, Inc.",
 "netMargin": 9.4,
 "opMargin": 12.8,
-"pe": 65.65,
-"ps": 6.14,
+"pe": 66.6,
+"ps": 6.23,
 "rating": "strong_buy",
 "revGrowth": 20.5,
 "sector": "Technology",
@@ -27787,7 +27787,7 @@ null
 "type": "EQUITY"
 },
 "NRG": {
-"_fetched": 1795551133.8108068,
+"_fetched": 1795634146.4104412,
 "_gate": {
 "bookValue": 22.011,
 "capexHist": [
@@ -27823,13 +27823,13 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 9.6436,
+"avg": 9.8032,
 "currency": null,
-"growth": 0.094,
+"growth": 0.112,
 "high": 11.16,
 "low": 8.66,
 "methodology": null,
-"numberOfAnalysts": 8.0,
+"numberOfAnalysts": 6.0,
 "yearAgoEps": 8.8154
 },
 "0y": {
@@ -27847,10 +27847,10 @@ null
 "+1y": {
 "30daysAgo": 10.8145,
 "60daysAgo": 11.1892,
-"7daysAgo": 9.5799,
+"7daysAgo": 9.7182,
 "90daysAgo": 11.1965,
 "currency": null,
-"current": 9.6436,
+"current": 9.8032,
 "methodology": null
 },
 "0y": {
@@ -27863,7 +27863,7 @@ null
 "methodology": null
 }
 },
-"ev": 44149280768.0,
+"ev": 42716934144.0,
 "fcf": 1384625024.0,
 "fcfHist": [
 765000000.0,
@@ -27873,7 +27873,7 @@ null
 null
 ],
 "fcfTtm": 635000000.0,
-"forwardEps": 9.5799,
+"forwardEps": 9.6436,
 "grossMargin": 0.202,
 "interest": [
 741000000.0,
@@ -27947,12 +27947,12 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 35417494670.0,
+"avg": 35220740000.0,
 "currency": null,
-"growth": -0.0003,
+"growth": -0.0058,
 "high": 38693000000.0,
 "low": 32603000000.0,
-"numberOfAnalysts": 9.0,
+"numberOfAnalysts": 7.0,
 "yearAgoRevenue": 35427542970.0
 },
 "0y": {
@@ -28001,14 +28001,14 @@ null
 "earningsDate": "2026-11-09",
 "eps": 5.72,
 "exchange": "NYQ",
-"forwardPe": 9.55,
+"forwardPe": 9.49,
 "industry": "Utilities - Independent Power Producers",
-"marketCap": 19219048448,
+"marketCap": 19215896576,
 "name": "NRG Energy, Inc.",
 "netMargin": 3.6,
 "opMargin": 7.9,
 "pe": 16.0,
-"ps": 0.5498,
+"ps": 0.5497,
 "rating": "strong_buy",
 "revGrowth": 24.0,
 "sector": "Utilities",
@@ -28016,7 +28016,7 @@ null
 "type": "EQUITY"
 },
 "NVDA": {
-"_fetched": 1795550949.73262,
+"_fetched": 1795634037.7548554,
 "_gate": {
 "bookValue": 11.062,
 "capexHist": [
@@ -28054,17 +28054,17 @@ null
 "+1y": {
 "avg": 16.6053,
 "currency": null,
-"growth": 0.7173,
+"growth": 0.7168,
 "high": 18.785,
 "low": 12.27,
 "methodology": null,
 "numberOfAnalysts": 55.0,
-"yearAgoEps": 9.6692
+"yearAgoEps": 9.6725
 },
 "0y": {
-"avg": 9.6692,
+"avg": 9.6725,
 "currency": null,
-"growth": 1.0271,
+"growth": 1.0278,
 "high": 10.52,
 "low": 9.39,
 "methodology": null,
@@ -28085,14 +28085,14 @@ null
 "0y": {
 "30daysAgo": 9.3124,
 "60daysAgo": 9.3071,
-"7daysAgo": 9.3484,
-"90daysAgo": 9.0516,
+"7daysAgo": 9.6819,
+"90daysAgo": 9.299,
 "currency": null,
-"current": 9.6692,
+"current": 9.6725,
 "methodology": null
 }
 },
-"ev": 3919112306688.0,
+"ev": 3686007308288.0,
 "fcf": 99241377792.0,
 "fcfHist": [
 96676000000.0,
@@ -28176,18 +28176,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 726015650900.0,
+"avg": 726229969860.0,
 "currency": null,
-"growth": 0.7137,
+"growth": 0.7136,
 "high": 778471000000.0,
 "low": 546002000000.0,
 "numberOfAnalysts": 58.0,
-"yearAgoRevenue": 423664744700.0
+"yearAgoRevenue": 423798321620.0
 },
 "0y": {
-"avg": 423664744700.0,
+"avg": 423798321620.0,
 "currency": null,
-"growth": 0.962,
+"growth": 0.9626,
 "high": 431684000000.0,
 "low": 412449860000.0,
 "numberOfAnalysts": 52.0,
@@ -28223,29 +28223,29 @@ null
 "2022-01-31"
 ]
 },
-"analysts": 58,
+"analysts": 59,
 "beta": 2.25,
 "currency": "USD",
 "dividendRate": 1.0,
 "earningsDate": "2026-11-17",
 "eps": 9.31,
 "exchange": "NMS",
-"forwardPe": 9.16,
+"forwardPe": 8.88,
 "industry": "Semiconductors",
-"marketCap": 3673623101440,
+"marketCap": 3562285826048,
 "name": "NVIDIA Corporation",
 "netMargin": 62.5,
 "opMargin": 66.1,
-"pe": 16.34,
-"ps": 10.15,
+"pe": 15.85,
+"ps": 9.85,
 "rating": "buy",
 "revGrowth": 103.2,
 "sector": "Technology",
-"targetPrice": 244.71,
+"targetPrice": 242.43,
 "type": "EQUITY"
 },
 "NVT": {
-"_fetched": 1795551135.3902504,
+"_fetched": 1795634147.2372913,
 "_gate": {
 "bookValue": 25.449,
 "capexHist": [
@@ -28321,7 +28321,7 @@ null
 "methodology": null
 }
 },
-"ev": 19310155776.0,
+"ev": 18124025856.0,
 "fcf": 503687488.0,
 "fcfHist": [
 371900000.0,
@@ -28454,14 +28454,14 @@ null
 "earningsDate": "2027-02-05",
 "eps": 4.12,
 "exchange": "NYQ",
-"forwardPe": 14.85,
+"forwardPe": 14.8,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 16875685888,
+"marketCap": 16822358016,
 "name": "nVent Electric plc",
 "netMargin": 12.8,
 "opMargin": 17.7,
-"pe": 25.35,
-"ps": 3.19,
+"pe": 25.27,
+"ps": 3.18,
 "rating": "strong_buy",
 "revGrowth": 43.7,
 "sector": "Industrials",
@@ -28469,7 +28469,7 @@ null
 "type": "EQUITY"
 },
 "OKTA": {
-"_fetched": 1795551136.9930303,
+"_fetched": 1795634148.1600606,
 "_gate": {
 "bookValue": 39.887,
 "capexHist": [
@@ -28530,7 +28530,7 @@ null
 "30daysAgo": 4.3783,
 "60daysAgo": 4.3785,
 "7daysAgo": 4.3783,
-"90daysAgo": 4.2857,
+"90daysAgo": 4.358,
 "currency": null,
 "current": 4.3813,
 "methodology": null
@@ -28539,13 +28539,13 @@ null
 "30daysAgo": 3.9292,
 "60daysAgo": 3.929,
 "7daysAgo": 3.9292,
-"90daysAgo": 3.8441,
+"90daysAgo": 3.9216,
 "currency": null,
 "current": 3.9295,
 "methodology": null
 }
 },
-"ev": 33816061952.0,
+"ev": 32389521408.0,
 "fcf": 1037625024.0,
 "fcfHist": [
 863000000.0,
@@ -28683,22 +28683,22 @@ null
 "earningsDate": "2026-12-01",
 "eps": 1.66,
 "exchange": "NMS",
-"forwardPe": 45.37,
+"forwardPe": 45.55,
 "industry": "Software - Infrastructure",
-"marketCap": 34724683776,
+"marketCap": 34867163136,
 "name": "Okta, Inc.",
 "netMargin": 9.6,
 "opMargin": 7.7,
-"pe": 119.66,
-"ps": 11.3,
+"pe": 120.15,
+"ps": 11.35,
 "rating": "buy",
 "revGrowth": 10.6,
 "sector": "Technology",
-"targetPrice": 217.16,
+"targetPrice": 217.73,
 "type": "EQUITY"
 },
 "ONDS": {
-"_fetched": 1795551138.6477816,
+"_fetched": 1795634149.0758111,
 "_gate": {
 "bookValue": 4.011,
 "capexHist": [
@@ -28774,7 +28774,7 @@ null
 "methodology": null
 }
 },
-"ev": 1660889088.0,
+"ev": 1578087168.0,
 "fcf": -150322320.0,
 "fcfHist": [
 -40885000.0,
@@ -28858,21 +28858,21 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 1095642030.0,
+"avg": 1098348470.0,
 "currency": null,
-"growth": 0.9707,
+"growth": 0.9763,
 "high": 1140356000.0,
 "low": 1030000000.0,
-"numberOfAnalysts": 8.0,
-"yearAgoRevenue": 555965830.0
+"numberOfAnalysts": 9.0,
+"yearAgoRevenue": 555758650.0
 },
 "0y": {
-"avg": 555965830.0,
+"avg": 555758650.0,
 "currency": null,
-"growth": 9.9591,
+"growth": 9.955,
 "high": 561383000.0,
 "low": 552616500.0,
-"numberOfAnalysts": 9.0,
+"numberOfAnalysts": 10.0,
 "yearAgoRevenue": 50731000.0
 }
 },
@@ -28912,14 +28912,14 @@ null
 "earningsDate": "2026-11-12",
 "eps": -0.14,
 "exchange": "NCM",
-"forwardPe": -25.19,
+"forwardPe": -26.35,
 "industry": "Communication Equipment",
-"marketCap": 2309894912,
+"marketCap": 2416368896,
 "name": "Ondas Inc",
 "netMargin": 33.9,
 "opMargin": -107.2,
 "pe": null,
-"ps": 6.97,
+"ps": 7.29,
 "rating": "strong_buy",
 "revGrowth": 1558.6,
 "sector": "Technology",
@@ -28927,7 +28927,7 @@ null
 "type": "EQUITY"
 },
 "ORCL": {
-"_fetched": 1795550962.2545822,
+"_fetched": 1795634044.9184158,
 "_gate": {
 "bookValue": 20.444,
 "capexHist": [
@@ -29003,7 +29003,7 @@ null
 "methodology": null
 }
 },
-"ev": 481182318592.0,
+"ev": 468543078400.0,
 "fcf": -45853626368.0,
 "fcfHist": [
 -23686000000.0,
@@ -29136,14 +29136,14 @@ null
 "earningsDate": "2026-12-14",
 "eps": 6.38,
 "exchange": "NYQ",
-"forwardPe": 9.84,
+"forwardPe": 9.49,
 "industry": "Software - Infrastructure",
-"marketCap": 339253395456,
+"marketCap": 327125532672,
 "name": "Oracle Corporation",
 "netMargin": 26.4,
 "opMargin": 34.3,
-"pe": 17.06,
-"ps": 4.73,
+"pe": 16.45,
+"ps": 4.56,
 "rating": "strong_buy",
 "revGrowth": 29.6,
 "sector": "Technology",
@@ -29151,7 +29151,7 @@ null
 "type": "EQUITY"
 },
 "OSCR": {
-"_fetched": 1795551140.282859,
+"_fetched": 1795634150.1111078,
 "_gate": {
 "bookValue": 7.163,
 "capexHist": [
@@ -29221,7 +29221,7 @@ null
 "methodology": null
 }
 },
-"ev": 1000769088.0,
+"ev": 1084569216.0,
 "fcf": 1733762688.0,
 "fcfHist": [
 1058482000.0,
@@ -29346,14 +29346,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 2.25,
 "exchange": "NYQ",
-"forwardPe": 10.35,
+"forwardPe": 10.6,
 "industry": "Healthcare Plans",
-"marketCap": 8205217792,
+"marketCap": 8400950272,
 "name": "Oscar Health, Inc.",
 "netMargin": 4.9,
 "opMargin": 5.4,
-"pe": 11.74,
-"ps": 0.4696,
+"pe": 12.02,
+"ps": 0.4808,
 "rating": "hold",
 "revGrowth": 72.1,
 "sector": "Healthcare",
@@ -29361,7 +29361,7 @@ null
 "type": "EQUITY"
 },
 "PARR": {
-"_fetched": 1795551141.9688034,
+"_fetched": 1795634151.083297,
 "_gate": {
 "bookValue": 47.325,
 "capexHist": [
@@ -29397,23 +29397,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 16.5739,
+"avg": 15.9482,
 "currency": null,
-"growth": -0.4014,
+"growth": -0.4074,
 "high": 26.1171,
 "low": 11.11,
 "methodology": null,
 "numberOfAnalysts": 7.0,
-"yearAgoEps": 27.6859
+"yearAgoEps": 26.9122
 },
 "0y": {
-"avg": 27.6859,
+"avg": 26.9122,
 "currency": null,
-"growth": 2.6622,
+"growth": 2.5598,
 "high": 30.6355,
-"low": 24.25,
+"low": 23.18,
 "methodology": null,
-"numberOfAnalysts": 6.0,
+"numberOfAnalysts": 7.0,
 "yearAgoEps": 7.56
 }
 },
@@ -29424,7 +29424,7 @@ null
 "7daysAgo": 16.5739,
 "90daysAgo": 11.8172,
 "currency": null,
-"current": 16.5739,
+"current": 15.9482,
 "methodology": null
 },
 "0y": {
@@ -29433,11 +29433,11 @@ null
 "7daysAgo": 27.6859,
 "90daysAgo": 19.2834,
 "currency": null,
-"current": 27.6859,
+"current": 26.9122,
 "methodology": null
 }
 },
-"ev": 3351967232.0,
+"ev": 3329432576.0,
 "fcf": 771166976.0,
 "fcfHist": [
 296464000.0,
@@ -29447,7 +29447,7 @@ null
 null
 ],
 "fcfTtm": 1026816000.0,
-"forwardEps": 16.5739,
+"forwardEps": 15.9482,
 "grossMargin": 0.2219,
 "interest": [
 82383000.0,
@@ -29577,20 +29577,20 @@ null
 "exchange": "NYQ",
 "forwardPe": 3.8,
 "industry": "Oil & Gas Refining & Marketing",
-"marketCap": 3156851712,
+"marketCap": 3033161472,
 "name": "Par Pacific Holdings, Inc. Comm",
 "netMargin": 9.8,
 "opMargin": 13.1,
-"pe": 3.3,
-"ps": 0.3269,
+"pe": 3.17,
+"ps": 0.314,
 "rating": "buy",
 "revGrowth": 51.6,
 "sector": "Energy",
-"targetPrice": 94.38,
+"targetPrice": 92.62,
 "type": "EQUITY"
 },
 "PBF": {
-"_fetched": 1795551143.3402586,
+"_fetched": 1795634152.041805,
 "_gate": {
 "bookValue": 65.576,
 "capexHist": [
@@ -29666,7 +29666,7 @@ null
 "methodology": null
 }
 },
-"ev": 7522426368.0,
+"ev": 7328306176.0,
 "fcf": 1743037440.0,
 "fcfHist": [
 -783200000.0,
@@ -29804,14 +29804,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 22.51,
 "exchange": "NYQ",
-"forwardPe": 3.19,
+"forwardPe": 3.16,
 "industry": "Oil & Gas Refining & Marketing",
-"marketCap": 6999246848,
+"marketCap": 6945257472,
 "name": "PBF Energy Inc.",
 "netMargin": 7.0,
 "opMargin": 7.1,
-"pe": 2.56,
-"ps": 0.1801,
+"pe": 2.54,
+"ps": 0.1787,
 "rating": "hold",
 "revGrowth": 58.6,
 "sector": "Energy",
@@ -29819,7 +29819,7 @@ null
 "type": "EQUITY"
 },
 "PGY": {
-"_fetched": 1795551144.849323,
+"_fetched": 1795634153.4082146,
 "_gate": {
 "bookValue": 7.416,
 "capexHist": [
@@ -29895,7 +29895,7 @@ null
 "methodology": null
 }
 },
-"ev": 946071424.0,
+"ev": 897335360.0,
 "fcf": 218913872.0,
 "fcfHist": [
 224718000.0,
@@ -30027,14 +30027,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 1.68,
 "exchange": "NCM",
-"forwardPe": 3.32,
+"forwardPe": 3.39,
 "industry": "Software - Infrastructure",
-"marketCap": 1172186112,
+"marketCap": 1198234752,
 "name": "Pagaya Technologies Ltd.",
 "netMargin": 10.8,
 "opMargin": 26.4,
-"pe": 8.3,
-"ps": 0.8195,
+"pe": 8.49,
+"ps": 0.8378,
 "rating": "strong_buy",
 "revGrowth": 11.5,
 "sector": "Technology",
@@ -30042,7 +30042,7 @@ null
 "type": "EQUITY"
 },
 "PL": {
-"_fetched": 1795551146.4070542,
+"_fetched": 1795634154.4489248,
 "_gate": {
 "bookValue": 1.552,
 "capexHist": [
@@ -30118,7 +30118,7 @@ null
 "methodology": null
 }
 },
-"ev": 3711940864.0,
+"ev": 3504547584.0,
 "fcf": 51749876.0,
 "fcfHist": [
 51414000.0,
@@ -30256,14 +30256,14 @@ null
 "earningsDate": "2026-12-10",
 "eps": -1.1,
 "exchange": "NYQ",
-"forwardPe": -8636.0,
+"forwardPe": -8660.0,
 "industry": "Aerospace & Defense",
-"marketCap": 3927739136,
+"marketCap": 3938654464,
 "name": "Planet Labs PBC",
 "netMargin": -95.1,
 "opMargin": -22.7,
 "pe": null,
-"ps": 10.38,
+"ps": 10.41,
 "rating": "buy",
 "revGrowth": 58.1,
 "sector": "Industrials",
@@ -30271,7 +30271,7 @@ null
 "type": "EQUITY"
 },
 "PLD": {
-"_fetched": 1795551148.0063517,
+"_fetched": 1795634155.3820188,
 "_gate": {
 "bookValue": 58.76,
 "capexHist": null,
@@ -30340,7 +30340,7 @@ null
 "methodology": null
 }
 },
-"ev": 158644338688.0,
+"ev": 160716455936.0,
 "fcf": 5681334784.0,
 "fcfHist": [
 5008434000.0,
@@ -30478,14 +30478,14 @@ null
 "earningsDate": "2027-01-20",
 "eps": 4.54,
 "exchange": "NYQ",
-"forwardPe": 35.19,
+"forwardPe": 35.47,
 "industry": "REIT - Industrial",
-"marketCap": 123245068288,
+"marketCap": 124236783616,
 "name": "Prologis, Inc.",
 "netMargin": 43.1,
 "opMargin": 41.5,
-"pe": 27.92,
-"ps": 12.46,
+"pe": 28.15,
+"ps": 12.55,
 "rating": "buy",
 "revGrowth": 10.2,
 "sector": "Real Estate",
@@ -30493,7 +30493,7 @@ null
 "type": "EQUITY"
 },
 "PLPC": {
-"_fetched": 1795551149.434505,
+"_fetched": 1795634156.5121229,
 "_gate": {
 "bookValue": 105.026,
 "capexHist": [
@@ -30569,7 +30569,7 @@ null
 "methodology": null
 }
 },
-"ev": 1314158080.0,
+"ev": 1232796928.0,
 "fcf": 22348500.0,
 "fcfHist": [
 33335000.0,
@@ -30704,11 +30704,11 @@ null
 "exchange": "NMS",
 "forwardPe": null,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 1275183488,
+"marketCap": 1271859200,
 "name": "Preformed Line Products Company",
 "netMargin": 7.6,
 "opMargin": 10.2,
-"pe": 21.96,
+"pe": 21.9,
 "ps": 1.65,
 "rating": "none",
 "revGrowth": 17.6,
@@ -30717,7 +30717,7 @@ null
 "type": "EQUITY"
 },
 "PLTR": {
-"_fetched": 1795550963.7238698,
+"_fetched": 1795634045.82008,
 "_gate": {
 "bookValue": 4.661,
 "capexHist": [
@@ -30793,7 +30793,7 @@ null
 "methodology": null
 }
 },
-"ev": 373758361600.0,
+"ev": 378143670272.0,
 "fcf": 2652487680.0,
 "fcfHist": [
 2100591000.0,
@@ -30926,14 +30926,14 @@ null
 "earningsDate": "2027-02-01",
 "eps": 1.42,
 "exchange": "NMS",
-"forwardPe": 63.12,
+"forwardPe": 64.6,
 "industry": "Software - Infrastructure",
-"marketCap": 386121990144,
+"marketCap": 395181686784,
 "name": "Palantir Technologies Inc.",
 "netMargin": 50.3,
 "opMargin": 45.6,
-"pe": 112.85,
-"ps": 52.98,
+"pe": 115.5,
+"ps": 54.22,
 "rating": "buy",
 "revGrowth": 95.9,
 "sector": "Technology",
@@ -30941,7 +30941,7 @@ null
 "type": "EQUITY"
 },
 "POWL": {
-"_fetched": 1795551150.7941144,
+"_fetched": 1795634157.4451573,
 "_gate": {
 "bookValue": 22.972,
 "capexHist": [
@@ -31017,7 +31017,7 @@ null
 "methodology": null
 }
 },
-"ev": 5047284736.0,
+"ev": 4751970816.0,
 "fcf": 344341504.0,
 "fcfHist": [
 415229000.0,
@@ -31149,13 +31149,13 @@ null
 "earningsDate": "2027-02-02",
 "eps": 6.04,
 "exchange": "NMS",
-"forwardPe": 15.87,
+"forwardPe": 15.88,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 5613693440,
+"marketCap": 5618979328,
 "name": "Powell Industries, Inc.",
 "netMargin": 17.6,
 "opMargin": 21.1,
-"pe": 25.49,
+"pe": 25.52,
 "ps": 4.47,
 "rating": "buy",
 "revGrowth": 33.1,
@@ -31164,7 +31164,7 @@ null
 "type": "EQUITY"
 },
 "QQQM": {
-"_fetched": 1795550940.2091699,
+"_fetched": 1795634031.9430614,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -31179,7 +31179,7 @@ null
 "name": "Invesco NASDAQ 100 ETF",
 "netMargin": null,
 "opMargin": null,
-"pe": 26.16,
+"pe": 26.05,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -31188,7 +31188,7 @@ null
 "type": "ETF"
 },
 "RCL": {
-"_fetched": 1795551152.2848966,
+"_fetched": 1795634158.3142147,
 "_gate": {
 "bookValue": 43.792,
 "capexHist": [
@@ -31264,7 +31264,7 @@ null
 "methodology": null
 }
 },
-"ev": 104670019584.0,
+"ev": 107646967808.0,
 "fcf": -50000000.0,
 "fcfHist": [
 1236000000.0,
@@ -31402,22 +31402,22 @@ null
 "earningsDate": "2027-01-26",
 "eps": 16.9,
 "exchange": "NYQ",
-"forwardPe": 15.39,
+"forwardPe": 15.47,
 "industry": "Travel Services",
-"marketCap": 84420509696,
+"marketCap": 84876541952,
 "name": "Royal Caribbean Cruises Ltd.",
 "netMargin": 23.8,
 "opMargin": 27.6,
-"pe": 18.68,
-"ps": 4.41,
-"rating": "buy",
+"pe": 18.78,
+"ps": 4.44,
+"rating": "strong_buy",
 "revGrowth": 8.8,
 "sector": "Consumer Cyclical",
 "targetPrice": 357.7,
 "type": "EQUITY"
 },
 "RDDT": {
-"_fetched": 1795551153.6970022,
+"_fetched": 1795634159.2500212,
 "_gate": {
 "bookValue": 18.547,
 "capexHist": [
@@ -31491,7 +31491,7 @@ null
 "methodology": null
 }
 },
-"ev": 14136976384.0,
+"ev": 14442064896.0,
 "fcf": 811615232.0,
 "fcfHist": [
 684169000.0,
@@ -31614,14 +31614,14 @@ null
 "earningsDate": "2027-02-04",
 "eps": 4.9,
 "exchange": "NYQ",
-"forwardPe": 9.91,
+"forwardPe": 10.11,
 "industry": "Internet Content & Information",
-"marketCap": 17412708352,
+"marketCap": 17765586944,
 "name": "Reddit, Inc.",
 "netMargin": 32.1,
 "opMargin": 29.4,
-"pe": 18.4,
-"ps": 5.64,
+"pe": 18.78,
+"ps": 5.75,
 "rating": "buy",
 "revGrowth": 53.0,
 "sector": "Communication Services",
@@ -31629,7 +31629,7 @@ null
 "type": "EQUITY"
 },
 "RGA": {
-"_fetched": 1795551155.1949341,
+"_fetched": 1795634160.0666034,
 "_gate": {
 "bookValue": 178.897,
 "capexHist": [
@@ -31698,7 +31698,7 @@ null
 "methodology": null
 }
 },
-"ev": 18115674112.0,
+"ev": 18213249024.0,
 "fcf": 3983500032.0,
 "fcfHist": [
 4091000000.0,
@@ -31812,14 +31812,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 25.82,
 "exchange": "NYQ",
-"forwardPe": 8.93,
+"forwardPe": 9.11,
 "industry": "Insurance - Reinsurance",
-"marketCap": 17812025344,
+"marketCap": 18168137728,
 "name": "Reinsurance Group of America, I",
 "netMargin": 6.3,
 "opMargin": 9.4,
-"pe": 10.61,
-"ps": 0.6521,
+"pe": 10.82,
+"ps": 0.6651,
 "rating": "buy",
 "revGrowth": 21.7,
 "sector": "Financial Services",
@@ -31827,7 +31827,7 @@ null
 "type": "EQUITY"
 },
 "RKLB": {
-"_fetched": 1795551156.6643157,
+"_fetched": 1795634161.0669882,
 "_gate": {
 "bookValue": 9.078,
 "capexHist": [
@@ -31903,7 +31903,7 @@ null
 "methodology": null
 }
 },
-"ev": 26879531008.0,
+"ev": 24572655616.0,
 "fcf": -221815376.0,
 "fcfHist": [
 -321806000.0,
@@ -32041,14 +32041,14 @@ null
 "earningsDate": "2026-11-09",
 "eps": -0.37,
 "exchange": "NMS",
-"forwardPe": 646.55,
+"forwardPe": 662.13,
 "industry": "Aerospace & Defense",
-"marketCap": 31145150464,
+"marketCap": 31895515136,
 "name": "Rocket Lab Corporation",
 "netMargin": -25.7,
 "opMargin": -27.6,
 "pe": null,
-"ps": 35.32,
+"ps": 36.17,
 "rating": "buy",
 "revGrowth": 72.7,
 "sector": "Industrials",
@@ -32056,7 +32056,7 @@ null
 "type": "EQUITY"
 },
 "RNR": {
-"_fetched": 1795551158.1614108,
+"_fetched": 1795634161.9927604,
 "_gate": {
 "bookValue": 259.602,
 "capexHist": null,
@@ -32119,7 +32119,7 @@ null
 "methodology": null
 }
 },
-"ev": -6029988864.0,
+"ev": -5941896704.0,
 "fcf": 2405187072.0,
 "fcfHist": [
 3693107000.0,
@@ -32233,13 +32233,13 @@ null
 "earningsDate": "2027-02-02",
 "eps": 34.96,
 "exchange": "NYQ",
-"forwardPe": 8.08,
+"forwardPe": 8.11,
 "industry": "Insurance - Reinsurance",
-"marketCap": 13872487424,
+"marketCap": 13933101056,
 "name": "RenaissanceRe Holdings Ltd.",
 "netMargin": 16.2,
 "opMargin": 31.6,
-"pe": 9.82,
+"pe": 9.86,
 "ps": 1.44,
 "rating": "hold",
 "revGrowth": -47.1,
@@ -32248,7 +32248,7 @@ null
 "type": "EQUITY"
 },
 "RTX": {
-"_fetched": 1795551159.7231317,
+"_fetched": 1795634162.915151,
 "_gate": {
 "bookValue": 51.318,
 "capexHist": [
@@ -32324,7 +32324,7 @@ null
 "methodology": null
 }
 },
-"ev": 294273548288.0,
+"ev": 295029211136.0,
 "fcf": 8301749760.0,
 "fcfHist": [
 7448000000.0,
@@ -32457,14 +32457,14 @@ null
 "earningsDate": "2027-01-26",
 "eps": 6.15,
 "exchange": "NYQ",
-"forwardPe": 24.3,
+"forwardPe": 24.2,
 "industry": "Aerospace & Defense",
-"marketCap": 265367470080,
+"marketCap": 264281178112,
 "name": "RTX Corporation",
 "netMargin": 8.8,
 "opMargin": 13.1,
-"pe": 31.98,
-"ps": 2.76,
+"pe": 31.84,
+"ps": 2.75,
 "rating": "buy",
 "revGrowth": 11.1,
 "sector": "Industrials",
@@ -32472,7 +32472,7 @@ null
 "type": "EQUITY"
 },
 "S": {
-"_fetched": 1795551161.1088626,
+"_fetched": 1795634163.8563645,
 "_gate": {
 "bookValue": 4.186,
 "capexHist": [
@@ -32548,7 +32548,7 @@ null
 "methodology": null
 }
 },
-"ev": 7868474880.0,
+"ev": 7697930752.0,
 "fcf": 296880640.0,
 "fcfHist": [
 51686000.0,
@@ -32681,14 +32681,14 @@ null
 "earningsDate": "2026-12-03",
 "eps": -1.01,
 "exchange": "NYQ",
-"forwardPe": 52.01,
+"forwardPe": 51.53,
 "industry": "Software - Infrastructure",
-"marketCap": 8342737408,
+"marketCap": 8266166784,
 "name": "SentinelOne, Inc.",
 "netMargin": -31.0,
 "opMargin": -26.1,
 "pe": null,
-"ps": 7.59,
+"ps": 7.52,
 "rating": "buy",
 "revGrowth": 20.6,
 "sector": "Technology",
@@ -32696,7 +32696,7 @@ null
 "type": "EQUITY"
 },
 "SANM": {
-"_fetched": 1795551163.1406484,
+"_fetched": 1795634164.8925302,
 "_gate": {
 "bookValue": 48.962,
 "capexHist": [
@@ -32772,7 +32772,7 @@ null
 "methodology": null
 }
 },
-"ev": 8991825920.0,
+"ev": 8168416256.0,
 "fcf": -285216000.0,
 "fcfHist": [
 540402000.0,
@@ -32910,14 +32910,14 @@ null
 "earningsDate": "2027-02-01",
 "eps": 6.85,
 "exchange": "NMS",
-"forwardPe": 7.13,
+"forwardPe": 7.05,
 "industry": "Electronic Components",
-"marketCap": 7385091584,
+"marketCap": 7302487552,
 "name": "Sanmina Corporation",
 "netMargin": 2.6,
 "opMargin": 6.3,
-"pe": 20.43,
-"ps": 0.5084,
+"pe": 20.2,
+"ps": 0.5028,
 "rating": "buy",
 "revGrowth": 84.0,
 "sector": "Technology",
@@ -32925,7 +32925,7 @@ null
 "type": "EQUITY"
 },
 "SCHD": {
-"_fetched": 1795550940.8227565,
+"_fetched": 1795634032.3137004,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -32940,7 +32940,7 @@ null
 "name": "Schwab US Dividend Equity ETF",
 "netMargin": null,
 "opMargin": null,
-"pe": 18.76,
+"pe": 19.03,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -32949,7 +32949,7 @@ null
 "type": "ETF"
 },
 "SCHG": {
-"_fetched": 1795550941.3905005,
+"_fetched": 1795634032.6737878,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -32964,7 +32964,7 @@ null
 "name": "Schwab U.S. Large-Cap Growth ET",
 "netMargin": null,
 "opMargin": null,
-"pe": 24.91,
+"pe": 24.81,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -32973,7 +32973,7 @@ null
 "type": "ETF"
 },
 "SEZL": {
-"_fetched": 1795551164.8072581,
+"_fetched": 1795634166.0192473,
 "_gate": {
 "bookValue": 8.219,
 "capexHist": [
@@ -33009,23 +33009,23 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 7.2083,
+"avg": 7.1286,
 "currency": null,
-"growth": 0.3158,
+"growth": 0.3019,
 "high": 7.26,
-"low": 7.19,
+"low": 6.65,
 "methodology": null,
-"numberOfAnalysts": 6.0,
-"yearAgoEps": 5.4783
+"numberOfAnalysts": 7.0,
+"yearAgoEps": 5.4757
 },
 "0y": {
-"avg": 5.4783,
+"avg": 5.4757,
 "currency": null,
-"growth": 0.526,
+"growth": 0.5253,
 "high": 5.5,
 "low": 5.46,
 "methodology": null,
-"numberOfAnalysts": 6.0,
+"numberOfAnalysts": 7.0,
 "yearAgoEps": 3.59
 }
 },
@@ -33033,23 +33033,23 @@ null
 "+1y": {
 "30daysAgo": 6.6483,
 "60daysAgo": 6.6467,
-"7daysAgo": 7.212,
+"7daysAgo": 7.2083,
 "90daysAgo": 6.6467,
 "currency": null,
-"current": 7.2083,
+"current": 7.1286,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 5.26,
 "60daysAgo": 5.26,
-"7daysAgo": 5.478,
+"7daysAgo": 5.4783,
 "90daysAgo": 5.26,
 "currency": null,
-"current": 5.4783,
+"current": 5.4757,
 "methodology": null
 }
 },
-"ev": 4876141568.0,
+"ev": 4958573056.0,
 "fcf": 91929624.0,
 "fcfHist": [
 207212000.0,
@@ -33133,21 +33133,21 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 812107430.0,
+"avg": 805219000.0,
 "currency": null,
-"growth": 0.2674,
+"growth": 0.2563,
 "high": 838300000.0,
-"low": 790700000.0,
-"numberOfAnalysts": 7.0,
-"yearAgoRevenue": 640768570.0
+"low": 757000000.0,
+"numberOfAnalysts": 8.0,
+"yearAgoRevenue": 640922500.0
 },
 "0y": {
-"avg": 640768570.0,
+"avg": 640922500.0,
 "currency": null,
-"growth": 0.423,
-"high": 641834000.0,
+"growth": 0.4234,
+"high": 642000000.0,
 "low": 637873000.0,
-"numberOfAnalysts": 7.0,
+"numberOfAnalysts": 8.0,
 "yearAgoRevenue": 450279000.0
 }
 },
@@ -33180,29 +33180,29 @@ null
 "2021-12-31"
 ]
 },
-"analysts": 6,
+"analysts": 7,
 "beta": 6.6,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2026-11-04",
 "eps": 5.19,
 "exchange": "NCM",
-"forwardPe": 19.9,
+"forwardPe": 20.12,
 "industry": "Credit Services",
-"marketCap": 4847242240,
+"marketCap": 4898762240,
 "name": "Sezzle Inc.",
 "netMargin": 31.4,
 "opMargin": 60.0,
-"pe": 27.65,
-"ps": 8.33,
+"pe": 27.94,
+"ps": 8.42,
 "rating": "buy",
 "revGrowth": 42.6,
 "sector": "Financial Services",
-"targetPrice": 192.67,
+"targetPrice": 189.86,
 "type": "EQUITY"
 },
 "SHOP": {
-"_fetched": 1795551166.2730808,
+"_fetched": 1795634167.013085,
 "_gate": {
 "bookValue": 9.911,
 "capexHist": [
@@ -33238,17 +33238,17 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 2.4599,
+"avg": 2.46,
 "currency": null,
-"growth": 0.2908,
+"growth": 0.2909,
 "high": 2.9,
 "low": 1.95,
 "methodology": null,
 "numberOfAnalysts": 40.0,
-"yearAgoEps": 1.9057
+"yearAgoEps": 1.9056
 },
 "0y": {
-"avg": 1.9057,
+"avg": 1.9056,
 "currency": null,
 "growth": 0.3326,
 "high": 2.06,
@@ -33265,7 +33265,7 @@ null
 "7daysAgo": 2.4599,
 "90daysAgo": 2.4528,
 "currency": null,
-"current": 2.4599,
+"current": 2.46,
 "methodology": null
 },
 "0y": {
@@ -33274,11 +33274,11 @@ null
 "7daysAgo": 1.9057,
 "90daysAgo": 1.9062,
 "currency": null,
-"current": 1.9057,
+"current": 1.9056,
 "methodology": null
 }
 },
-"ev": 168240906240.0,
+"ev": 165680726016.0,
 "fcf": 1640999936.0,
 "fcfHist": [
 2007000000.0,
@@ -33288,7 +33288,7 @@ null
 null
 ],
 "fcfTtm": 2562000000.0,
-"forwardEps": 2.4599,
+"forwardEps": 2.46,
 "grossMargin": 0.4749,
 "interest": [
 null,
@@ -33362,19 +33362,19 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 19363490590.0,
+"avg": 19363484300.0,
 "currency": null,
 "growth": 0.2647,
 "high": 21263000000.0,
 "low": 18051000000.0,
 "numberOfAnalysts": 51.0,
-"yearAgoRevenue": 15310854240.0
+"yearAgoRevenue": 15310855900.0
 },
 "0y": {
-"avg": 15310854240.0,
+"avg": 15310855900.0,
 "currency": null,
 "growth": 0.3249,
-"high": 15391920410.0,
+"high": 15392000000.0,
 "low": 15167000000.0,
 "numberOfAnalysts": 48.0,
 "yearAgoRevenue": 11556000000.0
@@ -33416,14 +33416,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 1.63,
 "exchange": "NMS",
-"forwardPe": 53.47,
+"forwardPe": 54.59,
 "industry": "Software - Application",
-"marketCap": 169222668288,
+"marketCap": 172760612864,
 "name": "Shopify Inc.",
 "netMargin": 15.0,
 "opMargin": 18.1,
-"pe": 80.7,
-"ps": 11.94,
+"pe": 82.38,
+"ps": 12.19,
 "rating": "buy",
 "revGrowth": 31.6,
 "sector": "Technology",
@@ -33431,7 +33431,7 @@ null
 "type": "EQUITY"
 },
 "SKHY": {
-"_fetched": 1795551167.7701437,
+"_fetched": 1795634167.863356,
 "_gate": {
 "bookValue": 32.6665,
 "capexHist": [
@@ -33465,20 +33465,20 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 41.3485,
+"avg": 40.4567,
 "currency": null,
-"growth": 0.5461,
+"growth": 0.5182,
 "high": 48.567,
 "low": 33.2943,
 "methodology": null,
 "numberOfAnalysts": 5.0,
-"yearAgoEps": 26.7431
+"yearAgoEps": 26.6477
 },
 "0y": {
-"avg": 26.7431,
+"avg": 26.6477,
 "currency": null,
 "growth": null,
-"high": 27.641,
+"high": 27.265,
 "low": 25.443,
 "methodology": null,
 "numberOfAnalysts": 5.0,
@@ -33488,24 +33488,24 @@ null
 "epsTrend": {
 "+1y": {
 "30daysAgo": 34.6854,
-"60daysAgo": 34.0312,
-"7daysAgo": 42.2991,
-"90daysAgo": 32.2352,
+"60daysAgo": 33.986,
+"7daysAgo": 41.3675,
+"90daysAgo": 33.8012,
 "currency": null,
-"current": 41.3485,
+"current": 40.4567,
 "methodology": null
 },
 "0y": {
 "30daysAgo": 26.8564,
-"60daysAgo": 26.5404,
-"7daysAgo": 26.8889,
-"90daysAgo": 26.2485,
+"60daysAgo": 26.5998,
+"7daysAgo": 26.6709,
+"90daysAgo": 26.3411,
 "currency": null,
-"current": 26.7431,
+"current": 26.6477,
 "methodology": null
 }
 },
-"ev": -94860770017280.0,
+"ev": -94948238032896.0,
 "fcf": null,
 "fcfHist": [
 24793783000000.0,
@@ -33515,7 +33515,7 @@ null
 null
 ],
 "fcfTtm": 122290728000000.0,
-"forwardEps": 40.4567,
+"forwardEps": 40.4435,
 "grossMargin": 0.7738,
 "interest": [
 923703000000.0,
@@ -33586,18 +33586,18 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 586285952810000.0,
+"avg": 585082390420000.0,
 "currency": null,
-"growth": 0.6089,
+"growth": 0.6057,
 "high": 738334000000000.0,
 "low": 472174000000000.0,
 "numberOfAnalysts": 46.0,
-"yearAgoRevenue": 364406350400000.0
+"yearAgoRevenue": 364368963330000.0
 },
 "0y": {
-"avg": 364406350400000.0,
+"avg": 364368963330000.0,
 "currency": null,
-"growth": 2.7511,
+"growth": 2.7507,
 "high": 387551000000000.0,
 "low": 339190000000000.0,
 "numberOfAnalysts": 40.0,
@@ -33637,24 +33637,24 @@ null,
 "earningsDate": "2027-01-27",
 "eps": 18.07,
 "exchange": "NMS",
-"forwardPe": 2.77,
+"forwardPe": 2.72,
 "industry": "Semiconductors",
-"marketCap": 791313055744,
+"marketCap": 775549616128,
 "name": "SK hynix Inc.",
 "netMargin": 70.1,
 "opMargin": 74.5,
-"pe": 6.21,
+"pe": 6.09,
 "ps": 0.0029,
 "rating": "strong_buy",
 "revGrowth": 327.9,
 "sector": "Technology",
-"targetPrice": 259.5,
+"targetPrice": 253.07,
 "type": "EQUITY"
 },
 "SNEX": {
-"_fetched": 1795551169.1455746,
+"_fetched": 1795634168.810944,
 "_gate": {
-"bookValue": 23.701,
+"bookValue": 24.242,
 "capexHist": [
 -65400000.0,
 -65200000.0,
@@ -33727,7 +33727,7 @@ null
 "methodology": null
 }
 },
-"ev": -11310048256.0,
+"ev": -11471636480.0,
 "fcf": null,
 "fcfHist": [
 4322900000.0,
@@ -33736,7 +33736,7 @@ null
 -279000000.0
 ],
 "fcfTtm": 3784700000.0,
-"forwardEps": 5.03,
+"forwardEps": 4.25,
 "grossMargin": 0.0172,
 "interest": [
 null,
@@ -33854,16 +33854,16 @@ null,
 "currency": "USD",
 "dividendRate": 0.0,
 "earningsDate": "2027-02-03",
-"eps": 3.02,
+"eps": 4.15,
 "exchange": "NMS",
-"forwardPe": 7.73,
+"forwardPe": 8.7,
 "industry": "Capital Markets",
-"marketCap": 4703602176,
+"marketCap": 4476047360,
 "name": "StoneX Group Inc.",
 "netMargin": 0.3,
 "opMargin": 0.4,
-"pe": 12.87,
-"ps": 0.0293,
+"pe": 8.91,
+"ps": 0.0279,
 "rating": "buy",
 "revGrowth": 14.3,
 "sector": "Financial Services",
@@ -33871,7 +33871,7 @@ null,
 "type": "EQUITY"
 },
 "SNPS": {
-"_fetched": 1795551170.6103983,
+"_fetched": 1795634169.7551036,
 "_gate": {
 "bookValue": 162.587,
 "capexHist": [
@@ -33927,7 +33927,7 @@ null,
 "epsTrend": {
 "+1y": {
 "30daysAgo": 18.7328,
-"60daysAgo": 17.588,
+"60daysAgo": 17.6835,
 "7daysAgo": 18.6455,
 "90daysAgo": 17.2493,
 "currency": null,
@@ -33936,7 +33936,7 @@ null,
 },
 "0y": {
 "30daysAgo": 15.14,
-"60daysAgo": 15.1215,
+"60daysAgo": 15.1393,
 "7daysAgo": 15.14,
 "90daysAgo": 14.7495,
 "currency": null,
@@ -33944,7 +33944,7 @@ null,
 "methodology": null
 }
 },
-"ev": 89059893248.0,
+"ev": 86727671808.0,
 "fcf": 3425542400.0,
 "fcfHist": [
 1349154000.0,
@@ -34074,14 +34074,14 @@ null
 "earningsDate": "2026-12-08",
 "eps": 5.66,
 "exchange": "NMS",
-"forwardPe": 22.13,
+"forwardPe": 21.82,
 "industry": "Software - Infrastructure",
-"marketCap": 79327985664,
+"marketCap": 78229905408,
 "name": "Synopsys, Inc.",
 "netMargin": 11.4,
 "opMargin": 11.0,
-"pe": 73.14,
-"ps": 8.42,
+"pe": 72.12,
+"ps": 8.32,
 "rating": "strong_buy",
 "revGrowth": 42.4,
 "sector": "Technology",
@@ -34089,7 +34089,7 @@ null
 "type": "EQUITY"
 },
 "SPAXX": {
-"_fetched": 1795550941.9437675,
+"_fetched": 1795634033.0462086,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -34113,7 +34113,7 @@ null
 "type": "MONEYMARKET"
 },
 "SPMO": {
-"_fetched": 1795550942.505439,
+"_fetched": 1795634033.4336352,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -34128,7 +34128,7 @@ null
 "name": "Invesco S&P 500 Momentum ETF",
 "netMargin": null,
 "opMargin": null,
-"pe": 21.69,
+"pe": 21.52,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -34137,7 +34137,7 @@ null
 "type": "ETF"
 },
 "SPYM": {
-"_fetched": 1795550943.1474824,
+"_fetched": 1795634033.8038807,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -34152,7 +34152,7 @@ null
 "name": "State Street SPDR Portfolio S&P",
 "netMargin": null,
 "opMargin": null,
-"pe": 22.78,
+"pe": 22.8,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -34161,7 +34161,7 @@ null
 "type": "ETF"
 },
 "SSRM": {
-"_fetched": 1795551172.1567285,
+"_fetched": 1795634170.6295493,
 "_gate": {
 "bookValue": 16.332,
 "capexHist": [
@@ -34197,47 +34197,47 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 3.3931,
+"avg": 3.6197,
 "currency": null,
-"growth": 0.9378,
+"growth": 1.0671,
 "high": 3.7493,
-"low": 2.94,
+"low": 3.49,
 "methodology": null,
-"numberOfAnalysts": 3.0,
+"numberOfAnalysts": 2.0,
 "yearAgoEps": 1.751
 },
 "0y": {
-"avg": 3.6894,
+"avg": 3.6909,
 "currency": null,
-"growth": 0.8355,
+"growth": 0.8363,
 "high": 3.7961,
 "low": 3.39,
 "methodology": null,
-"numberOfAnalysts": 6.0,
+"numberOfAnalysts": 7.0,
 "yearAgoEps": 2.01
 }
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 3.6778,
+"30daysAgo": 3.5478,
 "60daysAgo": 5.4874,
-"7daysAgo": 3.5048,
+"7daysAgo": 3.3931,
 "90daysAgo": 5.7917,
 "currency": null,
-"current": 3.3931,
+"current": 3.6197,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 3.799,
-"60daysAgo": 4.0825,
-"7daysAgo": 3.7492,
-"90daysAgo": 4.0895,
+"30daysAgo": 3.8005,
+"60daysAgo": 4.0865,
+"7daysAgo": 3.6894,
+"90daysAgo": 4.1165,
 "currency": null,
-"current": 3.6894,
+"current": 3.6909,
 "methodology": null
 }
 },
-"ev": 2997254144.0,
+"ev": 2883502592.0,
 "fcf": 332291616.0,
 "fcfHist": [
 241649000.0,
@@ -34321,21 +34321,21 @@ null,
 ],
 "revEst": {
 "+1y": {
-"avg": 2292743200.0,
+"avg": 2262877680.0,
 "currency": null,
-"growth": 0.0797,
+"growth": 0.0588,
 "high": 2626000000.0,
-"low": 2080211940.0,
+"low": 1960749870.0,
 "numberOfAnalysts": 4.0,
-"yearAgoRevenue": 2123471320.0
+"yearAgoRevenue": 2137204260.0
 },
 "0y": {
-"avg": 2123471320.0,
+"avg": 2137204260.0,
 "currency": null,
-"growth": 0.303,
-"high": 2140000000.0,
+"growth": 0.3115,
+"high": 2192135990.0,
 "low": 2114585300.0,
-"numberOfAnalysts": 4.0,
+"numberOfAnalysts": 5.0,
 "yearAgoRevenue": 1629637000.0
 }
 },
@@ -34375,22 +34375,22 @@ null
 "earningsDate": "2027-02-16",
 "eps": 3.15,
 "exchange": "NMS",
-"forwardPe": 7.08,
+"forwardPe": 7.28,
 "industry": "Gold",
-"marketCap": 4523119104,
+"marketCap": 4653833216,
 "name": "SSR Mining Inc.",
 "netMargin": 12.6,
 "opMargin": 36.7,
-"pe": 7.2,
-"ps": 2.27,
+"pe": 7.4,
+"ps": 2.33,
 "rating": "strong_buy",
 "revGrowth": 16.0,
 "sector": "Basic Materials",
-"targetPrice": 40.25,
+"targetPrice": 37.25,
 "type": "EQUITY"
 },
 "STLD": {
-"_fetched": 1795551173.6710296,
+"_fetched": 1795634171.520145,
 "_gate": {
 "bookValue": 69.092,
 "capexHist": [
@@ -34426,47 +34426,47 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 22.6486,
+"avg": 23.2493,
 "currency": null,
-"growth": 0.2965,
-"high": 28.1,
+"growth": 0.3271,
+"high": 32.17,
 "low": 14.67,
 "methodology": null,
 "numberOfAnalysts": 14.0,
-"yearAgoEps": 17.4692
+"yearAgoEps": 17.5192
 },
 "0y": {
-"avg": 17.4692,
+"avg": 17.5192,
 "currency": null,
-"growth": 1.1864,
+"growth": 1.1926,
 "high": 18.3,
 "low": 16.4684,
 "methodology": null,
-"numberOfAnalysts": 11.0,
+"numberOfAnalysts": 12.0,
 "yearAgoEps": 7.99
 }
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 21.3392,
-"60daysAgo": 19.3688,
-"7daysAgo": 21.401,
-"90daysAgo": 19.0184,
+"30daysAgo": 21.4096,
+"60daysAgo": 19.3771,
+"7daysAgo": 22.22,
+"90daysAgo": 18.9453,
 "currency": null,
-"current": 22.6486,
+"current": 23.2493,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 17.18,
+"30daysAgo": 17.2941,
 "60daysAgo": 17.7514,
-"7daysAgo": 17.4233,
-"90daysAgo": 16.7628,
+"7daysAgo": 17.3341,
+"90daysAgo": 16.8474,
 "currency": null,
-"current": 17.4692,
+"current": 17.5192,
 "methodology": null
 }
 },
-"ev": 34072064000.0,
+"ev": 34030821376.0,
 "fcf": 429926752.0,
 "fcfHist": [
 501509000.0,
@@ -34476,7 +34476,7 @@ null
 null
 ],
 "fcfTtm": 1094833000.0,
-"forwardEps": 22.6486,
+"forwardEps": 23.2493,
 "grossMargin": 0.159,
 "interest": [
 70043000.0,
@@ -34550,18 +34550,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 25652432950.0,
+"avg": 25942721230.0,
 "currency": null,
-"growth": 0.0585,
-"high": 28901845480.0,
+"growth": 0.0696,
+"high": 30811818500.0,
 "low": 22460054510.0,
 "numberOfAnalysts": 11.0,
-"yearAgoRevenue": 24235322020.0
+"yearAgoRevenue": 24253681020.0
 },
 "0y": {
-"avg": 24235322020.0,
+"avg": 24253681020.0,
 "currency": null,
-"growth": 0.3333,
+"growth": 0.3343,
 "high": 24754707600.0,
 "low": 23482542140.0,
 "numberOfAnalysts": 10.0,
@@ -34604,22 +34604,22 @@ null
 "earningsDate": "2027-01-25",
 "eps": 13.54,
 "exchange": "NMS",
-"forwardPe": 9.45,
+"forwardPe": 9.4,
 "industry": "Steel",
-"marketCap": 30423164928,
+"marketCap": 31080208384,
 "name": "Steel Dynamics, Inc.",
 "netMargin": 8.8,
 "opMargin": 11.5,
-"pe": 15.8,
-"ps": 1.37,
+"pe": 16.14,
+"ps": 1.4,
 "rating": "buy",
 "revGrowth": 34.8,
 "sector": "Basic Materials",
-"targetPrice": 272.32,
+"targetPrice": 270.46,
 "type": "EQUITY"
 },
 "STRL": {
-"_fetched": 1795551175.2109277,
+"_fetched": 1795634172.4565768,
 "_gate": {
 "bookValue": 49.279,
 "capexHist": [
@@ -34695,7 +34695,7 @@ null
 "methodology": null
 }
 },
-"ev": 8499061248.0,
+"ev": 7809093632.0,
 "fcf": 352616640.0,
 "fcfHist": [
 362676000.0,
@@ -34828,14 +34828,14 @@ null
 "earningsDate": "2026-10-28",
 "eps": 17.83,
 "exchange": "NMS",
-"forwardPe": 9.23,
+"forwardPe": 9.37,
 "industry": "Engineering & Construction",
-"marketCap": 7852954624,
+"marketCap": 7975192576,
 "name": "Sterling Infrastructure, Inc.",
 "netMargin": 12.9,
 "opMargin": 18.6,
-"pe": 14.44,
-"ps": 1.82,
+"pe": 14.66,
+"ps": 1.85,
 "rating": "strong_buy",
 "revGrowth": 127.0,
 "sector": "Industrials",
@@ -34843,7 +34843,7 @@ null
 "type": "EQUITY"
 },
 "SUNB": {
-"_fetched": 1795551176.7358298,
+"_fetched": 1795634173.4305131,
 "_gate": {
 "bookValue": 18.169,
 "capexHist": [
@@ -34919,7 +34919,7 @@ null
 "methodology": null
 }
 },
-"ev": 42586402816.0,
+"ev": 41852923904.0,
 "fcf": 1726200064.0,
 "fcfHist": [
 1584000000.0,
@@ -35056,14 +35056,14 @@ null
 "earningsDate": "2026-12-08",
 "eps": 3.31,
 "exchange": "NYQ",
-"forwardPe": 15.4,
+"forwardPe": 15.33,
 "industry": "Rental & Leasing Services",
-"marketCap": 30564896768,
+"marketCap": 30410700800,
 "name": "Sunbelt Rentals Holdings, Inc.",
 "netMargin": 12.1,
 "opMargin": 21.3,
-"pe": 22.54,
-"ps": 2.67,
+"pe": 22.42,
+"ps": 2.65,
 "rating": "buy",
 "revGrowth": 11.2,
 "sector": "Industrials",
@@ -35071,7 +35071,7 @@ null
 "type": "EQUITY"
 },
 "SYF": {
-"_fetched": 1795551178.1213593,
+"_fetched": 1795634174.8032167,
 "_gate": {
 "bookValue": 47.7,
 "capexHist": null,
@@ -35133,7 +35133,7 @@ null
 "methodology": null
 }
 },
-"ev": 24003074048.0,
+"ev": 23987503104.0,
 "fcf": null,
 "fcfHist": [
 9851000000.0,
@@ -35247,14 +35247,14 @@ null
 "earningsDate": "2027-01-26",
 "eps": 9.58,
 "exchange": "NYQ",
-"forwardPe": 6.52,
+"forwardPe": 6.55,
 "industry": "Credit Services",
-"marketCap": 21253382144,
+"marketCap": 21357703168,
 "name": "Synchrony Financial",
 "netMargin": 34.1,
 "opMargin": 48.0,
-"pe": 7.12,
-"ps": 2.17,
+"pe": 7.16,
+"ps": 2.18,
 "rating": "buy",
 "revGrowth": -4.7,
 "sector": "Financial Services",
@@ -35262,7 +35262,7 @@ null
 "type": "EQUITY"
 },
 "TEM": {
-"_fetched": 1795551179.5947223,
+"_fetched": 1795634175.6984,
 "_gate": {
 "bookValue": 2.749,
 "capexHist": [
@@ -35338,7 +35338,7 @@ null
 "methodology": null
 }
 },
-"ev": 11198747648.0,
+"ev": 10795639808.0,
 "fcf": 41290500.0,
 "fcfHist": [
 -245355000.0,
@@ -35476,14 +35476,14 @@ null
 "earningsDate": "2027-02-23",
 "eps": -1.06,
 "exchange": "NMS",
-"forwardPe": -1368.39,
+"forwardPe": -1390.14,
 "industry": "Health Information Services",
-"marketCap": 9871576064,
+"marketCap": 10028441600,
 "name": "Tempus AI, Inc.",
 "netMargin": -12.5,
 "opMargin": -18.5,
 "pe": null,
-"ps": 6.54,
+"ps": 6.64,
 "rating": "buy",
 "revGrowth": 23.1,
 "sector": "Healthcare",
@@ -35491,7 +35491,7 @@ null
 "type": "EQUITY"
 },
 "TIGO": {
-"_fetched": 1795551180.9553542,
+"_fetched": 1795634176.5535247,
 "_gate": {
 "bookValue": 13.344,
 "capexHist": [
@@ -35567,7 +35567,7 @@ null
 "methodology": null
 }
 },
-"ev": 24193570816.0,
+"ev": 24503848960.0,
 "fcf": 1983000064.0,
 "fcfHist": [
 920000000.0,
@@ -35707,7 +35707,7 @@ null
 "exchange": "NMS",
 "forwardPe": 10.69,
 "industry": "Telecom Services",
-"marketCap": 13329591296,
+"marketCap": 13324559360,
 "name": "Millicom International Cellular",
 "netMargin": 7.0,
 "opMargin": 24.0,
@@ -35720,7 +35720,7 @@ null
 "type": "EQUITY"
 },
 "TMO": {
-"_fetched": 1795551182.6105607,
+"_fetched": 1795634177.4959247,
 "_gate": {
 "bookValue": 147.797,
 "capexHist": [
@@ -35794,7 +35794,7 @@ null
 "methodology": null
 }
 },
-"ev": 290387558400.0,
+"ev": 293181259776.0,
 "fcf": 6441625088.0,
 "fcfHist": [
 6293000000.0,
@@ -35804,7 +35804,7 @@ null
 null
 ],
 "fcfTtm": 7596000000.0,
-"forwardEps": 27.7865,
+"forwardEps": 27.7831,
 "grossMargin": 0.4126,
 "interest": [
 1419000000.0,
@@ -35922,14 +35922,14 @@ null
 "earningsDate": "2027-01-28",
 "eps": 18.96,
 "exchange": "NYQ",
-"forwardPe": 25.06,
+"forwardPe": 24.78,
 "industry": "Diagnostics & Research",
-"marketCap": 258043936768,
+"marketCap": 255096471552,
 "name": "Thermo Fisher Scientific Inc",
 "netMargin": 14.9,
 "opMargin": 19.1,
-"pe": 36.73,
-"ps": 5.45,
+"pe": 36.31,
+"ps": 5.39,
 "rating": "strong_buy",
 "revGrowth": 9.1,
 "sector": "Healthcare",
@@ -35937,7 +35937,7 @@ null
 "type": "EQUITY"
 },
 "TMUS": {
-"_fetched": 1795551184.112136,
+"_fetched": 1795634178.4868703,
 "_gate": {
 "bookValue": 52.978,
 "capexHist": [
@@ -36012,7 +36012,7 @@ null
 "methodology": null
 }
 },
-"ev": 289588576256.0,
+"ev": 290584297472.0,
 "fcf": 16360999936.0,
 "fcfHist": [
 15427000000.0,
@@ -36145,14 +36145,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 10.37,
 "exchange": "NMS",
-"forwardPe": 11.81,
+"forwardPe": 11.73,
 "industry": "Telecom Services",
-"marketCap": 178381488128,
+"marketCap": 177189814272,
 "name": "T-Mobile US, Inc.",
 "netMargin": 12.0,
 "opMargin": 22.7,
-"pe": 16.24,
-"ps": 1.9,
+"pe": 16.13,
+"ps": 1.89,
 "rating": "buy",
 "revGrowth": 7.4,
 "sector": "Communication Services",
@@ -36160,7 +36160,7 @@ null
 "type": "EQUITY"
 },
 "TOST": {
-"_fetched": 1795551185.626485,
+"_fetched": 1795634179.4627695,
 "_gate": {
 "bookValue": 3.943,
 "capexHist": [
@@ -36236,7 +36236,7 @@ null
 "methodology": null
 }
 },
-"ev": 16980070400.0,
+"ev": 17688889344.0,
 "fcf": 481875008.0,
 "fcfHist": [
 608000000.0,
@@ -36374,14 +36374,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 0.91,
 "exchange": "NYQ",
-"forwardPe": 18.97,
+"forwardPe": 19.07,
 "industry": "Software - Infrastructure",
-"marketCap": 19521599488,
+"marketCap": 19626178560,
 "name": "Toast, Inc.",
 "netMargin": 7.7,
 "opMargin": 7.3,
-"pe": 36.92,
-"ps": 2.73,
+"pe": 37.12,
+"ps": 2.74,
 "rating": "buy",
 "revGrowth": 21.3,
 "sector": "Technology",
@@ -36389,7 +36389,7 @@ null
 "type": "EQUITY"
 },
 "TRXB": {
-"_fetched": 1795551187.0751538,
+"_fetched": 1795634180.2769728,
 "_gate": {
 "bookValue": -98.172,
 "capexHist": [
@@ -36449,7 +36449,7 @@ null
 "methodology": null
 }
 },
-"ev": 131515416.0,
+"ev": 130404216.0,
 "fcf": null,
 "fcfHist": [
 -41426000.0,
@@ -36542,9 +36542,9 @@ null,
 "earningsDate": null,
 "eps": -2.74,
 "exchange": "NMS",
-"forwardPe": -5.39,
+"forwardPe": -5.5,
 "industry": "Biotechnology",
-"marketCap": 280689376,
+"marketCap": 286303168,
 "name": "TRex Bio, Inc.",
 "netMargin": 0.0,
 "opMargin": 0.0,
@@ -36557,7 +36557,7 @@ null,
 "type": "EQUITY"
 },
 "TTMI": {
-"_fetched": 1795551188.5821867,
+"_fetched": 1795634181.1398454,
 "_gate": {
 "bookValue": 19.383,
 "capexHist": [
@@ -36615,25 +36615,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 6.8925,
+"30daysAgo": 8.336,
 "60daysAgo": 6.8925,
-"7daysAgo": 7.8567,
-"90daysAgo": 5.4,
+"7daysAgo": 8.336,
+"90daysAgo": 6.8925,
 "currency": null,
 "current": 8.336,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 4.85,
+"30daysAgo": 4.956,
 "60daysAgo": 4.85,
-"7daysAgo": 4.8167,
-"90daysAgo": 4.0375,
+"7daysAgo": 4.956,
+"90daysAgo": 4.85,
 "currency": null,
 "current": 4.956,
 "methodology": null
 }
 },
-"ev": 8130664448.0,
+"ev": 7166478336.0,
 "fcf": 27334624.0,
 "fcfHist": [
 -683000.0,
@@ -36712,9 +36712,9 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 6586724400.0,
+"avg": 6586924400.0,
 "currency": null,
-"growth": 0.4722,
+"growth": 0.4723,
 "high": 6636622000.0,
 "low": 6482000000.0,
 "numberOfAnalysts": 5.0,
@@ -36766,22 +36766,22 @@ null
 "earningsDate": "2027-02-03",
 "eps": 2.5,
 "exchange": "NMS",
-"forwardPe": 7.15,
+"forwardPe": 7.03,
 "industry": "Electronic Components",
-"marketCap": 6279337472,
+"marketCap": 6171833856,
 "name": "TTM Technologies, Inc.",
 "netMargin": 7.0,
 "opMargin": 11.1,
-"pe": 23.84,
-"ps": 1.64,
-"rating": "none",
+"pe": 23.43,
+"ps": 1.61,
+"rating": "strong_buy",
 "revGrowth": 59.9,
 "sector": "Technology",
-"targetPrice": 185.8,
+"targetPrice": 176.2,
 "type": "EQUITY"
 },
 "TTWO": {
-"_fetched": 1795551190.2389112,
+"_fetched": 1795634182.1727388,
 "_gate": {
 "bookValue": 19.624,
 "capexHist": [
@@ -36857,7 +36857,7 @@ null
 "methodology": null
 }
 },
-"ev": 40432816128.0,
+"ev": 42501525504.0,
 "fcf": 787574976.0,
 "fcfHist": [
 461500000.0,
@@ -36867,7 +36867,7 @@ null
 null
 ],
 "fcfTtm": 98000000.0,
-"forwardEps": 10.0894,
+"forwardEps": 10.1994,
 "grossMargin": 0.5772,
 "interest": [
 161300000.0,
@@ -36943,19 +36943,19 @@ null
 "+1y": {
 "avg": 9126679860.0,
 "currency": null,
-"growth": 0.0089,
+"growth": 0.005,
 "high": 11323736250.0,
 "low": 8033000000.0,
 "numberOfAnalysts": 20.0,
-"yearAgoRevenue": 9046146180.0
+"yearAgoRevenue": 9081688870.0
 },
 "0y": {
-"avg": 9046146180.0,
+"avg": 9081688870.0,
 "currency": null,
-"growth": 0.346,
+"growth": 0.3512,
 "high": 11107699800.0,
 "low": 8197766000.0,
-"numberOfAnalysts": 19.0,
+"numberOfAnalysts": 20.0,
 "yearAgoRevenue": 6721000000.0
 }
 },
@@ -36995,14 +36995,14 @@ null
 "earningsDate": "2027-02-09",
 "eps": -1.29,
 "exchange": "NMS",
-"forwardPe": 21.78,
+"forwardPe": 22.03,
 "industry": "Electronic Gaming & Multimedia",
-"marketCap": 41143910400,
+"marketCap": 42064998400,
 "name": "Take-Two Interactive Software, ",
 "netMargin": -3.8,
 "opMargin": -1.8,
 "pe": null,
-"ps": 6.42,
+"ps": 6.56,
 "rating": "strong_buy",
 "revGrowth": -15.6,
 "sector": "Communication Services",
@@ -37010,7 +37010,7 @@ null
 "type": "EQUITY"
 },
 "TWLO": {
-"_fetched": 1795551191.6650927,
+"_fetched": 1795634183.268827,
 "_gate": {
 "bookValue": 59.261,
 "capexHist": [
@@ -37084,7 +37084,7 @@ null
 "methodology": null
 }
 },
-"ev": 26703126528.0,
+"ev": 26112043008.0,
 "fcf": 1077864576.0,
 "fcfHist": [
 945427000.0,
@@ -37212,14 +37212,14 @@ null
 "earningsDate": "2027-02-11",
 "eps": 7.96,
 "exchange": "NYQ",
-"forwardPe": 26.45,
+"forwardPe": 26.36,
 "industry": "Software - Infrastructure",
-"marketCap": 28048637952,
+"marketCap": 27953475584,
 "name": "Twilio Inc.",
 "netMargin": 21.8,
 "opMargin": 7.7,
-"pe": 22.77,
-"ps": 4.81,
+"pe": 22.7,
+"ps": 4.79,
 "rating": "buy",
 "revGrowth": 19.9,
 "sector": "Technology",
@@ -37227,7 +37227,7 @@ null
 "type": "EQUITY"
 },
 "UHS": {
-"_fetched": 1795551193.1487815,
+"_fetched": 1795634184.2707653,
 "_gate": {
 "bookValue": 131.771,
 "capexHist": [
@@ -37301,7 +37301,7 @@ null
 "methodology": null
 }
 },
-"ev": 16722149376.0,
+"ev": 16714654720.0,
 "fcf": 745047616.0,
 "fcfHist": [
 824550000.0,
@@ -37382,16 +37382,16 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 19474244680.0,
+"avg": 19474321500.0,
 "currency": null,
 "growth": 0.0463,
 "high": 19818662410.0,
 "low": 19048000000.0,
 "numberOfAnalysts": 17.0,
-"yearAgoRevenue": 18611782280.0
+"yearAgoRevenue": 18611723670.0
 },
 "0y": {
-"avg": 18611782280.0,
+"avg": 18611723670.0,
 "currency": null,
 "growth": 0.0718,
 "high": 18710800000.0,
@@ -37434,14 +37434,14 @@ null
 "earningsDate": "2026-10-27",
 "eps": 23.89,
 "exchange": "NYQ",
-"forwardPe": 7.96,
+"forwardPe": 8.27,
 "industry": "Medical Care Facilities",
-"marketCap": 10561291264,
+"marketCap": 10974656512,
 "name": "Universal Health Services, Inc.",
 "netMargin": 8.0,
 "opMargin": 10.8,
-"pe": 7.67,
-"ps": 0.5755,
+"pe": 7.97,
+"ps": 0.598,
 "rating": "buy",
 "revGrowth": 5.3,
 "sector": "Healthcare",
@@ -37449,7 +37449,7 @@ null
 "type": "EQUITY"
 },
 "UNFI": {
-"_fetched": 1795551194.7553182,
+"_fetched": 1795634185.282222,
 "_gate": {
 "bookValue": 26.882,
 "capexHist": [
@@ -37525,7 +37525,7 @@ null
 "methodology": null
 }
 },
-"ev": 6043409408.0,
+"ev": 6024711168.0,
 "fcf": 426875008.0,
 "fcfHist": [
 323000000.0,
@@ -37658,14 +37658,14 @@ null
 "earningsDate": "2026-12-08",
 "eps": 1.34,
 "exchange": "NYQ",
-"forwardPe": 12.3,
+"forwardPe": 12.41,
 "industry": "Food Distribution",
-"marketCap": 2994850560,
+"marketCap": 3020072960,
 "name": "United Natural Foods, Inc.",
 "netMargin": 0.3,
 "opMargin": 1.1,
-"pe": 37.22,
-"ps": 0.0961,
+"pe": 37.53,
+"ps": 0.0969,
 "rating": "buy",
 "revGrowth": -0.7,
 "sector": "Consumer Defensive",
@@ -37673,7 +37673,7 @@ null
 "type": "EQUITY"
 },
 "VG": {
-"_fetched": 1795551196.3406994,
+"_fetched": 1795634186.0763755,
 "_gate": {
 "bookValue": 4.396,
 "capexHist": [
@@ -37749,7 +37749,7 @@ null
 "methodology": null
 }
 },
-"ev": 75732672512.0,
+"ev": 75707490304.0,
 "fcf": -8146874880.0,
 "fcfHist": [
 -6799000000.0,
@@ -37882,14 +37882,14 @@ null
 "earningsDate": "2026-11-10",
 "eps": 2.07,
 "exchange": "NYQ",
-"forwardPe": 7.13,
+"forwardPe": 7.06,
 "industry": "Oil & Gas Midstream",
-"marketCap": 29997789184,
+"marketCap": 29708261376,
 "name": "Venture Global, Inc.",
 "netMargin": 31.6,
 "opMargin": 40.0,
-"pe": 5.76,
-"ps": 1.63,
+"pe": 5.7,
+"ps": 1.62,
 "rating": "buy",
 "revGrowth": 42.9,
 "sector": "Energy",
@@ -37897,12 +37897,12 @@ null
 "type": "EQUITY"
 },
 "VOO": {
-"_fetched": 1795550943.7092834,
+"_fetched": 1795634034.2087758,
 "_gate": {},
 "analysts": null,
 "beta": null,
 "currency": "USD",
-"dividendRate": null,
+"dividendRate": 5.44,
 "earningsDate": null,
 "eps": null,
 "exchange": "PCX",
@@ -37912,7 +37912,7 @@ null
 "name": "Vanguard S&P 500 ETF",
 "netMargin": null,
 "opMargin": null,
-"pe": 22.24,
+"pe": 22.25,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -37921,7 +37921,7 @@ null
 "type": "ETF"
 },
 "VRT": {
-"_fetched": 1795551197.862309,
+"_fetched": 1795634186.9614422,
 "_gate": {
 "bookValue": 14.29,
 "capexHist": [
@@ -37997,7 +37997,7 @@ null
 "methodology": null
 }
 },
-"ev": 71401209856.0,
+"ev": 66576400384.0,
 "fcf": 2962249984.0,
 "fcfHist": [
 1887400000.0,
@@ -38131,18 +38131,18 @@ null
 "analysts": 30,
 "beta": 2.11,
 "currency": "USD",
-"dividendRate": 0.25,
+"dividendRate": 0.29,
 "earningsDate": "2027-02-10",
 "eps": 5.35,
 "exchange": "NYQ",
-"forwardPe": 17.5,
+"forwardPe": 17.66,
 "industry": "Electrical Equipment & Parts",
-"marketCap": 66544218112,
+"marketCap": 67139133440,
 "name": "Vertiv Holdings, LLC",
 "netMargin": 16.0,
 "opMargin": 21.1,
-"pe": 32.3,
-"ps": 5.07,
+"pe": 32.59,
+"ps": 5.12,
 "rating": "strong_buy",
 "revGrowth": 61.2,
 "sector": "Industrials",
@@ -38150,7 +38150,7 @@ null
 "type": "EQUITY"
 },
 "VST": {
-"_fetched": 1795551199.508802,
+"_fetched": 1795634187.9925878,
 "_gate": {
 "bookValue": 11.441,
 "capexHist": [
@@ -38186,13 +38186,13 @@ null
 ],
 "epsEst": {
 "+1y": {
-"avg": 10.2913,
+"avg": 10.0727,
 "currency": null,
-"growth": 0.1199,
+"growth": 0.0961,
 "high": 12.3,
 "low": 8.25,
 "methodology": null,
-"numberOfAnalysts": 9.0,
+"numberOfAnalysts": 8.0,
 "yearAgoEps": 9.1897
 },
 "0y": {
@@ -38208,25 +38208,25 @@ null
 },
 "epsTrend": {
 "+1y": {
-"30daysAgo": 10.2602,
+"30daysAgo": 10.3153,
 "60daysAgo": 10.4546,
-"7daysAgo": 10.5829,
-"90daysAgo": 10.4281,
+"7daysAgo": 10.0603,
+"90daysAgo": 10.3461,
 "currency": null,
-"current": 10.2913,
+"current": 10.0727,
 "methodology": null
 },
 "0y": {
-"30daysAgo": 9.518,
+"30daysAgo": 9.4566,
 "60daysAgo": 9.5108,
-"7daysAgo": 9.1835,
-"90daysAgo": 9.6318,
+"7daysAgo": 9.1253,
+"90daysAgo": 9.5862,
 "currency": null,
 "current": 9.1897,
 "methodology": null
 }
 },
-"ev": 63697817600.0,
+"ev": 62628724736.0,
 "fcf": 904124992.0,
 "fcfHist": [
 1318000000.0,
@@ -38364,14 +38364,14 @@ null
 "earningsDate": "2026-11-06",
 "eps": 7.4,
 "exchange": "NYQ",
-"forwardPe": 12.29,
+"forwardPe": 12.42,
 "industry": "Utilities - Independent Power Producers",
-"marketCap": 40683241472,
+"marketCap": 41107484672,
 "name": "Vistra Corp.",
 "netMargin": 13.1,
 "opMargin": 23.0,
-"pe": 16.2,
-"ps": 1.98,
+"pe": 16.37,
+"ps": 2.0,
 "rating": "strong_buy",
 "revGrowth": 27.7,
 "sector": "Utilities",
@@ -38379,12 +38379,12 @@ null
 "type": "EQUITY"
 },
 "VXF": {
-"_fetched": 1795550944.4598763,
+"_fetched": 1795634034.5730343,
 "_gate": {},
 "analysts": null,
 "beta": null,
 "currency": "USD",
-"dividendRate": null,
+"dividendRate": 1.77,
 "earningsDate": null,
 "eps": null,
 "exchange": "PCX",
@@ -38394,7 +38394,7 @@ null
 "name": "Vanguard Extended Market ETF",
 "netMargin": null,
 "opMargin": null,
-"pe": 16.61,
+"pe": 16.8,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -38403,7 +38403,7 @@ null
 "type": "ETF"
 },
 "W": {
-"_fetched": 1795551200.9599977,
+"_fetched": 1795634189.025965,
 "_gate": {
 "bookValue": -20.56,
 "capexHist": [
@@ -38479,7 +38479,7 @@ null
 "methodology": null
 }
 },
-"ev": 15815211008.0,
+"ev": 15661950976.0,
 "fcf": 501124992.0,
 "fcfHist": [
 329000000.0,
@@ -38617,14 +38617,14 @@ null
 "earningsDate": "2027-02-18",
 "eps": -1.23,
 "exchange": "NYQ",
-"forwardPe": 23.02,
+"forwardPe": 23.75,
 "industry": "Internet Retail",
-"marketCap": 13038108672,
+"marketCap": 13456838656,
 "name": "Wayfair Inc.",
 "netMargin": -1.2,
 "opMargin": 2.5,
 "pe": null,
-"ps": 0.9872,
+"ps": 1.02,
 "rating": "buy",
 "revGrowth": 9.7,
 "sector": "Consumer Cyclical",
@@ -38632,7 +38632,7 @@ null
 "type": "EQUITY"
 },
 "WAB": {
-"_fetched": 1795551202.4704952,
+"_fetched": 1795634189.8524644,
 "_gate": {
 "bookValue": 67.458,
 "capexHist": [
@@ -38708,7 +38708,7 @@ null
 "methodology": null
 }
 },
-"ev": 53984555008.0,
+"ev": 53362008064.0,
 "fcf": 1239250048.0,
 "fcfHist": [
 1499000000.0,
@@ -38846,14 +38846,14 @@ null
 "earningsDate": "2027-02-10",
 "eps": 8.05,
 "exchange": "NYQ",
-"forwardPe": 22.2,
+"forwardPe": 22.79,
 "industry": "Railroads",
-"marketCap": 46928453632,
+"marketCap": 48172707840,
 "name": "Westinghouse Air Brake Technolo",
 "netMargin": 11.2,
 "opMargin": 18.4,
-"pe": 34.74,
-"ps": 3.84,
+"pe": 35.66,
+"ps": 3.94,
 "rating": "strong_buy",
 "revGrowth": 8.1,
 "sector": "Industrials",
@@ -38861,7 +38861,7 @@ null
 "type": "EQUITY"
 },
 "WQTM": {
-"_fetched": 1795550945.0230784,
+"_fetched": 1795634034.9726648,
 "_gate": {},
 "analysts": null,
 "beta": null,
@@ -38876,7 +38876,7 @@ null
 "name": "WisdomTree Quantum Computing Fu",
 "netMargin": null,
 "opMargin": null,
-"pe": 22.39,
+"pe": 22.46,
 "ps": null,
 "rating": null,
 "revGrowth": null,
@@ -38885,7 +38885,7 @@ null
 "type": "ETF"
 },
 "ZS": {
-"_fetched": 1795551204.023016,
+"_fetched": 1795634190.7943792,
 "_gate": {
 "bookValue": 15.935,
 "capexHist": [
@@ -38961,7 +38961,7 @@ null
 "methodology": null
 }
 },
-"ev": 35352768512.0,
+"ev": 35740995584.0,
 "fcf": 1080869632.0,
 "fcfHist": [
 779143000.0,
@@ -39045,18 +39045,18 @@ null
 ],
 "revEst": {
 "+1y": {
-"avg": 4594068880.0,
+"avg": 4594160800.0,
 "currency": null,
 "growth": 0.1652,
 "high": 4789140000.0,
 "low": 4474215000.0,
-"numberOfAnalysts": 42.0,
-"yearAgoRevenue": 3942650780.0
+"numberOfAnalysts": 41.0,
+"yearAgoRevenue": 3942939420.0
 },
 "0y": {
-"avg": 3942650780.0,
+"avg": 3942939420.0,
 "currency": null,
-"growth": 0.176,
+"growth": 0.1761,
 "high": 4038203000.0,
 "low": 3923000000.0,
 "numberOfAnalysts": 44.0,
@@ -39099,18 +39099,18 @@ null
 "earningsDate": "2026-11-23",
 "eps": -0.39,
 "exchange": "NMS",
-"forwardPe": 40.83,
+"forwardPe": 40.54,
 "industry": "Software - Infrastructure",
-"marketCap": 37746253824,
+"marketCap": 37473800192,
 "name": "Zscaler, Inc.",
 "netMargin": -2.2,
 "opMargin": -3.1,
 "pe": null,
-"ps": 10.74,
+"ps": 10.66,
 "rating": "buy",
 "revGrowth": 20.5,
 "sector": "Technology",
-"targetPrice": 252.53,
+"targetPrice": 254.11,
 "type": "EQUITY"
 }
 }
