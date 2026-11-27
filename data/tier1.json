@@ -1,19 +1,19 @@
 {
- "updated": "2026-11-25T13:00:00Z",
- "asOf": "2026-11-24",
+ "updated": "2026-11-27T13:00:00Z",
+ "asOf": "2026-11-25",
  "summary": {
   "screened": 174,
   "strict": 7,
-  "approaching": 6,
-  "note": "Nov 25 run on Tue Nov 24 closes (Monday's rally faded: SPY -0.5%, QQQ -2.0%, DIA +0.8%, IWM +0.5%; NVDA -5.9% to $155.38; chip stocks fell sharply, HPE -16.3% and DY -18.0% after earnings). Prices re-checked against Twelve Data for all 13 listed names. CHANGE vs the Nov 24 screen: Strict is now 7. EME (now $631.98, 1.6% under its $642.46 buy price) and B (falling-estimates check passes at -4.6% in 90 days, near the 5% line) moved from Approaching to Strict. RDDT stays Approaching and NVDA stays Approaching: their P/S test (Gate 4) rescales to about 3.12 and 3.59 against the 3.0 limit on today's closes. NVDA also has the open rule gap on red flag 7 (CEO resigned Nov 12; reported reinstatement of Huang Nov 23; Seth asked for a ruling). HCC is 2.3% above its buy price. Near-miss counts (13 listed names only): 10 had no failed gate (IESC with 2 unverified gates), 8 of those are at or below their buy price, 1 is within 10% above it (HCC; ADMA is 10.1% above); DAVE is below buy price but blocked (red flags 8 and 9). Gate 4 values were rescaled to the Nov 24 closes; other gate numbers, fair values and buy prices are carried from the Nov 17-18 screens (stale after the large price moves). The other universe names were carried from the Nov 17 screen, not re-run. MARKET SWEEP did not run (Yahoo estimate pages unavailable on the Nov 24 test). Carried to the next run: ACAD, ABX, AROW, DCOM, CUBI, LOB, HMY and the earlier backlog. Recommendations in the watchlist list are carried from Nov 19, not re-checked."
+  "approaching": 5,
+  "note": "Nov 27 run on Wed Nov 25 closes (US markets were closed Nov 26 for Thanksgiving): SPY -0.3%, QQQ -0.7%, DIA +0.3%, IWM +0.6%; the Dow fell more than 1,100 points intraday and recovered; NVDA -3.9% to $149.30. Prices re-checked against Twelve Data for all 13 previously listed names. CHANGE vs the Nov 25 screen: CHKP drops off the list: its Gate 4 (P/S rescaled to the Nov 25 close, about 3.07) now fails in addition to its Gate 1 failure (revenue +5.3% vs 10% needed), so it has two failed gates and is Not Qualified. The 7 Strict names are unchanged: DLO, STRL, B, IESC, FIX, EME, EXEL (B's falling-estimates check passes at -4.5% in 90 days, 0.5 points from the line; EME is 2.1% under its buy price). HCC is 6.2% above its buy price. NVDA (Gate 4 about 3.45 fail; open rule gap on red flag 7) and RDDT (Gate 4 about 3.16 fail) stay Approaching. Near-miss counts (12 listed names): 9 had no failed gate (IESC with 2 unverified gates), 8 of those are at or below their buy price, 0 are within 10% above it (HCC is 6.2% above; ADMA is 12.8% above); DAVE is below buy price but blocked (red flags 8 and 9). Gate 4 values were rescaled to the Nov 25 closes; other gate numbers, fair values and buy prices are carried from the Nov 17-18 screens (stale after the large price moves). The other universe names were carried from the Nov 17 screen, not re-run. MARKET SWEEP did not run today (blocked: Yahoo estimate pages unavailable on the Nov 25 test). Recommendations in the watchlist list are carried from Nov 19, not re-checked."
  },
  "names": [
   {
    "symbol": "DLO",
    "rank": 1,
    "class": "strict",
-   "price": 12.3,
-   "priceDate": "2026-11-24",
+   "price": 12.57,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -29,7 +29,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.43 (market value about $3.6B / TTM revenue $1,471.5M) at a 17.4% TTM operating margin = 2.10; RESCALED to the Nov 24 close $12.30 (was $12.04 at the Nov 20 close): about 2.15, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 2.43 (market value about $3.6B / TTM revenue $1,471.5M) at a 17.4% TTM operating margin = 2.10; RESCALED to the Nov 25 close $12.57 (was $12.04 at the Nov 20 close): about 2.19, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -47,9 +47,9 @@
    "roic": null,
    "fairValue": 34.56,
    "buyBelow": 24.72,
-   "discountPct": 64.4,
+   "discountPct": 63.6,
    "rewardRisk": null,
-   "impliedReturnPct": 41.1,
+   "impliedReturnPct": 40.1,
    "spreadPct": 72.8,
    "strictChecks": {
     "allMethods": true
@@ -100,15 +100,15 @@
     "bull": null,
     "note": "company type SOFTWARE (no EV/EBITDA method); buy price set by Forward P/S; methods spread widely (72.8%); free cash flow inflated by merchant working capital; PEG $16.91 is lower but does not set the buy price; share count about 290M is approximate"
    },
-   "entry": "RSI(14) 37.9 (neutral); price below the 50-day average and below the 200-day average; 17.55% above the 52-week low; volume 0.62x the 30-day average; next earnings last reported 2026-11-12; next date not confirmed",
+   "entry": "RSI(14) 41.2 (neutral); price below the 50-day average and below the 200-day average; 20.13% above the 52-week low; volume 0.9x the 30-day average; next earnings last reported 2026-11-12; next date not confirmed",
    "upgrade": "Nothing required under the rules: all gates pass, no blockers, and the price is at or below the buy price. Check the caveats in the reason line before acting.",
    "tech": {
-    "rsi": 37.9,
+    "rsi": 41.2,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 17.55,
-    "volVsAvg": 0.62,
+    "fromLowPct": 20.13,
+    "volVsAvg": 0.9,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -134,8 +134,8 @@
    "symbol": "STRL",
    "rank": 2,
    "class": "strict",
-   "price": 256.15,
-   "priceDate": "2026-11-24",
+   "price": 260.7,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -151,7 +151,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.9 at 18.6% margin = 1.6; RESCALED to the Nov 24 close $256.15 (was $247.92 at the Nov 20 close): about 1.65, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 1.9 at 18.6% margin = 1.6; RESCALED to the Nov 25 close $260.70 (was $247.92 at the Nov 20 close): about 1.68, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -169,9 +169,9 @@
    "roic": null,
    "fairValue": 543.06,
    "buyBelow": 443.49,
-   "discountPct": 52.8,
+   "discountPct": 52.0,
    "rewardRisk": null,
-   "impliedReturnPct": 28.5,
+   "impliedReturnPct": 27.7,
    "spreadPct": 80,
    "strictChecks": {
     "allMethods": true
@@ -229,15 +229,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 34.9 (neutral); price below the 50-day average and below the 200-day average; 7.01% above the 52-week low; volume 0.48x the 30-day average; next earnings last reported 2026-10-28; next date not confirmed",
+   "entry": "RSI(14) 36.2 (neutral); price below the 50-day average and below the 200-day average; 10.47% above the 52-week low; volume 0.74x the 30-day average; next earnings last reported 2026-10-28; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 34.9,
+    "rsi": 36.2,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 7.01,
-    "volVsAvg": 0.48,
+    "fromLowPct": 10.47,
+    "volVsAvg": 0.74,
     "staging": "Analysis only, no new capital."
    },
    "sources": [
@@ -255,8 +255,8 @@
    "symbol": "B",
    "rank": 3,
    "class": "strict",
-   "price": 33.58,
-   "priceDate": "2026-11-24",
+   "price": 34.52,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -272,27 +272,27 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.8 at 32.9% margin = 1.3; RESCALED to the Nov 24 close $33.58 (was $31.54 at the Nov 20 close): about 1.38, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 2.8 at 32.9% margin = 1.3; RESCALED to the Nov 25 close $34.52 (was $31.54 at the Nov 20 close): about 1.42, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
-     "detail": "next-year EPS down 4.6% in 90 days ($4.39 to $4.19)"
+     "detail": "next-year EPS down 4.5% in 90 days ($4.39 to $4.19)"
     },
     "redFlags": {
      "result": "pass",
      "detail": "none found (Nov 17 check). Q3 report Nov 9: revenue $5.07B, +22% a year; 2026 gold and copper production guidance kept. Nov 10: filed for an IPO of American Barrick (its North American gold assets), a partial listing of a subsidiary, not an agreement for Barrick to be acquired (rule 5 not triggered). No government suit found. Quarterly operating margin 50.0% vs 50.3% a year ago."
     }
    },
-   "reason": "gold and copper miner. revenue 14% next yr, 15 analysts; P/S about 1.4 at 32.9% margin. Back to Strict on the Nov 24 screen: the falling-estimates check now passes because next-year EPS is down 4.6% in 90 days (cut line is more than 5%; it failed at -5.8% on Nov 23), so the result sits close to the line and can flip again.",
+   "reason": "gold and copper miner. revenue 14% next yr, 15 analysts; P/S about 1.4 at 32.9% margin. Back to Strict on the Nov 24 screen: the falling-estimates check now passes because next-year EPS is down 4.5% in 90 days (cut line is more than 5%; it failed at -5.8% on Nov 23), so the result sits close to the line and can flip again.",
    "revGrowth": 22.3,
    "fwdPE": 8.72,
    "fcfYield": 8.1,
    "roic": null,
    "fairValue": 67.35,
    "buyBelow": 40.8,
-   "discountPct": 50.1,
+   "discountPct": 48.7,
    "rewardRisk": null,
-   "impliedReturnPct": 26.1,
+   "impliedReturnPct": 25.0,
    "spreadPct": 120,
    "strictChecks": {
     "allMethods": true
@@ -350,15 +350,15 @@
     "bull": null,
     "note": "company type CYCLICAL; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; stock pay verified from filings ($263M trailing 12 months, stockanalysis.com), which enables the FCF and DCF methods"
    },
-   "entry": "RSI(14) 36.9 (neutral); price below the 50-day average and below the 200-day average; 7.11% above the 52-week low; volume 1.11x the 30-day average; next earnings 2027-02-04 (71 days)",
+   "entry": "RSI(14) 40.7 (neutral); price below the 50-day average and below the 200-day average; 10.11% above the 52-week low; volume 1.31x the 30-day average; next earnings 2027-02-04 (69 days)",
    "upgrade": "Nothing required under the rules: all gates pass, no blockers, and the price is at or below the buy price. The estimates check is within 0.4 points of failing.",
    "tech": {
-    "rsi": 36.9,
+    "rsi": 40.7,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 7.11,
-    "volVsAvg": 1.11,
+    "fromLowPct": 10.11,
+    "volVsAvg": 1.31,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -384,8 +384,8 @@
    "symbol": "IESC",
    "rank": 4,
    "class": "strict",
-   "price": 166.04,
-   "priceDate": "2026-11-24",
+   "price": 171.98,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "unverified",
@@ -401,7 +401,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.8 at 12.4% margin = 2.1; RESCALED to the Nov 24 close $166.04 (was $156.06 at the Nov 20 close): about 2.23, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 1.8 at 12.4% margin = 2.1; RESCALED to the Nov 25 close $171.98 (was $156.06 at the Nov 20 close): about 2.31, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -419,9 +419,9 @@
    "roic": null,
    "fairValue": 277.77,
    "buyBelow": 196.5,
-   "discountPct": 40.2,
+   "discountPct": 38.1,
    "rewardRisk": null,
-   "impliedReturnPct": 18.7,
+   "impliedReturnPct": 17.3,
    "spreadPct": 81,
    "strictChecks": {
     "allMethods": true
@@ -479,15 +479,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 35.9 (neutral); price below the 50-day average and below the 200-day average; 16.39% above the 52-week low; volume 0.66x the 30-day average; next earnings 2027-01-29 (65 days)",
+   "entry": "RSI(14) 39.3 (neutral); price below the 50-day average and below the 200-day average; 20.55% above the 52-week low; volume 0.86x the 30-day average; next earnings 2027-01-29 (63 days)",
    "upgrade": "Nothing required under the rules (unverified gates keep a stock eligible), but Gates 1 and 2 rest on 1 analyst: confirm the growth estimates before acting.",
    "tech": {
-    "rsi": 35.9,
+    "rsi": 39.3,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 16.39,
-    "volVsAvg": 0.66,
+    "fromLowPct": 20.55,
+    "volVsAvg": 0.86,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -505,8 +505,8 @@
    "symbol": "FIX",
    "rank": 5,
    "class": "strict",
-   "price": 1096.56,
-   "priceDate": "2026-11-24",
+   "price": 1099.58,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -522,7 +522,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 3.0 at 16.8% margin = 2.6; RESCALED to the Nov 24 close $1096.56 (was $1042.47 at the Nov 20 close): about 2.73, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 3.0 at 16.8% margin = 2.6; RESCALED to the Nov 25 close $1099.58 (was $1042.47 at the Nov 20 close): about 2.74, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -540,9 +540,9 @@
    "roic": null,
    "fairValue": 1733.96,
    "buyBelow": 1460.61,
-   "discountPct": 36.8,
+   "discountPct": 36.6,
    "rewardRisk": null,
-   "impliedReturnPct": 16.5,
+   "impliedReturnPct": 16.4,
    "spreadPct": 29,
    "strictChecks": {
     "allMethods": true
@@ -600,15 +600,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 42.8 (neutral); price below the 50-day average and below the 200-day average; 25.1% above the 52-week low; volume 0.61x the 30-day average; next earnings 2027-02-18 (85 days)",
+   "entry": "RSI(14) 43.1 (neutral); price below the 50-day average and below the 200-day average; 25.44% above the 52-week low; volume 0.91x the 30-day average; next earnings 2027-02-18 (83 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 42.8,
+    "rsi": 43.1,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 25.1,
-    "volVsAvg": 0.61,
+    "fromLowPct": 25.44,
+    "volVsAvg": 0.91,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -626,8 +626,8 @@
    "symbol": "EME",
    "rank": 6,
    "class": "strict",
-   "price": 631.98,
-   "priceDate": "2026-11-24",
+   "price": 628.72,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -643,7 +643,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 1.4 at 9.9% margin = 2.1; RESCALED to the Nov 24 close $631.98 (was $603.32 at the Nov 20 close): about 2.20, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 1.4 at 9.9% margin = 2.1; RESCALED to the Nov 25 close $628.72 (was $603.32 at the Nov 20 close): about 2.19, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -661,9 +661,9 @@
    "roic": null,
    "fairValue": 845.65,
    "buyBelow": 642.46,
-   "discountPct": 25.3,
+   "discountPct": 25.7,
    "rewardRisk": null,
-   "impliedReturnPct": 10.2,
+   "impliedReturnPct": 10.4,
    "spreadPct": 50,
    "strictChecks": {
     "allMethods": true
@@ -721,15 +721,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 43.3 (neutral); price below the 50-day average and below the 200-day average; 9.06% above the 52-week low; volume 0.56x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
+   "entry": "RSI(14) 42.8 (neutral); price below the 50-day average and below the 200-day average; 8.5% above the 52-week low; volume 0.7x the 30-day average; next earnings last reported 2026-10-29; next date not confirmed",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 43.3,
+    "rsi": 42.8,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 9.06,
-    "volVsAvg": 0.56,
+    "fromLowPct": 8.5,
+    "volVsAvg": 0.7,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -747,8 +747,8 @@
    "symbol": "EXEL",
    "rank": 7,
    "class": "strict",
-   "price": 67.45,
-   "priceDate": "2026-11-24",
+   "price": 67.25,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -764,7 +764,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 6.6 at 40.2% margin = 2.5; RESCALED to the Nov 24 close $67.45 (was $64.63 at the Nov 20 close): about 2.61, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 6.6 at 40.2% margin = 2.5; RESCALED to the Nov 25 close $67.25 (was $64.63 at the Nov 20 close): about 2.60, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -782,9 +782,9 @@
    "roic": null,
    "fairValue": 79.04,
    "buyBelow": 74.03,
-   "discountPct": 14.7,
+   "discountPct": 14.9,
    "rewardRisk": null,
-   "impliedReturnPct": 5.4,
+   "impliedReturnPct": 5.5,
    "spreadPct": 22,
    "strictChecks": {
     "allMethods": true
@@ -842,15 +842,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 52.3 (neutral); price above the 50-day average and above the 200-day average; 69.86% above the 52-week low; volume 0.66x the 30-day average; next earnings 2027-02-09 (76 days)",
+   "entry": "RSI(14) 51.7 (neutral); price above the 50-day average and above the 200-day average; 69.35% above the 52-week low; volume 0.49x the 30-day average; next earnings 2027-02-09 (74 days)",
    "upgrade": "Nothing: all gates pass, no blockers, and the price is at or below the buy price.",
    "tech": {
-    "rsi": 52.3,
+    "rsi": 51.7,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 69.86,
-    "volVsAvg": 0.66,
+    "fromLowPct": 69.35,
+    "volVsAvg": 0.49,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -868,8 +868,8 @@
    "symbol": "DAVE",
    "rank": 8,
    "class": "approaching",
-   "price": 229.96,
-   "priceDate": "2026-11-24",
+   "price": 235.46,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -885,7 +885,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.0 at 34.1% margin = 2.2; RESCALED to the Nov 24 close $229.96 (was $228.39 at the Nov 20 close): about 2.22, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 5.0 at 34.1% margin = 2.2; RESCALED to the Nov 25 close $235.46 (was $228.39 at the Nov 20 close): about 2.27, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -903,9 +903,9 @@
    "roic": null,
    "fairValue": 457.79,
    "buyBelow": 454.42,
-   "discountPct": 49.8,
+   "discountPct": 48.6,
    "rewardRisk": null,
-   "impliedReturnPct": 25.8,
+   "impliedReturnPct": 24.8,
    "spreadPct": 84,
    "strictChecks": {
     "allMethods": true
@@ -942,15 +942,15 @@
     "bull": null,
     "note": "company type LENDER; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price; EV/EBITDA left out (industry multiple not verified or not used for this type)"
    },
-   "entry": "RSI(14) 31.9 (neutral); price below the 50-day average and below the 200-day average; 51.08% above the 52-week low; volume 0.67x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
+   "entry": "RSI(14) 34.1 (neutral); price below the 50-day average and below the 200-day average; 54.69% above the 52-week low; volume 0.79x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
    "upgrade": "red flag 8: open Justice Department/FTC case over ExtraCash (filed Nov 2024; listed pending) must be resolved; red flag 9: quarterly operating margin 24.3% vs 30.5% a year earlier (down 6.2 points) must be back within 5.0 points; price is already at or below the buy price",
    "tech": {
-    "rsi": 31.9,
+    "rsi": 34.1,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 51.08,
-    "volVsAvg": 0.67,
+    "fromLowPct": 54.69,
+    "volVsAvg": 0.79,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -964,8 +964,8 @@
    "symbol": "HCC",
    "rank": 9,
    "class": "approaching",
-   "price": 80.16,
-   "priceDate": "2026-11-24",
+   "price": 83.23,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -981,27 +981,27 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 2.24 (market value $4.18B / TTM revenue $1.860B) at the 5-year average operating margin 24.3% (2021-25) = 1.38; TTM margin 13.9%; RESCALED to the Nov 24 close $80.16 (was $76.56 at the Nov 20 close): about 1.44, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 2.24 (market value $4.18B / TTM revenue $1.860B) at the 5-year average operating margin 24.3% (2021-25) = 1.38; TTM margin 13.9%; RESCALED to the Nov 25 close $83.23 (was $76.56 at the Nov 20 close): about 1.50, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
-     "detail": "next-year EPS up 13.9% in 90 days ($6.83 to $7.79)"
+     "detail": "next-year EPS up 13.6% in 90 days ($6.83 to $7.76)"
     },
     "redFlags": {
      "result": "pass",
      "detail": "none found: Q3 revenue $507.9M vs $328.6M; Q3 operating margin 10.0% vs 6.3%; guidance reaffirmed Nov 4; diluted shares 52.88M vs 52.65M; TTM operating margin 13.9% vs 0.6% the year before; no CEO/CFO 8-K since Apr 21; 10-Q Note 8 shows no government action; no late filings, going-concern or restatement"
     }
    },
-   "reason": "Warrior Met Coal: steelmaking (metallurgical) coal producer, valued as a cyclical. Revenue +12.4% next yr (6 analysts); net cash; P/S 2.24 at the 5-year average margin of 24.3% = 1.38. Closed $80.16 on Nov 24, 2.3% above its $78.38 buy price, so it is Approaching again (Strict on the Nov 23 screen at $76.56). Added to the watchlist by the Nov 18 sweep (numbers from the Q3 10-Q, checked by the sweep session; I re-checked the price only).",
+   "reason": "Warrior Met Coal: steelmaking (metallurgical) coal producer, valued as a cyclical. Revenue +12.4% next yr (6 analysts); net cash; P/S 2.24 at the 5-year average margin of 24.3% = 1.38. Closed $83.23 on Nov 25, 6.2% above its $78.38 buy price, so it is Approaching again (Strict on the Nov 23 screen at $76.56). Added to the watchlist by the Nov 18 sweep (numbers from the Q3 10-Q, checked by the sweep session; I re-checked the price only).",
    "revGrowth": 12.4,
    "fwdPE": 10.1,
    "fcfYield": 3.2,
    "roic": null,
    "fairValue": 114.05,
    "buyBelow": 78.38,
-   "discountPct": 29.7,
+   "discountPct": 27.0,
    "rewardRisk": null,
-   "impliedReturnPct": 12.5,
+   "impliedReturnPct": 11.1,
    "spreadPct": 90.1,
    "strictChecks": {
     "allMethods": false
@@ -1052,15 +1052,15 @@
     "bull": null,
     "note": "company type CYCLICAL (cyclical blend used); EV/EBITDA left out: industry multiple not verified; PEG $81.88 is lower than the Forward P/E but does not set the buy price; $2.00 special dividend payable Nov 20 (record date Nov 9) not adjusted"
    },
-   "entry": "RSI(14) 45.1 (neutral); price below the 50-day average and below the 200-day average; 10.13% above the 52-week low; volume 0.73x the 30-day average; next earnings 2027-02-11 (78 days)",
-   "upgrade": "price $80.16 is 2.3% above the buy price $78.38 (needs a 2.2% fall)",
+   "entry": "RSI(14) 52.2 (neutral); price below the 50-day average and below the 200-day average; 12.82% above the 52-week low; volume 1.26x the 30-day average; next earnings 2027-02-11 (76 days)",
+   "upgrade": "price $83.23 is 6.2% above the buy price $78.38 (needs a 5.8% fall)",
    "tech": {
-    "rsi": 45.1,
+    "rsi": 52.2,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 10.13,
-    "volVsAvg": 0.73,
+    "fromLowPct": 12.82,
+    "volVsAvg": 1.26,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1086,8 +1086,8 @@
    "symbol": "ADMA",
    "rank": 10,
    "class": "approaching",
-   "price": 13.9,
-   "priceDate": "2026-11-24",
+   "price": 14.23,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -1103,7 +1103,7 @@
     },
     "marginPs": {
      "result": "pass",
-     "detail": "P/S 5.8 at 44.9% margin = 1.9; RESCALED to the Nov 24 close $13.90 (was $13.17 at the Nov 20 close): about 2.01, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 5.8 at 44.9% margin = 1.9; RESCALED to the Nov 25 close $14.23 (was $13.17 at the Nov 20 close): about 2.05, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1121,9 +1121,9 @@
    "roic": null,
    "fairValue": 16.18,
    "buyBelow": 12.62,
-   "discountPct": 14.1,
+   "discountPct": 12.1,
    "rewardRisk": null,
-   "impliedReturnPct": 5.2,
+   "impliedReturnPct": 4.4,
    "spreadPct": 102,
    "strictChecks": {
     "allMethods": false
@@ -1181,15 +1181,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied; PEG is lower but does not set the buy price"
    },
-   "entry": "RSI(14) 68.2 (neutral); price above the 50-day average and above the 200-day average; 92.79% above the 52-week low; volume 0.69x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
-   "upgrade": "price $13.90 is 10.1% above the buy price $12.62 (needs a 9.2% fall)",
+   "entry": "RSI(14) 70.6 (overbought); price above the 50-day average and above the 200-day average; 97.36% above the 52-week low; volume 0.68x the 30-day average; next earnings last reported 2026-11-04; next date not confirmed",
+   "upgrade": "price $14.23 is 12.8% above the buy price $12.62 (needs a 11.3% fall)",
    "tech": {
-    "rsi": 68.2,
+    "rsi": 70.6,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 92.79,
-    "volVsAvg": 0.69,
+    "fromLowPct": 97.36,
+    "volVsAvg": 0.68,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1207,8 +1207,8 @@
    "symbol": "NVDA",
    "rank": 11,
    "class": "approaching",
-   "price": 155.38,
-   "priceDate": "2026-11-24",
+   "price": 149.3,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -1224,7 +1224,7 @@
     },
     "marginPs": {
      "result": "fail",
-     "detail": "P/S 12.4 at 65.2% margin = 2.9; RESCALED to the Nov 24 close $155.38 (was $125.53 at the Nov 20 close): about 3.59, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 12.4 at 65.2% margin = 2.9; RESCALED to the Nov 25 close $149.30 (was $125.53 at the Nov 20 close): about 3.45, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1242,9 +1242,9 @@
    "roic": null,
    "fairValue": 375.57,
    "buyBelow": 233.08,
-   "discountPct": 58.6,
+   "discountPct": 60.2,
    "rewardRisk": null,
-   "impliedReturnPct": 34.2,
+   "impliedReturnPct": 36.0,
    "spreadPct": 104,
    "strictChecks": {
     "allMethods": true
@@ -1302,15 +1302,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied | Capped at Approaching by an open rule gap (CEO reinstated, red flag 7)."
    },
-   "entry": "RSI(14) 39.5 (neutral); price below the 50-day average and below the 200-day average; 24.8% above the 52-week low; volume 1.19x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
-   "upgrade": "Gate 4: margin-adjusted P/S about 3.59 vs 3.0 (price would need to fall to about $130); red flag 7 kept literally (CEO resigned Nov 12, no permanent successor named; reports say Huang was reinstated Nov 23): RULE GAP, capped at Approaching until Seth rules",
+   "entry": "RSI(14) 37.5 (neutral); price below the 50-day average and below the 200-day average; 19.92% above the 52-week low; volume 1.09x the 30-day average; next earnings last reported 2026-11-17; next date not confirmed",
+   "upgrade": "Gate 4: margin-adjusted P/S about 3.45 vs 3.0 (price would need to fall to about $130); red flag 7 kept literally (CEO resigned Nov 12, no permanent successor named; reports say Huang was reinstated Nov 23): RULE GAP, capped at Approaching until Seth rules",
    "tech": {
-    "rsi": 39.5,
+    "rsi": 37.5,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 24.8,
-    "volVsAvg": 1.19,
+    "fromLowPct": 19.92,
+    "volVsAvg": 1.09,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1332,8 +1332,8 @@
    "symbol": "RDDT",
    "rank": 12,
    "class": "approaching",
-   "price": 90.34,
-   "priceDate": "2026-11-24",
+   "price": 91.51,
+   "priceDate": "2026-11-25",
    "gates": {
     "revenueGrowth": {
      "result": "pass",
@@ -1349,7 +1349,7 @@
     },
     "marginPs": {
      "result": "fail",
-     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly); RESCALED to the Nov 24 close $90.34 (was $85.33 at the Nov 20 close): about 3.12, limit 3.0 (TTM revenue and margin carried)"
+     "detail": "P/S 5.8 at 29.4% margin = 2.95 (limit 3.0; passes narrowly); RESCALED to the Nov 25 close $91.51 (was $85.33 at the Nov 20 close): about 3.16, limit 3.0 (TTM revenue and margin carried)"
     },
     "estimates": {
      "result": "pass",
@@ -1367,9 +1367,9 @@
    "roic": null,
    "fairValue": 118.9,
    "buyBelow": 98.64,
-   "discountPct": 24.0,
+   "discountPct": 23.0,
    "rewardRisk": null,
-   "impliedReturnPct": 9.6,
+   "impliedReturnPct": 9.1,
    "spreadPct": 31,
    "strictChecks": {
     "allMethods": true
@@ -1427,15 +1427,15 @@
     "bull": null,
     "note": "company type STANDARD; G uses next-year growth only (2-3 year consensus not in the data); Nov 15 valuation rules applied"
    },
-   "entry": "RSI(14) 34.0 (neutral); price below the 50-day average and below the 200-day average; 6.79% above the 52-week low; volume 0.5x the 30-day average; next earnings 2027-02-04 (71 days)",
-   "upgrade": "Gate 4: margin-adjusted P/S about 3.12 vs 3.0 (price must fall to about $86.8); price is already at or below the buy price",
+   "entry": "RSI(14) 35.4 (neutral); price below the 50-day average and below the 200-day average; 8.17% above the 52-week low; volume 0.53x the 30-day average; next earnings 2027-02-04 (69 days)",
+   "upgrade": "Gate 4: margin-adjusted P/S about 3.16 vs 3.0 (price must fall to about $86.8); price is already at or below the buy price",
    "tech": {
-    "rsi": 34.0,
+    "rsi": 35.4,
     "rsiWeekly": null,
     "macd": null,
     "atrPct": null,
-    "fromLowPct": 6.79,
-    "volVsAvg": 0.5,
+    "fromLowPct": 8.17,
+    "volVsAvg": 0.53,
     "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
    },
    "sources": [
@@ -1453,120 +1453,6 @@
     },
     {
      "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 closes checked against Twelve Data",
-     "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
-    }
-   ]
-  },
-  {
-   "symbol": "CHKP",
-   "rank": 13,
-   "class": "approaching",
-   "price": 159.34,
-   "priceDate": "2026-11-24",
-   "gates": {
-    "revenueGrowth": {
-     "result": "fail",
-     "detail": "5.3% next yr ($2.913B vs $2.767B), 36 analysts; 10% needed"
-    },
-    "earnings": {
-     "result": "pass",
-     "detail": "EPS +7.2% vs revenue +5.3% next yr (38 analysts on EPS)"
-    },
-    "balanceSheet": {
-     "result": "pass",
-     "detail": "net cash: cash $2.154B vs debt $1.976B (Yahoo data, not read from filings)"
-    },
-    "marginPs": {
-     "result": "pass",
-     "detail": "P/S 5.47 at 28.3% margin = 2.90; RESCALED to the Nov 24 close $159.34 (was $154.88 at the Nov 20 close): about 2.98, limit 3.0 (TTM revenue and margin carried)"
-    },
-    "estimates": {
-     "result": "pass",
-     "detail": "next-year EPS down 2.3% in 90 days ($11.30 to $11.04)"
-    },
-    "redFlags": {
-     "result": "fail",
-     "detail": "(3) Q3 revenue $669.8M vs $677.5M a year earlier (-1.1%). (2) Probable but not confirmed: full-year 2026 revenue guidance at the Nov 2 report ($2.732-2.782B) looks lower than the $2.8-2.9B given in July. Not flagged: share count down (101.9M vs 109.5M a year ago); quarterly operating margin 26.5% vs 29.4% (-2.9 points, under the 5.0 limit); plaintiff-firm investigations are not government actions. Government suits, CEO/CFO changes and going-concern text were not read from filings (SEC document downloads were refused)."
-    }
-   },
-   "reason": "Check Point Software: network and cloud security software (Israel-based foreign filer). Gate 1 FAILS: next-year revenue growth is 5.3% (36 analysts) against the 10% needed. Red flag 3: Q3 revenue $669.8M vs $677.5M a year earlier (-1.1%). Gate numbers are snapshot-level (Yahoo data saved on this site, second-checked against the Nov 2 results release); filings were not read.",
-   "revGrowth": -1.1,
-   "fwdPE": 13.38,
-   "fcfYield": 7.5,
-   "roic": null,
-   "fairValue": 140.82,
-   "buyBelow": 135.89,
-   "discountPct": -13.2,
-   "rewardRisk": null,
-   "impliedReturnPct": -4.0,
-   "spreadPct": 19,
-   "strictChecks": {
-    "allMethods": false
-   },
-   "fairValueDetail": {
-    "methods": [
-     {
-      "name": "Forward P/E",
-      "assumption": "15.59x (12 + 0.5 x G of 7.2) on FY27 EPS $8.82 (published $11.04 minus stock pay $2.22/sh; Technology default: consensus excludes stock pay, and stock pay is 8.2% of revenue)",
-      "value": 137.48,
-      "weight": 41.7,
-      "trimmed": false
-     },
-     {
-      "name": "DCF",
-      "assumption": "year 1 $9.33/sh (TTM FCF $11.09 minus stock pay $2.22 = $8.86, x 1.053 for F of 5.3%), grown 3.6%/yr (50% of G, floor 3%), 10% discount, 3% terminal",
-      "value": 135.89,
-      "weight": 41.6,
-      "trimmed": false
-     },
-     {
-      "name": "Forward P/S",
-      "assumption": "5.66x (3 x 28.3% TTM margin / 15) on next-yr revenue $28.53/sh",
-      "value": 161.48,
-      "weight": 16.7,
-      "trimmed": false
-     },
-     {
-      "name": "FCF yield",
-      "assumption": "5.28% yield (6 - G/10) on forward stock-pay-adjusted FCF $9.33/sh (TTM $8.86, F 5.3%)",
-      "value": 176.62,
-      "weight": 0,
-      "trimmed": true
-     },
-     {
-      "name": "PEG",
-      "assumption": "10.0x (0.5 x G of 7.2, floor 10) on EPS $8.82",
-      "value": 88.18,
-      "weight": 0,
-      "trimmed": true
-     }
-    ],
-    "composite": 140.82,
-    "spreadPct": 19,
-    "low": 88.18,
-    "high": 176.62,
-    "bear": null,
-    "bull": null,
-    "note": "company type SOFTWARE (Software - Infrastructure; no EV/EBITDA method); G uses next-year EPS growth only (no 2-3 year consensus in the data); Nov 15 valuation rules applied; PEG $88.18 is lower but does not set the buy price; snapshot-level inputs, not filing-verified"
-   },
-   "entry": "RSI(14) 68.8 (neutral); price above the 50-day average and above the 200-day average; 41.98% above the 52-week low; volume 1.22x the 30-day average; next earnings 2027-02-18 (85 days)",
-   "upgrade": "Gate 1: next-year revenue growth 5.3% vs the 10% needed; red flags 3 and 2 (see the red-flag line); price $159.34 is 17.3% above the buy price $135.89 (needs a 14.7% fall)",
-   "tech": {
-    "rsi": 68.8,
-    "rsiWeekly": null,
-    "macd": null,
-    "atrPct": null,
-    "fromLowPct": 41.98,
-    "volVsAvg": 1.22,
-    "staging": "Sizing rule: 5-9% of the stock portfolio, never above 10%."
-   },
-   "sources": [
-    {
-     "title": "Check Point Q3 2026 results (Nov 2, 2026)",
-     "url": "https://www.morningstar.com/news/pr-newswire/20261102dc86338/check-point-software-reports-2026-third-quarter-financial-results"
-    },
-    {
-     "title": "Yahoo Finance data saved on this site (prices, statements, estimates); Nov 16 close checked against Twelve Data",
      "url": "https://sethdesselle.github.io/sethdesselle-screener-/"
     }
    ]
@@ -1607,5 +1493,5 @@
   ],
   "removes": []
  },
- "reportUrl": "https://claude.ai/artifact/7P7xdrE1cY5Fu44SogfU2k"
+ "reportUrl": "https://claude.ai/artifact/4QmHkYcUDwptNddfoB5qAD"
 }
